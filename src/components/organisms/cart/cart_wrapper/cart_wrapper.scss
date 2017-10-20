@@ -1,0 +1,38 @@
+@import 'src/css/mixins';
+
+.c-cart-wrapper {
+  &__low-bridge-icon {
+    width: 90px;
+  }
+
+  &__apple-pay-promo {
+    line-height: 1.5;
+    max-width: 450px;
+  }
+
+  &__banner {
+    background: color('light-red');
+    border-color: color('red', 0.2);
+  }
+
+  &__banner-icon {
+    width: 20px;
+
+    @include mqAbove($grid-breakpoint-tablet) {
+      width: 16px;
+    }
+  }
+
+  &__banner-cta {
+    padding: 4px 0;
+
+    &:focus {
+      outline: none;
+      color: color('blue-shadow');
+    }
+  }
+
+  &__heading-message {
+    max-width: 500px;
+  }
+}

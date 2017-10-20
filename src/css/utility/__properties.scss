@@ -1,0 +1,901 @@
+@include property-generator((
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  (
+    variations: (
+      bgp: background-position,
+      bgr: background-repeat,
+      bgs: background-size,
+    ),
+    values: (
+      (
+        variations: ( bgp ),
+        strings: (
+          c: center,
+
+          tc: top center,
+
+
+
+
+
+
+
+
+
+
+        ),
+        delimiter: "--"
+      ),
+      (
+        variations: ( bgr ),
+        strings: (
+          nr: no-repeat,
+        ),
+        delimiter: "--"
+      ),
+      (
+        variations: ( bgs ),
+        strings: (
+          cn: contain,
+          cv: cover,
+        ),
+        delimiter: "--"
+      ),
+    ),
+    breakpoints: (
+      0,
+    ),
+  ),
+
+
+
+  (
+    variations: (
+      bs:   border-style,
+      bts:  border-top-style,
+      brs:  border-right-style,
+      bbs:  border-bottom-style,
+      bls:  border-left-style,
+      bw:   border-width,
+      btw:  border-top-width,
+      brw:  border-right-width,
+      bbw:  border-bottom-width,
+      blw:  border-left-width,
+      bc:   border-color,
+      br:   border-radius,
+    ),
+    values: (
+      (
+
+        variations: ( bs bts brs bbs bls ),
+        strings: (
+
+          s: solid,
+        ),
+      ),
+      (
+        variations: ( bw btw brw bbw blw ),
+        numbers: (
+
+          px: ( 0 1 2 3 4 8),
+        ),
+      ),
+      (
+        variations: ( br ),
+        numbers: (
+
+          px: ( 1 2 4 ),
+        ),
+      ),
+      (
+        variations: ( bc ),
+
+        strings: pick($colors, (
+          "blue",
+          "dark-gray",
+          "dark-gray-alt-2",
+          "light-gray",
+          "light-gray-alt-1",
+          "light-gray-alt-2",
+          "subtle-gray",
+          "white",
+          "white-0p",
+          "black",
+          "black-20p",
+        )),
+
+
+        delimiter: "--"
+      ),
+    ),
+    breakpoints: (
+
+
+      $grid-breakpoint-list
+    ),
+  ),
+
+
+
+  (
+    variations: (
+      c: clear,
+    ),
+    values: (
+      (
+        variations: ( c ),
+        strings: (
+          b: both,
+          l: left,
+          n: none,
+          r: right,
+        ),
+      ),
+    ),
+    breakpoints: (
+      0,
+    ),
+  ),
+
+
+
+  (
+    variations: (
+      color:        color,
+      color-bg:     background-color,
+      fill:         fill,
+      stroke:       stroke,
+    ),
+    values: (
+      (
+        variations: ( color ),
+        delimiter: "--",
+        strings: pick($colors, (
+          "blue",
+          "blue-shadow",
+          "dark-gray",
+          "dark-gray-alt-1",
+          "dark-gray-alt-2",
+          "dark-gray-alt-3",
+          "red",
+          "red-alt-1",
+          "red-alt-2",
+          "light-gray",
+          "light-gray-alt-1",
+          "light-gray-alt-4",
+          "light-gray-alt-6",
+          "yellow",
+          "yellow-alt-1",
+          "white",
+          "black",
+        )),
+      ),
+       (
+        variations: ( color-bg ),
+        delimiter: "--",
+        strings: pick($colors, (
+          "blue",
+          "dark-gray",
+          "dark-gray-alt-2",
+          "dark-gray-alt-3",
+          "dark-gray-alt-4",
+          "dark-gray-95p",
+          "light-gray",
+          "light-gray-alt-1",
+          "light-gray-alt-2",
+          "light-gray-alt-3",
+          "light-gray-alt-5",
+          "white",
+          "white-0p",
+          "white-95p",
+          "black",
+        )),
+      ),
+       (
+        variations: ( fill ),
+        delimiter: "--",
+        strings: pick($colors, (
+          "blue",
+          "dark-gray",
+          "dark-gray-alt-1",
+          "dark-gray-alt-2",
+          "red",
+          "light-gray",
+          "light-gray-alt-1",
+          "yellow",
+          "white",
+        )),
+      ),
+       (
+        variations: ( stroke ),
+        delimiter: "--",
+        strings: pick($colors, (
+          "blue",
+          "dark-gray",
+          "dark-gray-alt-2",
+          "light-gray",
+          "light-gray-alt-1",
+          "white",
+        )),
+      ),
+    ),
+    breakpoints: (
+      $grid-breakpoint-list
+    ),
+  ),
+
+
+
+  (
+    variations: (
+      cursor: cursor,
+      pe: pointer-events,
+    ),
+    values: (
+      (
+        variations: ( cursor ),
+        delimiter: "--",
+        strings: (
+          default: default,
+          pointer: pointer,
+        ),
+      ),
+      (
+        variations: ( pe ),
+        strings: (
+          a: auto,
+          n: none,
+        ),
+      ),
+    ),
+    breakpoints: (
+      0,
+    ),
+  ),
+
+
+
+  (
+    variations: (
+      d: display,
+    ),
+    values: (
+      (
+        variations: ( d ),
+        strings: (
+          b:  block,
+          f:  flex,
+          ib: inline-block,
+          i:  inline,
+          t:  table,
+          tc: table-cell,
+          n:  none,
+        ),
+      ),
+    ),
+    breakpoints: (
+      0 600px 720px 768px 900px 960px 1200px 1440px
+    ),
+  ),
+
+
+
+  (
+    variations: (
+      ac: align-content,
+      ai: align-items,
+      as: align-self,
+      flex: flex,
+      flexd: flex-direction,
+      flexw: flex-wrap,
+      ord: order,
+    ),
+    values: (
+      (
+        variations: ( ac ),
+        delimiter: "--",
+        strings: (
+
+
+          fs: flex-start,
+
+
+
+        ),
+      ),
+      (
+        variations: ( ai ),
+        delimiter: "--",
+        strings: (
+
+          c: center,
+          fe: flex-end,
+          fs: flex-start,
+          s: stretch,
+        ),
+      ),
+      (
+        variations: ( as ),
+        delimiter: "--",
+        strings: (
+
+
+          c: center,
+
+
+
+        ),
+      ),
+      (
+        variations: ( flex ),
+        delimiter: "--",
+        strings: (
+          none: none,
+          0: 0,
+          1: 1,
+        ),
+      ),
+      (
+        variations: ( flexd ),
+        delimiter: "--",
+        strings: (
+          c: column,
+
+          r: row,
+          rr: row-reverse,
+        ),
+      ),
+      (
+        variations: ( flexw ),
+        delimiter: "--",
+        strings: (
+
+          w: wrap,
+
+        ),
+      ),
+      (
+        variations: ( ord ),
+        strings: (
+          0: 0,
+          1: 1,
+        ),
+      ),
+    ),
+    breakpoints: (
+      $grid-breakpoint-list
+    ),
+  ),
+
+
+
+  (
+    variations: (
+      f: float,
+    ),
+    values: (
+      (
+        variations: ( f ),
+        strings: (
+          r: right,
+          l: left,
+          n: none,
+        ),
+      ),
+    ),
+    breakpoints: (
+      $grid-breakpoint-list
+    ),
+  ),
+
+
+
+  (
+    variations: (
+      ff: font-family,
+      fw: font-weight,
+      fs: font-style,
+    ),
+    values: (
+      (
+        variations: ( ff ),
+        strings: (
+          s: $family-serif,
+        ),
+        additional: (
+          line-height: calc(1em + 6px)
+        )
+      ),
+      (
+        variations: ( ff ),
+        strings: (
+          ss: $family-sans,
+        ),
+        additional: (
+          line-height: calc(1em + 10px)
+        )
+      ),
+      (
+        variations: ( fw ),
+        strings: (
+          l: $font-weight-light,
+          n: $font-weight-normal,
+          s: $font-weight-semibold,
+          b: $font-weight-bold,
+        ),
+      ),
+      (
+        variations: ( fs ),
+        strings: (
+          i: $font-style-em,
+        ),
+      ),
+    ),
+    breakpoints: (
+      0
+    ),
+  ),
+
+
+
+  (
+    variations: (
+      fs: font-size,
+    ),
+    values: (
+      (
+        variations: ( fs ),
+        numbers: (
+          px: ( 10 12 14 16 18 20 22 24 26 30 34 36 40 44 48 45 50 55 60 70 80 ),
+        ),
+      ),
+    ),
+    breakpoints: (
+      $grid-breakpoint-list
+    ),
+  ),
+
+
+
+  (
+    variations: (
+      lh: line-height,
+    ),
+    values: (
+      (
+        variations: ( lh ),
+        numbers: (
+          px: ( 10 12 14 16 18 20 22 24 26 28 30 32 34 ),
+        ),
+      ),
+    ),
+    breakpoints: (
+      $grid-breakpoint-list
+    ),
+  ),
+
+
+
+  (
+    variations: (
+      h: height,
+    ),
+    values: (
+      (
+        variations: ( h ),
+        numbers: (
+          px: ( 0 48 60 ),
+          "%": ( 100 ),
+        ),
+        strings: (
+          auto: auto,
+        )
+      ),
+    ),
+    breakpoints: (
+      $grid-breakpoint-list
+    ),
+  ),
+
+
+
+  (
+    variations: (
+      jc: justify-content,
+    ),
+    values: (
+      (
+        variations: ( jc ),
+        delimiter: "--",
+        strings: (
+          c: center,
+          fe: flex-end,
+          fs: flex-start,
+          sa: space-around,
+          sb: space-between,
+        ),
+      ),
+    ),
+    breakpoints: (
+      $grid-breakpoint-list
+    ),
+  ),
+
+
+
+  (
+    variations: (
+      ls: letter-spacing,
+    ),
+    values: (
+      (
+        variations: ( ls ),
+        numbers: (
+          px: ( 0 1 1.5 2 2.5 3 ),
+        ),
+        strings: (
+          i: initial,
+        )
+      ),
+    ),
+    breakpoints: (
+      $grid-breakpoint-list
+    ),
+  ),
+
+
+
+
+  (
+    variations: (
+      p: position,
+    ),
+    values: (
+      (
+        variations: ( p ),
+        strings: (
+          a: absolute,
+          r: relative,
+          s: static,
+          f: fixed,
+        )
+      ),
+    ),
+    breakpoints: (
+      $grid-breakpoint-list
+    ),
+  ),
+
+
+
+  (
+    variations: (
+      m:  margin,
+      mt: margin-top,
+      mr: margin-right,
+      mb: margin-bottom,
+      ml: margin-left,
+    ),
+    values: (
+      (
+        variations: ( m ),
+        strings: (
+          a: auto,
+          0a: 0 auto,
+        ),
+        numbers: (
+          px: (0, 12, 20),
+        ),
+      ),
+      (
+        variations: ( mt mr mb ml ),
+        strings: (
+          a: auto,
+        ),
+        numbers: (
+          px: (-84 -72 -60 -48 -36 -24 -18 -12 -6 -5 -1 0 1 2 3 4 5 6 7 8 9 10 12 18 24 30 36 42 48 54 60 66 72 78 84 90 96 108 120 140 180),
+        )
+      ),
+    ),
+    breakpoints: (
+      0 600px 900px 960px 1200px
+    ),
+  ),
+
+
+
+  (
+    variations: (
+      o:  overflow,
+    ),
+    values: (
+      (
+        variations: ( o ),
+        strings: (
+          h: hidden,
+          v: visible,
+          a: auto,
+        ),
+      ),
+    ),
+    breakpoints: (
+      0  900px
+    ),
+  ),
+
+
+
+  (
+    variations: (
+      p:  padding,
+      pt: padding-top,
+      pr: padding-right,
+      pb: padding-bottom,
+      pl: padding-left,
+    ),
+    values: (
+      (
+        variations: ( p pt pr pb pl),
+        numbers: (
+          px: (0 1 2 3 4 5 6 7 8 9 10 12 18 24 30 36 42 48 54 60 72 84 96 120 200),
+        )
+      ),
+      (
+
+        variations: ( pb ),
+        strings: (
+          "1x1":  percentage(1),
+          "2x1":  percentage(1 / 2),
+          "2x3":  percentage(3 / 2),
+          "3x1":  percentage(1 / 3),
+          "3x2":  percentage(2 / 3),
+          "3x4":  percentage(4 / 3),
+          "4x3":  percentage(3 / 4),
+          "5x4": percentage(4 / 5),
+          "5x2": percentage(2 / 5),
+          "16x9": percentage(9 / 16),
+        ),
+      ),
+    ),
+    breakpoints: (
+      $grid-breakpoint-list
+    ),
+  ),
+
+
+
+  (
+    variations: (
+      ta:  text-align,
+    ),
+    values: (
+      (
+        variations: ( ta ),
+        strings: (
+          c: center,
+          r: right,
+          l: left,
+          j: justify,
+        ),
+      ),
+    ),
+    breakpoints: (
+      0 500px 600px 720px 900px 960px 1200px
+    ),
+  ),
+
+
+
+  (
+    variations: (
+      td:  text-decoration,
+    ),
+    values: (
+      (
+        variations: ( td ),
+        strings: (
+          i: inherit,
+          n: none,
+          u: underline,
+        ),
+      ),
+    ),
+    breakpoints: (
+      0
+    ),
+  ),
+
+
+
+  (
+    variations: (
+      tt:  text-transform,
+    ),
+    values: (
+      (
+        variations: ( tt ),
+        strings: (
+          u: uppercase,
+          c: capitalize,
+          l: lowercase,
+          n: none,
+        ),
+      ),
+    ),
+    breakpoints: (
+      $grid-breakpoint-list
+    ),
+  ),
+
+
+
+  (
+    variations: (
+      t:  transform,
+    ),
+    values: (
+      (
+        variations: ( t ),
+        strings: (
+          tn50: translate(-50%),
+          tn50n50: translate(-50%, -50%),
+          txn50: translateX(-50%),
+          tyn50: translateY(-50%),
+          tyn: none,
+          r180: rotate(180deg),
+        ),
+      ),
+    ),
+    breakpoints: (
+      $grid-breakpoint-list
+    ),
+  ),
+
+
+
+  (
+    variations: (
+      t: top,
+      r: right,
+      b: bottom,
+      l: left,
+    ),
+    values: (
+      (
+        variations: ( l r ),
+        numbers: (
+          col: ( 1 2 3 4 5 6 7 8 9 10 11 12 )
+        )
+      ),
+      (
+        variations: ( t r b l ),
+        numbers: (
+          px: ( 0 ),
+          "%": ( 25 50 75 100 ),
+        ),
+        strings: (
+          a: auto,
+        )
+      ),
+    ),
+    breakpoints: (
+      $grid-breakpoint-list
+    ),
+  ),
+
+
+
+  (
+    variations: (
+      va:  vertical-align,
+    ),
+    values: (
+      (
+        variations: ( va ),
+        strings: (
+          t: top,
+          m: middle,
+          b: bottom,
+          tt: text-top,
+        ),
+      ),
+    ),
+    breakpoints: (
+      $grid-breakpoint-list
+    ),
+  ),
+
+
+
+  (
+    variations: (
+      v:  visibility,
+    ),
+    values: (
+      (
+        variations: ( v ),
+        strings: (
+          v: visible,
+          h: hidden,
+          c: collapse,
+        ),
+      ),
+    ),
+    breakpoints: (
+      0
+    ),
+  ),
+
+
+
+  (
+    variations: (
+      ws: white-space,
+    ),
+    values: (
+      (
+        variations: ( ws ),
+        strings: (
+          n: normal,
+          nw: nowrap,
+
+        ),
+      ),
+    ),
+    breakpoints: (
+      $grid-breakpoint-list
+    ),
+  ),
+
+
+
+  (
+    variations: (
+      w: width,
+      mw: max-width,
+    ),
+    values: (
+      (
+        variations: ( w ),
+        numbers: (
+          "%": ( 100 ),
+          vw: (100),
+          col: ( 1 2 3 4 5 6 7 8 9 10 11 12 ),
+        ),
+        strings: (
+          auto: auto,
+        )
+      ),
+      (
+        variations: ( mw ),
+        numbers: (
+          px: ( 600, 960, 1440, 2000 ),
+          "%": ( 50, 75, 100 ),
+        ),
+        strings: (
+          none: none,
+        )
+      ),
+    ),
+    breakpoints: (
+      0 600px 720px 900px 1200px
+    ),
+  )
+
+));

@@ -1,0 +1,73 @@
+@import 'src/css/mixins';
+
+.c-prescription-check {
+
+  &__header {
+    @include mqAbove($grid-breakpoint-desktop-large) {
+      top: 120px;
+    }
+  }
+
+  &__download-icon {
+    width: 160px;
+  }
+
+  &__app-icon {
+    width: 60px;
+  }
+
+  &__popout {
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+
+  &__callout {
+    &:last-child {
+      border: none;
+    }
+  }
+
+  &__callout-content {
+    max-width: 600px;
+
+    @include mqAbove($grid-breakpoint-desktop) {
+      max-width: 1080px;
+    }
+  }
+
+  &__header-description {
+    max-width: 600px;
+  }
+
+  &__notice {
+    &:last-child {
+      border: none;
+    }
+
+    @include mqAbove($grid-breakpoint-tablet) {
+      &:nth-child(2n) {
+        border: none;
+      }
+    }
+  }
+
+  &__takeover {
+    background: color('dark-gray', 0.95);
+  }
+
+  @keyframes slide-in-sticky {
+    from { transform: translate3d(0, 110%, 0); }
+    to { transform: translate3d(0, 0, 0); }
+  }
+
+  &__sticky-footer {
+    box-shadow: 0 -2px 6px -2px color('black-10p');
+    z-index: 100;
+    animation: {
+      name: slide-in-sticky;
+      duration: $transition-duration-default;
+      timing-function: ease-out;
+    }
+  }
+}
+

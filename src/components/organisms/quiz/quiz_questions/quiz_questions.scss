@@ -1,0 +1,157 @@
+@import 'src/css/mixins';
+
+.c-quiz-questions {
+  // Colors here are one offs; avoiding adding them to $colors
+  $color-quiz-border: #c8d5dd;
+  $color-progress-background: #dfe9f0;
+  $color-progress-active: #bcd1db;
+
+  z-index: $z-index-takeover;
+
+  &__progress-bar {
+    background-color: $color-progress-background;
+  }
+
+  &__progress {
+    transition: width $transition-duration-default ease-in-out;
+    height: 5px;
+    background-color: $color-progress-active;
+  }
+
+  &__nav {
+    border-bottom: 1px solid $color-quiz-border;
+
+    @include mqAbove($grid-breakpoint-tablet) {
+      border: none;
+    }
+  }
+
+  &__nav-button {
+    line-height: 0;
+
+    &:focus {
+      outline: none;
+
+      .u-icon {
+        stroke: color('black');
+      }
+    }
+  }
+
+  &__content {
+
+    @include mqAbove($grid-breakpoint-tablet) {
+      max-height: 800px;
+    }
+  }
+
+  &__flex-static {
+    flex: 0 0 auto;
+  }
+
+  &__flex-expand {
+    flex: 1 0 auto;
+  }
+
+  &__options {
+    opacity: 1;
+    transform: none;
+    transition: {
+      property: opacity, transform;
+      duration: 0.5s;
+      timing-function: ease-in-out;
+    }
+
+    &.-transition {
+      opacity: 0.01;
+      transform: translateY(10px);
+    }
+  }
+
+  &__option-container {
+
+    &.-bordered{
+      border: solid $color-quiz-border;
+      border-width: 0 0 1px 0;
+
+      &:last-child {
+        border: none;
+      }
+
+      @include mqAbove($grid-breakpoint-tablet) {
+        border-width: 0 1px 0 0;
+
+        &:last-child {
+          border: none;
+        }
+      }
+    }
+  }
+
+  &__option-image {
+
+    &.-inline {
+      width: 96px;
+      flex-shrink: 0;
+
+      @include mqAbove($grid-breakpoint-tablet) {
+        width: auto;
+      }
+    }
+
+    &.-swatch {
+      width: 44px;
+
+      @include mqAbove($grid-breakpoint-tablet) {
+        width: auto;
+      }
+    }
+  }
+
+  &__option-pill {
+    border-radius: 15px;
+    padding: 8px 15px;
+    transition: $transition-duration-default ease-in-out;
+  }
+
+  &__input:checked + &__option-pill {
+    background: color('blue');
+    color: color('white');
+  }
+
+  &__option-description {
+    @include mqAbove($grid-breakpoint-tablet) {
+      max-width: 300px;
+    }
+  }
+
+  &__cta-container {
+    border-color: $color-quiz-border;
+  }
+
+  &__cta {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    &.-button-white,
+    &.-button-blue {
+      border-width: 0;
+    }
+
+    @include mqAbove($grid-breakpoint-tablet) {
+      position: relative;
+      width: 240px;
+
+      &.-button-white,
+      &.-button-blue {
+        border-width: 1px;
+      }
+
+      &.-button-white {
+        background: transparent;
+      }
+    }
+  }
+}

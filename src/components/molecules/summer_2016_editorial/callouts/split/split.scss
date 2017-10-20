@@ -1,0 +1,20 @@
+@import 'src/css/mixins';
+
+.c-summer-2016-editorial-callout-split {
+
+  &__shop-link-wrapper {
+    @include mqAbove($grid-breakpoint-tablet) {
+      width: 120px;
+    }
+  }
+
+  &__shop-link {
+    @include mqAbove($grid-breakpoint-desktop) {
+      &:hover {
+        color: color('blue');
+        border-bottom: 2px solid color('blue');
+      }
+    }
+  }
+
+}

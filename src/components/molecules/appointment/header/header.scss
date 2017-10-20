@@ -1,0 +1,54 @@
+@import 'src/css/mixins';
+
+.c-appointment-header {
+  max-width: 1056px;
+  height: 50px;
+  box-shadow: inset 0 -1px color('light-gray');
+
+  // Extend the gray background horizontally to fill the viewport.
+  &::after,
+  &::before {
+    background-color: color('light-gray-alt-2');
+    position: absolute;
+    content: '';
+    top: 0;
+    width: 200%;
+    height: 100%;
+    border-bottom: 1px solid color('light-gray');
+  }
+
+  &::before {
+    right: 100%;
+  }
+
+  &::after {
+    left: 100%;
+  }
+
+  &__home-link {
+    width: 120px;
+
+    @include mqAbove($grid-breakpoint-tablet) {
+      width: 144px;
+    }
+
+    &.-complete {
+      margin: 0 auto;
+
+      @include mqAbove($grid-breakpoint-tablet) {
+        margin: 0;
+      }
+    }
+  }
+
+  &__cancel-link,
+  &__tagline {
+    @each $name, $data in $grid-breakpoints {
+      $breakpoint: map-get($data, breakpoint);
+
+      @include mqAbove($breakpoint) {
+        right: map-get($data, gutter-row);
+      }
+    }
+  }
+}

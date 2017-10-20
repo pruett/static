@@ -1,0 +1,40 @@
+@import 'src/css/mixins';
+
+.c-temp-footer {
+  text-align: center;
+  height: 48px;
+}
+
+.c-temp-footer__link-list {
+  list-style: none;
+  padding: 16px 12px;
+  margin: 0;
+  border-top: 1px solid color('light-gray');
+  line-height: 16px;
+}
+
+.c-temp-footer__link-list-item {
+  display: inline-block;
+  padding: 0 3px;
+  height: 16px;
+
+  & + &::before {
+    padding-right: 6px;
+    content: '|';
+    height: 12px;
+    font-size: 12px;
+    color: color('dark-gray');
+  }
+
+  @include mqAbove($min-width-tablet) {
+    padding: 0 6px;
+
+    & + &::before {
+      padding-right: 12px;
+    }
+  }
+}
+
+.c-temp-footer__link {
+  color: color('dark-gray');
+}

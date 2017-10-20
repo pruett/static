@@ -1,0 +1,43 @@
+@import 'src/css/mixins';
+
+.c-quiz-promo {
+
+  &__image {
+    height: 95px;
+  }
+
+  &__cta {
+    width: 240px;
+  }
+
+  &__subhead {
+    max-width: 360px
+  }
+
+  &__transition {
+    &-enter,
+    &-leave {
+      transition: 2*$transition-duration-default ease-in-out;
+    }
+
+    &-enter {
+      max-height: 0;
+      opacity: 0.01;
+
+      &-active {
+        max-height: 364px;
+        opacity: 1;
+      }
+    }
+
+    &-leave {
+      max-height: 364px;
+      opacity: 1;
+
+      &-active {
+        max-height: 0;
+        opacity: 0.01;
+      }
+    }
+  }
+}

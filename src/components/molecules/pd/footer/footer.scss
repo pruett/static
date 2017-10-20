@@ -1,0 +1,12 @@
+@import 'src/css/mixins';
+
+.c-pd-footer {
+
+  .c-footer-help--v2__title {
+      font-size: 24px;
+
+      @include mqAbove($min-width-tablet) {
+          font-size: 30px;
+      }
+  }
+}

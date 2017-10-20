@@ -1,0 +1,28 @@
+@import 'src/css/mixins';
+
+.c-contact-links {
+
+  &__col {
+
+    // Hide separator on last item.
+    @include mqAbove($grid-breakpoint-tablet) {
+      &:not(:last-child) {
+        border-right: 1px color('light-gray-alt-1') solid;
+      }
+    }
+  }
+
+  &__link {
+
+    &:hover,
+    &:focus {
+      outline: none;
+      text-decoration: none;
+
+      // Only highlight blue text.
+      .c-contact-links__primary {
+        border-bottom: 1px color('blue') solid;
+      }
+    }
+  }
+}

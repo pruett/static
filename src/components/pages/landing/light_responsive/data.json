@@ -1,0 +1,142 @@
+{
+  "hero": {
+    "heading": "All about light-responsive lenses",
+    "description": "Looking for glasses that adapt to wherever you go? Our light-responsive lenses seamlessly change from clear to dark grey in the sun (rain or shine). They also help reduce glare and prevent eyestrain and fatigue. Wahoo!",
+    "buyOnline": {
+      "path": "/",
+      "copy": "How to buy online",
+      "svg": { "width": 10, "height": 6, "path": "M5 5L1 1M9 1L5 5" },
+      "wpEvent": "buyOnline"
+    },
+    "nearestStore": {
+      "path": "/retail",
+      "copy": "Find the nearest store",
+      "wpEvent": "nearestStore"
+    }
+  },
+  "slider": {
+    "slides": [
+      {
+        "indoor": "//i.warbycdn.com/v/c/assets/light-responsive-landing-page/image/frames/8/1aa425c096.jpg",
+        "outdoor": "//i.warbycdn.com/v/c/assets/light-responsive-landing-page/image/frames/7/33210ea91d.jpg",
+        "name": "Durand",
+        "colorway": "Whiskey Tortoise"
+      },
+      {
+        "indoor": "//i.warbycdn.com/v/c/assets/light-responsive-landing-page/image/frames/8/2b9bbdf3bc.jpg",
+        "outdoor": "//i.warbycdn.com/v/c/assets/light-responsive-landing-page/image/frames/7/f2775a9364.jpg",
+        "name": "Chamberlain",
+        "colorway": "Crystal"
+      },
+      {
+        "indoor": "//i.warbycdn.com/v/c/assets/light-responsive-landing-page/image/frames/6/5cdf5b2ea4.jpg",
+        "outdoor": "//i.warbycdn.com/v/c/assets/light-responsive-landing-page/image/frames/7/23bcfcd790.jpg",
+        "name": "Wilkie",
+        "colorway": "Eastern Bluebird Fade"
+      },
+      {
+        "indoor": "//i.warbycdn.com/v/c/assets/light-responsive-landing-page/image/frames/8/24fe4c156c.jpg",
+        "outdoor": "//i.warbycdn.com/v/c/assets/light-responsive-landing-page/image/frames/8/95df08e0bd.jpg",
+        "name": "Welty",
+        "colorway": "Rose Fog"
+      }
+    ],
+    "labels": {
+      "left": "Indoor",
+      "right": "Outdoor"
+    },
+    "caption": "*Fun fact: The level of darkness and speed of transition depend on the level of UV exposure and temperature."
+  },
+  "details": [
+    {
+      "header": "But wait. There’s more.",
+      "image": "//i.warbycdn.com/v/c/assets/light-responsive-landing-page/image/fpo-indoors/1/134a253b87.jpg?quality=80",
+      "caption": "Lenses remain clear indoors, with absence of UV light",
+      "bullets": [
+        "Light-responsive lenses can be added to both single-vision and progressive prescriptions",
+        "Scratch-resistant and superhydrophobic, anti-reflective coatings are included",
+        "They offer 100% UV protection"
+      ],
+      "flip": false,
+      "link": {
+        "path": "/help#prescriptions",
+        "copy": "Check prescription ranges and availability",
+        "event": "checkRangeAvailability"
+      }
+    },
+    {
+      "header": "How they work",
+      "image": "//i.warbycdn.com/v/c/assets/light-responsive-landing-page/image/fpo-outdoors/2/04ae613cd6.jpg?quality=80",
+      "caption": "Lenses darken outdoors, when UV light increases",
+      "bullets": [
+        "Light-responsive lenses begin to darken when exposed to UV rays (in both direct and indirect light)—then fade back to clear indoors",
+        "The level of darkness and speed of transition depend on the level of UV exposure and temperature",
+        "Light-responsive technology is inside the lens—so treatment won’t rub or peel off"
+      ],
+      "flip": true
+    }
+  ],
+  "howTo": {
+    "heading": "How to buy online",
+    "points": [
+      {
+        "title": "Find a pair of eyeglasses you like",
+        "description": "Then click “Add to cart.” (Just like you normally would.)"
+      },
+      {
+        "title": "Select your prescription type",
+        "description": "Choose from single-vision (the standard prescription for near or distance) or progressive (a prescription that covers reading, distance, and in between)."
+      },
+      {
+        "title": "Choose your lenses",
+        "description": "We offer standard clear lenses and light-responsive lenses. If you’d like light-responsive lenses, choose them for an additional $100."
+      }
+    ],
+    "deviceUrls": {
+      "mobile": "//i.warbycdn.com/v/c/assets/light-responsive-landing-page/image/mobile/5/c7c7d921f2.png",
+      "tablet": "//i.warbycdn.com/v/c/assets/light-responsive-landing-page/image/tablet/5/7a0d09a96f.png",
+      "desktop": "//i.warbycdn.com/v/c/assets/light-responsive-landing-page/image/desktop/0/f7898a3eea.png"
+    },
+    "slideUrls": [
+      {
+        "mobile": "//i.warbycdn.com/v/c/assets/light-responsive-landing-page/image/mobile/1/4153bc6227.jpg",
+        "tablet": "//i.warbycdn.com/v/c/assets/light-responsive-landing-page/image/tablet/1/9f81269a71.jpg",
+        "desktop": "//i.warbycdn.com/v/c/assets/light-responsive-landing-page/image/desktop/1/831ea7924a.jpg"
+      },
+      {
+        "mobile": "//i.warbycdn.com/v/c/assets/light-responsive-landing-page/image/mobile/2/85872f84a3.jpg",
+        "tablet": "//i.warbycdn.com/v/c/assets/light-responsive-landing-page/image/tablet/2/c27cdec1bc.jpg",
+        "desktop": "//i.warbycdn.com/v/c/assets/light-responsive-landing-page/image/desktop/2/f19bc8b167.jpg"
+      },
+      {
+        "mobile": "//i.warbycdn.com/v/c/assets/light-responsive-landing-page/image/mobile/3/e4336e39b5.jpg",
+        "tablet": "//i.warbycdn.com/v/c/assets/light-responsive-landing-page/image/tablet/3/cf0de2c57f.jpg",
+        "desktop": "//i.warbycdn.com/v/c/assets/light-responsive-landing-page/image/desktop/3/e3371254a8.jpg"
+      },
+      {
+        "mobile": "//i.warbycdn.com/v/c/assets/light-responsive-landing-page/image/mobile/4/c00a649e4d.jpg",
+        "tablet": "//i.warbycdn.com/v/c/assets/light-responsive-landing-page/image/tablet/4/698794a309.jpg",
+        "desktop": "//i.warbycdn.com/v/c/assets/light-responsive-landing-page/image/desktop/4/cb2e8648bc.jpg"
+      }
+    ]
+  },
+  "footer": {
+    "header": "Go forth and find those frames",
+    "copy": "If you have any questions, feel free to call 888.492.7297, email",
+    "links": [
+      {
+        "copy": "Shop Men",
+        "path": "/eyeglasses/men",
+        "wpEvent": "shopMen"
+      },
+      {
+        "copy": "Shop Women",
+        "path": "/eyeglasses/women",
+        "wpEvent": "shopWomen"
+      }
+    ],
+    "image": "https://i.warbycdn.com/v/c/assets/light-responsive-landing-page/image/icon/0/cd1ecbb092.png",
+    "wpEventHelp": "help",
+    "wpEventChat": "chat"
+  }
+}

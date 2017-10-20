@@ -1,0 +1,83 @@
+@import 'src/css/mixins';
+
+.c-bapgap-doing-good-work {
+  &.u-grid {
+    padding-left: 0;
+    padding-right: 0;
+
+    @include mqAbove(600px) {
+      padding-left: 18px;
+      padding-right: 18px;
+    }
+  }
+
+  @keyframes bounceInDown {
+    0% {
+      opacity: 0;
+      transform: translateY(-300px);
+    }
+
+    60% {
+      opacity: 1;
+      transform: translateY(30px);
+    }
+
+    80% {
+      transform: translateY(-10px);
+    }
+
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  .bounceInDown {
+    animation-name: bounceInDown;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+  }
+
+  &__pin {
+    background: url('https://i.warbycdn.com/v/c/assets/buy-a-pair-give-a-pair/image/pin/1/c5d2e0b001.png?height=10') no-repeat;
+    height: 30px;
+    width: 16px;
+    z-index: 3;
+
+    @include mqAbove(768px) {
+      background-image: url('https://i.warbycdn.com/v/c/assets/buy-a-pair-give-a-pair/image/pin/1/c5d2e0b001.png?height=20');
+    }
+
+    @include mqAbove($min-width-desktop-large) {
+      background-image: url('https://i.warbycdn.com/v/c/assets/buy-a-pair-give-a-pair/image/pin/1/c5d2e0b001.png');
+    }
+
+    &:after {
+      background: transparent;
+      border: 2px solid #fff;
+      border-radius: 30px;
+      position: absolute;
+      display: block;
+      content: "";
+      width: 31px;
+      height: 31px;
+      top: -7px;
+      left: -7px;
+      opacity: 0;
+      z-index: 2;
+    }
+
+    &.bounceInDown {
+      visibility: visible;
+    }
+  }
+
+  &__image {
+    @include mqAbove(768px) {
+      margin-top: 42px;
+    }
+
+    @include mqAbove($min-width-desktop-large) {
+      margin-top: 0;
+    }
+  }
+}

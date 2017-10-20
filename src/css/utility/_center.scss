@@ -1,0 +1,40 @@
+.u-center {
+
+  &--vertical {
+    @include uVerticallyCenter;
+  }
+
+  @each $breakpoint in map-get($breakpoint-utilities, 'center') {
+    $variation: property-breakpoint-variation($breakpoint);
+    @include mqAbove($breakpoint) {
+
+      &#{$variation},
+      &-x#{$variation} {
+        left: 50%;
+      }
+
+      &#{$variation},
+      &-y#{$variation} {
+        top: 50%;
+      }
+
+      &#{$variation} {
+        transform: translate(-50%, -50%);
+      }
+
+      &-x#{$variation} {
+        transform: translateX(-50%);
+      }
+
+      &-y#{$variation} {
+        transform: translateY(-50%);
+      }
+
+      &-none#{$variation} {
+        transform: none;
+        left: auto;
+        right: auto;
+      }
+    }
+  }
+}

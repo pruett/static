@@ -1,0 +1,5 @@
+@import 'src/css/mixins';
+
+.c-icon {
+  @include svg(16, 16, 'clear');
+}

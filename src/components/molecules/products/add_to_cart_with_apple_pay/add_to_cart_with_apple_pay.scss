@@ -1,0 +1,30 @@
+@import 'src/css/mixins';
+
+.c-product-add-to-cart-with-apple-pay {
+  @include mqAbove($grid-breakpoint-tablet) {
+    width: 340px;
+
+    &__quantity-select {
+      width: 72px;
+    }
+
+    &__quantity-buttons {
+      width: 328px;
+    }
+  }
+
+  @include mqAbove($grid-breakpoint-desktop-large) {
+    width: 100%;
+  }
+
+  &__button {
+    border-radius: 5px;
+
+    // Override width: auto from .u-button.
+    width: calc(50% - 12px);
+
+    &.-apple-pay {
+      border-color: color('black');
+    }
+  }
+}

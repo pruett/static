@@ -1,0 +1,34 @@
+@import 'src/css/mixins';
+
+.c-killscreen-hero {
+
+  &__logo {
+    @include mqAbove($grid-breakpoint-tablet) {
+      width: 75%;
+    }
+  }
+
+  &__content-wrapper {
+    top: 69%;
+
+    @include mqAbove($grid-breakpoint-tablet) {
+      top: 60%;
+    }
+    @include mqAbove(768px) {
+      top: 76%;
+    }
+    @include mqAbove($grid-breakpoint-desktop) {
+      top: 50%;
+    }
+  }
+
+  &__cta {
+    width: 220px;
+    margin-bottom: 12px;
+
+    @include mqAbove($grid-breakpoint-desktop) {
+      width: 155px;
+    }
+
+  }
+}

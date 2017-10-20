@@ -1,0 +1,304 @@
+@import 'src/css/mixins';
+
+.c-gallery-frame {
+  max-width: 320px;
+  margin-bottom: 96px;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+
+  &__heart-icon {
+    right: 0;
+  }
+
+  &__name-windsor {
+    font-family: "kepler-std-semicondensed-dis";
+    color: color('black');
+  }
+
+  &.-hidden {
+    display: none;
+  }
+
+  &__clip-on {
+    margin-top: -5px;
+    color: color('black');
+    font-family: "kepler-std-semicondensed-dis";
+    font-size: 16px;
+    margin-top: -15px;
+  }
+
+  &__sold-out {
+    color: color('black-50p');
+    position: absolute;
+    top: -33px;
+    width: 100%;
+    opacity: 0.01;
+    transition: opacity 0.3s;
+
+    &.-show{
+      opacity: 1;
+    }
+  }
+
+  &__details {
+    top: 20px;
+  }
+
+  &:last-child {
+    /******
+      Override Foundation styles in the mobile legacy template.
+      They have a very gross and highly specific selector:
+
+      [class*="column"] + [class*="column"]:last-child {
+        float: right;
+      }
+
+      Yup, they really did that.
+     ******/
+    float: none !important;
+  }
+
+  &.-fluid-width {
+
+    @include mqAbove($min-width-tablet) {
+      max-width: none;
+      padding: 0 2.5%;
+
+      &.-two-column {
+        width: 50%;
+      }
+
+      &.-three-column {
+        width: 33.333333%;
+      }
+
+      &.-four-column {
+        width: 25%;
+      }
+    }
+  }
+
+  &:not(.-fluid-width) {
+    @include mqAbove($c-frames-grid-breakpoint-0) {
+      margin: 0 36px 96px;
+    }
+
+    @include mqAbove($c-frames-grid-breakpoint-1) {
+      width: 320px;
+      max-width: none;
+    }
+
+    @include mqAbove($c-frames-grid-breakpoint-2) {
+      width: 340px;
+      margin: 0 48px 96px;
+    }
+
+    @include mqAbove($c-frames-grid-breakpoint-3) {
+      margin: 0 36px 96px;
+    }
+
+    @include mqAbove($c-frames-grid-breakpoint-4) {
+      width: 400px;
+      margin: 0 48px 96px;
+    }
+
+    @include mqAbove($c-frames-grid-breakpoint-5) {
+      margin: 0 60px 96px;
+    }
+
+    @include mqAbove($c-frames-grid-breakpoint-6) {
+      width: 500px;
+      margin: 0 75px 96px;
+    }
+
+    &.-two-column {
+
+      @include mqAbove($c-frames-grid-breakpoint-2) {
+        width: 450px;
+        margin: 0 36px 96px;
+      }
+
+      @include mqAbove($c-frames-grid-breakpoint-3) {
+        width: 510px;
+        margin: 0 54px 96px;
+      }
+
+      @include mqAbove($c-frames-grid-breakpoint-4) {
+        width: 600px;
+        margin: 0 72px 96px;
+      }
+
+      @include mqAbove($c-frames-grid-breakpoint-5) {
+        margin: 0 90px 96px;
+      }
+
+      @include mqAbove($c-frames-grid-breakpoint-6) {
+        width: 750px;
+        margin: 0 112px 96px;
+      }
+    }
+  }
+}
+
+.c-gallery-frame__images-container {
+  position: relative;
+  transition: margin $transition-duration-fast;
+
+  &.-show-ctas {
+    margin-bottom: 93px;
+
+    &.-single-cta {
+      margin-bottom: 36px;
+    }
+
+    @include mqAbove($min-width-tablet-small) {
+      &,
+      &.-single-cta {
+        margin-bottom: 24px;
+      }
+    }
+
+    @include mqAbove($c-frames-grid-breakpoint-1) {
+      &,
+      &.-single-cta {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.c-gallery-frame__image-link {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  min-height: 90px;
+  visibility: hidden;
+  opacity: 0;
+  transition:
+    visibility 0s $transition-duration-fast,
+    opacity $transition-duration-fast,
+    transform $transition-duration-fast;
+
+  &.-active {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity $transition-duration-fast $transition-duration-fast, transform $transition-duration-fast;
+  }
+
+  &.-show-ctas {
+    transform: scale(.64) translateY(-60%);
+
+    @include mqAbove($min-width-tablet-small) {
+      transform: scale(.64) translateY(-36%);
+    }
+
+    @include mqAbove($c-frames-grid-breakpoint-1) {
+      transform: scale(.64) translateY(-64px);
+    }
+  }
+
+  &.-block {
+    position: relative;
+    display: block;
+  }
+}
+
+.c-gallery-frame__image {
+  width: 100%;
+}
+
+.c-gallery-frame__cta-container {
+  visibility: hidden;
+  opacity: 0;
+  padding-top: 0;
+  height: 0;
+  transition: opacity 2 * $transition-duration-fast $transition-duration-fast;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  bottom: -93px;
+  right: 50%;
+  transform: translateY(20%) translateX(50%);
+
+  &.-single-cta {
+    margin-bottom: 30px;
+
+    @include mqAbove($min-width-tablet-small) {
+      margin-bottom: 0;
+    }
+
+  }
+
+
+  @include mqAbove($min-width-tablet-small) {
+    &,
+    &.-single-cta {
+      bottom: -24px;
+    }
+  }
+
+  @include mqAbove($c-frames-grid-breakpoint-1) {
+    &,
+    &.-single-cta {
+      bottom: 0;
+    }
+  }
+
+  @include mqBetween($min-width-tablet-small, $c-frames-grid-breakpoint-3) {
+    // Fix to accommodate shop-links margins
+    width: 110%;
+    margin-left: -5%
+  }
+
+  &.-active {
+    &.-show-ctas {
+      height: auto;
+      transition:
+        opacity 2 * $transition-duration-fast ease-out,
+        visibility $transition-duration-fast,
+        transform $transition-duration-fast ease;
+      visibility: visible;
+      opacity: 1;
+      transform: translateX(50%);
+    }
+  }
+}
+
+.c-gallery-frame__name {
+  @include familySerif;
+  @include typeSectionHeadline;
+  font-weight: 600;
+  letter-spacing: 0;
+  margin: 12px 0 3px;
+}
+
+
+.c-gallery-frame__color-swatches {
+  margin-top: 12px;
+}
+
+
+/*************************
+HACK FOR LEGACY TEMPLATE
+Because the legacy template
+has a max width of 1600px, we need
+to override the 2000px breakpoint in order
+to avoid breaking the grid on wider screens.
+This probably only applies to the Fall 2015
+collection, as it may be the only one to
+use the new responsive gallery grid inside
+the legacy wrapper.
+**************************/
+.u-template--legacy {
+  .c-gallery-frame {
+    &.-two-column:not(.-fluid-width) {
+      @include mqAbove($c-frames-grid-breakpoint-5) {
+        width: 600px;
+        margin: 0 90px 96px;
+      }
+    }
+  }
+}

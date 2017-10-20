@@ -1,0 +1,81 @@
+@import 'src/css/mixins';
+.c-atc {
+  z-index: $z-index-photochromics-atc;
+}
+
+.c-atc__copy {
+  @include mqAbove($min-width-desktop) {
+    min-height: 475px;
+  }
+}
+
+.c-atc__step {
+  // Fit on 5S.
+  font-size: 15px;
+  @include mqAbove(325px) {
+    font-size: 16px;
+  }
+}
+
+.c-atc__decimal {
+  display: none;
+
+  @include mqAbove(325px) {
+    display: inline-block;
+    margin-right: 3px;
+  }
+}
+
+.c-atc__button {
+  @include mqAbove($min-width-desktop) {
+    &.-active {
+      &::before,
+      &::after {
+        position: absolute;
+        content: "";
+        width: 15px;
+        height: 15px;
+        background-color: color(light-gray-alt-1);
+        left: -13px;
+        top: 50%;
+        transform: rotate(45deg) translateY(-50%);
+        border-radius: 4px;
+      }
+
+      &::after {
+        background-color: #fff;
+        left: -12px;
+      }
+
+    }
+  }
+}
+
+// Hack to control Apple Pay button sizing.
+// Fix if this variant wins.
+.c-atc__submit--apple-pay.c-atc__submit--apple-pay {
+  border-radius: 4px;
+  width: calc(50% - 6px);
+  min-width: 0px;
+  padding: 0;
+
+  + .c-atc__submit--apple-pay {
+    margin-left: 12px;
+  }
+}
+
+.c-atc__apple-pay.c-atc__apple-pay {
+  background-color: black;
+}
+
+.c-atc__list {
+  list-style: decimal;
+}
+
+.c-atc__fade-in {
+  opacity: 0;
+  &.-start {
+    animation: fadeIn 2.75s infinite alternate;
+  }
+}
+

@@ -1,0 +1,39 @@
+
+@import 'src/css/mixins';
+
+.c-killscreen-loader {
+  opacity: 0;
+  min-height: 80vh;
+
+  @include mqAbove($grid-breakpoint-desktop) {
+    min-height: 100vh;
+  }
+
+
+  &__image {
+    left: 25%;
+
+    @include mqAbove($grid-breakpoint-desktop) {
+      left: 40%;
+    }
+  }
+
+}
+.c-killscreen-loader.logo-appear {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+}
+
+.c-killscreen-loader.logo-appear.logo-appear-active {
+  opacity: 1;
+}
+
+
+.c-killscreen-loader.logo-leave {
+  opacity: 1;
+  transition: opacity 1000ms ease-in;
+}
+
+.c-killscreen-loader.logo-leave.logo-leave-active {
+  opacity: 0.01;
+}

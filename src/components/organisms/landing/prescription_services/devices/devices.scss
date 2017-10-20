@@ -1,0 +1,45 @@
+@import 'src/css/mixins';
+
+.c-devices {
+  height: 0;
+  width: 100%;
+  padding-bottom: 100% * 450 / 280;
+
+  @include mqAbove($grid-breakpoint-tablet) {
+    padding-bottom: 100% * 456 / 540;
+  }
+
+  @include mqAbove($grid-breakpoint-desktop) {
+    padding-bottom: 100% * 575 / 1000;
+  }
+}
+
+.c-devices__curr-slide {
+  animation-name: devices-slide-in;
+}
+
+.c-devices__prev-slide {
+  animation-name: devices-slide-out;
+}
+
+@keyframes devices-slide-in {
+  0% {
+    transform: translateY(24px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes devices-slide-out {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(24px);
+    opacity: 0;
+  }
+}

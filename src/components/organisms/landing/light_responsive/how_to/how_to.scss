@@ -1,0 +1,153 @@
+@import 'src/css/mixins';
+.c-light-responsive-how-to {
+  background-color: #f4f4f4;
+  box-sizing: content-box;
+
+  @include mqAbove($grid-breakpoint-desktop) {
+    height: 575px;
+  }
+
+  &__content {
+    width: 80%;
+    max-width: 464px;
+  }
+
+  &__column-right {
+    @include mqAbove($grid-breakpoint-desktop) {
+      width: 35%;
+    }
+  }
+
+  &__column-left {
+    @include mqAbove($grid-breakpoint-desktop) {
+      width: 65%;
+    }
+  }
+
+  &__image-container {
+    width: 280px;
+    height: 450px;
+
+    @include mqAbove($grid-breakpoint-tablet) {
+      width: 540px;
+      height: 456px;
+    }
+
+    @include mqAbove($grid-breakpoint-desktop) {
+      width: 1000px;
+      height: 575px;
+    }
+  }
+
+  &__slide {
+    @for $i from 0 through 3 {
+      &.-slide-#{$i} {
+        animation: slide#{$i} 20s linear infinite;
+      }
+    }
+  }
+
+  @keyframes slide0 {
+    0% {
+      transform: translateY(24px);
+      opacity: 0;
+    }
+    1% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    23% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    24% {
+      transform: translateY(24px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(24px);
+      opacity: 0;
+    }
+  }
+
+  @keyframes slide1 {
+    0% {
+      transform: translateY(24px);
+      opacity: 0;
+    }
+    24% {
+      transform: translateY(24px);
+      opacity: 0;
+    }
+    25% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    48% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    49% {
+      transform: translateY(24px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(24px);
+      opacity: 0;
+    }
+  }
+
+  @keyframes slide2 {
+    0% {
+      transform: translateY(24px);
+      opacity: 0;
+    }
+    49% {
+      transform: translateY(24px);
+      opacity: 0;
+    }
+    50% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    73% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    74% {
+      transform: translateY(24);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(24px);
+      opacity: 0;
+    }
+  }
+
+  @keyframes slide3 {
+    0% {
+      transform: translateY(24px);
+      opacity: 0;
+    }
+    74% {
+      transform: translateY(24px);
+      opacity: 0;
+    }
+    75% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    95% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    96% {
+      transform: translateY(24);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(24px);
+      opacity: 0;
+    }
+  }
+}

@@ -1,0 +1,85 @@
+@import 'src/css/mixins';
+
+.c-gallery-filters.c-gallery-filters--no-filters {
+  // Override filter style for experiment.
+  // Remove import in filters.scss when experiment is over.
+
+  margin-top: 36px;
+  margin-bottom: 12px;
+
+  @include mqAbove($c-frames-grid-breakpoint-1) {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .c-gallery-filters__container {
+      height: 80px;
+      border-top: 1px solid color('subtle-gray');
+      border-bottom: 1px solid color('subtle-gray');
+      margin: 0 18px;
+
+      @include mqAbove($c-frames-grid-breakpoint-1) {
+        border-top: 0;
+        margin: 0 auto;
+      }
+  }
+
+  .c-gallery-filters__hto-checkbox {
+      max-width: none;
+  }
+
+  .c-gallery-filters__container-right,
+  .c-gallery-filters__container-left {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: 600;
+    font-size: 14px;
+    display: inline-block;
+
+    @include mqAbove($c-frames-grid-breakpoint-1) {
+      font-size: 16px;
+      font-weight: normal;
+    }
+  }
+
+  .c-gallery-filters__search-frames-text {
+    display: none;
+    @include mqAbove($c-frames-grid-breakpoint-1) {
+      display: inline-block;
+    }
+  }
+
+  .c-gallery-filters__container-right {
+    right: 0;
+    margin-top: 1px;
+
+    @include mqAbove($c-frames-grid-breakpoint-1) {
+      right: 18px;
+    }
+  }
+
+  .c-gallery-filters__container-left {
+    left: 0;
+    margin: 0;
+
+    @include mqAbove($c-frames-grid-breakpoint-1) {
+      left: 18px;
+    }
+  }
+
+  .c-gallery-filters__container-filters,
+  .c-gallery-filters__buttons-bar,
+  .c-gallery-filters__container-active-filters {
+      display: none;
+  }
+
+  .c-gallery-filters__button {
+      border: 0;
+      width: auto;
+      padding: 0;
+      vertical-align: initial;
+  }
+
+}
+

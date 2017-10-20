@@ -1,0 +1,140 @@
+@import 'src/css/mixins';
+
+.c-cta-progress-button {
+  min-width: 260px;
+  overflow: hidden;
+  padding: 13px;
+
+  &::before {
+    opacity: 0;
+    content: '';
+    transition: {
+      property: width;
+      duration: $transition-duration-cta-progress * 2;
+      timing-function: $transition-timing-function-cta-progress-fill;
+    }
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 0;
+    height: 100%;
+    background-color: color('black-10p');
+  }
+
+  &.-loading::before {
+    width: 100%;
+    opacity: 1;
+  }
+
+  &.-complete::before {
+    opacity: 0;
+  }
+
+  &:not(.-default):not(.-confirm) {
+    pointer-events: none;
+  }
+}
+
+
+/**
+ * Progress button and hover lock.
+ */
+
+.c-cta-progress-button.-confirm {
+
+  &,
+  &:hover {
+    box-shadow: none;
+    background-color: color('white');
+  }
+}
+
+
+/**
+ * Confirm Mode
+ */
+
+.c-cta-progress-button__question {
+  text-shadow: none;
+  float: left;
+  margin-left: 12px;
+  margin-top: 12px;
+  color: color('dark-gray');
+}
+
+.c-cta-progress-button__answers {
+  float: right;
+  margin-right: 1px;
+}
+
+.c-cta-progress-button__answer {
+  display: inline-block;
+  margin: 5px 5px 5px 0;
+}
+
+
+/**
+ * Mode Animations
+ * translateY
+ *  -250% is outside the top of the button.
+ *  +150% is outside the bottom of the button.
+ *  -50% centers the text.
+ */
+
+.c-cta-progress-button__text {
+  transition-duration: $transition-duration-cta-progress;
+  transform: translateY(-50%);
+  opacity: 1;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  left: 0;
+
+  /* Fade in Default mode. */
+  &--default {
+    &.slide-enter {
+      transition-delay: $transition-duration-cta-progress/2;
+      transition-property: opacity;
+      transform: translateY(-50%);
+      opacity: 0.01;
+
+      &-active {
+        opacity: 1;
+      }
+    }
+  }
+
+  /* Fly in non-default modes in from top. */
+  &:not(.c-cta-progress-button__text--default) {
+    &.slide-enter {
+      transition-property: transform;
+      transform: translateY(-250%);
+
+      &-active {
+        transform: translateY(-50%);
+      }
+    }
+  }
+
+  /* Fly out all modes. */
+  &.slide-leave {
+    transition-property: transform;
+    transform: translateY(-50%);
+
+    &-active {
+      transform: translateY(150%);
+    }
+  }
+
+  /**
+   * Move multiple modes out of way if API returns
+   * quicker than animation. Looking for React to update
+   * CSSTransitionGroup for fix. Until then it may skip
+   * a mode if it comes back too fast.
+   */
+  & ~ & {
+    transform: translateY(149%) !important;
+  }
+
+}

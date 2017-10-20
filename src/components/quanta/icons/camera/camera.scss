@@ -1,0 +1,21 @@
+@import 'src/css/mixins';
+
+.c-camera {
+  &__camera-body, &__flash, &__shutter-button {
+    fill: color('blue');
+  }
+
+  &__lens {
+    stroke: color('white');
+    stroke-width: 1;
+    fill: none;
+  }
+
+  &__lens-reflection {
+    fill: color('white');
+  }
+}
+
+.c-icon {
+  @include svg(28, 19, 'camera');
+}

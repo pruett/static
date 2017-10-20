@@ -1,0 +1,274 @@
+@import 'src/css/mixins';
+
+.c-solar-eclipse-page {
+  &__main-wrapper {
+    background-image: url("https://i.warbycdn.com/v/c/assets/solar-eclipse/image/page-background/0/efcf8cf0f6.png");
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      height: 33%;
+    }
+
+    &::before {
+      top: 620px;
+      @include mqAbove($grid-breakpoint-desktop) {
+        top: 810px;
+      }
+      background: linear-gradient(#0d1114, rgba(13,17,20,0));
+    }
+
+    &::after {
+      bottom: 0;
+      background: linear-gradient(rgba(0,162,225,0) , color('blue'));
+    }
+  }
+
+  &__main-container {
+    z-index: 1;
+  }
+
+  &__hero-text-overlay-container {
+    width: 440px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+    @include mqAbove($grid-breakpoint-desktop) {
+      transform: translate(-50%,-70%);
+    }
+  }
+
+  &__hero-text-overlay-image {
+    max-width: 300px;
+    @include mqAbove($grid-breakpoint-desktop) {
+      max-width: 375px;
+    }
+  }
+
+  &__hero-wrapper {
+    height: 620px;
+    @include mqAbove($grid-breakpoint-desktop) {
+      height: 810px;
+    }
+  }
+
+  &__background-hero-video {
+    min-width: 100%;
+  }
+
+  &__pre-cat-wrapper {
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    @include mqAbove($grid-breakpoint-desktop) {
+      padding-left: 140px;
+      padding-right: 140px;
+      padding-top: 90px;
+      padding-bottom: 90px;
+    }
+  }
+
+  &__pre-cat-container {
+    max-width: 975px; 
+  }
+
+  &__pre-cat-img {
+    width: 247px;
+    padding-top: 44px;
+    padding-bottom: 44px;
+    @include mqAbove($grid-breakpoint-desktop) {
+      width: 492px;
+    }
+  }
+
+  &__pre-cat-left-text {
+    width: 150px;
+  }
+
+  &__pre-cat-right {
+    @include mqAbove($grid-breakpoint-desktop) {
+      margin-top: 415px;
+    }
+  }
+
+  &__pre-cat-right-text {
+    width: 206px;
+  }
+
+  &__pre-cat-circles {
+    width: 170px;
+    animation-name: spin;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    @keyframes spin {
+      from {
+        transform:rotate(0);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  }
+
+  &__description-wrapper {
+    line-height: 1.5;
+    p {
+      margin-top: 0;
+      margin-bottom: 0; 
+    }
+  }
+
+  &__video-loop {
+    max-width: 100%;
+    @include mqAbove($grid-breakpoint-desktop) {
+      max-width: 576px;
+    }
+    box-shadow: 12px 12px 18px -2px rgba(0,0,0,0.6);
+  }
+
+  &__countdown-wrapper {
+    line-height: 1.5;
+  }
+
+  &__people-img {
+    max-width: 620px;
+  }
+
+  &__markdown {
+    margin-top: 0;
+    &.-light {
+      &__em {
+        color: color('blue');
+        font-style: normal;
+      }
+    }
+    &.-dark {
+      &__em,
+      &__a {
+        color: #333F48;
+        font-weight: bold;
+        letter-spacing: 1.25px;
+      }
+    }
+  }
+
+  &__sticky-container {
+    position: sticky;
+    top: -1px;
+    z-index: 100;
+  }
+
+  &__pinhole-wrapper {
+    @include mqAbove($grid-breakpoint-desktop) {
+      max-width: 800px;
+    }
+  }
+
+  &__pinhole-img {
+    width: 300px;
+  }
+
+  &__small-title {
+    width: 120px;
+  }
+
+  &__contest-title {
+    width: 144px;
+  }
+
+  &__contest-fineprint {
+    font-size: 11px;
+  }
+
+  &__map {
+    max-width: 550px;
+  }
+
+  &__small-video {
+    width: 480px;
+  }
+
+  &__mixed-text {
+    max-width: 264px;
+    @include mqAbove($grid-breakpoint-desktop) {
+      padding-top: 30px;
+      max-width: 464px;
+    }
+  }
+
+  &__small-link {
+    width: 216px;
+  }
+
+  &__play-link {
+    width: 200px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  &__header {
+    letter-spacing: 1.5px;
+  }
+
+  &__header-link {
+    transition: all 0.1s;
+    &::after {
+      transition: all 0.1s;
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 0;
+      background: color('white');
+    }
+    &:hover:not(.-active) {
+      color: color('white');
+      &::after {
+        height: 2px;
+      }
+    }
+    &.-active {
+      border-bottom: solid 2px color('dark-gray');
+      color: color('dark-gray');
+    }
+  }
+
+  &__sub-description {
+    max-width: 400px;
+  }
+
+  &__main-description {
+    max-width: 480px;
+  }
+
+  &__question-header {
+    max-width: 375px;
+  }
+
+  &__win-header {
+    max-width: 400px;
+  }
+
+  &__win-body {
+    max-width: 324px;
+  }
+}
+
+.u-futura {
+  font-family: "futura-pt", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.u-futura-heavy {
+  font-family: "futura-pt", sans-serif;
+  font-style: normal;
+  font-weight: 700; 
+}
+
+

@@ -1,0 +1,73 @@
+@import 'src/css/mixins';
+
+.c-lenses-landing {
+  &__section-image {
+    @include mqAbove($grid-breakpoint-desktop) {
+      width: 552px;
+    }
+    width: 362px;
+    &.-animated {
+      animation-name: lightResponsive;
+      animation-duration: 5s;
+      animation-direction: alternate;
+      animation-iteration-count: infinite;
+      @keyframes lightResponsive {
+        from {
+          background-color: #828282;
+        }
+        to {
+          background-color: #FDFDFD;
+        }
+      }
+    }
+  }
+  &__markdown {
+    &__p {
+      margin-top: .5em;
+      margin-bottom: 0;
+    }
+    &__a {
+      font-weight: bold;
+    }
+  }
+  &__outer-category:nth-child(even) {
+    background: color('subtle-gray');
+    div:last-child {
+      border-bottom: none;
+    }
+  }
+  &__category {
+    max-width: 1000px;
+  }
+  &__header-link {
+    transition: all 0.1s;
+    &::after {
+      transition: all 0.1s;
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 0;
+      background: color('dark-gray-alt-2');
+    }
+    &:hover:not(.-active) {
+      color: color('dark-gray-alt-2');
+      &::after {
+        height: 2px;
+      }
+    }
+    &.-active {
+      border-bottom: solid 2px color('dark-gray');
+      color: color('dark-gray');
+    }
+  }
+  &__sticky-container {
+    position: sticky;
+    top: -1px;
+    z-index: 1;
+  }
+  &__button-links {
+    width: 240px;
+  }
+}

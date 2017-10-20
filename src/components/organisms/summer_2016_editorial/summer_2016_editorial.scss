@@ -1,0 +1,37 @@
+@import 'src/css/mixins';
+
+.c-summer-2016-editorial {
+  &__spotify-logo {
+    @include mqAbove($grid-breakpoint-tablet) {
+      min-width: 100%;
+    }
+    @include mqAbove($grid-breakpoint-desktop) {
+      min-width: 0;
+    }
+  }
+
+  &__spotify-shoppable {
+    @include mqAbove($grid-breakpoint-desktop) {
+      &:hover {
+        color: color('blue');
+        border-bottom: 2px solid color('blue');
+      }
+    }
+  }
+
+  &__instagram-label {
+    width: 8px;
+    height: 8px;
+
+    @include mqAbove($grid-breakpoint-tablet) {
+      width: 10px;
+      height: 10px;
+    }
+
+    @include mqAbove($grid-breakpoint-desktop) {
+      width: 12px;
+      height: 12px;
+    }
+
+  }
+}

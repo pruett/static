@@ -1,0 +1,24 @@
+.c-fader {
+  &__list {
+    list-style: none;
+    display: block;
+    position: relative;
+    height: 0;
+    padding-bottom: 100%;
+  }
+
+  &__item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    animation-name: xfade;
+    animation-iteration-count: infinite;
+  }
+
+  &__picture {
+    width: 100%;
+    height: 100%;
+  }
+
+}

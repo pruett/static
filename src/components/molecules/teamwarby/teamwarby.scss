@@ -1,0 +1,48 @@
+@import 'src/css/mixins';
+
+.c-teamwarby {
+  &__close {
+    height: 17px;
+
+    &:after {
+      content: "";
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      border-top: 1px color('dark-gray') solid;  
+      border-left: 1px color('dark-gray') solid;
+      transform: translateX(-50%) rotate(45deg);
+      bottom: 0;
+      left: 50%;
+    }
+  }
+
+  &__image {
+    width: 164px;
+
+    @include mqAbove($min-width-desktop) {
+      width: 215px;
+    }
+  }
+}
+
+.c-sliding-drawer {
+  &__animated {
+    padding-bottom: 48px;
+    &:after {
+      background-color: color('light-gray-alt-2');
+    }
+  }
+
+  &.-open {
+    max-height: 1600px;
+
+    @include mqAbove($min-width-tablet) {
+      max-height: 1200px;
+    }
+
+    @include mqAbove($min-width-desktop) {
+      max-height: 1000px;
+    }
+  }
+}

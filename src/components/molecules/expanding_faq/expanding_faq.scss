@@ -1,0 +1,77 @@
+@import 'src/css/mixins';
+
+.c-expanding-faq {
+  &::before,
+  &.-last::after {
+    content: '';
+    position: absolute;
+    left: -50vw;
+    right: -50vw;
+    background-color: color('light-gray');
+    height: 1px;
+    z-index: 1;
+
+    @include mqAbove($grid-breakpoint-desktop) {
+      left: 0;
+      right: 0;
+    }
+  }
+
+  &::before {
+    top: 0;
+  }
+
+  &.-last::after {
+    bottom: 0;
+  }
+
+  &__toggle {
+    background: none;
+
+    &:focus {
+      outline: 0;
+      text-decoration: underline;
+    }
+
+    @include mqAbove($grid-breakpoint-desktop) {
+      &[aria-expanded=false]:hover {
+        background-color: color('light-gray-alt-2');
+        border-right-color: color('light-gray');
+        border-left-color: color('light-gray');
+      }
+    }
+  }
+
+  &__question:not(:first-child) {
+    margin-top: 48px;
+  }
+
+  .c-markdown__table {
+    width: 100%;
+    margin-bottom: 20px;
+    background: #fff;
+    font-size: 14px;
+    border: 1px solid color('light-gray');
+    color: color('dark-gray');
+  }
+
+  .c-markdown__tr:nth-of-type(even) {
+    background: color('light-gray-alt-2');
+  }
+
+  .c-markdown__th,
+  .c-markdown__td {
+    line-height: 1.125;
+    border: none;
+    padding: 12px;
+    vertical-align: top;
+  }
+
+  .c-markdown__img {
+    max-width: 100%;
+
+    @include mqAbove($grid-breakpoint-tablet) {
+      max-width: 600px;
+    }
+  }
+}

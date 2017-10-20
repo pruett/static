@@ -1,0 +1,12 @@
+@import 'src/css/mixins';
+
+.c-order-info-details {
+  &__order-info-container {
+    @include mqAbove($grid-breakpoint-tablet) {
+      margin-left: 200px
+    }
+  }
+  &__header {
+    font-size: 11px;
+  }
+}

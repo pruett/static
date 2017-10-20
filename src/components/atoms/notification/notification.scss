@@ -1,0 +1,28 @@
+@import 'src/css/mixins';
+
+.c-notification {
+  position: relative;
+  margin-top: 12px;
+  border: 1px solid color('light-gray');
+
+  &__close {
+    position: absolute;
+    right: 24px;
+    width: 12px;
+    height: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &__content {
+    padding: 12px;
+
+    &.-has-close {
+      padding-right: 60px;
+    }
+
+    @include mqAbove($min-width-tablet) {
+      padding: 24px;
+    }
+  }
+}

@@ -1,0 +1,49 @@
+/* Horizontal Rule */
+
+.u-hr {
+  margin: 24px -6px 23px;
+  border: {
+    color: color('light-gray');
+    width: 0 0 1px;
+    style: solid;
+  }
+
+  @include mqAbove($min-width-tablet) {
+    margin-top: 0;
+  }
+
+  &.-no-margin {
+    margin: 0
+  }
+
+  &.-three {
+    border-bottom-width: 3px;
+  }
+
+  &.-dark {
+    border-color: color('dark-gray');
+  }
+
+}
+
+/* hr with no margin specified */
+.u-hr-xm {
+  border: {
+    color: color('light-gray');
+    width: 0 0 1px;
+    style: solid;
+  }
+
+  &.-no-margin {
+    margin: 0;
+  }
+
+  &.-three {
+    border-bottom-width: 3px;
+  }
+
+  &.-dark {
+    border-color: color('dark-gray');
+  }
+
+}

@@ -1,0 +1,66 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  @include familySans;
+  color: color('dark-gray');
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+/*
+ * Sticky footer (see _layout.scss).
+ */
+html,
+body,
+#content {
+  height: 100%;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  color: $color-link;
+  text-decoration: none;
+
+  &:hover {
+    cursor: pointer;
+    color: $color-link-hover;
+  }
+}
+
+strong {
+  font-weight: 600;
+}
+
+
+// Remove autofill yellow background and black text.
+input,
+select {
+  &:-webkit-autofill {
+    box-shadow: 0 0 0 1000px color('white') inset;
+    -webkit-text-fill-color: color('dark-gray');
+  }
+}
+
+// Hide placeholder except when focused on empty.
+input::placeholder {
+  color: color('dark-gray-alt-2');
+}
+
+select:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #000;
+}
+

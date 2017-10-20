@@ -1,0 +1,73 @@
+@import 'src/css/mixins';
+
+.c-tyler-oakley-copy-box {
+  transition: {
+    property: opacity;
+    duration: 1s;
+    timing-function: $transition-timing-function-default;
+  }
+
+  &__copy-wrapper {
+    padding-bottom: 150%;
+
+    @include mqAbove($grid-breakpoint-tablet) {
+      padding-bottom: 62%;
+    }
+
+    @include mqAbove($grid-breakpoint-desktop) {
+      padding-bottom: 50%;
+    }
+  }
+
+  &__copy {
+    top: 46%;
+    transition: {
+      property: opacity;
+      duration: 1s;
+      timing-function: $transition-timing-function-default;
+    }
+
+    &.-show {
+      opacity: 1;
+    }
+
+    &.-hide {
+      opacity: 0.01;
+    }
+
+    @include mqAbove($grid-breakpoint-desktop-large) {
+      line-height: 54px;
+    }
+  }
+
+  &__button {
+    border-radius: 50%;
+    height: 16px;
+    cursor: pointer;
+    width: 16px;
+    background: white;
+    transition: {
+      property: opacity;
+      duration: 0.75s;
+      timing-function: $transition-timing-function-default;
+    }
+
+    &.-dark {
+      opacity: 0.15;
+    }
+
+    &.-light {
+      opacity: 1;
+    }
+
+    @include mqAbove($grid-breakpoint-desktop) {
+      height: 12px;
+      width: 12px;
+    }
+  }
+
+  &__button + &__button{
+    margin-left: 24px;
+  }
+
+}

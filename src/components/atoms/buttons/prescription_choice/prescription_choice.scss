@@ -1,0 +1,33 @@
+@import 'src/css/mixins';
+
+.c-prescription-choice {
+  margin-bottom: 12px;
+  display: block;
+  width: 100%;
+  padding: 30px 24px 24px;
+
+  &.-expired,
+  &.-expired:hover {
+    border: 1px color('yellow') solid;
+  }
+
+  &__title {
+    margin-bottom: 6px;
+  }
+
+  &__arrow {
+    position: absolute;
+    right: 24px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &__eye-container{
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__eye {
+    width: 84px;
+  }
+}

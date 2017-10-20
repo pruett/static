@@ -1,0 +1,5 @@
+@import 'src/css/mixins';
+
+.c-icon {
+  @include svg(8, 12, 'right-arrow');
+}

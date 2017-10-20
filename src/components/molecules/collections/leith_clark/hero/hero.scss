@@ -1,0 +1,19 @@
+@import 'src/css/mixins';
+
+.c-leith-clark-hero {
+
+  &__copy-box {
+    color: #73528F;
+
+    @include mqAbove($grid-breakpoint-desktop) {
+      left: 5%;
+      width: 30%;
+    }
+
+    @include mqAbove($grid-breakpoint-desktop-large) {
+      width: 34%;
+    }
+
+  }
+
+}

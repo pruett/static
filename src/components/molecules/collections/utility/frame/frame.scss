@@ -1,0 +1,16 @@
+@import 'src/css/mixins';
+
+.c-collection-frame {
+
+  &__shop-link {
+    &:hover {
+      border-bottom-width: 1px;
+      color: color('blue');
+    }
+  }
+
+  &__shop-link + &__shop-link {
+    margin-left: 24px;
+  }
+
+}

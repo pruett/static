@@ -1,0 +1,46 @@
+@import 'src/css/mixins';
+
+.c-phone-number-form {
+
+  &__phone-container {
+    width: 240px;
+  }
+
+  &__phone-input-container {
+
+    &.c-field-container.-v2 {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+
+      &.-inline {
+        border-top: 0;
+        border-bottom: 0;
+      }
+
+      &:not(.-inline) {
+         border-color: color('white');
+      }
+
+      &.-focus {
+        border-color: color('dark-gray-alt-2');
+      }
+    }
+  }
+
+  &__submit-button {
+    width: 62px;
+    height: 62px;
+    border-top-right-radius: 1px;
+    border-bottom-right-radius: 1px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__arrow-group {
+    stroke-width: 1.5;
+    fill: none;
+    fill-rule: evenodd;
+  }
+}

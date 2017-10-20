@@ -1,0 +1,14 @@
+@import 'src/css/mixins';
+
+.c-icon--heart--path {
+  transition: all 0.15s ease-in-out;
+
+  &.-active {
+    fill: color('red-alt-1');
+    stroke: color(red-alt-1);
+  }
+}
+
+.c-icon {
+  @include svg(21, 19, 'heart');
+}

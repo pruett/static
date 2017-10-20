@@ -1,0 +1,29 @@
+@mixin buttonBlue($selector: '') {
+  &#{$selector} {
+    color: color('white');
+    background: color('blue');
+    border: 1px solid color('blue-shadow');
+
+    &:hover {
+      color: color('white');
+      background: color('blue-cta');
+    }
+
+    &:focus {
+      color: color('white');
+      background: color('blue-cta');
+      box-shadow: 0 0 0 1px color('white'),
+        0 0 0 2px color('blue-shadow');
+    }
+
+    &:active {
+      color: color('white');
+      background: color('blue-shadow');
+    }
+
+    &:disabled,
+    &.-disabled {
+      color: color('white-60p');
+    }
+  }
+}

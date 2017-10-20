@@ -1,0 +1,28 @@
+@import 'src/css/mixins';
+
+.c-product-collection-callout {
+  &__image {
+    margin-bottom: 12px;
+    max-width: 115px;
+
+    @include mqAbove($min-width-tablet) {
+      max-width: 150px;
+      float: left;
+    }
+
+    @include mqAbove($min-width-desktop-large) {
+      max-width: 125px;
+      float: none;
+    }
+  }
+
+  &__text {
+    @include mqBetween($min-width-tablet, $min-width-desktop-large) {
+      padding-left: 35%;
+    }
+  }
+
+  &__description {
+    margin-bottom: 12px;
+  }
+}

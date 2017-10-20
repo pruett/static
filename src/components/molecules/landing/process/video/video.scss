@@ -1,0 +1,33 @@
+@import 'src/css/mixins';
+
+.c-landing-process-video {
+  &__video-overlay-wrapper {
+    &.-hidden {
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 1s ease-in-out, visibility 0s 1s;
+    }
+  }
+
+  &__play-button {
+    width: 45px;
+
+    @include mqAbove($grid-breakpoint-desktop) {
+      width: 64px;
+    }
+
+  }
+
+  &__video-controls {
+    z-index: 1;
+  }
+
+  &__button-wrapper {
+    // Hack to override grid__col padding
+    left: 2%;
+  }
+
+  &__video-copy-wrapper {
+    text-shadow: 1px 1px grey;
+  }
+}

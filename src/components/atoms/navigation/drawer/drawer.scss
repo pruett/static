@@ -1,0 +1,134 @@
+@import 'src/css/mixins';
+
+.c-navigation-drawer {
+  $fade-duration: $transition-duration-default * 2;
+
+  height: $navigation-drawer-mobile-height;
+  box-shadow: 0 1px 0 0 color('subtle-gray');
+
+  @include mqAbove($grid-breakpoint-desktop) {
+    font-weight: $font-weight-normal;
+    box-shadow: none;
+    height: auto;
+    padding-top: 18px;
+    padding-bottom: 0;
+  }
+
+  &__list-container {
+    $fade-duration: $transition-duration-default * 2;
+    z-index: $z-index-navigation__primary;
+    opacity: 0;
+    transition: {
+      property: opacity, visibility;
+      duration: $fade-duration, 0s;
+      timing-function: $transition-timing-function-default;
+      delay: 0s, $fade-duration;
+    }
+
+    @include mqAbove($grid-breakpoint-desktop) {
+      top: 60px;
+      transition: {
+        property: opacity, visibility;
+        duration: $fade-duration, 0s;
+        timing-function: $transition-timing-function-default;
+        delay: 0s, $fade-duration;
+      }
+    }
+  }
+
+  &__list-hide {
+    background: none;
+    z-index: $z-index-foreground;
+  }
+
+  &__item {
+    height: 50vh;
+
+    @include mqAbove($grid-breakpoint-desktop) {
+      height: auto;
+    }
+
+    &:nth-child(1) {
+      .c-navigation-drawer__link-wrap {
+        right: 0;
+        margin-right: 14%;
+      }
+    }
+
+    &:nth-child(2) {
+      .c-navigation-drawer__link-wrap {
+        left: 0;
+        margin-left: 10%;
+
+        @include mqAbove($grid-breakpoint-desktop) {
+          left: auto;
+          right: 0;
+          margin-right: 24%;
+        }
+      }
+    }
+  }
+
+  &__link {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh;
+    background-position: center center;
+
+    @include mqAbove($grid-breakpoint-desktop) {
+      height: 0;
+      width: 100%;
+      padding-bottom: 56.25%;
+    }
+
+    &:hover .c-navigation-drawer__link-label {
+      border-bottom-color: color('dark-gray');
+    }
+  }
+
+  &__picture--glasses {
+    width: 180px;
+    top: 48px;
+    height: 68px;
+    z-index: 0;
+    background: {
+      size: cover;
+      position: top center;
+    }
+  }
+
+  &__list-toggle {
+    background: none;
+    top: 20px;
+  }
+
+  // `:focus` denotes expanded state until React takes over, when we defer to
+  // its state, as is available in `.-visible` and `aria-expanded` values.
+  &.-visible &__list-toggle,
+  &__list-toggle:focus:not([aria-expanded=false]) {
+    display: block;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+    top: 2px;
+    width: auto;
+    z-index: $z-index-navigation__product;
+
+    @include mqAbove($grid-breakpoint-desktop) {
+      position: static;
+    }
+  }
+
+  &.-visible &__list-container,
+  &__list-toggle:focus:not([aria-expanded=false]) ~ &__list-container {
+    opacity: 1;
+    transition-delay: 0.025s, 0s;
+    visibility: visible;
+
+    @include mqAbove($grid-breakpoint-desktop) {
+      left: calc(50% - 50vw);
+      right: calc(50% - 50vw);
+      transition-delay: 0.025s, 0s;
+    }
+  }
+}

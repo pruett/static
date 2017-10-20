@@ -1,0 +1,12 @@
+@import 'src/css/mixins';
+
+.c-landing-curated-promo {
+
+  &__cta {
+    background-color: color('white');
+    width: 220px;
+    @include mqAbove($grid-breakpoint-desktop) {
+      width: 182px;
+    }
+  }
+}

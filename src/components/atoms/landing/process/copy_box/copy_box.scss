@@ -1,0 +1,17 @@
+@import 'src/css/mixins';
+
+.c-landing-process-block-copy {
+
+  &__a {
+    @include mqAbove ($grid-breakpoint-desktop) {
+      &:hover {
+        border-bottom: 1px solid color('blue');
+      }
+    }
+  }
+
+  &__list {
+    right: 20px;
+  }
+
+}

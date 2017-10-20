@@ -1,0 +1,82 @@
+@import 'src/css/mixins';
+
+.c-tab-bar {
+  display: block;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  padding: 0;
+}
+
+.c-tab-bar__label {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  padding-bottom: 3px;
+  color: color('dark-gray-alt-2');
+  font-weight: $font-weight-semibold;
+  text-align: center;
+
+  &:hover {
+    border-bottom: 2px color('dark-gray-alt-2') solid;
+  }
+
+  &:nth-of-type(even) {
+    margin-left: 24px;
+
+    @include mqAbove($grid-breakpoint-tablet) {
+      margin-left: 36px;
+    }
+
+    &:not(:last-of-type) {
+      margin-right: 24px;
+
+      @include mqAbove($grid-breakpoint-tablet) {
+        margin-right: 48px;
+      }
+    }
+  }
+}
+
+.c-tab-bar__container {
+  position: relative;
+}
+
+.c-tab-bar__spacer {
+  visibility: hidden;
+}
+
+.c-tab-bar__content {
+  position: absolute;
+  visibility: hidden;
+  top: 150px;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  transition: {
+    property: opacity, transform, visibility;
+    duration: $transition-duration-default, $transition-duration-default, 0s;
+    timing-function: $transition-timing-function-default;
+    delay: 0s, 0s, $transition-duration-default;
+  }
+}
+
+.c-tab-bar__radio {
+  position: absolute;
+  top: 0;
+}
+
+.c-tab-bar__radio:checked {
+
+  + .c-tab-bar__label {
+    color: color('dark-gray');
+    border-bottom: 2px color('dark-gray') solid;
+
+    + .c-tab-bar__content {
+      transform: translateY(-36px);
+      transition-delay: 0s, 0s, 0s;
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+}

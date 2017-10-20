@@ -1,0 +1,59 @@
+@import 'src/css/mixins';
+
+.c-summer-2016-editorial-video-box {
+
+  &__video-overlay-wrapper {
+    &.-hidden {
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 1s ease-in-out, visibility 0s 1s;
+    }
+  }
+
+  &__video-title {
+    top: 75%;
+    left: 33%;
+  }
+
+  &__play-text {
+    bottom: 15px;
+    left: 20px;
+
+    @include mqAbove($grid-breakpoint-desktop) {
+      bottom: 24px;
+    }
+
+  }
+
+  &__play-button {
+    width: 45px;
+
+    @include mqAbove($grid-breakpoint-desktop) {
+      width: 64px;
+    }
+
+  }
+
+  &__video-controls {
+    top: 50%;
+    width: 85%;
+    left: 7%;
+    z-index: 1;
+
+    @include mqAbove($grid-breakpoint-tablet) {
+      left: 18%;
+      top: 60%;
+      width: 65%;
+    }
+
+    @include mqAbove($grid-breakpoint-desktop) {
+      top: 20%;
+    }
+
+    @include mqAbove($grid-breakpoint-desktop-large) {
+      left: 16%;
+      top: 60%;
+      width: 70%;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+@import 'src/css/mixins';
+
+.c-eyesun-hero {
+  max-width: width-callout('l');
+  overflow: hidden;
+
+  &__link {
+    @include buttonGray;
+
+    @include mqAbove($grid-breakpoint-desktop) {
+      @include buttonWhite;
+    }
+  }
+
+  &__wrapper {
+    @include mqAbove($grid-breakpoint-desktop) {
+      padding-bottom: 0;
+      position: absolute;
+      top: 50%;
+      left: 1/12 * 100%;
+      width: 4/12 * 100%;
+      transform: translateY(-50%);
+      border: 0;
+    }
+  }
+}

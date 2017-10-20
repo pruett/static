@@ -1,0 +1,25 @@
+@import "src/css/mixins";
+
+.c-prescription-services {
+  // Override hero.
+  .c-prescription-how-to-hero__hero-content {
+    @include mqAbove($grid-breakpoint-tablet) {
+      right: 0;
+      width: calc(((6 / 12) * 100%) - 12px);
+      margin: 0;
+      left: auto;
+      max-width: none;
+      padding: 0;
+      margin-top: -5%;
+      padding-left: 1%;
+      right: 1%;
+    }
+
+    @include mqAbove($grid-breakpoint-desktop) {
+      right: calc((1 / 12) * 100%);
+      width: calc((5 / 12) * 100%);
+      padding-left: 4%;
+    }
+  }
+}
+

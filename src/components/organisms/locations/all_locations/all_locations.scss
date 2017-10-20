@@ -1,0 +1,106 @@
+@import 'src/css/mixins';
+
+.c-all-locations {
+  margin: 0 -18px;
+
+  &__banner-image {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  &__country-group {
+    margin: 0 auto;
+  }
+
+  &__eye-exam-info {
+    width: 90%;
+    max-width: 600px;
+  }
+
+  &__hr {
+    margin: 48px 0;
+    border: 1px solid color('light-gray');
+
+    &.--dashed {
+      border-style: dashed;
+    }
+  }
+
+  &__country-name {
+    @include typeSubhead;
+    padding: 24px 6px;
+
+    @include mqAbove($grid-breakpoint-tablet) {
+      @include typeIntro;
+    }
+
+    @include mqAbove($min-width-desktop-x-large) {
+      @include typeHeadline;
+      padding-top: 36px;
+      padding-bottom: 36px;
+    }
+  }
+
+  &__region-group {
+    // we want to counteract the margin-top
+    // that the first row location groups cause
+    margin-top: -36px;
+    padding: 0 18px 0;
+
+    @include mqAbove($min-width-tablet) {
+      max-width: 1100px;
+      margin: -36px auto 0;
+      columns: 2;
+      column-gap: 96px;
+    }
+
+    @include mqAbove($min-width-desktop) {
+      columns: 3;
+      column-gap: 84px;
+    }
+  }
+
+  &__location-group {
+    display: inline-block;
+    width: 100%;
+    margin-top: 36px;
+  }
+
+  &__region-name {
+    @include typeSectionHeadline;
+    margin-bottom: 12px;
+
+    @include mqAbove($grid-breakpoint-tablet) {
+      @include typeSubhead;
+    }
+  }
+
+  &__location-detail {
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__address {
+    color: color('dark-gray-alt-2');
+  }
+
+  &__eye-exam-footer {
+    width: 90%;
+    max-width: 860px;
+  }
+
+  &__footer {
+    margin: 0 12px;
+    text-align: center;
+
+    @include mqAbove($min-width-tablet) {
+      max-width: 420px;
+      margin: 0 auto;
+    }
+  }
+
+  &__footer-title {
+    margin-top: 48px;
+  }
+}

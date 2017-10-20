@@ -1,0 +1,9 @@
+@import 'src/css/mixins';
+
+.c-prescription__content {
+  display: block;
+
+  @include mqAbove($min-width-tablet) {
+    display: inline-block;
+  }
+}

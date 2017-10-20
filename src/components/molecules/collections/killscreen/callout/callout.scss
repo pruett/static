@@ -1,0 +1,13 @@
+@import 'src/css/mixins';
+
+.c-killscreen-callout {
+
+  &__bottom-image {
+    top: -5px;
+
+    @include mqAbove($grid-breakpoint-tablet) {
+      top: 0;
+    }
+  }
+
+}

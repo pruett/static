@@ -1,0 +1,32 @@
+/**
+ * SVG SIZING MIXIN
+ * Set a width and it will generate 50% - 300% classes.
+ * Default class is 100%.
+ * Set a name and it will create a namespace before them.
+ */
+
+@mixin svg($width: 1, $height: 1, $name: '') {
+
+  // Percent widths
+  $sizes: 50, 75, 150, 200, 300;
+
+  @if $name != '' {
+    $name: "--#{$name}";
+  }
+
+  &#{$name} {
+    width: $width * 1px;
+
+    @if ($height/$width) != 1 {
+      &__rsvg {
+        padding-bottom: ($height / $width) * 100%;
+      }
+    }
+
+    @each $size in $sizes {
+      &.-size-#{$size} {
+        width: $width * ($size/100) * 1px;
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+@import "src/css/mixins";
+
+.c-appointment-container {
+  // bring appointment styles to forefront when against a bg
+  z-index: 1;
+
+  max-width: 1056px;
+
+  flex: 1 1 auto;
+
+  @include mqAbove($grid-breakpoint-desktop-large) {
+    max-width: 1080px;
+  }
+
+  &__screen.-inactive {
+    display: none;
+  }
+}

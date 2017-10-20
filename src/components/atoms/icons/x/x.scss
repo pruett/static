@@ -1,0 +1,15 @@
+.c-x-icon {
+
+  &__image {
+    background: {
+      image: url(/assets/img/icons/actions/x.svg);
+      position: 0 0;
+      size: cover;
+    }
+
+    a:focus &,
+    button:focus & {
+      background-position: 0 100%;
+    }
+  }
+}

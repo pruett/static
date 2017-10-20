@@ -1,0 +1,84 @@
+@import 'src/css/mixins';
+
+.c-spring-2017-shoppable-grid {
+
+  &__flex-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__flex-child {
+    // Modifiers to toggle lifestyle and frame imagery/video position
+    &.-lifestyle-lifestyle {
+      // Can probably kill this
+      &:nth-child(1) {
+        order: 1;
+      }
+      &:nth-child(2) {
+        order: 2;
+      }
+    }
+
+    &.-lifestyle-frame {
+      &:nth-child(1) {
+        order: 1;
+      }
+      &:nth-child(2) {
+        order: 2;
+      }
+      @include mqAbove($grid-breakpoint-tablet) {
+        &:nth-child(1) {
+          order: 2;
+        }
+        &:nth-child(2) {
+          order: 1;
+        }
+      }
+    }
+
+    &.-frame-frame {
+      &:nth-child(1) {
+        order: 2;
+      }
+      &:nth-child(2) {
+        order: 1;
+      }
+    }
+
+    &.-frame-lifestyle {
+      &:nth-child(1) {
+        order: 2;
+      }
+      &:nth-child(2) {
+        order: 1;
+      }
+      @include mqAbove($grid-breakpoint-tablet) {
+        &:nth-child(1) {
+          order: 1;
+        }
+        &:nth-child(2) {
+          order: 2;
+        }
+      }
+    }
+  }
+
+  &__shop-link-modifier {
+    color: color('dark-gray');
+    border-color: color('dark-gray');
+    border-bottom-width: 1px;
+
+    @include mqAbove($grid-breakpoint-desktop) {
+      border-bottom-width: 0;
+      transition: all 0.1s;
+      &:hover {
+        color: color('dark-gray');
+        border-bottom: 2px solid color('dark-gray');
+      }
+    }
+  }
+
+  &__cta + &__cta {
+    margin-left: 24px;
+  }
+}

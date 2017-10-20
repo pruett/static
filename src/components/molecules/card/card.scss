@@ -1,0 +1,75 @@
+@import 'src/css/mixins';
+
+.c-card {
+  text-align: left;
+  max-width: 500px;
+  margin: 0 auto 12px;
+  border: color('light-gray-alt-1') 1px solid;
+  box-shadow: 0 1px color('light-gray');
+  background-color: #fff;
+  display: block;
+  width: 100%;
+  position: relative;
+  vertical-align: top;
+  padding: 0;
+  transition: $transition-duration-default all;
+  color: color('dark-gray');
+
+  &:hover,
+  &:focus {
+    border-color: color('light-gray');
+    box-shadow: 0 1px color('blue');
+    color: color('dark-gray');
+  }
+
+  @include mqAbove($min-width-tablet) {
+    margin-left: inherit;
+    margin-right: 24px;
+    margin-bottom: 24px;
+    width: 45%;
+    display: inline-block;
+
+    /* Modern browsers */
+    width: calc(50% - 12px);
+    display: flex;
+    flex-wrap: wrap;
+
+    &:nth-child(even) {
+      margin-right: 0;
+    }
+  }
+}
+
+.c-card__contents {
+  padding: 24px;
+  position: relative;
+  width: 100%;
+}
+
+.c-card__trigger {
+  @include typeBody;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: left;
+  padding: 12px 24px 11px;
+  margin-bottom: 0;
+  background-color: color('white');
+  display: block;
+  border: {
+    width: 1px 0 0;
+    color: color('light-gray-alt-1');
+    style: solid;
+  }
+  transition: $transition-duration-default all;
+
+  .c-card:hover & {
+    border-color: color('light-gray');
+    color: color('dark-gray');
+  }
+}
+
+.c-card__wrapper {
+  width: 100%;
+}

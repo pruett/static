@@ -1,0 +1,37 @@
+@import 'src/css/mixins';
+
+.c-spring-2017-hero {
+
+  $spring-font: 'utopia-std-display';
+
+  &__header {
+    font-family: $spring-font;
+
+    @include mqAbove($grid-breakpoint-desktop-large) {
+      font-size: 90px;
+    }
+  }
+
+  &__header-desktop {
+    left: 60%;
+    width: 30%;
+  }
+
+  &__css-modifier-video-wrapper {
+
+    padding-bottom: 62%;
+
+    @include mqAbove($grid-breakpoint-tablet) {
+      padding-bottom: 66%;
+    }
+
+    @include mqAbove($grid-breakpoint-desktop) {
+      padding-bottom: 41%;
+    }
+
+  }
+
+  &__css-modifier-video {
+    width: 100%;
+  }
+}

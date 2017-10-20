@@ -1,0 +1,144 @@
+@import 'src/css/mixins';
+
+.c-product-lens-details {
+  &__flex-wrapper {
+    @include mqAbove($grid-breakpoint-desktop) {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+
+  &__separator {
+    height: 1px;
+    background-color: rgba(161, 164, 166, 0.4);
+  }
+
+  &__bullet-list {
+    min-height: 220px;
+
+    @include mqAbove($grid-breakpoint-desktop) {
+      min-height: 250px;
+    }
+  }
+
+  &__section-wrapper {
+    position: relative;
+    @include mqAbove($grid-breakpoint-desktop) {
+      width: 75%;
+    }
+  }
+  &__bullet {
+    list-style: none;
+    padding-left: 20px;
+    color: #677079;
+
+    &:before {
+      content: "";
+      line-height: 1em;
+      width: 8px;
+      position: absolute;
+      left: -12px;
+      height: 8px;
+      background-color: #D8D8D8;
+      float: left;
+      margin: 0.5em 12px 0;
+      border-radius: 50%;
+    }
+  }
+
+  &__button {
+    min-width: 150px;
+    border-radius: 18px;
+    height: 32px;
+    border: 1px solid rgba(161, 164, 166, 0.4);
+    background-color: white;
+    letter-spacing: 1px;
+
+    &.-active {
+      background-color: color('blue');
+      color: color('white');
+      border: 1px solid color('blue');
+      &:hover {
+        background-color: #0089BF;
+      }
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &:hover {
+      background-color: #F8F8F8;
+    }
+
+    &.-short {
+      min-width: 130px;
+    }
+  }
+
+  &__image-wrapper {
+    height: 0;
+    padding-bottom: 66%;
+
+    @include mqAbove($grid-breakpoint-tablet) {
+      padding-bottom: 45%;
+    }
+
+    @include mqAbove($grid-breakpoint-desktop) {
+      padding-bottom: 66%;
+    }
+
+  }
+
+  &__image {
+    &.-flip {
+      left: 10%;
+
+      @include mqAbove($grid-breakpoint-tablet) {
+        left: 17%;
+      }
+      @include mqAbove($grid-breakpoint-desktop) {
+        left: 5%;
+      }
+    }
+    &.-bottom {
+      opacity: 1;
+    }
+
+    &.-top {
+      opacity: 0;
+      transition: opacity;
+
+      &.-transition-fast {
+        transition-duration: 0.25s;
+      }
+
+      &.-transition-slow {
+        transition-duration: 1.5s;
+      }
+
+      &.-active {
+        opacity: 1;
+      }
+    }
+  }
+  &__imagery-section {
+    order: 0;
+    &.-flip {
+      order: 1;
+    }
+  }
+
+  &__detail-section {
+    order: 0;
+  }
+
+  &__fade-in {
+    opacity: 0;
+    &.-active {
+      animation: fadeIn 2s infinite alternate;
+    }
+  }
+
+}
+

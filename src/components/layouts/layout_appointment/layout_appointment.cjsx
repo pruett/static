@@ -26,6 +26,8 @@ module.exports = React.createClass
   mixins: [
     Mixins.analytics
     Mixins.classes
+    Mixins.dispatcher
+    Mixins.conversion
   ]
 
   propTypes:
@@ -48,7 +50,7 @@ module.exports = React.createClass
 
   getStaticClasses: ->
     block: 'u-template'
-    main: 'u-template__main -full-width u-oh'
+    main: "#{@BLOCK_CLASS}__main u-template__main u-oh"
     footer: "
       #{@BLOCK_CLASS}__footer
       u-w100p
@@ -70,35 +72,43 @@ module.exports = React.createClass
       u-mb12
       u-reset u-fs20 u-ffs u-fws
     "
+    footerActionContainer:
+      "u-mt48 u-mb48 u-pt24 u-pt36--900 u-btss u-btw1 u-bc--light-gray"
+    footerDateTime: "u-tac u-fs20 u-fws u-ffs u-mt0"
+    footerAction: "u-fs16 u-db u-tac u-ffss u-tac"
 
-  renderQuestion: (question, i) ->
-    classes = @getClasses()
-
-    <section className=classes.questionBlock key="question-#{i}">
-      <h3 className=classes.question children=question.question />
-      <Markdown rawMarkdown=question.answer />
-    </section>
+  handleClickChange: (evt) ->
+    evt.preventDefault()
+    @commandDispatcher 'appointments', 'change'
+    @trackInteraction 'appointments-change-appointment', evt
 
   render: ->
     classes = @getClasses()
+    console.log('appointment layout props: ', @props)
 
     <div className=classes.block>
       <UnsupportedBrowserNotice />
-
-      <Takeover active=@state.takeoverActive
-        analyticsSlug='appointments-close-faq'
-        title={_.get @props.content, 'faq.title'}
-        manageClose=@handleCloseTakeover
-        children={_.map _.get(@props.content, 'faq.questions', []), @renderQuestion} />
 
       <main {...@props}
         role='main'
         className=classes.main />
 
-      <footer className=classes.footer>
-        <button className=classes.footerButton
-          children='Booking FAQs'
-          onClick=@handleOpenTakeover />
-      </footer>
+      {if @props.appointment
+        switch @props.appointment.booking_status
+          when 'inProgress'
+            dateObj = @convert 'utcdate', 'object', "#{@props.appointment.date.timestamp}Z"
+
+            <footer className=classes.footerActionContainer key='date-time'>
+              <p className=classes.footerDateTime>{"#{dateObj.month} #{dateObj.ordinalDate} at #{dateObj.formattedTime}"}</p>
+              <a className=classes.footerAction
+                onClick=@handleClickChange >
+                Choose a different day or time
+              </a>
+            </footer>
+          when 'complete'
+            <footer className=classes.footerActionContainer key='book-another'>
+              <a className=classes.footerAction>Book another appointment</a>
+            </footer>
+        }
 
     </div>

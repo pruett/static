@@ -1,0 +1,23 @@
+@import 'src/css/mixins';
+
+.c-home-try-on {
+
+  // Circles
+  &__tout-body::after {
+    content: '';
+    background: color('light-gray');
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    width: 8px;
+    height: 8px;
+    left: -4.5px;
+    box-shadow: 0 0 0 10px white;
+  }
+
+  @include mqAbove($grid-breakpoint-tablet) {
+    &__tout-body::after {
+      content: none;
+    }
+  }
+}

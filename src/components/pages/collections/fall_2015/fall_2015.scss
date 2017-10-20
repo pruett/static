@@ -1,0 +1,58 @@
+@import 'src/css/mixins';
+
+.c-fall-2015 {
+  .-fall-2015-responsive-type {
+    font-size: 20px;
+    line-height: 24px;
+
+    font-size: 4.5vw;
+    line-height: 5.5vw;
+
+    @include mqAbove($min-width-tablet-small) {
+      font-size: 24px;
+      line-height: 30px;
+      font-size: 4.8vw;
+      line-height: 5.8vw;
+    }
+
+    @include mqAbove($min-width-tablet) {
+      font-size: 16px;
+      line-height: 20px;
+      font-size: 2vw;
+      line-height: 2.5vw;
+
+      &.-intro-text {
+        font-size: 20px;
+        line-height: 24px;
+      }
+    }
+
+    @include mqAbove($min-width-desktop) {
+      font-size: 20px;
+      line-height: 24px;
+      font-size: 2vw;
+      line-height: 2.5vw;
+
+      &.-intro-text {
+        font-size: 20px;
+        line-height: 24px;
+        font-size: 2vw;
+        line-height: 2.5vw;
+      }
+    }
+
+    @include mqAbove($min-width-desktop-large) {
+      font-size: 24px;
+      line-height: 30px;
+      font-size: 2vw;
+      line-height: 2.5vw;
+
+      &.-intro-text {
+        font-size: 24px;
+        line-height: 30px;
+        font-size: 2vw;
+        line-height: 2.5vw;
+      }
+    }
+  }
+}

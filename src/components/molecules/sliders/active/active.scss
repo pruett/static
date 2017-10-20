@@ -1,0 +1,168 @@
+@import 'src/css/mixins';
+
+.c-slider-active {
+  overflow: hidden;
+  position: relative;
+
+  &.-v2 {
+    @include mqAbove($grid-breakpoint-desktop) {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+  }
+
+  &__list {
+    white-space: nowrap;
+    position: relative;
+    left: -100%;
+
+    &.-single {
+      left: 0;
+    }
+  }
+
+  &__list-item {
+    width: 100%;
+    display: inline-block;
+
+    &.-vertical-center {
+      vertical-align: middle;
+    }
+  }
+
+  &__toggle {
+    position: absolute;
+    transform: translateY(-50%);
+    width: 34px;
+    padding: 12px;
+    top: 62%;
+
+    @include mqAbove($min-width-tablet) {
+      width: 48px;
+      padding: 0 12px;
+      top: 50%;
+    }
+
+    &.-left {
+      left: 0;
+
+      @include mqAbove($min-width-tablet) {
+        left: 6px;
+      }
+
+      &.-v2 {
+        @include mqAbove($grid-breakpoint-desktop) {
+          left: -12px;
+        }
+
+        @include mqAbove($grid-breakpoint-desktop-large) {
+          left: 12px;
+        }
+      }
+    }
+
+    &.-right {
+      right: 0;
+
+      @include mqAbove($min-width-tablet) {
+        right: 6px;
+      }
+
+      &.-v2 {
+        @include mqAbove($grid-breakpoint-desktop) {
+          right: -12px;
+        }
+
+        @include mqAbove($grid-breakpoint-desktop-large) {
+          right: 12px;
+        }
+      }
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &:hover, &:focus {
+      // Override legacy wrapper styles
+      background-color: inherit;
+      border: none;
+    }
+
+    &.-v2 {
+      top: 46%;
+      transform: scale(1.5);
+      stroke-width: 0.75px;
+      @include mqAbove($grid-breakpoint-tablet) {
+        top: 49%;
+      }
+    }
+  }
+
+  &__arrow {
+    &:hover,
+    &.-focused {
+      fill: color('dark-gray-alt-2');
+    }
+    &.-v2 {
+      @include mqAbove($grid-breakpoint-tablet) {
+        width: 30px;
+      }
+    }
+    &.-left {
+      &.-v2 {
+        transform: rotate(90deg);
+      }
+    }
+    &.-right {
+      &.-v2 {
+        transform: rotate(270deg);
+      }
+    }
+  }
+
+  &__dots-container {
+    list-style: none;
+    &.-v2 {
+      margin-top: 24px;
+    }
+  }
+
+  &__dot {
+    height: 6px;
+    width: 6px;
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 4px;
+    background-color: color('light-gray-alt-1');
+    border-radius: 50%;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &.-active {
+      background-color: color('dark-gray-alt-2');
+    }
+
+    &.-v2 {
+      height: 10px;
+      width: 10px;
+      margin-right: 11px;
+      list-style-position: inside;
+      border: 1px solid white;
+      background-color: transparent;
+      &.-active {
+        background-color: color('white');
+      }
+    }
+  }
+
+  &__shadow {
+    bottom: 0;
+    background: linear-gradient(to bottom , rgba(0, 0, 0, 0), rgba(0,0,0,0.55));
+  }
+}

@@ -1,0 +1,48 @@
+@import 'src/css/mixins';
+
+.c-filter-checkbox {
+  text-align: left;
+  margin-top: 4px;
+  margin-bottom: 36px;
+
+  &.-one-row {
+    margin-bottom: 48px;
+  }
+
+  &.-two-row:nth-of-type(odd) {
+    width: 172px;
+  }
+
+  @include mqAbove($c-frames-grid-breakpoint-1) {
+    margin-right: 36px;
+    margin-bottom: 0;
+    display: inline-block;
+
+    &.-one-row {
+      margin-bottom: 0;
+    }
+
+    &.-two-row {
+      margin-right: 24px;
+
+      &:nth-of-type(odd) {
+        width: auto;
+        margin-bottom: 24px;
+      }
+    }
+  }
+
+  @include mqAbove($c-gallery-filters-breakpoint-3) {
+    &.-two-row {
+      margin-right: 36px;
+    }
+  }
+
+  @include mqAbove($c-frames-grid-breakpoint-2) {
+    margin-right: 48px;
+
+    &.-two-row:nth-of-type(odd) {
+      margin-bottom: 12px;
+    }
+  }
+}

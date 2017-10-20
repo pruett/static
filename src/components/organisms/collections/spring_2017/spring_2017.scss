@@ -1,0 +1,57 @@
+@import 'src/css/mixins';
+
+.c-spring-2017 {
+  &__nav-wrapper-sticky {
+    transform: translate3d(0, 0, 0);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: white;
+    border-bottom: 1px solid color('subtle-gray');
+  }
+
+  &__nav-wrapper-static {
+    box-shadow: 0 4px 2px -2px color('subtle-gray');
+  }
+
+  &__transition-group {
+    &-appear {
+      opacity: 0.1;
+      transform: translate3d(0, -70px, 0);
+    }
+    &-appear-active {
+      opacity: 1.0;
+      transition: all 300ms;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  &__nav-link-modifier {
+    color: color('dark-gray');
+    border-color: color('dark-gray');
+    border-bottom-width: 1px;
+
+    @include mqAbove($grid-breakpoint-desktop) {
+      border-bottom-width: 0;
+      transition: all 0.1s;
+      &:hover {
+        color: color('blue');
+        border-bottom: 2px solid color('blue');
+      }
+    }
+
+    &.-active {
+      color: color('blue');
+      border-bottom: 1px solid color('blue');
+    }
+  }
+}
+
+// Nested selector to override markdown *bold* styling and allow custom copy
+// styling from CMS.
+.u-spring-2017-header-copy em {
+  color: color('blue');
+  font-style: normal;
+  font-weight: 600;
+}

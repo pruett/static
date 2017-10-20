@@ -1,0 +1,36 @@
+@import 'src/css/mixins';
+
+.c-bapgap-our-partners {
+
+  .c-slider-active {
+    &__subtitle {
+      float: none;
+
+      @include mqAbove($min-width-tablet) {
+        float: left;
+      }
+
+      .u-fsi {
+        font-style: normal;
+      }
+
+    }
+
+    &__dots-container {
+      float: none;
+
+      @include mqAbove($min-width-tablet) {
+        float: right;
+
+        &.-v2 {
+          margin-top: 8px;
+        }
+      }
+    }
+
+    &__shadow {
+      margin-bottom: 0;
+    }
+  }
+
+}

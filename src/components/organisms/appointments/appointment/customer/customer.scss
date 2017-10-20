@@ -1,0 +1,31 @@
+@import "src/css/mixins";
+
+.c-appointment-customer {
+  &__field-container {
+    background-color: color("white");
+  }
+  &__age-tooltip {
+    margin-left: -36px;
+  }
+  &__to-know-header {
+    top: -30px;
+    width: 150px;
+  }
+  &__bullet {
+    padding-left: 20px;
+    list-style: none;
+
+    &:before {
+      content: "";
+      line-height: 1em;
+      width: 8px;
+      position: absolute;
+      left: 12px;
+      height: 8px;
+      background-color: color("light-gray");
+      float: left;
+      margin: 0.5em 12px 0;
+      border-radius: 50%;
+    }
+  }
+}

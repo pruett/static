@@ -1,0 +1,55 @@
+@import 'src/css/mixins';
+
+.c-formgroup--radio {
+  position: relative;
+  padding-left: 36px;
+  display: block;
+
+  &__toggle {
+    left: 0;
+    top: 2px;
+
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px color('light-gray');
+    background: color('white');
+  }
+
+  &__input:checked + &__toggle {
+    background: color('blue');
+    box-shadow: inset 0 0 0 2px color('white'), 0 0 0 1px color('light-gray');
+  }
+}
+
+.c-formgroup--radio-v2 {
+  position: relative;
+  padding-left: 30px;
+  display: block;
+
+  &__toggle {
+    left: 0;
+    top: 0;
+
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    box-shadow: inset 0 0 0 10px color('white'), 0 0 0 1px color('dark-gray');
+    background: color('white');
+
+    transition: background $transition-duration-fast ease-in-out,
+                box-shadow $transition-duration-fast ease-in-out;
+  }
+
+  &__input:checked + &__toggle {
+    background: color('blue');
+    box-shadow: inset 0 0 0 3px color('white'), 0 0 0 1px color('dark-gray');
+  }
+
+  &__input:disabled + &__toggle {
+    background: color('white');
+    box-shadow: 0 0 0 1px color('light-gray');
+  }
+}

@@ -1,0 +1,99 @@
+@import 'src/css/mixins';
+
+
+.c-sunscapades-hero {
+  background-color: color('white');
+  height: 0;
+  padding-bottom: 168%;
+  overflow: hidden;
+
+  @include mqAbove($grid-breakpoint-tablet) {
+    padding-bottom: 100%;
+  }
+
+  @include mqAbove($grid-breakpoint-desktop) {
+    padding-bottom: 53%;
+  }
+
+  @include mqAbove(1440px) {
+    overflow: initial;
+    padding-bottom: 0;
+    height: 700px;
+  }
+
+  &__model-image {
+    backface-visibility: hidden;
+    padding: 1px;
+    top: 1%;
+    left: 3%;
+    transform: rotate(-3deg);
+
+    @include mqAbove($grid-breakpoint-tablet) {
+      width: 90%;
+      left: 9%;
+      top: 2%;
+    }
+
+    @include mqAbove($grid-breakpoint-desktop) {
+      box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.50);
+      padding: 0;
+      width: 58%;
+      left: 39%;
+      top: 5%;
+      transform: rotate(-4deg);
+    }
+  }
+
+  &__vespa-image {
+    z-index: 2;
+    right: -5%;
+    bottom: 27%;
+    width: 35%;
+    transform: rotate(-8deg);
+
+    @include mqAbove($grid-breakpoint-desktop) {
+      bottom: 5%;
+      width: 27%;
+    }
+  }
+
+  &__camera-image {
+    top: 0;
+    width: 30%;
+    left: -5%;
+  }
+
+  &__copy-wrapper {
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, 60%);
+
+    @include mqAbove($grid-breakpoint-tablet) {
+      transform: translate(-50%, 88%);
+    }
+
+    @include mqAbove($grid-breakpoint-desktop) {
+      transform: translate(-165%, -37%);
+    }
+
+    @include mqAbove($grid-breakpoint-desktop-large) {
+      transform: translate(-165%, -33%);
+    }
+
+  }
+
+  &__logo {
+    @include mqAbove($grid-breakpoint-desktop) {
+      width: 90%;
+    }
+  }
+
+  &__wrapper {
+    height: 0;
+    background-color: #F7F6F5;
+    padding-bottom: 41%;
+
+  }
+
+
+}

@@ -1,0 +1,43 @@
+@import 'src/css/mixins';
+
+.c-spring-2017-video {
+
+  &__loader {
+    padding-bottom: 62%;
+    transition: opacity 1s;
+    @include mqAbove($grid-breakpoint-tablet) {
+      padding-bottom: 61%;
+    }
+
+    @include mqAbove($grid-breakpoint-desktop) {
+      padding-bottom: 41%;
+    }
+
+    &.-fade {
+      opacity: 0;
+    }
+
+  }
+
+  &__wrapper {
+    padding-bottom: 100%;
+
+    @include mqAbove($grid-breakpoint-tablet) {
+      padding-bottom: 110%;
+    }
+    opacity: 0;
+
+    transition: {
+      property: opacity;
+      duration: 1s;
+      delay: 1s;
+      timing-function: $transition-timing-function-default;
+    }
+
+    &.-faded {
+      opacity: 1;
+    }
+
+  }
+
+}

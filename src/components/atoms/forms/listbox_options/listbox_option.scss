@@ -1,0 +1,164 @@
+@import 'src/css/mixins';
+
+.c-listbox-option {
+  position: relative;
+  overflow: hidden;
+  height: 0;
+  cursor: pointer;
+  border: {
+    style: solid;
+    color: color('light-gray');
+    width: 0;
+  }
+  padding: 0 24px;
+  transition: border-color $transition-duration-fast,
+              background $transition-duration-fast,
+              padding $transition-duration-fast;
+
+  /** Generic visible state */
+  &.-expanded,
+  &.-selected {
+    height: auto;
+    padding: 18px 24px;
+    border-width: 1px 1px 0 1px;
+  }
+
+  &.-expanded {
+    background: color('light-gray-alt-2');
+
+    .c-listbox-option__dot {
+      background: color('light-gray');
+      margin-right: 12px;
+      width: 8px;
+      height: 8px;
+    }
+
+    .c-listbox-option__content {
+      width: calc(100% - 20px);
+    }
+
+    &.-selected {
+      background: color('white');
+
+      .c-listbox-option__dot {
+        background: color('blue');
+      }
+    }
+  }
+
+  &.-selected:not(.-expanded) {
+    border-radius: 1px;
+    border-width: 1px;
+    box-shadow: none;
+  }
+
+
+  &.-focused:not(.-expanded) {
+    border-color: color('dark-gray');
+  }
+
+  &.-expanded:first-child {
+    border-width: 1px;
+    box-shadow: none;
+    border-top-right-radius: 1px;
+    border-top-left-radius: 1px;
+    border-bottom: 0;
+  }
+
+  &.-expanded:last-child {
+    border-bottom-right-radius: 1px;
+    border-bottom-left-radius: 1px;
+    border-bottom-width: 1px;
+  }
+
+  &.-focused:hover,
+  &.-expanded:hover,
+  &.-selected:hover {
+    border-color: color('dark-gray-alt-2');
+
+    & + .c-listbox-option.-v2 {
+      border-top-color: color('dark-gray-alt-2');
+    }
+  }
+
+
+
+  /** State of selected option while expanded */
+  &.-expanded.-selected {
+    background: color('light-gray-alt-2');
+  }
+
+  /** Focused state of listbox */
+  &.-focused {
+    &.-expanded,
+    &.-selected {
+      border-color: color('light-gray');
+      box-shadow: 0 0 0 1px color('white'),
+        0 0 0 2px color('blue', 0.3),
+        inset 0 0 0 1px color('white'),
+        inset 0 0 0 2px color('light-gray-alt-2');
+    }
+  }
+
+  &:hover {
+    border-color: color('subtle-gray');
+    box-shadow: none;
+  }
+
+  &__down-arrow {
+    position: absolute;
+    top: 50%;
+    right: 18px;
+    transform: translateY(-50%);
+    transition: transform $transition-duration-default;
+  }
+
+  &.-expanded {
+    .c-listbox-option__down-arrow {
+      transform: translateY(-50%) rotateX(180deg);
+    }
+  }
+}
+
+.c-listbox-option--default {
+  &.-selected,
+  &.-expanded {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  &.-expanded {
+    background: color('white');
+
+    &.-selected {
+      border-color: color('blue');
+
+      &:hover {
+        border-color: color('blue-highlight');
+      }
+    }
+  }
+}
+
+.c-listbox-option--payment {
+  &__credit-card-icon,
+  &__credit-card-detail {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  &__credit-card-icon {
+    width: 42px;
+    padding-top: 4px;
+    margin-right: 18px;
+  }
+}
+
+.c-listbox-option__dot {
+  border-radius: 4px;
+  transition: {
+    property: margin, background;
+    duration: $transition-duration-fast;
+    timing-function: ease-in-out;
+  }
+}

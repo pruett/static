@@ -1,0 +1,128 @@
+@import "src/css/mixins";
+
+.c-appointment-time-slots {
+  margin-left: -30px;
+  margin-right: -30px;
+
+  @include mqAbove($grid-breakpoint-tablet) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  /* A bit of unfortunate CSS to handle multiple viewports of tabular
+    data. We want each `span` to have a top border on mobile viewports.
+    On tablet and above, items are stacked and we only need the first
+    (or first and second) to have a top border
+  */
+
+  &__time-of-day {
+    .c-appointment-time-slots__time-slot-container {
+      label:nth-of-type(1) > span,
+      label:nth-of-type(2) > span,
+      label:nth-of-type(3) > span,
+      label:nth-of-type(4) > span {
+        border-top: 1px solid color("light-gray");
+      }
+
+      label:nth-of-type(1) {
+        & > input:checked + span,
+        & > input:hover + span,
+        & > input:focus + span,
+        & > input:active + span {
+          border-top: 1px solid color("blue");
+        }
+      }
+      label:nth-of-type(2) {
+        & > input:checked + span,
+        & > input:hover + span,
+        & > input:focus + span,
+        & > input:active + span {
+          border-top: 1px solid color("blue");
+        }
+      }
+      label:nth-of-type(3) {
+        & > input:checked + span,
+        & > input:hover + span,
+        & > input:focus + span,
+        & > input:active + span {
+          border-top: 1px solid color("blue");
+        }
+      }
+      label:nth-of-type(4) {
+        & > input:checked + span,
+        & > input:hover + span,
+        & > input:focus + span,
+        & > input:active + span {
+          border-top: 1px solid color("blue");
+        }
+      }
+
+      @include mqAbove($grid-breakpoint-tablet) {
+        label:nth-of-type(3) > span,
+        label:nth-of-type(4) > span {
+          border-top: 1px solid color("white");
+        }
+      }
+    }
+  }
+
+  &__time-of-day:not(.-afternoon) {
+    .c-appointment-time-slots__time-slot-container {
+      @include mqAbove($grid-breakpoint-tablet) {
+        label:nth-of-type(2) > span {
+          border-top: 1px solid color("white");
+        }
+      }
+    }
+  }
+
+  &__time-slot-container {
+    font-size: 0;
+  }
+
+  &__time-slot {
+    width: 25%;
+
+    @include mqAbove($grid-breakpoint-tablet) {
+      &.-col {
+        &--wide {
+          width: 50%;
+        }
+
+        &--narrow {
+          width: 100%;
+        }
+
+        &--left {
+          margin-left: 0;
+        }
+
+        &--right {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  &__time-slot-unavailable {
+    @include mqAbove($grid-breakpoint-tablet) {
+      border: 1px solid color("light-gray");
+
+      &.-col {
+        &--left {
+          margin-left: 0;
+        }
+
+        &--right {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  &__next-available:focus,
+  &__next-available:hover {
+    color: color("blue-shadow");
+    outline: none;
+  }
+}

@@ -1,0 +1,59 @@
+@import 'src/css/mixins';
+
+.c-tyler-oakley-video {
+
+  &__link + &__link {
+    margin-left: 24px;
+  }
+
+  &__link {
+    @include mqAbove($grid-breakpoint-desktop) {
+      transition: all 0.1s;
+      &:hover {
+        color: color('blue');
+        border-bottom: 2px solid color('blue');
+      }
+    }
+  }
+
+  &__mobile-button {
+    top: 90%;
+    left: 38%;
+    min-height: 60px;
+    appearance: none;
+    border: none;
+    background: none;
+
+    @include mqAbove($grid-breakpoint-tablet) {
+      top: 92%;
+      left: 42%;
+    }
+
+  }
+
+  &__poster {
+    transition: {
+      property: opacity;
+      duration: 1.6s;
+      timing-function: $transition-timing-function-default;
+    }
+
+    &.-faded {
+      opacity: 0.01;
+    }
+
+    &.-covered {
+      opacity: 1;
+    }
+  }
+
+  &__button-wrapper {
+    transition: all 0.2s;
+    opacity: 0.01;
+
+    &.-show {
+      opacity: 1;
+    }
+  }
+
+}

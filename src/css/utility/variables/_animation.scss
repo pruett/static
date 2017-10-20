@@ -1,0 +1,11 @@
+$transition-duration-default: 0.3s;
+$transition-duration-fast: 0.2s;
+$transition-timing-function-default: ease-in-out;
+
+$transition-duration-formgroup: $transition-duration-default;
+$transition-duration-cta-progress: $transition-duration-default * 3;
+$transition-duration-page: 0.1s;
+$transition-duration-navigation: 0.15s;
+$transition-timing-function-cta-progress-fill: ease-out;
+
+$transition-timing-function-ease-in-out-back: cubic-bezier(0.680, 0, 0.265, 1);

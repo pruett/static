@@ -1,0 +1,80 @@
+@import 'src/css/mixins';
+
+.c-sculpted-series-shoppable-callout {
+  &__link {
+    &:hover, &:active, &:visited {
+      color: #979797;
+    }
+  }
+  &__overlay-wrapper {
+    transition: all 1s;
+    &.-hide {
+      opacity: 0;
+    }
+    &.-show {
+      opacity: 1;
+    }
+  }
+
+  &__frame-info-wrapper {
+    @include mqAbove($grid-breakpoint-desktop) {
+      top: 25%;
+      right: 3%;
+    }
+  }
+
+  &__top-picture-wrapper {
+    left: 10.25%;
+    width: 86%;
+    top: 5.25%;
+
+    &.-flip {
+      left: 4%;
+    }
+
+    @include mqAbove($grid-breakpoint-desktop) {
+      width: 75%;
+      top: 5%;
+      left: 5%;
+
+      &.-flip {
+        left: 4%;
+      }
+    }
+  }
+
+  &__bottom-picture-wrapper {
+    width: 86%;
+    left: 4%;
+    &.-flip {
+      left: 10%;
+    }
+    @include mqAbove($grid-breakpoint-desktop) {
+      width: 74%;
+      left: 0;
+    }
+  }
+
+  &__frame-name {
+    right: 6%;
+    bottom: 5%;
+    z-index: 2;
+  }
+
+  &__flex-wrapper {
+    display: flex;
+    flex-direction: column;
+
+    @include mqAbove($grid-breakpoint-desktop) {
+      flex-direction: row;
+    }
+  }
+
+  &__media-wrapper {
+    @include mqAbove($grid-breakpoint-desktop) {
+      &.-flip {
+        order: 2;
+      }
+    }
+  }
+}

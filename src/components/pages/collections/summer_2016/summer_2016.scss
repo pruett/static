@@ -1,0 +1,97 @@
+@import 'src/css/mixins';
+
+.u-summer-2016 {
+
+  &__subheader {
+    letter-spacing: 4px;
+    font-size: 24px;
+    font-weight: 900;
+
+    @include mqAbove($grid-breakpoint-desktop) {
+      font-size: 40px;
+    }
+  }
+
+  &__instagram-label {
+    width: 10px;
+    height: 10px;
+  }
+
+  &__spotify-header {
+    letter-spacing: 4px;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 35px;
+
+    @include mqAbove($grid-breakpoint-tablet) {
+      font-size: 30px;
+    }
+  }
+
+  &__body {
+    line-height: 26px;
+    color: color('dark-gray');
+    font-size: 16px;
+
+    @include mqAbove($grid-breakpoint-desktop) {
+      line-height: 28px;
+      font-size: 18px;
+    }
+  }
+
+  &__video-header {
+    font-family: "filson-pro";
+    letter-spacing: 3px;
+    font-size: 24px;
+    font-weight: 900;
+
+    @include mqAbove($grid-breakpoint-tablet) {
+      letter-spacing: 4px;
+      font-size: 40px;
+    }
+
+    @include mqAbove($grid-breakpoint-desktop) {
+      font-size: 60px;
+    }
+  }
+
+  &__header {
+    letter-spacing: 3px;
+    font-size: 30px;
+    font-weight: 900;
+
+    @include mqAbove($grid-breakpoint-tablet) {
+      letter-spacing: 4px;
+      font-size: 40px;
+    }
+
+    @include mqAbove($grid-breakpoint-desktop) {
+      font-size: 60px;
+    }
+  }
+
+  &__cta-header {
+    letter-spacing: 2px;
+    font-size: 16px;
+    font-weight: 700;
+
+    @include mqAbove($grid-breakpoint-tablet) {
+      font-size: 20px;
+    }
+
+    @include mqAbove($grid-breakpoint-desktop) {
+      font-size: 18px;
+    }
+  }
+
+}
+
+
+.u-typekit--filson {
+    visibility: hidden;
+}
+
+html[class*="wf-filsonpro"] .u-typekit--filson {
+    visibility: visible;
+    font-family: "filson-pro";
+}

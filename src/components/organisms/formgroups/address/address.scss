@@ -1,0 +1,20 @@
+.c-formgroup--address {
+
+  &__places {
+    max-height: 0;
+    overflow: hidden;
+    transition: {
+      property: max-height;
+      duration: 0.2s;
+      delay: 0.2s;
+
+    }
+  }
+
+  // Unfortunately using (>) is better than using JS w/ Safari.
+  // If I start monitoring focus in the formgroup,
+  // the state changes overwhelm input changes.
+  &__field-container.-focus > &__places {
+    max-height: 300px;
+  }
+ }

@@ -1,0 +1,25 @@
+@mixin uType {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+@mixin fontStyle($fontSize, $lineHeight, $marginBottom) {
+  font-size: $fontSize + px;
+  line-height: $lineHeight + px;
+  margin-bottom: $marginBottom + px;
+}
+
+@mixin fontStyleMarginOptIn($fontSize, $lineHeight, $marginBottom) {
+  font-size: $fontSize + px;
+  line-height: $lineHeight + px;
+
+  &.-margin {
+    margin-bottom: $marginBottom + px;
+  }
+}
+
+@mixin modifySerifLineHeight($lineHeight) {
+  &.u-ffs {
+    line-height: $lineHeight + px;
+  }
+}

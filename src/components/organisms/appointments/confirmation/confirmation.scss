@@ -1,0 +1,75 @@
+@import 'src/css/mixins';
+
+.c-appointment-confirmation {
+
+  &__confirmation-content {
+    max-width: 440px;
+
+    @include mqAbove($grid-breakpoint-desktop) {
+      max-width: 960px;
+    }
+  }
+
+  &__hr {
+    width: 72px;
+    margin: 36px auto;
+    border-color: color('blue');
+  }
+
+  &__appointment-data-chunk {
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  &__chunk-icon {
+
+    &.-customer {
+      width: 60px;
+    }
+
+    &.-location {
+      width: 32px;
+    }
+
+    &.-time {
+      width: 40px;
+    }
+  }
+
+  &__info-row {
+
+    &.-alt {
+      @include mqAbove($grid-breakpoint-desktop) {
+        background: color('light-gray-alt-2');
+        border: 1px solid color('subtle-gray');
+      }
+    }
+  }
+
+  &__map-area {
+    border-bottom: 1px dashed color('subtle-gray');
+
+    @include mqAbove($grid-breakpoint-desktop) {
+      border-bottom: none;
+    }
+  }
+
+  &__map-embed {
+    max-width: 100%;
+  }
+
+  &__detail {
+
+    & + & {
+      margin-top: 36px;
+    }
+  }
+
+  &__markdown__p {
+    @include mqAbove($grid-breakpoint-desktop) {
+      display: inline;
+    }
+  }
+
+}

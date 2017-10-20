@@ -1,0 +1,118 @@
+@import 'src/css/mixins';
+
+.c-retail-email-capture-form {
+
+  text-align: center;
+
+  @include mqNav('tablet') {
+    text-align: left;
+  }
+
+  &__capture-copy {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+    transition: transform 0.85s cubic-bezier(0.68, -0.55, 0.27, 1.55) 1s, opacity linear 0.45s 1s, visibility 0s linear 2s;
+
+    &.-success {
+      opacity: 0.01;
+      transform: translateY(100px);
+      visibility: hidden;
+    }
+  }
+  &__capture-form {
+    opacity: 1;
+    transform: translateX(0);
+    visibility: visible;
+    transition: transform 0.85s cubic-bezier(0.68, -0.55, 0.27, 1.55), opacity linear 0.45s, visibility 0s linear 1s;
+
+    &.-success {
+      opacity: 0.01;
+      transform: translateX(200px);
+      visibility: hidden;
+    }
+  }
+
+  &__label {
+    left: 0;
+    transform: translate(18px, 0);
+
+    &.-empty:not(.-focus):not(.-sticky) {
+      background-color: color('light-gray-alt-2');
+      transform: translate(18px, 24px);
+    }
+  }
+
+  &__cta {
+    height: 50px;
+    width: 100%;
+
+    @include mqAbove($grid-breakpoint-tablet) {
+      width: 37%;
+      float: right;
+    }
+  }
+
+  &__field-container,
+  &__field {
+    min-height: 48px;
+  }
+
+  &__field-container {
+    background-color: color('light-gray-alt-2');
+
+    &.-focus {
+      background-color: transparent;
+    }
+  }
+
+  &__field {
+    padding: 0 12px;
+
+    &:-webkit-autofill {
+      box-shadow: 0 0 0 1000px color('light-gray-alt-2') inset;
+    }
+
+    @include mqAbove($grid-breakpoint-tablet) {
+      text-align: left;
+    }
+  }
+
+  &__formgroup {
+    @include mqAbove($grid-breakpoint-tablet) {
+      float: left;
+      width: 60%;
+      margin-bottom: 0 !important;
+    }
+  }
+
+  &__plane {
+    max-width: 110px;
+    opacity: 0.01;
+    transform: translateX(-250px) translateY(90px) rotate(-20deg) scale(0);
+    transition: all 0.75s ease-in-out 1.1s;
+
+    &.-success {
+      opacity: 1;
+      transform: translateX(0) translateY(0) rotate(0) scale(1);
+    }
+  }
+
+  &__thanks {
+    opacity: 0.01;
+    transform: translateY(15px);
+    transition: all 0.55s cubic-bezier(0.68, -0.55, 0.27, 1.55) 2.0s;
+
+    &.-success {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+
+  &__actions {
+    top: 4px;
+    right: 5px;
+  }
+
+}

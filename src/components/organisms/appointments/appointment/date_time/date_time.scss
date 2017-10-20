@@ -1,0 +1,73 @@
+@import "src/css/mixins";
+
+.c-appointment-date-time {
+  &__heading-image {
+    max-width: 100px;
+  }
+
+  &__heading {
+    margin-bottom: 24px;
+  }
+
+  &__heading-hr {
+    width: 70px;
+  }
+
+  &__scroll-button-col {
+    display: none;
+
+    @include mqAbove($grid-breakpoint-desktop) {
+      display: inline-block;
+    }
+  }
+
+  &__button {
+    height: 45px;
+    width: 45px;
+
+    &:focus {
+      outline: color("dark-gray-alt-3") 5px auto;
+    }
+  }
+
+  &__arrow {
+    width: 40px;
+
+    &.-left {
+      transform: rotate(90deg);
+    }
+    &.-right {
+      transform: rotate(270deg);
+    }
+  }
+
+  &__scroll-container {
+    overflow-x: scroll;
+    white-space: nowrap;
+
+    @include mqAbove($grid-breakpoint-desktop) {
+      overflow-x: hidden;
+    }
+  }
+
+  &__date {
+    width: 26%;
+    min-width: 96px;
+    max-width: 156px;
+
+    @include mqAbove($grid-breakpoint-desktop) {
+      width: calc(20% + 1px);
+      max-width: none;
+    }
+  }
+}
+
+/**
+ * Workaround for FF bug:
+ * https://bugzilla.mozilla.org/show_bug.cgi?id=504622
+ */
+@-moz-document url-prefix() {
+  .c-appointment-date-time__fieldset {
+    display: table-cell;
+  }
+}

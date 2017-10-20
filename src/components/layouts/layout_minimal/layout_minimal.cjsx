@@ -44,6 +44,12 @@ module.exports = React.createClass
   receiveStoreChanges: -> [
     'navigation'
   ]
+  
+  FOOTER_CONTENT_PATH: "/footer"
+    
+  fetchVariations: -> [
+    @FOOTER_CONTENT_PATH
+  ]
 
   getStaticClasses: ->
     block: 'u-template'
@@ -59,6 +65,7 @@ module.exports = React.createClass
   render: ->
     classes = @getClasses()
     navigation = @getStore('navigation')
+    footer = @getContentVariation(@FOOTER_CONTENT_PATH);
 
     <div className=classes.block>
       <UnsupportedBrowserNotice />
@@ -82,6 +89,6 @@ module.exports = React.createClass
           cssUtility=classes.footer />}
 
       {if @props.showHelpFooter
-        <HelpFooter {...@props} {...navigation} key='temp-footer'
+        <HelpFooter {...@props} {...footer} key='temp-footer'
           cssUtility=classes.footer />}
     </div>

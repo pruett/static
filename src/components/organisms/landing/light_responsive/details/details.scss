@@ -1,0 +1,48 @@
+@import 'src/css/mixins';
+
+.c-light-responsive-details {
+  &__row {
+    @include mqAbove($grid-breakpoint-tablet) {
+      display: flex;
+    }
+  }
+
+  &__list {
+    margin-top: 33px;
+  }
+
+  &__col-image.-flip {
+    @include mqAbove($grid-breakpoint-desktop) {
+      left: 16.6666666667%;
+    }
+  }
+
+  &__col-copy.-flip {
+    @include mqAbove($grid-breakpoint-desktop) {
+      left: 8.3333333333%;
+    }
+  }
+
+  &__figure-title {
+    &:after {
+      content: '';
+      position: absolute;
+      width: 80px;
+      height: 6px;
+      background-color: color('light-gray-alt-1');
+      left: 0;
+      top: 39px;
+    }
+  }
+
+  &__bullet {
+    text-indent: -30px;
+
+    &:before {
+      content: '\002022';
+      color: color('light-gray');
+      font-size: 30px;
+      margin-right: 20px;
+    }
+  }
+}

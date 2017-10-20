@@ -1,0 +1,19 @@
+@import 'src/css/mixins';
+
+.c-title-block {
+  padding: 24px 6px;
+  border-top: 1px color('light-gray') solid;
+  border-bottom: 3px color('dark-gray') solid;
+  margin: 24px -6px 48px;
+}
+
+.c-title-block__title,
+.c-title-block__description {
+  @include mqAbove($min-width-tablet-small) {
+    display: inline-block;
+  }
+}
+
+.c-title-block__title {
+  padding-right: 48px;
+}

@@ -1,0 +1,69 @@
+@import 'src/css/mixins';
+
+.c-modal-takeover {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2147483001; // Only way to get on top of the Medchat window :(
+}
+
+.c-modal-takeover__header-wrapper {
+  height: 60px;
+  border-bottom: 1px solid color('blue');
+}
+
+.c-modal-takeover__header {
+  position: relative;
+  max-width: $min-width-tablet;
+  margin: 0 auto;
+}
+
+.c-modal-takeover__title {
+  @include typeSubhead;
+  @include familySerif;
+  font-weight: $font-weight-semibold;
+  text-align: center;
+  padding: 12px 0;
+  margin: 0;
+}
+
+.c-modal-takeover__close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 36px;
+  height: 36px;
+  padding: 10px;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.c-modal-takeover__icon-x {
+  width: 15px;
+}
+
+.c-modal-takeover__content-wrapper {
+  height: calc(100% - 60px);
+  overflow: auto;
+
+  &.-full {
+    height: 100%;
+  }
+}
+
+.c-modal-takeover__content {
+  height: 100%;
+
+  &.-centered {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    height: auto;
+    max-height: 100%;
+  }
+}

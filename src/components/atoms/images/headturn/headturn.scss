@@ -1,0 +1,11 @@
+.c-headturn {
+
+  &__image {
+    max-width: none;
+    opacity: 0;
+
+    &.-active {
+      opacity: 1;
+    }
+  }
+}

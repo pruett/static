@@ -1,0 +1,36 @@
+@import "src/css/mixins";
+
+.c-appointment-date {
+  height: 150px;
+  margin-left: -1px;
+
+  &.-past + &:not(.-past),
+  &:first-child {
+    border-left: 1px solid color("light-gray");
+  }
+
+  // Checked
+  &__input:checked ~ &__background {
+    border-color: color("blue");
+    z-index: 1;
+  }
+
+  &__input:checked ~ &__day {
+    font-weight: $font-weight-semibold;
+  }
+
+  &__input:checked ~ &__date {
+    color: color("blue");
+  }
+
+  // Disabled
+  &__input:disabled ~ &__background {
+    background-color: color("light-gray-alt-2");
+  }
+
+  &__input:disabled ~ &__day,
+  &__input:disabled ~ &__date,
+  &__input:disabled ~ &__slots {
+    color: color("dark-gray-alt-2");
+  }
+}

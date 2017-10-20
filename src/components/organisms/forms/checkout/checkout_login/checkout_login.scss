@@ -1,0 +1,7 @@
+@import 'src/css/mixins';
+
+.c-checkout-login {
+  &__cta {
+    min-width: 0;
+  }
+}

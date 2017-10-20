@@ -1,0 +1,92 @@
+@import 'src/css/mixins';
+
+@mixin checked-box {
+  fill: color('blue');
+  stroke: color('blue-shadow');
+}
+
+@mixin checked-check {
+  fill: $form-color-background;
+  transform: translate(-1px, -1px);
+}
+
+@mixin disabled-box {
+  stroke: color('light-gray');
+  fill: color('light-gray-alt-1');
+}
+
+@mixin disabled-check {
+  fill: none;
+}
+
+.c-checkmark-icon__box {
+  stroke: color('blue-shadow');
+  stroke-width: 2px;
+  fill: none;
+  transition: $transition-duration-fast ease-in-out;
+
+  &.-border-light-gray {
+    stroke: color('light-gray');
+    fill: color('white');
+  }
+
+  &.-checked {
+    @include checked-box;
+  }
+
+  &.-disabled {
+    @include disabled-box;
+  }
+}
+
+.c-checkmark-icon__check {
+  fill: none;
+  transform: translate(-1px, 0);
+  transition: $transition-duration-fast ease-in-out;
+
+  &.-checked {
+    @include checked-check;
+  }
+
+  &.-disabled {
+    @include disabled-check;
+  }
+
+  &.-check-blue {
+    fill: color('blue');
+  }
+
+  &.-check-dark-gray {
+    fill: color('dark-gray');
+  }
+
+  &.-check-dark-gray-alt-2 {
+    fill: color('dark-gray-alt-2');
+  }
+}
+
+[type="checkbox"]:checked + .c-icon--checkmark {
+
+  .c-checkmark-icon__box {
+    @include checked-box;
+  }
+
+  .c-checkmark-icon__check {
+    @include checked-check;
+  }
+}
+
+[type="checkbox"]:disabled + .c-icon--checkmark {
+
+  .c-checkmark-icon__box {
+    @include disabled-box;
+  }
+
+  .c-checkmark-icon__check {
+    @include disabled-check;
+  }
+}
+
+.c-icon {
+  @include svg(20, 20, 'checkmark');
+}

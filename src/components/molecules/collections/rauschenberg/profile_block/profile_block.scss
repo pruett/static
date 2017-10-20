@@ -1,0 +1,66 @@
+@import 'src/css/mixins';
+
+.c-rauschenberg-profile-block {
+
+  @include mqAbove($grid-breakpoint-desktop) {
+    background-color: #F9F6F6;
+  }
+
+  &__gray-wrapper {
+    background-color: #F9F6F6;
+    height: 205px;
+
+    @include mqAbove($grid-breakpoint-tablet) {
+      height: 375px;
+    }
+
+    @include mqAbove($grid-breakpoint-desktop) {
+      height: 866px;
+    }
+  }
+
+  &__quote {
+    @include mqAbove($grid-breakpoint-desktop) {
+      right: 5%;
+    }
+  }
+
+  &__artist-wrapper {
+    width: 149px;
+    left: 60%;
+
+    @include mqAbove($grid-breakpoint-tablet) {
+      width: 29%;
+      left: 60%;
+    }
+
+    @include mqAbove($grid-breakpoint-desktop) {
+      top: 42%;
+      width: 32%;
+    }
+
+  }
+
+  &__mobile-quote {
+    font-size: 13px;
+    padding-left: 200px;
+  }
+
+  &__quote-wrapper {
+    left: 3%;
+    width: 187px;
+
+    @include mqAbove($grid-breakpoint-tablet) {
+      width: 35%;
+      left: 13%;
+    }
+
+    @include mqAbove($grid-breakpoint-desktop) {
+      top: 50%;
+      width: 36%;
+    }
+
+  }
+
+
+}

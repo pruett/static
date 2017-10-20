@@ -1,0 +1,155 @@
+@import 'src/css/mixins';
+
+.c-concentric-collection {
+  &__frame-color-modifier {
+    width: 56%;
+
+    @include mqAbove($grid-breakpoint-tablet) {
+      width: 55%;
+    }
+
+    @include mqAbove($grid-breakpoint-desktop) {
+      width: 43%;
+    }
+  }
+  &__frame-info-wrapper {
+    width: 50%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 12px;
+    text-align: right;
+
+    @include mqAbove($grid-breakpoint-desktop) {
+      padding: 24px 36px;
+    }
+
+    &.-top {
+      width: 33%;
+
+      @include mqAbove($grid-breakpoint-tablet) {
+        width: 20%;
+        padding: 28px;
+      }
+
+      @include mqAbove($grid-breakpoint-desktop) {
+        width: 33%;
+        padding: 24px 36px;
+      }
+    }
+
+    &.-bottom {
+      width: 33%;
+      @include mqAbove($grid-breakpoint-tablet) {
+        width: 23%;
+        padding: 28px;
+      }
+
+      @include mqAbove($grid-breakpoint-desktop) {
+        width: 22%;
+        padding: 24px 36px;
+      }
+    }
+  }
+  &__callout-link {
+    color: color('dark-gray');
+    border-color: color('dark-gray');
+    border-bottom-width: 1px;
+
+    @include mqAbove($grid-breakpoint-desktop) {
+      border-bottom-width: 0;
+      transition: all 0.1s;
+      &:hover {
+        color: color('dark-gray');
+        border-bottom: 1px solid color('dark-gray');
+      }
+    }
+  }
+  &__callout-copy-wrapper {
+    @include mqAbove($grid-breakpoint-desktop) {
+      &.-top {
+        left: -14%;
+      }
+
+      &.-bottom {
+        right: -6%;
+      }
+    }
+  }
+  &__callout-copy {
+    line-height: 24px;
+    &.-top {
+      width: 75%;
+
+      @include mqAbove($grid-breakpoint-tablet) {
+        width: 37%;
+      }
+    }
+
+    &.-bottom {
+      width: 62%;
+      @include mqAbove($grid-breakpoint-tablet) {
+        width: 36%;
+      }
+    }
+    @include mqAbove($grid-breakpoint-desktop) {
+      width: 38%;
+    }
+  }
+  &__callout-circle {
+    width: 10%;
+
+    @include mqAbove($grid-breakpoint-tablet) {
+      width: 5%;
+    }
+
+    @include mqAbove($grid-breakpoint-desktop) {
+      width: 4%;
+    }
+  }
+  &__hero-copy-wrapper {
+    @include mqAbove($grid-breakpoint-desktop-large) {
+      left: -21%;
+    }
+    @include mqAbove(1440px) {
+      left: -15%;
+    }
+  }
+  &__hero-header {
+    line-height: 36px;
+
+    @include mqAbove($grid-breakpoint-desktop) {
+      line-height: 45px;
+    }
+  }
+
+  &__hero-body {
+    line-height: 24px;
+    width: 80.66%;
+
+    @include mqAbove($grid-breakpoint-tablet) {
+      width: 42.66%;
+    }
+
+    @include mqAbove($grid-breakpoint-desktop) {
+      width: 35.66%;
+    }
+  }
+
+  &__hero-pricing {
+    line-height: 24px;
+  }
+
+  &__hero-image-wrapper {
+    height: 0;
+    padding-bottom: 75%;
+
+    @include mqAbove($grid-breakpoint-tablet) {
+      padding-bottom: 45%;
+    }
+
+    @include mqAbove($grid-breakpoint-desktop) {
+      padding-bottom: 36.5%;
+    }
+  }
+}

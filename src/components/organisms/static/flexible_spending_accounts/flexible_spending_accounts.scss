@@ -1,0 +1,49 @@
+@import 'src/css/mixins';
+
+.c-flexible-spending-accounts {
+
+  &__subhead-ruled-inner {
+    top: -20px;
+  }
+
+  &__cta-text-button {
+    transition: border-color 0.1s;
+
+    &:hover {
+      border-bottom-color: color('blue');
+    }
+  }
+
+  &__qa-pair {
+
+    & ~ & {
+      margin-top: 36px;
+    }
+  }
+
+  &__cross-sell {
+
+    &:hover {
+      color: color('dark-gray');
+      font-weight: $font-weight-semibold;
+    }
+
+    & + & {
+      margin-top: 72px;
+    }
+
+    @include mqAbove($min-width-tablet-small) {
+      width: 45%;
+      margin: 0;
+
+      & + & {
+        margin: 0 0 0 5%;
+      }
+    }
+  }
+
+  &__cross-sell-image {
+    width: 100%;
+    max-width: 80%;
+  }
+}

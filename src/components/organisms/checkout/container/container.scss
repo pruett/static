@@ -1,0 +1,75 @@
+@import 'src/css/mixins';
+
+.c-checkout-container__content {
+  max-width: 348px;
+  margin: 0 auto;
+
+  @include mqAbove($min-width-tablet) {
+    max-width: 500px;
+  }
+
+  &.-layout-wide {
+    max-width: 696px;
+  }
+
+  &.-layout-wide-v2 {
+    max-width: 396px;
+
+    @include mqAbove($grid-breakpoint-desktop) {
+      max-width: 1056px;
+    }
+  }
+
+  &.-full-width {
+    max-width: none;
+  }
+}
+
+.c-checkout-container__logo {
+
+  &.c-warbyparker-logo {
+    width: 146px;
+  }
+}
+
+.c-checkout-container__back {
+  display: block;
+
+  @include mqAbove($min-width-tablet) {
+    display: inline-block;
+    margin-left: 6px;
+  }
+}
+
+.c-checkout-container__notification {
+  &-enter {
+    transition: {
+      duration: $transition-duration-default;
+      property: max-height;
+      timing-function: ease-out;
+    }
+    max-height: 0;
+
+    &-active {
+      max-height: 100px;
+    }
+  }
+
+  &-leave {
+    transition: {
+      duration: $transition-duration-default;
+      property: max-height;
+      timing-function: ease-out;
+    }
+    overflow: hidden;
+    max-height: 100px;
+
+    &-active {
+      max-height: 0;
+    }
+  }
+}
+
+.c-checkout-container__back-link {
+  margin-top: 12px;
+}

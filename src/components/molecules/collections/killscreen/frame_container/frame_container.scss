@@ -1,0 +1,14 @@
+@import 'src/css/mixins';
+
+.c-killscreen-frame-container {
+
+  &__cta {
+    width: 220px;
+    margin-bottom: 12px;
+
+    @include mqAbove($grid-breakpoint-desktop) {
+      width: 155px;
+    }
+  }
+
+}

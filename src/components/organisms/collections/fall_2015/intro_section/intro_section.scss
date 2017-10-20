@@ -1,0 +1,48 @@
+@import 'src/css/mixins';
+
+.c-fall-2015-intro-section {
+  &__slider {
+    padding-bottom: 52.638888888%;
+  }
+
+  &__static-hero {
+    width: 100%;
+  }
+
+  &__static-hero-image {
+    width: 100%;
+  }
+
+  &__static-hero-wrapper {
+    position: relative;
+    padding-bottom: 30%;
+    min-height: 400px;
+
+    @include mqAbove($min-width-tablet) {
+      padding-bottom: 0;
+      min-height: 504px;
+    }
+  }
+
+  &__intro-text {
+    width: 80%;
+    margin: 20px 10% 0;
+    padding-bottom: 10px;
+
+    @include mqAbove($min-width-tablet) {
+      width: 68%;
+      margin-left: 16%;
+      margin-right: 16%;
+    }
+  }
+
+  &__intro-text-wrapper {
+    margin-top: 20px;
+    margin-bottom: 50px;
+
+    @include mqAbove($min-width-desktop) {
+      margin-top: 80px;
+      margin-bottom: 75px;
+    }
+  }
+}

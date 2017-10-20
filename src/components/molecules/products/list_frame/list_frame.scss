@@ -1,0 +1,44 @@
+@import 'src/css/mixins';
+
+.c-list-frame {
+  padding-top: 24px;
+  position: relative;
+  vertical-align: bottom;
+
+  &.-disabled {
+    opacity: 0.4;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  @include mqAbove($grid-breakpoint-tablet) {
+    margin-bottom: 24px;
+  }
+}
+
+.c-list-frame__image {
+  @include mqAbove($grid-breakpoint-tablet) {
+    padding: 0 6px;
+  }
+}
+
+.c-list-frame__divider {
+  padding-top: 24px;
+
+  @include mqAbove($grid-breakpoint-tablet) {
+    display: none;
+  }
+}
+
+.c-list-frame__arrow {
+  position: absolute;
+  right: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  @include mqAbove($grid-breakpoint-tablet) {
+    display: none;
+  }
+}

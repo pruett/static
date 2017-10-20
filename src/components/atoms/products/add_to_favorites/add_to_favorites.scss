@@ -1,0 +1,24 @@
+@import 'src/css/mixins';
+
+.c-add-to-favorites__button {
+  user-select: none;
+
+  &:hover,
+  &:active,
+  &:focus:active {
+    fill: color('red-alt-1');
+    stroke: color('red-alt-1');
+  }
+
+  &:focus {
+    stroke: color('dark-gray');
+    fill: transparent;
+    outline: none;
+  }
+
+  &:active {
+    .c-icon--heart {
+      transform: translateY(2px);
+    }
+  }
+}

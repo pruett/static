@@ -1,0 +1,33 @@
+@import 'src/css/mixins';
+
+.c-landing-carousel {
+
+  &__image-link {
+    opacity: 0;
+    transition:
+      visibility 0s $transition-duration-fast,
+      opacity $transition-duration-fast,
+      transform $transition-duration-fast;
+
+    &.-active {
+      visibility: visible;
+      opacity: 1;
+      transition: opacity $transition-duration-fast $transition-duration-fast, transform $transition-duration-fast;
+    }
+
+    &.-fixed {
+      min-height: 170px;
+    }
+  }
+
+  &__link {
+    @include mqAbove($grid-breakpoint-desktop) {
+      transition: all 0.1s;
+      &:hover {
+        color: color('blue');
+        border-bottom: 2px solid color('blue');
+      }
+    }
+  }
+
+}

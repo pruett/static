@@ -1,0 +1,124 @@
+@import 'src/css/mixins';
+
+.c-tooltip {
+  vertical-align: middle;
+}
+
+.c-tooltip__trigger {
+  position: relative;
+  background: none;
+  border: 0;
+  padding: 12px;
+  margin: -12px 0;
+  line-height: 1px;
+
+  &.-open {
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      top: 25px;
+      left: 50%;
+      border: solid transparent;
+      height: 0;
+      width: 0;
+      z-index: $z-index-tooltip__trigger;
+    }
+
+    &::before {
+      border-bottom-color: color('dark-gray-alt-2');
+      border-width: 7px;
+      margin-left: -7px;
+    }
+
+    &::after {
+      border-bottom-color: color('light-gray-alt-2');
+      border-width: 8px;
+      margin: {
+        left: -8px;
+        bottom: -2px;
+      }
+      box-shadow: inset 0 0 1px 1px #fff;
+    }
+  }
+
+  &.-v2 {
+    &:focus {
+      outline: none;
+
+      .c-tooltip__trigger-icon {
+        fill: color('blue-shadow');
+      }
+    }
+
+    &.-open {
+      &::before {
+        top: 27px;
+        border-bottom-color: color('light-gray');
+      }
+
+      &::after {
+        top: 28px;
+        border-bottom-color: color('white');
+      }
+    }
+  }
+}
+
+.c-tooltip__contents {
+  position: relative;
+  margin: 6px -6px -6px;
+  padding: 0 12px;
+  background-color: color('light-gray-alt-2');
+  border: 1px solid transparent;
+  border-radius: 2px;
+  box-shadow: inset 0 0 1px 1px #fff,
+    0 0 4px 1px rgba(0, 0, 0, 0.05);
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    height 0.3s,
+    opacity 0.1s 0.2s,
+    border 0.1s 0.2s,
+    visibility 0s 0.3s;
+  height: 0;
+  display: block;
+
+  &.-calculating {
+    position: relative;
+  }
+
+  &.-open {
+    border-color: color('dark-gray-alt-2');
+    opacity: 1;
+    transition: height 0.3s, opacity 0s 0s;
+    visibility: visible;
+  }
+
+  &.-v2 {
+    background-color: color('white');
+    border-radius: 1px;
+    box-shadow: none;
+    margin-top: 12px;
+
+    &.-open {
+      border-color: color('light-gray');
+    }
+  }
+}
+
+.c-tooltip__contents-text {
+  padding: 12px 0;
+  display: block;
+  opacity: 0;
+  transition: opacity 0s 0s;
+
+  &.-open {
+    opacity: 1;
+    transition: opacity 0.3s 0.3s;
+  }
+
+  &.-v2 {
+    padding: 18px 6px;
+  }
+}

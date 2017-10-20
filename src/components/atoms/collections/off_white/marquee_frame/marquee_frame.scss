@@ -1,0 +1,43 @@
+@import 'src/css/mixins';
+
+.c-off-white-marquee-frame {
+  &:hover {
+    cursor: pointer;
+  }
+  &__caption {
+    font-family: Helvetica Neue;
+
+    &.-small {
+      padding-left: 14%;
+      @include mqAbove($grid-breakpoint-desktop-large) {
+        padding-left: 20%;
+      }
+    }
+    &.-medium {
+      padding-left: 14%;
+      @include mqAbove($grid-breakpoint-tablet) {
+        padding-left: 10%;
+      }
+      @include mqAbove($grid-breakpoint-desktop) {
+        padding-left: 18%;
+      }
+    }
+    &.-large {
+      padding-left: 16%;
+      @include mqAbove($grid-breakpoint-tablet) {
+        padding-left: 12%;
+      }
+      @include mqAbove($grid-breakpoint-desktop-large) {
+        padding-left: 20%;
+      }
+    }
+  }
+
+  &__caption-wrapper {
+    position: absolute;
+    top: 90%;
+    @include mqAbove($grid-breakpoint-desktop-large) {
+      top: 100%;
+    }
+  }
+}

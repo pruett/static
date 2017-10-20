@@ -1,0 +1,13 @@
+@import 'src/css/mixins';
+
+.c-global-search__input {
+  -webkit-appearance: none;
+
+  @include mqAbove($grid-breakpoint-tablet) {
+    font-family: $family-serif;
+
+    &::placeholder {
+      color: color('subtle-gray');
+    }
+  }
+}

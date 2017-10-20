@@ -1,0 +1,86 @@
+/**
+ * Type utility class.
+ */
+
+@mixin typeHeadlineLarge {
+  @include fontStyleMarginOptIn(80, 86, 24);
+  @include modifySerifLineHeight(72);
+}
+
+@mixin typeHeadlineMedium {
+  @include fontStyleMarginOptIn(60, 66, 24);
+  @include modifySerifLineHeight(58);
+}
+
+@mixin typeHeadlineSmall {
+  @include fontStyleMarginOptIn(50, 56, 24);
+  @include modifySerifLineHeight(54);
+}
+
+@mixin typeHeadline {
+  @include fontStyleMarginOptIn(40, 48, 24);
+  @include modifySerifLineHeight(40);
+}
+
+@mixin typeHeadlineExtraSmall {
+  @include fontStyleMarginOptIn(34, 44, 24);
+  @include modifySerifLineHeight(40);
+}
+
+@mixin typeIntro {
+  @include fontStyleMarginOptIn(30, 38, 24);
+  @include modifySerifLineHeight(34);
+}
+
+@mixin typeSubhead {
+  @include fontStyleMarginOptIn(24, 34, 12);
+  @include modifySerifLineHeight(28);
+}
+
+@mixin typeSectionHeadline {
+  @include fontStyleMarginOptIn(20, 30, 24);
+  @include modifySerifLineHeight(26);
+}
+
+@mixin typeSectionBody {
+  @include fontStyleMarginOptIn(18, 26, 12);
+  @include modifySerifLineHeight(24);
+}
+
+@mixin typeBody {
+  @include fontStyleMarginOptIn(16, 22, 24);
+}
+
+@mixin typeCaptionHeadline {
+  @include fontStyleMarginOptIn(14, 22, 8);
+  @include modifySerifLineHeight(20);
+}
+
+@mixin typeBannerHeadline {
+  @include fontStyleMarginOptIn(14, 20, 8);
+
+  @include mqAbove($min-width-desktop) {
+    @include fontStyleMarginOptIn(12, 16, 8);
+  }
+}
+
+@mixin typeCaptionBody {
+  @include fontStyleMarginOptIn(12, 18, 24);
+  @include modifySerifLineHeight(16);
+}
+
+@mixin typeCaptionLabel {
+  @include fontStyleMarginOptIn(12, 18, 24);
+  @include modifySerifLineHeight(16);
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+}
+
+@mixin typeNavigation {
+  @include fontStyleMarginOptIn(12, 24, 24);
+}
+
+@mixin typeDetail {
+  @include fontStyleMarginOptIn(10, 16, 6);
+  @include modifySerifLineHeight(14);
+}

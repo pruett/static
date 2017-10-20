@@ -1,0 +1,46 @@
+// BODY
+
+.u-body {
+
+  &-standard,
+  &-intro,
+  &-small,
+  &-micro {
+
+    &,
+    &--invert {
+      // Always san-serif.
+      @extend .u-ffss;
+    }
+
+    @extend .u-color--dark-gray-alt-3;
+
+    &--invert {
+      @extend .u-color--light-gray;
+    }
+
+  }
+
+  &-standard,
+  &-standard--invert {
+    @extend .u-fs16;
+    @extend .u-fs18--900;
+  }
+
+  &-intro,
+  &-intro--invert {
+    @extend .u-fs20;
+    @extend .u-fs22--900;
+  }
+
+  &-small,
+  &-small--invert {
+    @extend .u-fs14;
+    @extend .u-fs16--900;
+  }
+
+  &-micro,
+  &-micro--invert {
+    @extend .u-fs12;
+  }
+}

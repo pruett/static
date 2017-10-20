@@ -1,0 +1,87 @@
+@import 'src/css/mixins';
+
+.c-light-responsive-slider {
+  &__slide-image-container {
+    padding-bottom: 41.25%;
+  }
+
+  &__range-row {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__range-label {
+    flex: 1 1 auto;
+  }
+
+  // Restyle <input type="range" />
+  &__range {
+    flex: 2 1 auto;
+    appearance: none;
+    background: transparent;
+
+    &:focus {
+      outline: none;
+    }
+
+    // Thumb
+    &::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      height: 18px;
+      width: 18px;
+      margin-top: -9px;
+      border-radius: 50%;
+      box-shadow: none;
+      border: 2px solid color('dark-gray');
+      background: color('white');
+      cursor: pointer;
+    }
+
+    &::-moz-range-thumb {
+      height: 18px;
+      width: 18px;
+      border-radius: 50%;
+      box-shadow: none;
+      border: 2px solid color('dark-gray');
+      background: color('white');
+      cursor: pointer;
+    }
+
+    &::-ms-thumb {
+      height: 18px;
+      width: 18px;
+      border-radius: 9px;
+      box-shadow: none;
+      border: 2px solid color('dark-gray');
+      background: color('white');
+      cursor: pointer;
+    }
+
+    // Track
+    &::-webkit-slider-runnable-track {
+      cursor: pointer;
+      box-shadow: none;
+      background: color('white');
+      border: 1px solid color('dark-gray');
+      border-radius: 2px;
+      height: 0;
+    }
+
+    &::-moz-range-track {
+      cursor: pointer;
+      box-shadow: none;
+      background: color('white');
+      border: 1px solid color('dark-gray');
+      border-radius: 2px;
+      height: 0;
+    }
+
+    &::-ms-track {
+      height: 0;
+      cursor: pointer;
+      background: transparent;
+      border-color: transparent;
+      color: transparent;
+    }
+  }
+}

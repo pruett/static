@@ -1,0 +1,37 @@
+@import 'src/css/mixins';
+
+.c-upsell-checkbox {
+  position: relative;
+  cursor: pointer;
+  display: block;
+
+  &:hover {
+    background-color: mix(color('light-gray-alt-2'), color('white'), 70%)
+  }
+
+  &__price {
+    &::before{
+      content: '+';
+      margin-right: 6px;
+    }
+  }
+
+  &__input {
+    opacity: 0;
+  }
+
+  &__input,
+  &__icon {
+    position: absolute;
+    top: 0;
+    left: 6px;
+    width: 16px;
+
+    @include mqAbove($grid-breakpoint-tablet) {
+      left: 10px;
+      width: 20px;
+    }
+  }
+}
+
+

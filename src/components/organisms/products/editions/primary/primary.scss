@@ -1,0 +1,27 @@
+@import "src/css/mixins";
+
+.c-editions-primary {
+  &__product-image,
+  &__carousel-image {
+    max-height: 100%;
+  }
+
+  &__carousel-image > img {
+    max-width: 100% !important;
+  }
+
+  &__add-to-cart-section {
+    width: 100%;
+  }
+
+  &__details-container {
+    @each $breakpoint in desktop, desktop-large {
+      $data: map-get($grid-breakpoints, $breakpoint);
+
+      @include mqAbove(map-get($data, breakpoint)) {
+        padding-left: map-get($data, gutter-col);
+        padding-right: map-get($data, gutter-col);
+      }
+    }
+  }
+}

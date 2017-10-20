@@ -1,0 +1,12 @@
+@import 'src/css/mixins';
+
+.c-tyler-oakley-mosaic {
+
+  &__column-right {
+    display: none;
+    @include mqAbove($grid-breakpoint-desktop) {
+      display: inline-block
+    }
+  }
+
+}

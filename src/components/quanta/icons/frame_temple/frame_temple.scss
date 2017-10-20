@@ -1,0 +1,13 @@
+@import 'src/css/mixins';
+
+.c-icon {
+  @include svg(252, 109, 'frame-temple');
+
+  &--frame-temple{
+    width: 100%;
+    margin-top: -72px;
+    &__measurement {
+      letter-spacing: 0.5px;
+    }
+  }
+}

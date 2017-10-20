@@ -1,0 +1,301 @@
+@import 'src/css/mixins';
+
+.c-collection-spring-2016 {
+
+  overflow: hidden;
+  margin-bottom: -90px;
+
+  //hero modifiers
+
+  &__hero-wrapper {
+
+    //funky breakpoint here to accommodate text not overlapping balloon in hero
+
+    &--fans {
+      width: 74%;
+      top: 15%;
+      @include mqAbove(1100px) {
+        top: 29%;
+      }
+    }
+
+    &--men {
+      top: 35%;
+      width: 74%;
+      @include mqAbove(961px) {
+        left: -15%;
+        top: 25%;
+      }
+
+      @include mqAbove(1100px) {
+        top: 29%;
+      }
+    }
+
+    &--women {
+      top: 15%;
+      @include mqAbove(961px) {
+        left: -25%;
+      }
+
+      @include mqAbove(1100px) {
+        left: -15%;
+      }
+    }
+
+  }
+
+  &__hero {
+    padding-bottom: 200%;
+
+    @include mqAbove(374px) {
+      padding-bottom: 190%;
+    }
+
+    @include mqAbove(640px) {
+      padding-bottom: 60%;
+    }
+
+    @include mqAbove($collection-spring-2016-width-desktop) {
+      padding-bottom: 50%;
+    }
+  }
+
+  &__price-text {
+    width: 60%;
+    margin: 20px auto;
+    line-height: 25px;
+  }
+
+  &__logo-wrapper {
+    top: 25%;
+    left: 25%;
+    margin-bottom: 30px;
+  }
+
+  &__header-text {
+    color: $spring-header;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+  }
+
+  &__copy-wrapper {
+    width: 74%;
+    margin: 0 auto;
+    line-height: 25px;
+  }
+
+  &__hto-border-modifier {
+    border-bottom: 0;
+  }
+
+  //static hero modifiers
+
+  &__static-content-wrapper {
+    top: 55%;
+
+    @include mqAbove(374px) {
+      top: 57%;
+    }
+
+    @include mqAbove($collection-spring-2016-width-tablet) {
+      top: 20%;
+    }
+    //funky breakpoints here to accomodate text not overlapping balloon in hero
+    @include mqAbove(640px) {
+      left: -42%;
+    }
+
+    @include mqAbove(660px) {
+      left: -33%;
+    }
+
+    @include mqAbove(800px) {
+      left: -25%;
+    }
+
+    &--women {
+      top: 55%;
+      @include mqAbove($collection-spring-2016-width-tablet) {
+        top: 17%;
+        left: -33%;
+      }
+      @include mqAbove(800px) {
+        left: -28%;
+      }
+    }
+
+  }
+
+  &__static-header-text {
+    color: $spring-header;
+    margin: 20px 0 10px;
+    letter-spacing: 3px;
+  }
+
+  &__static-logo {
+    width: 75%;
+
+    @include mqAbove($collection-spring-2016-width-tablet) {
+      width: 33%;
+    }
+  }
+
+  &__static-copy {
+    margin: 0 auto;
+    width: 75%;
+
+    @include mqAbove($collection-spring-2016-width-tablet) {
+      width: 33%;
+    }
+
+  }
+
+  &__static-price-text {
+    width: 60%;
+    margin: 20px auto 0;
+
+    @include mqAbove(374px) {
+      width: 50%;
+    }
+
+    @include mqAbove($collection-spring-2016-width-tablet) {
+      width: 25%;
+    }
+  }
+
+  &__pdp-link-hero-wrapper {
+    top: 88%;
+  }
+
+
+  //callout modifiers
+
+  &__markdown-wrapper-right__p {
+    font-size: 16px;
+    line-height: 20px;
+    top: 66%;
+    left: 12%;
+    width: 75%;
+
+    @include mqAbove($collection-spring-2016-width-tablet) {
+      width: 36%;
+      top: 8%;
+      left: 57%;
+    }
+
+    @include mqAbove($collection-spring-2016-width-desktop) {
+      font-size: 20px;
+      line-height: 25px;
+      top: 15%;
+    }
+  }
+
+  &__markdown-wrapper-left__p {
+    font-size: 16px;
+    line-height: 20px;
+    top: 71%;
+    left: 12%;
+    width: 75%;
+
+    @include mqAbove($collection-spring-2016-width-tablet) {
+      width: 36%;
+      left: 2%;
+      top: 5%;
+    }
+
+    @include mqAbove($collection-spring-2016-width-desktop) {
+      left: 3%;
+      width: 32%;
+      font-size: 20px;
+      line-height: 25px;
+    }
+  }
+
+  //unique positions for frame information on gendered callouts
+
+
+  &__frame-info-right {
+    top: 5%;
+    left: 75%;
+    text-align: right;
+
+    @include mqAbove($collection-spring-2016-width-tablet) {
+      top: 87%;
+      left: 87%;
+    }
+
+    @include mqAbove($collection-spring-2016-width-desktop) {
+      top: 87%;
+      left: 90%;
+    }
+
+  }
+
+  &__frame-info-left {
+    top: 5%;
+    left: 75%;
+    text-align: right;
+
+    @include mqAbove($collection-spring-2016-width-tablet) {
+      text-align: left;
+      top: 87%;
+      left: 2%;
+    }
+  }
+
+  // unique positions for frame information on hero sliders
+
+  &__hero-slider--bottom-left {
+    left: 1.5%;
+    top: 89%;
+  }
+
+  &__hero-slider--bottom-right {
+    right: 1.5%;
+    top: 89%;
+  }
+
+  //hto callout modifiers
+
+  &__hto-callout-copy {
+    font-size: 16px;
+    line-height: 20px;
+    width: 80%;
+    top: 60%;
+    left: 11%;
+
+    //handle text positioning above iPhone5
+    @include mqAbove(330px) {
+      top: 66%;
+      left: 13%;
+      width: 72%;
+    }
+
+    @include mqAbove($collection-spring-2016-width-tablet) {
+      width: 35%;
+      top: 25%;
+      left: 60%;
+    }
+
+    @include mqAbove($collection-spring-2016-width-desktop) {
+      width: 25%;
+      left: 69%;
+      font-size: 20px;
+      line-height: 25px;
+    }
+  }
+
+  &__hto-callout-header {
+    color: $spring-header;
+    letter-spacing: 3px;
+  }
+
+  &__hto-callout-arrow {
+    position: relative;
+
+    @include mqAbove($collection-spring-2016-width-desktop) {
+      top: 2px;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+@import 'src/css/mixins';
+
+.c-enable-cookies {
+  margin: 0 auto;
+  max-width: $min-width-desktop;
+
+  &__heading {
+    margin-bottom: 24px;
+  }
+
+  &__hr {
+    margin: 24px 0 36px;
+  }
+
+  .c-markdown__ol {
+    margin: 0 0 48px;
+  }
+
+  .c-markdown__img {
+    display: block;
+    margin-top: 12px;
+  }
+
+  .c-markdown__li {
+    margin-bottom: 12px;
+  }
+}

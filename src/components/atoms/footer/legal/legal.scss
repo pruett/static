@@ -1,0 +1,19 @@
+@import 'src/css/mixins';
+
+.c-footer-legal--v2 {
+
+  &__link:hover {
+    color: color('dark-gray');
+  }
+
+  @include mqAbove($grid-breakpoint-desktop) {
+    flex: 1
+  }
+
+  @include mqNav('tablet') {
+    &__item:last-child {
+      margin-right: 0;
+    }
+  }
+
+}

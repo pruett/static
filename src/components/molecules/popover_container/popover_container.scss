@@ -1,0 +1,53 @@
+@import 'src/css/mixins';
+
+.c-popover-container {
+  bottom: calc(100% + 12px);
+  z-index: 1;
+  $transition-offset: 0.1s;
+  $transition-duration-abbreviated: $transition-duration-default - $transition-offset;
+
+  &.-transition{
+    &-enter,
+    &-appear {
+      opacity: 0.01;
+      bottom: 50%;
+      transition: opacity $transition-duration-default,
+                  bottom $transition-duration-default ease-in-out;
+
+      .c-popover-container__content {
+        opacity: 0.01;
+        transition: opacity $transition-duration-abbreviated $transition-offset;
+      }
+
+      &-active {
+        opacity: 1;
+        bottom: calc(100% + 12px);
+
+        .c-popover-container__content {
+          opacity: 1;
+        }
+      }
+    }
+
+    &-leave {
+      opacity: 1;
+      bottom: calc(100% + 12px);
+      transition: opacity $transition-duration-abbreviated $transition-offset,
+                  bottom $transition-duration-default ease-in-out;
+
+      .c-popover-container__content {
+        opacity: 1;
+        transition: opacity $transition-duration-default;
+      }
+
+      &-active {
+        opacity: 0.01;
+        bottom: 50%;
+
+        .c-popover-container__content {
+          opacity: 0.01;
+        }
+      }
+    }
+  }
+}

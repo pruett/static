@@ -1,0 +1,40 @@
+@import 'src/css/mixins';
+
+.c-product-slide--product-image,
+.c-product-slide--cms {
+  height: 0;
+  position: relative;
+  overflow: hidden;
+  &.-v2 {
+    height: 100%;
+  }
+
+  &__content {
+    max-height: 100%;
+    position: absolute;
+    left: 50%;
+
+    &.-v1 {
+      max-width: 96%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+
+      @include mqAbove($grid-breakpoint-tablet) {
+        max-width: 76%;
+      }
+
+      @include mqAbove($grid-breakpoint-desktop) {
+        max-width: 70%;
+      }
+    }
+
+    &.-v2 {
+      transform: translate(-50%);
+    }
+  }
+}
+
+.c-product-slide--cms__content.-video {
+  box-shadow: 50vw 0 color('subtle-gray'),
+    -50vw 0 color('subtle-gray');
+}

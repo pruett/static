@@ -1,0 +1,26 @@
+@import 'src/css/mixins';
+
+.c-collection-utility-carousel {
+
+  &__copy-wrapper {
+    padding-bottom: 10%;
+  }
+
+  &__shop-link + &__shop-link {
+    margin-left: 24px;
+  }
+  &__shop-link {
+    color: color('blue');
+    border-color: color('blue');
+    border-bottom-width: 1px;
+
+    @include mqAbove($grid-breakpoint-desktop) {
+      border-bottom-width: 0;
+      transition: all 0.1s;
+      &:hover {
+        color: color('blue');
+        border-bottom: 2px solid color('blue');
+      }
+    }
+  }
+}

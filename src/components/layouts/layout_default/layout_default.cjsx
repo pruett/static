@@ -5,6 +5,7 @@
   Header
   Footer
   ModalContainer
+  HtoDrawer
   PromoBanner
   SmartBanner
   WelcomeBackCart
@@ -21,8 +22,9 @@
   require 'react/addons'
 
   require 'components/organisms/header/header'
-  require 'components/organisms/footer/v2/footer/footer'
+  require 'components/organisms/footer/footer'
   require 'components/organisms/modals/modal_container/modal_container'
+  require 'components/organisms/hto_drawer/hto_drawer'
   require 'components/molecules/promo_banner/promo_banner'
   require 'components/molecules/smart_banner/smart_banner'
   require 'components/molecules/welcome_back_cart/welcome_back_cart'
@@ -64,6 +66,12 @@ module.exports = React.createClass
     showFooter: true
     showHeader: true
 
+  FOOTER_CONTENT_PATH: "/footer"
+
+  fetchVariations: -> [
+    @FOOTER_CONTENT_PATH
+  ]
+
   getStaticClasses: ->
     block:
       'u-template'
@@ -92,6 +100,7 @@ module.exports = React.createClass
       '-hidden': layout.showHeader is false
 
   receiveStoreChanges: -> [
+    'cart'
     'layout'
     'session'
     'emailCapture'
@@ -102,6 +111,7 @@ module.exports = React.createClass
   render: ->
     classes = @getClasses()
 
+    cart = @getStore('cart')
     session = @getStore('session')
     navigation = @getStore('navigation')
     layout = @getStore('layout')
@@ -115,6 +125,8 @@ module.exports = React.createClass
     htoWbVersion = _.get personalization, 'showWelcomeBackHtoVersion'
     htoWbClose = @commandDispatcher.bind(@, 'personalization', 'hideWelcomeBackHto')
     items = _.get personalization, 'lastHtoItems', []
+
+    footer = @getContentVariation(@FOOTER_CONTENT_PATH);
 
     if (layout.takeover or layout.isOverlayShowing) and layout.scrollbarWidth
       scrollbarOffset = {paddingRight: layout.scrollbarWidth}
@@ -149,6 +161,9 @@ module.exports = React.createClass
             cssModifier=classes.header />
         ]}
 
+      {if cart.htoDrawerEnabled
+        <HtoDrawer {...cart} sessionCart={session.cart} />}
+
       <ModalContainer key='modal-container' />
 
       <main key={_.get(@props.appState, 'location.component', 'main')}
@@ -159,7 +174,7 @@ module.exports = React.createClass
       </main>
 
       {if showFooter
-        <Footer {...@props} {...navigation} {...emailCapture}
+        <Footer {...@props} {...footer} {...emailCapture}
           session=session />
       }
 
@@ -168,5 +183,5 @@ module.exports = React.createClass
         url={_.get(@props.appState, 'location.href', '')}
         name={_.get(@props.appState, 'location.title', '')}
         description={_.get(@props.appState, 'location.description', '')}
-        navigation={_.get(navigation, 'footer_navigation_v2.columns', [])} />
+        navigation={_.get(footer, 'columns', [])} />
     </div>

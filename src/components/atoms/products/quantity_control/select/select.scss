@@ -1,0 +1,21 @@
+@import 'src/css/mixins';
+
+.c-product-quantity-select {
+  &__select {
+    appearance: none;
+    opacity: 0;
+  }
+
+  &__select:focus + &__output {
+    border-color: color('dark-gray-alt-2');
+    outline: none;
+  }
+
+  &__output.-rounded {
+    border-radius: 5px;
+  }
+
+  &__arrow {
+    width: 10px;
+  }
+}

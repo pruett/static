@@ -1,0 +1,47 @@
+@import 'src/css/mixins';
+.c-darcel {
+
+  &__right-arrow {
+    padding-top: 4px;
+    margin-left: 4px;
+  }
+
+  &__darcel-link-wrapper {
+
+    fill: color('blue');
+
+    @include mqAbove($grid-breakpoint-tablet) {
+      fill: white;
+    }
+
+    @include mqAbove($grid-breakpoint-desktop) {
+      &:hover{
+        fill: color('blue');
+      }
+    }
+  }
+
+
+  &__pouch-svg-container__rsvg {
+    padding-bottom: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+
+    @include mqAbove($grid-breakpoint-tablet) {
+      width: 100%;
+    }
+
+    @include mqAbove($grid-breakpoint-desktop) {
+      padding-bottom: 10%;
+    }
+  }
+
+  &__darcel-svg-container__rsvg {
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 15%;
+    width: 33%;
+  }
+
+}

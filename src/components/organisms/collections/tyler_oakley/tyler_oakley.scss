@@ -1,0 +1,24 @@
+@import 'src/css/mixins';
+
+.c-tyler-oakley {
+
+  &__mobile-logo {
+    width: 300px;
+    left: 10%;
+    @include mqAbove($grid-breakpoint-tablet) {
+      width: 400px;
+      left: 22%;
+    }
+  }
+
+  &__placeholder {
+    height: 100vh;
+  }
+
+  &__middle-video {
+    @include mqAbove($grid-breakpoint-desktop) {
+      margin-bottom: 140px;
+    }
+  }
+
+}

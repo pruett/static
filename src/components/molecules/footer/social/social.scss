@@ -1,0 +1,28 @@
+@import 'src/css/mixins';
+
+.c-footer-social {
+  width: 125px;
+
+  @include mqAbove($min-width-tablet-small) {
+    width: 150px;
+  }
+
+  &__item {
+    &.-facebook {
+      width: 9px;
+    }
+
+    &.-instagram {
+      width: 18px;
+    }
+
+    &.-youtube {
+      width: 22px;
+    }
+
+    &.-twitter {
+      width: 19px;
+    }
+  }
+
+}

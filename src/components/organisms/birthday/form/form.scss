@@ -1,0 +1,11 @@
+@import 'src/css/mixins';
+
+.c-birthday-form__col:not(:last-child) {
+  border-right: 1px color('light-gray-alt-1') solid;
+}
+
+.c-birthday-form__submit {
+  @include mqAbove($grid-breakpoint-tablet) {
+    max-width: 342px;
+  }
+}

@@ -1,0 +1,92 @@
+@import 'src/css/mixins';
+
+.c-eyesun-instagram {
+
+  &__slides {
+    white-space: nowrap;
+    transition: {
+      property: transform;
+      duration: $transition-duration-default;
+      timing-function: $transition-timing-function-default;
+    }
+  }
+
+  &__slide {
+    white-space: normal;
+  }
+
+  &__label {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+  }
+
+  @for $i from 0 through 3 {
+    $current: $i + 1;
+    &__radio:nth-of-type(#{$current}):checked {
+
+      ~ .c-eyesun-instagram__slides {
+        $percent: -100% * $i;
+        transform: translateX($percent);
+
+        @include mqAbove($grid-breakpoint-desktop) {
+          transform: none;
+        }
+      }
+
+      ~ .c-eyesun-instagram__label:nth-of-type(#{$current}) {
+        background-color: color('dark-gray');
+      }
+
+    }
+  }
+
+  &__wrapper {
+    background-color: color('black', 0.6);
+    bottom: -200%; // Push copy off-screen;
+    height: auto;
+    opacity: 0;
+    transition: {
+      property: opacity, transform;
+      duration: $transition-duration-default;
+      timing-function: $transition-timing-function-default;
+    }
+
+    &:hover {
+      opacity: 1;
+      bottom: -48px;
+      transform: translateY(-24px);
+    }
+  }
+
+  &__link {
+    border-bottom: 1px solid transparent;
+    margin-top: 24px;
+
+    &:hover {
+      color: color('white');
+      border-bottom-color: color('white');
+    }
+
+    &:first-of-type {
+      margin-top: 48px;
+    }
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+
+    &.-shoppable {
+      border-bottom: 2px solid color('white');
+      padding-bottom: 6px;
+
+      @include mqAbove($grid-breakpoint-desktop) {
+        border-bottom: 2px solid transparent;
+        &:hover {
+          border-bottom: 2px solid color('white');
+        }
+      }
+    }
+  }
+
+}

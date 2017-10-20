@@ -1,0 +1,100 @@
+@import 'src/css/mixins';
+
+.c-amanda-de-cadenet-frame {
+
+  &__container {
+    padding-bottom: 33%;
+
+    @include mqAbove($grid-breakpoint-tablet) {
+      padding-bottom: 25%;
+    }
+  }
+
+  &__cta-text {
+    @include mqAbove($grid-breakpoint-desktop) {
+      border-bottom-width: 0;
+      transition: all 0.1s;
+      &:hover {
+        color: color('black');
+        border-bottom: 1px solid color('black');
+      }
+    }
+  }
+
+  &__image-wrapper {
+    &-enter {
+      opacity: 0.1;
+    }
+    &-enter-active {
+      opacity: 1.0;
+      transition: opacity 700ms;
+      transition-delay: 0.2s;
+    }
+    &-leave {
+      opacity: 1;
+    }
+    &-leave-active {
+      opacity: 0.01;
+      transition: opacity 500ms;
+    }
+  }
+
+  &__button-wrapper {
+    @include mqAbove($grid-breakpoint-tablet) {
+      margin-top: 100px;
+    }
+    @include mqAbove($grid-breakpoint-desktop) {
+      margin-top: 36px;
+    }
+  }
+
+  &__button {
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    height: 16px;
+    width: 16px;
+    background: black;
+    transition: {
+      property: opacity;
+      duration: 0.75s;
+      timing-function: $transition-timing-function-default;
+    }
+    &.-dark {
+      opacity: 0.15;
+    }
+
+    &.-light {
+      opacity: 1;
+    }
+
+    &:focus {
+      outline: 0;
+    }
+  }
+
+  &__button + &__button {
+    margin-left: 12px;
+  }
+
+  &__button-left, &__button-right {
+
+    transition: {
+      property: opacity;
+      duration: 0.5s;
+      timing-function: $transition-timing-function-default;
+    }
+
+    &.-show {
+      opacity: 1;
+    }
+    &.-hide {
+      opacity: 0.33;
+    }
+  }
+
+  &__separator {
+    height: 1px;
+  }
+
+}

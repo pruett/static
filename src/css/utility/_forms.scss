@@ -1,0 +1,96 @@
+@import 'src/css/mixins';
+
+.u-input-radio {
+  margin-right: 10px;
+}
+
+.u-field {
+  appearance: none;
+  border-radius: 0;
+  display: block;
+  width: 100%;
+  padding: 12px 24px;
+  min-height: 72px;
+
+  color: $form-color-input;
+  background-color: transparent;
+  background-image: none;
+  border: 0;
+  text-overflow: ellipsis;
+
+  &:focus {
+    outline: none;
+    text-overflow: clip;
+  }
+
+  &::placeholder {
+    color: color('dark-gray-alt-2');
+  }
+
+  &.-no-resize {
+    resize: none;
+  }
+
+  // IE10+ (See https://github.com/filamentgroup/select-css).
+  &.-select {
+    &::-ms-expand {
+      display: none;
+    }
+
+    &:focus::-ms-value {
+      background: transparent;
+      color: $form-color-input;
+    }
+  }
+
+  &::-ms-clear,
+  &::-ms-reveal {
+    display: none;
+  }
+
+  &.-v2 {
+    padding: 12px 20px;
+    min-height: 46px;
+    color: color('dark-gray-alt-3');
+
+    &::placeholder {
+      color: color('light-gray');
+    }
+
+    &.-validation {
+      padding: 12px 40px 12px 20px;
+
+      &:focus {
+        padding-right: 20px;
+      }
+
+      &.-large {
+        padding-top: 18px;
+        padding-bottom: 18px;
+      }
+    }
+
+    &.-card {
+      padding-left: 60px;
+    }
+
+    &[type='password'] {
+      letter-spacing: 4px;
+
+      &::placeholder {
+        letter-spacing: 0;
+      }
+    }
+
+    &.-white {
+      background: color('white');
+    }
+  }
+}
+
+// Firefox hack until we build our own select.
+@-moz-document url-prefix() {
+  .u-field.-select:not(.-v2) {
+    padding-top: 24px;
+  }
+}

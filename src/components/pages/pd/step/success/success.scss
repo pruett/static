@@ -1,0 +1,8 @@
+@import 'src/css/mixins';
+
+.c-pd-success {
+    &__divider {
+        border: none;
+        height: 1px;
+    }
+}

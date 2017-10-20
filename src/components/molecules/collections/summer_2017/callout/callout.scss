@@ -1,0 +1,103 @@
+@import 'src/css/mixins';
+
+.c-summer-2017-callout {
+
+  $summer-2017-teal: #7EB4D3;
+  $summer-2017-orange: #F6887D;
+  $summer-2017-blue: #45A4E4;
+  $summer-2017-gray: #414B56;
+
+
+  &__link-text {
+
+    &.-teal {
+      color: $summer-2017-teal;
+    }
+
+    &.-orange {
+      color: $summer-2017-orange;
+    }
+
+    &.-blue {
+      color: $summer-2017-blue;
+    }
+
+  }
+
+  &__desktop-link-text {
+    &.-teal {
+      color: $summer-2017-teal;
+    }
+
+    &.-orange {
+      color: $summer-2017-orange;
+    }
+
+    &.-blue {
+      color: $summer-2017-blue;
+    }
+  }
+
+
+  &__desktop-link-wrapper {
+
+    &.-right {
+      right: 12%;
+    }
+
+    &.-left {
+      left: 10%;
+    }
+  }
+
+  &__frame-name-text {
+    font-size: 70px;
+    letter-spacing: 10px;
+
+    &.-teal {
+      text-shadow: 5px 5px $summer-2017-teal;
+    }
+
+    &.-orange {
+      text-shadow: 5px 5px $summer-2017-orange;
+    }
+
+    &.-blue {
+      text-shadow: 5px 5px $summer-2017-blue;
+    }
+
+    &.-dark {
+      color: $summer-2017-gray;
+      letter-spacing: 0px;
+      font-size: 16px;
+    }
+
+    &.-light {
+      color: $summer-2017-gray;
+      letter-spacing: 0px;
+      font-size: 16px;
+    }
+  }
+  &__sun-link {
+    &:hover {
+      border-bottom-width: 1px;
+    }
+
+    &.-dark {
+      color: $summer-2017-gray;
+      letter-spacing: 0px;
+      font-size: 16px;
+    }
+
+    &.-light {
+      color: $summer-2017-gray;
+      letter-spacing: 0px;
+      font-size: 16px;
+
+      @include mqAbove($grid-breakpoint-desktop) {
+        color: color('white');
+      }
+    }
+  }
+
+}

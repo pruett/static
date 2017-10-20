@@ -1,0 +1,50 @@
+@import 'src/css/mixins';
+
+.c-winter-2015 {
+
+  &__intro-text-wrapper {
+
+    margin: 5% auto 0;
+    width: 65%;
+    text-align: center;
+
+    @include mqAbove($collection-winter-2015-width-tablet) {
+      @include typeSectionBody;
+      width: 50%;
+    }
+
+    @include mqAbove($collection-winter-2015-width-desktop) {
+      display:none;
+    }
+
+  }
+
+  &__intro-text-body {
+    margin-bottom: 5%;
+    line-height: 1;
+    font-size: 20px;
+  }
+
+  &__intro-text-price {
+    font-size: 20px;
+  }
+
+  &__mobile-logo {
+    position: relative;
+    top: 0;
+    left: 12%;
+    width: 75%;
+
+    @include mqAbove($collection-winter-2015-width-tablet) {
+      left: 33%;
+      top: 5%;
+      width: 30%;
+    }
+
+    @include mqAbove($collection-winter-2015-width-desktop) {
+      display:none;
+    }
+
+  }
+
+}

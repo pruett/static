@@ -1,0 +1,124 @@
+@import 'src/css/mixins';
+
+.c-rich-select {
+  $arrow-height: 8px;
+
+  &__value {
+
+    &:focus {
+      outline: none;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      height: 1em;
+      width: 100%;
+      border-bottom: 1px solid;
+      border-color: inherit;
+      z-index: -1;
+      margin-top: 2px;
+
+      @include mqAbove($grid-breakpoint-tablet) {
+        margin-top: 0;
+      }
+    }
+  }
+
+  &__dropdown {
+    z-index: 1;
+    box-shadow: 0 0 12px color('black-5p');
+
+    &.-full-width {
+      width: calc(100% - 36px);
+      max-width: 480px;
+
+      @include mqAbove($grid-breakpoint-tablet) {
+        width: 100%;
+      }
+    }
+
+    &.-transition{
+      &-enter,
+      &-appear,
+      &-leave {
+        transition: {
+          property: margin, opacity;
+          duration: $transition-duration-default;
+          timing-function: ease-in-out;
+        }
+      }
+
+      &-enter,
+      &-appear {
+        opacity: 0.01;
+        margin-top: $arrow-height * -1;
+
+        &-active {
+          opacity: 1;
+          margin-top: $arrow-height;
+        }
+      }
+
+      &-leave {
+        opacity: 1;
+        margin-top: $arrow-height;
+
+        &-active {
+          opacity: 0.01;
+          margin-top: $arrow-height * -1;
+        }
+      }
+    }
+
+    &:after,
+    &:before {
+      bottom: 100%;
+      left: 50%;
+      border: solid transparent;
+      content: '';
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+    }
+
+    &:after {
+      border-bottom-color: color('white');
+      border-width: $arrow-height - 1;
+      margin-left: ($arrow-height - 1) * -1;
+    }
+
+    &:before {
+      border-bottom-color: color('light-gray');
+      border-width: $arrow-height;
+      margin-left: $arrow-height * -1;
+    }
+  }
+
+  &__option {
+
+    &:last-child {
+      border: none;
+    }
+  }
+
+  &__down-arrow {
+    width: 16px;
+    transform: scaleY(1);
+    transition: transform $transition-duration-fast;
+
+    &.-open {
+      transform: scaleY(-1);
+    }
+
+    @include mqAbove($grid-breakpoint-tablet) {
+      width: 24px;
+    }
+
+    @include mqAbove($grid-breakpoint-desktop) {
+      width: 28px;
+    }
+  }
+}

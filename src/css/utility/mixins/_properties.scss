@@ -1,0 +1,98 @@
+$property-slugs: ();
+$duplicate_check_warning: 0;
+
+@mixin property-generate-slug($slug) {
+  $duplicate_check: false;
+
+  @if($duplicate_check) {
+    // Make sure utility slug doesn't exist already.
+    @if(map_get($property-slugs, $slug) == 1) {
+      @error($slug + " already exists!");
+    }
+
+    $property-slugs: map-merge($property-slugs, ($slug: 1));
+  } else {
+    @if($duplicate_check_warning != 1) {
+      $duplicate_check_warning: 1 !global;
+      @warn "Duplicate utility slug checking is disabled."
+    }
+  }
+
+  &.u-#{$slug} {
+    @content;
+  }
+}
+
+@mixin property-generator($properties) {
+  // Loops through properties and creates values at each breakpoint specified.
+  // Combines `'u-' + property slug + value slug + breakpoint slug`.
+  @each $attributes in $properties {
+    @each $breakpoint in map-get($attributes, breakpoints) {
+      @include mqAbove($breakpoint) {
+        $breakpoint-variation: property-breakpoint-variation($breakpoint);
+
+        // Values
+        @each $values in map-get($attributes, values) {
+
+          // Variations
+          @each $variation-slug in map-get($values, variations) {
+
+            $property: map-get(map-get($attributes, variations), $variation_slug);
+
+            // If no property, throw error.
+            @if ($property == null) {
+              @error(No variation called #{$variation_slug});
+            }
+
+            // Get delimiter, or set to no space.
+            $delimiter: map-get($values, delimiter);
+            @if($delimiter == null) {
+              $delimiter: "";
+            }
+
+            // Numbers
+            $numbers: map-get($values, numbers);
+            @if ($numbers) {
+              @each $unit, $nums in $numbers {
+                @each $num in $nums {
+                  $slug: $variation-slug + $delimiter + property-number-slug($num, $unit) + $breakpoint-variation;
+                  @include property-generate-slug($slug) {
+                    $value: property-number-transform($num, $unit);
+                    #{$property}: $value;
+
+                    $additional: map-get($values, additional);
+                    @if ($additional) {
+                      @each $prop, $value in $additional {
+                        #{$prop}: $value;
+                      }
+                    }
+
+                  }
+                }
+              }
+            }
+
+            // Strings
+            $strings: map-get($values, strings);
+            @if ($strings) {
+              @each $string-slug, $string in $strings {
+                $slug: $variation-slug + $delimiter + $string-slug + $breakpoint-variation;
+                @include property-generate-slug($slug) {
+                  #{$property}: $string;
+
+                  $additional: map-get($values, additional);
+                  @if ($additional) {
+                    @each $prop, $value in $additional {
+                      #{$prop}: $value;
+                    }
+                  }
+
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

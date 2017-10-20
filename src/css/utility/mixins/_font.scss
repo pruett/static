@@ -1,0 +1,14 @@
+@mixin familySans($prepend: '') {
+  @if $prepend != '' {
+    $family: $prepend, $family-sans;
+  }
+  font-family: $family-sans;
+}
+
+@mixin familySerif($prepend: '') {
+  @if $prepend != '' {
+    $family: $prepend, $family-serif;
+  }
+  font-family: $family-serif;
+}
+

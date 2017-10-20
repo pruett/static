@@ -1,0 +1,41 @@
+@import "src/css/mixins";
+
+.c-opening-soon--hero {
+  .c-field-container {
+    background: color("white");
+  }
+
+  &__copy {
+    transform: translateY(-70%);
+
+    @include mqAbove($grid-breakpoint-desktop) {
+      transform: translateY(-50%);
+    }
+  }
+
+  &__text-field {
+    width: 300px;
+    margin: 0 !important;
+  }
+
+  &__arrow {
+    width: 20px;
+    height: 16px;
+  }
+
+  &__arrow-group {
+    stroke: color("white");
+    stroke-width: 1.5;
+    fill: none;
+    fill-rule: evenodd;
+  }
+
+  &__submit {
+    height: 46px;
+    width: 48px;
+    padding: 0;
+    background: color("blue");
+    outline: none;
+    border: none;
+  }
+}

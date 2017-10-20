@@ -1,0 +1,27 @@
+@import 'src/css/mixins';
+
+.c-order-details-section {
+  padding: 0 6px;
+  margin: 0 -6px;
+  width: calc(100% + 12px);
+
+  @include mqAbove($min-width-tablet) {
+    &:not(:only-child) {
+      width: 50%;
+
+      &:nth-child(2n + 1) {
+        margin-right: 6px;
+      }
+
+      &:nth-child(2n) {
+        margin-left: 6px;
+      }
+    }
+  }
+}
+
+.c-order-details-section__heading {
+  background-color: color('light-gray-alt-2');
+  padding: 0 6px;
+  margin: 0 -6px;
+}

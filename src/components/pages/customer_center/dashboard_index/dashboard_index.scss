@@ -1,0 +1,68 @@
+@import 'src/css/mixins';
+
+.c-customer-center-dashboard-index {
+  color: color('dark-gray');
+  max-width: $min-width-desktop;
+  margin: 0 auto;
+}
+
+.c-customer-center-dashboard-index__warning {
+  text-align: center;
+  margin: 10px 0;
+  color: color('yellow-alt-1');
+}
+
+.c-customer-center-dashboard-index__cta {
+  color: color('yellow-alt-1');
+  margin: 20px 0;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.c-customer-center-dashboard-index__issues {
+  max-width: 100%;
+  margin: 40px 0;
+}
+
+.c-customer-center-dashboard-index__dotted {
+  border-top: 2px dotted color('light-gray');
+  border-bottom: none;
+  background-color: transparent;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.c-customer-center-dashboard-index__active-order {
+  margin-bottom: 24px;
+}
+
+.c-customer-center-dashboard-index__cards {
+  max-width: 100%;
+
+  @include mqAbove($min-width-tablet) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.c-customer-center-dashboard-index__header {
+  margin: 70px auto;
+  text-align: center;
+}
+
+.c-customer-center-dashboard-index__divider {
+  margin: 0 -6px 23px;
+  border: {
+    color: color('light-gray');
+    width: 0 0 1px;
+  }
+
+  @include mqBelow($min-width-tablet) {
+    margin-top: 24px;
+  }
+}
+
+.c-customer-center-dashboard-index__logout {
+  text-align: center;
+  margin: 24px 0 0;
+}

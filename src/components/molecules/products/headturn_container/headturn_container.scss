@@ -1,0 +1,19 @@
+@import 'src/css/mixins';
+
+.c-product-headturn-container {
+
+  &.-empty {
+    @include mqAbove($grid-breakpoint-tablet) {
+      padding-bottom: 3%;
+    }
+
+    @include mqAbove($grid-breakpoint-desktop) {
+      padding-bottom: 50%;
+    }
+
+    @include mqAbove($grid-breakpoint-desktop-large) {
+      height: 660px;
+      padding-bottom: 0;
+    }
+  }
+}

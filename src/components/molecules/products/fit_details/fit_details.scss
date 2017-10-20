@@ -1,0 +1,7 @@
+@import 'src/css/mixins';
+
+.c-frame-fit-details {
+  @include mqAbove($grid-breakpoint-desktop) {
+    height: 100%;
+  }
+}

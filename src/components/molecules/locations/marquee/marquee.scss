@@ -1,0 +1,20 @@
+@import 'src/css/mixins';
+
+.c-locations-marquee {
+  display: block;
+  height: 0;
+  padding-bottom: percentage(47/64);
+
+  @include mqAbove($grid-breakpoint-desktop) {
+    padding-bottom: percentage(45/128);
+  }
+
+  &__img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+}

@@ -1,0 +1,112 @@
+@import 'src/css/mixins';
+
+.c-navigation-account-utility {
+  @include mqAbove($grid-breakpoint-desktop) {
+    font-weight: $font-weight-normal;
+  }
+
+  &__list-toggle {
+    background: none;
+  }
+
+  &__list {
+    column-count: 2;
+    column-gap: 48px;
+    list-style: none;
+
+    // We need to account for the space adjustment that comes
+    // from using icons instead of text. This dropdown list flows
+    // off-screen without handling it manually
+    &.-icon-align {
+      margin-left: -47px;
+
+      // Similarly to the reasons above, we need to align
+      // the tooltip in the center of the box to point to
+      // the icon
+      &::before {
+        left: 61px;
+      }
+
+      &::after {
+        left: 54px;
+      }
+
+    }
+
+    @include mqAbove($grid-breakpoint-desktop) {
+      column-count: 1;
+      column-gap: 0;
+      opacity: 0;
+      top: -9999px;
+      transform: translateY(-10px);
+      min-width: 0;
+      width: 0;
+      z-index: $z-index-navigation__secondary;
+      transition: {
+        property: transform, opacity, visibility;
+        duration: $transition-duration-navigation,
+         $transition-duration-navigation,
+         0s;
+        timing-function: $transition-timing-function-default;
+        delay: 0s, 0s, $transition-duration-navigation;
+      }
+      visibility: hidden;
+
+      &,
+      &::before {
+        background-color: color('white');
+        border: 1px solid color('light-gray');
+        box-shadow: inset 0 0 0 1px color('white'), inset 0 0 0 2px color('light-gray-alt-2');
+      }
+
+      // Top arrow for More box
+      &::before {
+        border-bottom: 0;
+        border-right: 0;
+        content: '';
+        height: 9px;
+        left: 23px;
+        position: absolute;
+        top: -5px;
+        transform: rotate(45deg);
+        width: 9px;
+      }
+
+      &::after {
+        background-color: color('white');
+        border: 0;
+        content: '';
+        height: 12px;
+        left: 15px;
+        position: absolute;
+        top: 0;
+        width: 24px;
+
+      }
+    }
+  }
+
+  // `:focus` denotes expanded state until React takes over, when we defer to
+  // its state, as is available in `.-visible` and `aria-expanded` values.
+  &.-visible &__list-toggle,
+  &__list-toggle:focus:not([aria-expanded=false]) {
+    display: block;
+  }
+
+  &.-visible &__list,
+  &__list-toggle:focus:not([aria-expanded=false]) ~ &__list,
+  &__list:hover {
+    opacity: 1;
+    transform: none;
+
+    @include mqAbove($grid-breakpoint-desktop) {
+      display: block;
+      top: 100%;
+      transform: translateY(0);
+      transition-delay: 0.025s, 0.025s, 0s;
+      min-width: 135px;
+      visibility: visible;
+      width: auto;
+    }
+  }
+}

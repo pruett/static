@@ -1,0 +1,31 @@
+@import 'src/css/mixins';
+
+.c-icon {
+  @include svg(30, 23, 'cart');
+}
+
+.c-icon--cart {
+  vertical-align: middle;
+  transform: translateY(-1px);
+
+  @include mqNav('tablet') {
+    width: 26px;
+  }
+
+  &.-has-items {
+    margin-right: 10px;
+  }
+
+  &__group {
+   fill: none;
+   fill-rule: evenodd;
+  }
+
+  &__path {
+    stroke: color('dark-gray')
+  }
+
+  &__fill {
+    fill: color('dark-gray')
+  }
+}

@@ -1,0 +1,136 @@
+@import "src/css/mixins";
+
+.c-insurance-provider-grid {
+  &__carrier-header {
+    @include mqAbove($grid-breakpoint-tablet) {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  &__logo-modal {
+    @include mqAbove($grid-breakpoint-tablet) {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  &__flex-wrapper {
+    @include mqAbove($grid-breakpoint-tablet) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__step-wrapper {
+    @include mqAbove($grid-breakpoint-tablet) {
+      &:nth-child(1) {
+        order: 1;
+      }
+      &:nth-child(2) {
+        order: 3;
+      }
+      &:nth-child(3) {
+        order: 2;
+      }
+      &:nth-child(4) {
+        order: 4;
+      }
+    }
+  }
+
+  &__logo-grid {
+    max-width: 200px;
+    max-height: 50px;
+  }
+  &__carrier-wrapper {
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    padding-bottom: 23%;
+    &:hover {
+      cursor: pointer;
+    }
+    @include mqAbove($grid-breakpoint-tablet) {
+      padding-bottom: 10%;
+      width: calc(38% - 24px);
+      margin: 0 4px 4px 4px;
+    }
+  }
+
+  &__modal-wrapper {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2000;
+    background-color: white;
+  }
+
+  &__modal-content {
+    overflow: auto;
+    height: 100%;
+  }
+
+  &__address-wrapper {
+    border-left: 3px solid color("dark-gray");
+  }
+
+  &__info {
+    line-height: 26px;
+    padding-left: 40px;
+    padding-right: 10px;
+  }
+
+  &__modal-info-wrapper {
+    border-top: 1px solid color("light-gray");
+    @include mqAbove($grid-breakpoint-tablet) {
+      border-top: 0;
+      border-right: 1px solid color("light-gray");
+    }
+  }
+
+  &__link-wrapper {
+    padding-left: 40px;
+  }
+
+  &__x {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 2%;
+    top: 2%;
+    border: none;
+    background-color: white;
+    &:hover {
+      cursor: pointer;
+    }
+
+    &::before,
+    &::after {
+      position: absolute;
+      height: 15px;
+      top: 0;
+      bottom: 0;
+      content: "";
+      border-right: 1px solid gray;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+
+    @include mqAbove($grid-breakpoint-tablet) {
+      top: 2%;
+      left: 96%;
+    }
+  }
+
+  &__address-line {
+    margin-bottom: 12px;
+    line-height: 12px;
+  }
+}

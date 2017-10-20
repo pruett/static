@@ -1,0 +1,59 @@
+@import 'src/css/mixins';
+
+.c-callout--bapgap {
+  margin: 0 auto;
+  max-width: width-callout('l');
+  position: relative;
+  overflow: hidden;
+
+  &__content {
+    position: relative;
+  }
+
+  &__copy {
+    text-align: center;
+    margin: 0 24px;
+
+    @include mqCallout('s') {
+      margin: 0 auto;
+    }
+  }
+
+  &__title {
+    @include typeSubhead;
+    margin-bottom: 24px;
+
+    @include mqCallout('s') {
+      margin-bottom: 60px;
+    }
+
+    @include mqCallout('m') {
+      @include typeIntro;
+      margin-bottom: 24px;
+    }
+
+    @include mqCallout('l') {
+      @include typeHeadline;
+      margin-bottom: 24px;
+    }
+  }
+
+  &__picture {
+    width: ratio-callout(266px, 'xs');
+    margin: 36px auto;
+
+    @include mqCallout('s') {
+      width: ratio-callout(405px, 's');
+      margin: 0 auto;
+    }
+
+    @include mqCallout('m') {
+      width: ratio-callout(541px, 's');
+    }
+  }
+
+  &__link {
+    margin-bottom: 5%;
+  }
+
+}

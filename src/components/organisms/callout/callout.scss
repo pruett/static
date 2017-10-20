@@ -1,0 +1,34 @@
+@import 'src/css/mixins';
+
+.c-callout {
+  // Used to add pseudo-separators for callouts.
+  &.-separator {
+    position: relative;
+
+    &::after {
+      content: "";
+      border-bottom: 1px solid color('light-gray');
+      position: absolute;
+      height: 1px;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      margin: auto;
+
+      @each $data in (
+        map-get($grid-breakpoints, default),
+        map-get($grid-breakpoints, tablet)
+      ) {
+        $width: map-get($data, gutter-row) * 2;
+        @include mqAbove(map-get($data, breakpoint)) {
+          width: calc(100% - #{$width});
+          max-width: map-get($data, max-width) - $width;
+        }
+      }
+
+      @include mqAbove($grid-breakpoint-desktop) {
+        content: none;
+      }
+    }
+  }
+}

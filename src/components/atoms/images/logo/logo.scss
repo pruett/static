@@ -1,0 +1,18 @@
+.c-warbyparker-logo {
+  /**
+   * A default width value is left here to support legacy instances of this
+   * component, but better may be to leave out default SVG widths altogether in
+   * favor of forcing the parent to specify them.
+   */
+  width: 300px;
+
+  &__image {
+    background-image: url(/assets/img/logos/warby_parker.svg);
+    padding-bottom: percentage(24 / 300);
+
+    a:focus &,
+    button:focus & {
+      background-image: url(/assets/img/logos/warby_parker_light_gray.svg);
+    }
+  }
+}

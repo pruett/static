@@ -1,0 +1,36 @@
+@import 'src/css/mixins';
+
+.c-pd-webcam-overlay {
+  width: 50%;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0.5;
+  transition: opacity 0.4s 0.4s;
+
+  &.-fade-out {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s, visibility 0s 0.4s;
+  }
+
+  &__face {
+    stroke: color('white');
+    stroke-width: 3;
+    stroke-dasharray: 10;
+    fill: none;
+  }
+
+  &__card {
+    stroke: color('white');
+    stroke-width: 3;
+    stroke-dasharray: 10;
+    fill: none;
+  }
+
+  &__card-stripe {
+    opacity: 0.3;
+    fill: #d7d7d7;
+  }
+}

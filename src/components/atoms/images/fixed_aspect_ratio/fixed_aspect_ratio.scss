@@ -1,0 +1,23 @@
+.c-fixed-aspect-ratio-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.c-fixed-aspect-ratio-image-wrap {
+  position: relative;
+  // Functionally, height gets set inline via padding-top.
+  // Aspect ratio (and optionally width, if it shouldn't be 100%) should
+  // be passed into the component manually.
+  height: 0;
+  overflow: hidden;
+}
+
+.c-fixed-aspect-ratio-image__image {
+  // This is equivalent to `background-size: cover;`, but with an <img> tag.
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}

@@ -1,0 +1,27 @@
+@import 'src/css/mixins';
+
+.c-opening-soon--hero {
+
+  &__content {
+    @include mqAbove($grid-breakpoint-desktop) {
+      min-height: 440px;
+    }
+  }
+
+  &__tagline-container {
+    &:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 7px;
+      display: block;
+      height: 1px;
+      background: color('light-gray');
+    }
+  }
+
+  &__tagline {
+    z-index: 1;
+  }
+}

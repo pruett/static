@@ -1,0 +1,163 @@
+// Simulate page load
+.-transition-load-enter,
+.-transition-load-appear {
+  opacity: 0.01;
+  transition: {
+    duration: $transition-duration-page;
+    property: opacity;
+    timing-function: ease-in-out;
+  }
+
+  &-active {
+    opacity: 1;
+  }
+}
+
+// Fade
+.-transition-fade {
+  @include animationTransitionFade;
+}
+
+.-transition-fade--fast {
+  @include animationTransitionFade(0.2s, 0.2s);
+}
+
+.-transition-toggle {
+  &-enter,
+  &-appear,
+  &-leave {
+    transition: {
+      duration: 0.15s;
+      property: opacity;
+      timing-function: ease-in;
+    }
+  }
+
+  &-enter {
+    transition-delay: 0.15s;
+  }
+
+  &-enter,
+  &-appear {
+    opacity: 0;
+
+    &-active {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
+  &-leave {
+    opacity: 1;
+
+    &-active {
+      opacity: 0;
+    }
+  }
+
+}
+
+// Slide Up With Fade
+.-transition-slide-up-fade {
+  &-enter,
+  &-appear,
+  &-leave {
+    transition: {
+      duration: $transition-duration-default;
+      property: transform, opacity;
+      timing-function: ease-in;
+    }
+  }
+
+  &-enter,
+  &-appear {
+    opacity: 0;
+    transform: translateY(10%);
+
+    &.-force-visible-mobile {
+      opacity: 1;
+      transform: none;
+    }
+
+
+    @include mqAbove($min-width-tablet) {
+      &.-force-visible-mobile {
+        opacity: 0;
+        transform: translateY(10%);
+      }
+    }
+
+    &-active {
+      opacity: 1;
+      transform: none;
+
+      @include mqAbove($min-width-tablet) {
+        &.-force-visible-mobile {
+          opacity: 1;
+          transform: none;
+        }
+      }
+    }
+  }
+
+  &-leave {
+    transform: none;
+    opacity: 1;
+    transition-delay: $transition-duration-default;
+
+    &-active {
+      opacity: 0;
+      transform: translateY(10%);
+    }
+  }
+}
+
+// Slide Down, No Fade
+.-transition-slide-down {
+  &-enter,
+  &-appear,
+  &-leave {
+    transition: {
+      duration: $transition-duration-default;
+      property: margin-top;
+      timing-function: ease-in;
+    }
+  }
+
+  &-enter,
+  &-appear {
+    margin-top: -60px;
+
+    @include mqNav('tablet') {
+      margin-top: -44px;
+    }
+
+    &-active {
+      margin-top: 0;
+    }
+  }
+
+  &-leave {
+    margin-top: 0;
+    transition-delay: $transition-duration-default;
+
+    &-active {
+      margin-top: -60px;
+
+      @include mqNav('tablet') {
+        margin-top: -44px;
+      }
+    }
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+

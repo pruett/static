@@ -1,0 +1,29 @@
+@import "src/css/mixins";
+
+.c-prescription-services-copy__section {
+  @include mqAbove($grid-breakpoint-desktop) {
+    min-height: 620px;
+  }
+
+  @include mqAbove($grid-breakpoint-desktop-large) {
+    min-height: 800px;
+  }
+}
+
+.c-prescription-services-copy__devices {
+  margin: auto;
+  max-width: 280px;
+  max-height: 310px;
+
+  @include mqAbove($grid-breakpoint-tablet) {
+    max-width: 540px;
+    max-height: 360px;
+  }
+
+  @include mqAbove($grid-breakpoint-desktop) {
+    max-width: none;
+    width: 135%;
+    margin-left: -35%;
+    max-height: none;
+  }
+}

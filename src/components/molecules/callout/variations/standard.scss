@@ -1,0 +1,58 @@
+@import 'src/css/mixins';
+
+.c-callout--standard {
+  height: 0;
+  margin: 0 auto;
+  overflow: hidden;
+  padding-bottom: ratio-callout(490px, 'xs');
+  position: relative;
+
+  @include mqCallout('s') {
+    padding-bottom: ratio-callout(411px, 's');
+  }
+
+  @include mqCallout('l') {
+    padding-bottom: 0;
+    height: width-callout('s');
+  }
+
+  &__title {
+    @include typeSubhead;
+    margin-bottom: 12px;
+
+    @include mqCallout('s') {
+      @include typeIntro;
+      margin-bottom: 36px;
+    }
+
+    @include mqCallout('m') {
+      @include fontStyle(35, 48, 36);
+    }
+
+    @include mqCallout('l') {
+      @include fontStyle(48, 60, 36);
+    }
+  }
+
+  &__description {
+
+    @include typeBody;
+    margin-bottom: 12px;
+
+    @include mqCallout('s') {
+      @include typeSectionHeadline;
+      margin-bottom: 36px;
+    }
+
+    @include mqCallout('m') {
+      @include typeSubhead;
+    }
+  }
+
+  &__image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+}

@@ -1,0 +1,10 @@
+.c-spring-2017-mobile-video {
+
+  &__button {
+    transition: opacity 0.5s;
+    &.-hide {
+      opacity: 0;
+    }
+  }
+
+}

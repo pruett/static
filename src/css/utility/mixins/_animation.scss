@@ -1,0 +1,32 @@
+@mixin animationTransitionFade(
+  $speed: $transition-duration-default,
+  $delay: $transition-duration-default
+) {
+  &-enter,
+  &-appear,
+  &-leave {
+    transition: {
+      duration: $speed;
+      property: opacity;
+      timing-function: ease-in;
+    }
+  }
+
+  &-enter,
+  &-appear {
+    opacity: 0.01;
+    transition-delay: $delay;
+
+    &-active {
+      opacity: 1;
+    }
+  }
+
+  &-leave {
+    opacity: 1;
+
+    &-active {
+      opacity: 0.01;
+    }
+  }
+}

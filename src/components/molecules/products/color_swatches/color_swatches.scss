@@ -1,0 +1,214 @@
+@import 'src/css/mixins';
+
+.c-color-swatches__swatch {
+  position: relative;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  margin: 6px;
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 5px color('white'),
+    0 0 0 1px $form-color-border-input;
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+  transition: border-color 0.1s;
+
+  &.-hidden {
+    display: none;
+  }
+
+  &:hover,
+  &:focus {
+    outline: none;
+    border: 0;
+    box-shadow: inset 0 0 0 5px color('white'),
+      0 0 0 1px color('dark-gray');
+  }
+
+  &.-active {
+    box-shadow: inset 0 0 0 5px color('white'),
+      0 0 0 2px color('dark-gray');
+  }
+
+  &.-disabled {
+    opacity: 0.4;
+  }
+
+  &.-color-code-2101 {
+    // Brushed ink
+    background-image: url('/assets/img/swatches/swatch-brushed-ink.png');
+  }
+
+  &.-color-code-2230 {
+    // Riesling
+    background-image: url('/assets/img/swatches/swatch-riesling.png');
+  }
+
+  &.-color-code-2305 {
+    // Brushed silver
+    background-image: url('/assets/img/swatches/swatch-brushed-silver.png');
+  }
+
+  &.-color-code-2550 {
+    // Brushed navy
+    background-image: url('/assets/img/swatches/swatch-brushed-navy.png');
+  }
+
+  &.-black {
+    background-color: #1c1c1c;
+  }
+
+  &.-two-tone {
+    background-color: #352929;
+    background-image: linear-gradient(to bottom,
+      #352929 0%, #352929 50%,
+      #b8c5cf 51%, #b8c5cf 100%
+    );
+  }
+
+  &.-tortoise {
+    background-color: #3d1506;
+  }
+
+  &.-brown {
+    background-color: #895a27;
+  }
+
+  &.-silver {
+    background-color: #e6e6e6;
+  }
+
+  &.-gold {
+    background-color: #eace5e;
+  }
+
+  &.-grey {
+    background-color: color('light-gray');
+  }
+
+  &.-crystal {
+    background-color: #f8f8f8;
+  }
+
+  &.-blue {
+    background-color: #00a2e1;
+  }
+
+  &.-green {
+    background-color: #6dc39c;
+  }
+
+  &.-red {
+    background-color: #de3a28;
+  }
+
+  &.-purple {
+    background-color: #745fb2;
+  }
+
+  &.-pink {
+    background-color: #fa8ea6;
+  }
+
+  @include mqAbove($grid-breakpoint-tablet) {
+    width: 28px;
+    height: 28px;
+    box-shadow: inset 0 0 0 4px color('white'),
+      0 0 0 1px $form-color-border-input;
+
+    &:hover,
+    &:focus {
+      box-shadow: inset 0 0 0 4px color('white'),
+        0 0 0 1px color('dark-gray');
+    }
+
+    &.-active {
+      box-shadow: inset 0 0 0 4px color('white'),
+        0 0 0 2px color('dark-gray');
+    }
+  }
+
+  &.-small {
+    width: 18px;
+    height: 18px;
+    box-shadow: 0 0 0 2px color('white');
+    margin: 6px 7px;
+
+    &:hover,
+    &:focus,
+    &.-active {
+      box-shadow: 0 0 0 2px color('white'),
+        0 0 0 3px color('dark-gray');
+    }
+
+    &:hover,
+    &:focus {
+      &.-active {
+        box-shadow: 0 0 0 2px color('white'),
+          0 0 0 3px color('dark-gray-alt-1');
+      }
+    }
+
+    @include mqAbove($grid-breakpoint-tablet) {
+      width: 18px;
+      height: 18px;
+      box-shadow: 0 0 0 2px color('white');
+
+      &:hover,
+      &:focus,
+      &.-active {
+        box-shadow: 0 0 0 2px color('white'),
+          0 0 0 3px color('dark-gray');
+      }
+
+      &:hover,
+      &:focus {
+        &.-active {
+          box-shadow: 0 0 0 2px color('white'),
+            0 0 0 3px color('dark-gray-alt-1');
+        }
+      }
+    }
+  }
+}
+
+.c-color-swatches__input {
+  position: absolute;
+  visibility: hidden;
+
+  @for $i from 0 through 8 {
+    &-#{$i}:checked ~ .c-gallery-frame__image-link-#{$i},
+    &-#{$i}:checked ~ .c-gallery-frame-radio__images .c-gallery-frame-radio__image-link--#{$i} {
+      visibility: visible;
+      opacity: 1;
+      transition: opacity $transition-duration-fast $transition-duration-fast, transform $transition-duration-fast;
+    }
+
+    &-#{$i}:checked ~ .c-gallery-frame-radio__swatch-row > .c-color-swatches__label-#{$i} {
+      box-shadow: inset 0 0 0 5px color('white'),
+        0 0 0 2px color('dark-gray');
+
+      @include mqAbove($min-width-tablet) {
+        box-shadow: inset 0 0 0 4px color('white'),
+          0 0 0 2px color('dark-gray');
+      }
+
+      &.-small {
+        box-shadow: 0 0 0 2px color('white'),
+          0 0 0 3px color('dark-gray');
+
+        &:focus,
+        &:hover {
+          box-shadow: 0 0 0 2px color('white'),
+            0 0 0 3px color('dark-gray-alt-1');
+        }
+
+        @include mqAbove($grid-breakpoint-tablet) {
+          box-shadow: 0 0 0 2px color('white'),
+            0 0 0 3px color('dark-gray');
+        }
+      }
+    }
+  }
+}

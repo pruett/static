@@ -1,0 +1,133 @@
+@import 'src/css/mixins';
+
+.c-fall-2015-callout {
+  width: 100%;
+  position: relative;
+  margin-bottom: 15%;
+  min-height: 400px;
+
+  @include mqAbove($min-width-tablet) {
+    width: 98.5%;
+    margin-bottom: 10%;
+    display: flex;
+    min-height: 190px;
+    margin-left: 0.75%;
+    margin-right: 0.75%;
+  }
+
+  @include mqAbove($min-width-desktop) {
+    min-height: 260px;
+  }
+
+  &.-border-top {
+    border-top: 1px color('light-gray') solid;
+  }
+
+  &.-border-bottom {
+    border-bottom: 1px color('light-gray') solid;
+  }
+
+  &.-tall {
+    min-height: 600px;
+    min-height: 130vw;
+
+    @include mqAbove($min-width-tablet) {
+      min-height: 300px;
+    }
+  }
+
+  &.-last {
+    margin-bottom: 0;
+  }
+
+  &__picture {
+    width: 100%;
+  }
+
+  &__image {
+    width: 100%;
+
+    @include mqAbove($min-width-tablet) {
+      &.-image-right {
+        float: right;
+      }
+
+      &.-image-left {
+        float: left;
+      }
+    }
+  }
+
+  &__text-wrapper {
+    position: absolute;
+    bottom: 0;
+    top: auto;
+    padding: 9%;
+
+
+    @include mqAbove($min-width-tablet) {
+      width: 62%;
+      bottom: auto;
+
+      &.-text-right {
+        right: 0;
+
+        &.-narrow {
+          padding-left: 9%;
+          padding-right: 9%;
+        }
+      }
+
+      &.-text-left {
+        left: 0;
+
+        &.-narrow {
+          padding-left: 5%;
+          padding-right: 10%;
+        }
+      }
+
+      &.-narrow {
+        width: 42%;
+      }
+
+      &.-vertical-center {
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+
+  &__divider {
+    width: 40%;
+    height: 10px;
+    height: 1.5vw;
+    max-height: 10.7px;
+    margin-left: 0;
+    margin-bottom: 8%;
+
+    @include mqAbove($min-width-tablet) {
+      width: 10vw;
+      height: 6px;
+      height: 0.52vw;
+      max-height: 8.3px;
+      margin-bottom: 2.25vw;
+    }
+
+    @include mqAbove($min-width-desktop-x-large) {
+      margin-bottom: 36px;
+    }
+
+    &.-light-gray {
+      background-color: $collection-fall-2015-color-light-gray;
+    }
+
+    &.-amber {
+      background-color: $collection-fall-2015-color-amber;
+    }
+
+    &.-blue {
+      background-color: $collection-fall-2015-color-sky-blue;
+    }
+  }
+}

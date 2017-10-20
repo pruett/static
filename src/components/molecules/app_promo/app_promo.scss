@@ -1,0 +1,77 @@
+@import 'src/css/mixins';
+
+@keyframes app-promo-sprites {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  20.01% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.c-app-promo {
+  &__download-icon {
+    width: 160px;
+  }
+
+  &__app-promo {
+
+    &.-sprites {
+      @include mqNav('tablet') {
+        background-image: linear-gradient(to bottom, color('white'), color('light-gray-alt-2'));
+      }
+    }
+  }
+
+  &__app-promo-sprites-area {
+    width: 349px;
+    height: 567px;
+    left: -21px;
+
+    @include mqNav('tablet') {
+      left: 0;
+    }
+  }
+
+  &__app-promo-sprites-container {
+    top: 54px;
+    left: 103px;
+    width: 185px;
+  }
+
+  &__app-promo-sprite {
+    // This is structured as a looping animation where for the first 20% of its duration the
+    // element is at `opacity: 1`, and for the rest it snaps to `opacity: 0`. Assuming 5 elements,
+    // the animation runs for 5 seconds and increases each element's animation delay by 1s.
+    // This creates the effect of a 5-element flipbook.
+    animation: app-promo-sprites 5s forwards;
+    animation-iteration-count: infinite;
+    opacity: 0;
+
+    &:first-child {
+      opacity: 1;
+    }
+
+    &:nth-child(2) {
+      animation-delay: 1s;
+    }
+
+    &:nth-child(3) {
+      animation-delay: 2s;
+    }
+
+    &:nth-child(4) {
+      animation-delay: 3s;
+    }
+
+    &:nth-child(5) {
+      animation-delay: 4s;
+    }
+  }
+}

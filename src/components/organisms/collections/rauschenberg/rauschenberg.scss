@@ -1,0 +1,53 @@
+@import 'src/css/mixins';
+
+.c-rauschenberg {
+  &__header {
+    font-family: 'balboa-plus-fill';
+    visibility: hidden;
+  }
+
+  &__copy-wrapper {
+    @include mqAbove(1440px) {
+      width: 33%;
+    }
+  }
+
+  &__hero-logo {
+    @include mqAbove($grid-breakpoint-desktop) {
+      width: 18%;
+      top: 42%;
+    }
+  }
+
+  &__copy-block {
+    height: 540px;
+
+    @include mqAbove($grid-breakpoint-tablet) {
+      height: 442px;
+    }
+
+    @include mqAbove($grid-breakpoint-desktop) {
+      height: 500px;
+    }
+
+    &.-blue {
+      background-color: #002855;
+      color: color('white');
+    },
+
+    &.-gray {
+      background-color: #F9F6F6;
+    }
+  }
+
+  &__copy-block-header {
+      &.-gray {
+        color: #002855;
+        width: 70%;
+      }
+  }
+}
+
+html[class*="wf-balboaplusfill"] .c-rauschenberg__header {
+    visibility: visible;
+}

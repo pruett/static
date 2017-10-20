@@ -1,0 +1,219 @@
+@import 'src/css/mixins';
+
+.c-location {
+  margin: 0 -18px;
+
+  &__marquee {
+    margin: 0 auto;
+    max-width: 2000px;
+  }
+
+  &__location-name {
+    @include typeSubhead;
+    margin: 36px 0 24px;
+
+    @include mqAbove($grid-breakpoint-tablet) {
+      @include typeHeadline;
+      margin: 48px 0;
+    }
+
+    @include mqAbove($min-width-tablet) {
+      margin: 72px 0;
+    }
+  }
+
+  &__outer-grid {
+    margin: 0 auto;
+    max-width: 960px;
+  }
+
+  &__inner-grid {
+    margin: 0 auto;
+    max-width: 660px;
+  }
+
+  &__hr {
+    margin: 0 auto;
+
+    &.-dashed {
+      border-style: dashed;
+    }
+  }
+
+  &__overview {
+    margin-bottom: 24px;
+
+    @include mqAbove($min-width-tablet) {
+      margin-bottom: 48px;
+    }
+  }
+
+  &__address-schedule {
+    text-align: center;
+
+    @include mqAbove($grid-breakpoint-tablet) {
+      text-align: left;
+    }
+  }
+
+  &__address,
+  &__hours-note,
+  &__map-link {
+    @include typeBody;
+
+    @include mqAbove($min-width-tablet) {
+      @include typeSectionBody;
+    }
+
+    @include mqAbove($grid-breakpoint-desktop-large) {
+      @include typeSectionHeadline;
+    }
+  }
+
+  &__address,
+  &__hours-note {
+    margin-bottom: 24px;
+  }
+
+  &__map {
+    text-align: left;
+  }
+
+  &__callout,
+  &__services,
+  &__about {
+    padding: 48px 0;
+
+    @include mqAbove($grid-breakpoint-tablet) {
+      padding: 72px 0;
+    }
+  }
+
+  &__shop-links,
+  &__nearby-locations {
+    padding-bottom: 48px;
+
+    @include mqAbove($grid-breakpoint-tablet) {
+      padding-bottom: 72px;
+    }
+  }
+
+  &__callout-intro-text {
+    @include typeBody;
+
+    @include mqAbove($min-width-tablet) {
+      @include typeSectionHeadline;
+    }
+  }
+
+  &__store-photo {
+    margin-bottom: 6px;
+
+    @include mqAbove($grid-breakpoint-tablet) {
+      margin-bottom: 12px;
+    }
+  }
+
+  &__about-heading,
+  &__shop-links-heading,
+  &__nearby-locations-heading {
+    @include typeSectionHeadline;
+
+    @include mqAbove($grid-breakpoint-tablet) {
+      @include typeSubhead;
+    }
+
+    @include mqAbove($min-width-tablet) {
+      @include typeIntro;
+    }
+  }
+
+  &__shop-links-heading {
+    padding-top: 48px;
+
+    @include mqAbove($grid-breakpoint-tablet) {
+      padding-top: 72px;
+    }
+  }
+
+  &__nearby-locations-heading {
+    padding-top: 48px;
+
+    @include mqAbove($grid-breakpoint-tablet) {
+      padding-top: 0;
+    }
+  }
+
+  &__shop-links-heading,
+  &__nearby-locations-heading {
+    @include mqAbove($grid-breakpoint-tablet) {
+      position: relative;
+
+      &::before {
+        content: '';
+        position: absolute;
+        bottom: 14px;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: color('light-gray');
+      }
+    }
+
+    @include mqAbove($min-width-tablet) {
+      &::before {
+        bottom: 17px;
+      }
+    }
+  }
+
+  &__shop-links-heading-text,
+  &__nearby-locations-heading-text {
+    position: relative;
+    z-index: 1;
+    padding: 0 6px;
+  }
+
+  &__nearby-locations-heading {
+    border-top: 1px solid color('light-gray');
+
+    @include mqAbove($grid-breakpoint-tablet) {
+      border-width: 0;
+    }
+  }
+
+  &__nearby-locations-card,
+  &__shop-link-text {
+    margin-top: 18px;
+
+    @include mqAbove($grid-breakpoint-tablet) {
+      margin-top: 36px;
+    }
+  }
+
+  &__about-hr {
+    border: {
+      width: 3px 0 0 0;
+      style: solid;
+      color: color('blue');
+    }
+    width: 60px;
+    margin-bottom: 24px;
+  }
+
+  &__about-body {
+    @include typeBody;
+
+    @include mqAbove($min-width-tablet) {
+      @include typeSectionHeadline;
+    }
+  }
+
+  &__shop-link-text {
+    letter-spacing: 2.5px;
+  }
+
+  &__all-locations-cta {
+    margin: 36px 0 48px;
+  }
+}

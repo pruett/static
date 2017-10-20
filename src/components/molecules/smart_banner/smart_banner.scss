@@ -1,0 +1,60 @@
+@import 'src/css/mixins';
+
+.c-smart-banner {
+  height: 84px;
+}
+
+.c-smart-banner__wrapper {
+  max-height: 84px;
+}
+
+.c-smart-banner__icon-wrapper {
+  height: 85px;
+  width: 50px;
+}
+
+.c-smart-banner__icon-image {
+  height: 40px;
+  width: 40px;
+}
+
+.c-smart-banner__details {
+  color: color('white');
+  height: 85px;
+  margin-top: 16px;
+}
+
+.c-smart-banner__reviews {
+  height: 10px;
+  width: 70px;
+}
+
+.c-smart-banner__stars,
+.c-smart-banner__stars--rating {
+  background-image: url(/assets/img/icons/general/star.svg);
+  opacity: 0.30;
+}
+
+.c-smart-banner__stars--rating {
+  opacity: 1.0;
+}
+
+.c-smart-banner__view-button {
+  margin-top: 26px;
+
+  &:hover {
+    border: 1px solid color('white');
+    color: color('white');
+  }
+}
+
+.c-smart-banner__x-button {
+  background-color: transparent;
+  border-width: 0px;
+  margin-top: 28px;
+}
+
+.c-smart-banner__x-button-wrapper {
+  height: 85px;
+  width: 34px;
+}

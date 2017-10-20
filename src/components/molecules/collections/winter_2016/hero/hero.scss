@@ -1,0 +1,19 @@
+@import 'src/css/mixins';
+
+
+.c-winter-2016-hero {
+
+  &__content-wrapper {
+    // Prevents image container from collapsing while loading
+    // Slightly weird hero proportions, hence avoiding utilities
+    height: 0;
+    padding-bottom: 125%;
+
+    @include mqAbove($grid-breakpoint-tablet) {
+      padding-bottom: 57%;
+    }
+
+  }
+
+
+}

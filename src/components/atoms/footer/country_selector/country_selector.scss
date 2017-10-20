@@ -1,0 +1,20 @@
+@import 'src/css/mixins';
+
+.c-footer-country-selector {
+
+  &__link {
+    text-indent: 3px;
+
+    &.-active {
+      border: 1px solid color('light-gray');
+    }
+  }
+
+  &__item + &__item {
+    margin-left: 10px;
+
+    @include mqAbove($min-width-tablet) {
+      margin-left: 18px;
+    }
+  }
+}

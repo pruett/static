@@ -1,0 +1,28 @@
+@import 'src/css/mixins';
+
+.c-discount-code-input {
+
+  &__input {
+    width: calc(100% - 100px);
+
+    .c-field-container.-v2 {
+      border-bottom-right-radius: 0;
+      border-top-right-radius: 0;
+    }
+  }
+
+  &__button {
+    width: 100px;
+    height: 48px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+
+    &.-button-white {
+      border-left: 0;
+    }
+
+    &.-button-blue {
+      border: none;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+@import 'src/css/mixins';
+
+.c-burger-button {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.c-burger-button__svg {
+  fill: color('dark-gray');
+
+  &.-is-open {
+    stroke: color('dark-gray');
+    fill: none;
+  }
+}

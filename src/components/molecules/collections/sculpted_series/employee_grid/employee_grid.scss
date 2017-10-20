@@ -1,0 +1,111 @@
+@import 'src/css/mixins';
+
+.c-sculpted-series-employee-grid {
+  width: 100%;
+  background-color: #FAEDE3;
+
+  &__frame-name {
+    letter-spacing: 4px;
+  }
+
+  &__copy {
+    @include mqAbove($grid-breakpoint-desktop) {
+      left: 20%;
+    }
+  }
+
+  &__content-wrapper {
+    background-color: #FAEDE3;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  &__shop-link {
+    &:hover, &:active, &:visited {
+      color: #979797;
+    }
+  }
+
+  &__header {
+    letter-spacing: 6px;
+    width: 60%;
+
+    @include mqAbove($grid-breakpoint-desktop) {
+      font-size: 36px;
+    }
+  }
+
+  &__copy-wrapper {
+    @include mqAbove($grid-breakpoint-desktop) {
+      &:before {
+        content: "";
+        position: absolute;
+        left: 95%;
+        top: 50%;
+        height: 10%;
+        width: 10%;
+        transform: rotate(45deg);
+        background-color: #FAEDE3;
+      }
+      &.-flip {
+        &:before {
+          left: -5%;
+        }
+      }
+    }
+  }
+
+  &__flex-wrapper {
+    @include mqAbove($grid-breakpoint-desktop) {
+      border-left: 1px solid #d2d6d9;
+      border-right: 1px solid #d2d6d9;
+      border-bottom: 1px solid #d2d6d9;
+    }
+  }
+
+  &__image-wrapper {
+    &.-left-left {
+      @include mqAbove($grid-breakpoint-tablet) {
+        order: 0;
+      }
+
+      @include mqAbove($grid-breakpoint-desktop) {
+        order: 0;
+      }
+    }
+    &.-left-right {
+      @include mqAbove($grid-breakpoint-tablet) {
+        order: 0;
+      }
+
+      @include mqAbove($grid-breakpoint-desktop) {
+        order: 1;
+      }
+    }
+    &.-right-right {
+      @include mqAbove($grid-breakpoint-tablet) {
+        order: 1;
+      }
+
+      @include mqAbove($grid-breakpoint-desktop) {
+        order: 1;
+      }
+    }
+    &.-right-left {
+      @include mqAbove($grid-breakpoint-tablet) {
+        order: 1;
+      }
+
+      @include mqAbove($grid-breakpoint-desktop) {
+        order: 0;
+      }
+    }
+  }
+
+  &__tout {
+    @include mqAbove($grid-breakpoint-tablet) {
+      display: inline-flex;
+      flex-direction: row;
+    }
+  }
+}

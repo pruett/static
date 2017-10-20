@@ -1,0 +1,105 @@
+@import 'src/css/mixins';
+
+.c-mixed-materials {
+  &__hero-image-wrapper {
+    height: 0;
+    padding-bottom: 61%;
+
+    @include mqAbove($grid-breakpoint-desktop) {
+      padding-bottom: 45%;
+    }
+  }
+
+  &__hero-body {
+    max-width: 960px;
+    font-family: 'utopia-std-display';
+
+    @include mqAbove($grid-breakpoint-desktop) {
+      line-height: 50px;
+    }
+  }
+
+  &__hero-pricing {
+    font-family: 'utopia-std-display';
+  }
+
+  &__bottom-callout-link {
+    &:hover {
+      border-bottom-width: 2px;
+      color: color('blue');
+    }
+  }
+
+  &__bottom-callout-link + &__bottom-callout-link {
+    margin-left: 14px;
+  }
+
+  &__css-modifier-image-wrapper {
+    padding-bottom: 42%;
+  }
+
+  &__hero-copy-wrapper {
+    background-color: rgba(76, 176, 153, 0.5);
+    height: 365px;
+
+    @include mqAbove($grid-breakpoint-tablet) {
+      height: 270px;
+    }
+
+    @include mqAbove($grid-breakpoint-desktop) {
+      height: 425px;
+    }
+  }
+
+  &__hero-header {
+    color: #60B4D1;
+    text-shadow: 1px 2px 0px black;
+    letter-spacing: 4px;
+
+    @include mqAbove($grid-breakpoint-desktop-large) {
+      bottom: 50%;
+      text-shadow: 3px 4px 0px black;
+    }
+
+    @include mqAbove($grid-breakpoint-desktop) {
+      bottom: 43%;
+    }
+  }
+
+  &__copy-block {
+    height: 300px;
+
+    &.-blue {
+      background-color: rgba(96, 180, 209, 0.5);
+    }
+
+    &.-pink {
+      background-color: rgba(226, 159, 156, 0.5);
+    }
+
+    @include mqAbove($grid-breakpoint-tablet) {
+      height: 240px;
+    }
+
+    @include mqAbove($grid-breakpoint-desktop) {
+      height: 360px;
+    }
+  }
+
+  &__copy-block-body {
+    max-width: 750px;
+    font-family: 'utopia-std-display';
+
+    @include mqAbove($grid-breakpoint-desktop) {
+      line-height: 50px;
+    }
+  }
+
+  &__copy-block-wrapper {
+    width: 85.6%;
+
+    @include mqAbove($grid-breakpoint-tablet) {
+      width: 58.6%;
+    }
+  }
+}

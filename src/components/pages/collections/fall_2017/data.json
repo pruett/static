@@ -1,0 +1,1287 @@
+{
+  "61478": {
+    "description": "An oversized, round eyeframe lends Watts a charmingly learned look. Slim temple arms and a keyhole bridge add a dose of midcentury panache. Perfect for bookworms and cool cats alike.",
+    "product_category": "Frame",
+    "image": "//i.warbycdn.com/s/c/23a8a6c6c8fbf264252dfa5e61a419c93c0148c8",
+    "swatch_url": "//i.warbycdn.com/s/f/defeba6138586ab74c90b58428b90157bcf76731",
+    "gendered_details": [
+      {
+        "gender": "m",
+        "product_id": 61506,
+        "path": "eyeglasses/men/watts/jet-black-matte-with-hazelnut-tortoise"
+      },
+      {
+        "gender": "f",
+        "product_id": 61478,
+        "path": "eyeglasses/women/watts/jet-black-matte-with-hazelnut-tortoise"
+      }
+    ],
+    "starting_price": 9500,
+    "path": "eyeglasses/men/watts/jet-black-matte-with-hazelnut-tortoise",
+    "assembly_type": "eyeglasses",
+    "sku": "0207_8101_OPK",
+    "image_set": {
+      "modes": {
+        "clear_fill": "//i.warbycdn.com/s/l",
+        "pad": "//i.warbycdn.com/s/p",
+        "clip": "//i.warbycdn.com/s/c",
+        "fill": "//i.warbycdn.com/s/f"
+      },
+      "orientations": {
+        "base_transparent": "4d33f6f358a0f0c37b288b29f7e45fd07c181a59",
+        "front": "23a8a6c6c8fbf264252dfa5e61a419c93c0148c8",
+        "angle": "842130a0164401f5258109ea4f576fc8c81c5e7d",
+        "side": "f73de438dfac68e27a62dcb42db508c46a7759f2"
+      }
+    },
+    "display_name": "Watts",
+    "product_id": 61506,
+    "width": 132,
+    "gender": "m",
+    "list": "PLP_Nones_None",
+    "color": "Jet Black Matte With Hazelnut Tortoise",
+    "hto_available": false,
+    "attributes": {
+      "color": { "two-tone": true, "black": true, "tortoise": true },
+      "material": { "acetate": true },
+      "collection": { "fall-2017": true },
+      "nose bridge": { "standard": true },
+      "width": { "medium": true },
+      "shape": { "round": true }
+    }
+  },
+  "61506": {
+    "description": "An oversized, round eyeframe lends Watts a charmingly learned look. Slim temple arms and a keyhole bridge add a dose of midcentury panache. Perfect for bookworms and cool cats alike.",
+    "product_category": "Frame",
+    "image": "//i.warbycdn.com/s/c/23a8a6c6c8fbf264252dfa5e61a419c93c0148c8",
+    "swatch_url": "//i.warbycdn.com/s/f/defeba6138586ab74c90b58428b90157bcf76731",
+    "gendered_details": [
+      {
+        "gender": "m",
+        "product_id": 61506,
+        "path": "eyeglasses/men/watts/jet-black-matte-with-hazelnut-tortoise"
+      },
+      {
+        "gender": "f",
+        "product_id": 61478,
+        "path": "eyeglasses/women/watts/jet-black-matte-with-hazelnut-tortoise"
+      }
+    ],
+    "starting_price": 9500,
+    "path": "eyeglasses/men/watts/jet-black-matte-with-hazelnut-tortoise",
+    "assembly_type": "eyeglasses",
+    "sku": "0207_8101_OPK",
+    "image_set": {
+      "modes": {
+        "clear_fill": "//i.warbycdn.com/s/l",
+        "pad": "//i.warbycdn.com/s/p",
+        "clip": "//i.warbycdn.com/s/c",
+        "fill": "//i.warbycdn.com/s/f"
+      },
+      "orientations": {
+        "base_transparent": "4d33f6f358a0f0c37b288b29f7e45fd07c181a59",
+        "front": "23a8a6c6c8fbf264252dfa5e61a419c93c0148c8",
+        "angle": "842130a0164401f5258109ea4f576fc8c81c5e7d",
+        "side": "f73de438dfac68e27a62dcb42db508c46a7759f2"
+      }
+    },
+    "display_name": "Watts",
+    "product_id": 61506,
+    "width": 132,
+    "gender": "m",
+    "list": "PLP_Nones_None",
+    "color": "Jet Black Matte With Hazelnut Tortoise",
+    "hto_available": false,
+    "attributes": {
+      "color": { "two-tone": true, "black": true, "tortoise": true },
+      "material": { "acetate": true },
+      "collection": { "fall-2017": true },
+      "nose bridge": { "standard": true },
+      "width": { "medium": true },
+      "shape": { "round": true }
+    }
+  },
+  "61536": {
+    "description": "Cora—with a hint of cat-eye and rectangular silhouette—has polish and sophistication to spare.",
+    "product_category": "Frame",
+    "image": "//i.warbycdn.com/s/c/c0d8fe28e0365be1eb8c6f52a38e94dc28ded6f9",
+    "swatch_url": "//i.warbycdn.com/s/f/0d5a5e22851f0071e9a3ebb8848fd9ce7f8cc18a",
+    "gendered_details": [
+      {
+        "gender": "f",
+        "product_id": 61536,
+        "path": "eyeglasses/women/cora/desert-tortoise-with-crystal-plum"
+      }
+    ],
+    "starting_price": 9500,
+    "path": "eyeglasses/women/cora/desert-tortoise-with-crystal-plum",
+    "assembly_type": "eyeglasses",
+    "sku": "0505_8254_OPK",
+    "image_set": {
+      "modes": {
+        "clear_fill": "//i.warbycdn.com/s/l",
+        "pad": "//i.warbycdn.com/s/p",
+        "clip": "//i.warbycdn.com/s/c",
+        "fill": "//i.warbycdn.com/s/f"
+      },
+      "orientations": {
+        "base_transparent": "44ccac3c5ab3ca1fc536b6d5c8f75a4ac5c22b81",
+        "front": "c0d8fe28e0365be1eb8c6f52a38e94dc28ded6f9",
+        "angle": "1dc9676e5ed22d9ed7d7aaba49ada1b29014aee2",
+        "side": "85939d7705b8600761eef6ad3f3a2bf6f6e41920"
+      }
+    },
+    "display_name": "Cora",
+    "product_id": 61536,
+    "width": 132,
+    "gender": "f",
+    "list": "PLP_Nones_None",
+    "color": "Desert Tortoise With Crystal Plum ",
+    "hto_available": false,
+    "attributes": {
+      "color": { "pink": true, "purple": true, "two-tone": true, "tortoise": true },
+      "material": { "acetate": true },
+      "collection": { "fall-2017": true },
+      "nose bridge": { "standard": true },
+      "width": { "medium": true },
+      "shape": { "rectangle": true }
+    }
+  },
+  "61594": {
+    "description": "Cora—with a hint of cat-eye and rectangular silhouette—has polish and sophistication to spare.",
+    "product_category": "Frame",
+    "image": "//i.warbycdn.com/s/c/9697fc0f0cf3e5e088da450aa184178562b10778",
+    "swatch_url": "//i.warbycdn.com/s/f/83589bebfcb2dbc91fa8088dcdb129463c08fb1f",
+    "gendered_details": [
+      {
+        "gender": "f",
+        "product_id": 61594,
+        "path": "eyeglasses/women/cora/crystal-sable-with-opal-tortoise"
+      }
+    ],
+    "starting_price": 9500,
+    "path": "eyeglasses/women/cora/crystal-sable-with-opal-tortoise",
+    "assembly_type": "eyeglasses",
+    "sku": "0505_8218_OPK",
+    "image_set": {
+      "modes": {
+        "clear_fill": "//i.warbycdn.com/s/l",
+        "pad": "//i.warbycdn.com/s/p",
+        "clip": "//i.warbycdn.com/s/c",
+        "fill": "//i.warbycdn.com/s/f"
+      },
+      "orientations": {
+        "base_transparent": "82462414e57cb0ae5cdefd6fd69028cc83d75dc3",
+        "front": "9697fc0f0cf3e5e088da450aa184178562b10778",
+        "angle": "21c1821528fea9c0f147b9caa26bd5ec2541b0b6",
+        "side": "0b26fec3321a7c5751e56dadf7806833ba017a98"
+      }
+    },
+    "display_name": "Cora",
+    "product_id": 61594,
+    "width": 132,
+    "gender": "f",
+    "list": "PLP_Nones_None",
+    "color": "Crystal Sable With Opal Tortoise ",
+    "hto_available": false,
+    "attributes": {
+      "color": { "crystal": true, "neutral": true, "two-tone": true, "tortoise": true },
+      "material": { "acetate": true },
+      "collection": { "fall-2017": true },
+      "nose bridge": { "standard": true },
+      "width": { "medium": true },
+      "shape": { "rectangle": true }
+    }
+  },
+  "61652": {
+    "description": "A cat-eye frame with a delicate, rounded silhouette, Louise is slightly oversized and utterly elegant.",
+    "product_category": "Frame",
+    "image": "//i.warbycdn.com/s/c/a42d3edb98d75383ac1be1c1b4fef2f3fecc409e",
+    "swatch_url": "//i.warbycdn.com/s/f/eeb69122ee8a2b88fdab22f7370583e069db5f71",
+    "gendered_details": [
+      {
+        "gender": "m",
+        "product_id": 61681,
+        "path": "eyeglasses/men/louise/violet-magnolia-with-violet"
+      },
+      {
+        "gender": "f",
+        "product_id": 61652,
+        "path": "eyeglasses/women/louise/violet-magnolia-with-violet"
+      }
+    ],
+    "starting_price": 9500,
+    "path": "eyeglasses/women/louise/violet-magnolia-with-violet",
+    "assembly_type": "eyeglasses",
+    "sku": "0467_8252_OPK",
+    "image_set": {
+      "modes": {
+        "clear_fill": "//i.warbycdn.com/s/l",
+        "pad": "//i.warbycdn.com/s/p",
+        "clip": "//i.warbycdn.com/s/c",
+        "fill": "//i.warbycdn.com/s/f"
+      },
+      "orientations": {
+        "base_transparent": "45ddd0045accb7aa567fb154dab0ab555942af85",
+        "front": "a42d3edb98d75383ac1be1c1b4fef2f3fecc409e",
+        "angle": "b139f496139a1a48f5071a437525f720246bbb14",
+        "side": "e251bd034e39653e35e8ea6c19f03aca7d4633b3"
+      }
+    },
+    "display_name": "Louise",
+    "product_id": 61652,
+    "width": 138,
+    "gender": "f",
+    "list": "PLP_Nones_None",
+    "color": "Violet Magnolia With Violet ",
+    "hto_available": false,
+    "attributes": {
+      "color": { "purple": true, "bright": true, "two-tone": true, "tortoise": true },
+      "material": { "acetate": true },
+      "collection": { "fall-2017": true },
+      "nose bridge": { "standard": true },
+      "width": { "wide": true },
+      "shape": { "rectangle": true }
+    }
+  },
+  "61711": {
+    "description": "Matte temple arms and the contrasting sheen of the facefront give wide, rectangular Becker frame a special bit of refinement.",
+    "product_category": "Frame",
+    "image": "//i.warbycdn.com/s/c/68bf213735ef5a32abacf2b9b3c3a7f45c77e092",
+    "swatch_url": "//i.warbycdn.com/s/f/0f887de0e1a8916b3148503daf558b838c6ff1de",
+    "gendered_details": [
+      {
+        "gender": "m",
+        "product_id": 61739,
+        "path": "eyeglasses/men/becker/indigo-crystal-with-english-oak"
+      },
+      {
+        "gender": "f",
+        "product_id": 61711,
+        "path": "eyeglasses/women/becker/indigo-crystal-with-english-oak"
+      }
+    ],
+    "starting_price": 9500,
+    "path": "eyeglasses/men/becker/indigo-crystal-with-english-oak",
+    "assembly_type": "eyeglasses",
+    "sku": "0506_8351_OPK",
+    "image_set": {
+      "modes": {
+        "clear_fill": "//i.warbycdn.com/s/l",
+        "pad": "//i.warbycdn.com/s/p",
+        "clip": "//i.warbycdn.com/s/c",
+        "fill": "//i.warbycdn.com/s/f"
+      },
+      "orientations": {
+        "base_transparent": "41d17babae4b155d6790dc929bc4ca5212a60c91",
+        "front": "68bf213735ef5a32abacf2b9b3c3a7f45c77e092",
+        "angle": "4cc924b8b22e7810ecc92bcc71acce1bde17667a",
+        "side": "a62b5877b0c91c1511ccfe3279c74798c4f261dd"
+      }
+    },
+    "display_name": "Becker",
+    "product_id": 61739,
+    "width": 140,
+    "gender": "m",
+    "list": "PLP_Nones_None",
+    "color": "Indigo Crystal With English Oak",
+    "hto_available": false,
+    "attributes": {
+      "color": { "blue": true, "crystal": true, "two-tone": true, "tortoise": true },
+      "material": { "acetate": true },
+      "collection": { "fall-2017": true },
+      "nose bridge": { "standard": true },
+      "width": { "wide": true },
+      "shape": { "square": true, "rectangle": true }
+    }
+  },
+  "61739": {
+    "description": "Matte temple arms and the contrasting sheen of the facefront give wide, rectangular Becker frame a special bit of refinement.",
+    "product_category": "Frame",
+    "image": "//i.warbycdn.com/s/c/68bf213735ef5a32abacf2b9b3c3a7f45c77e092",
+    "swatch_url": "//i.warbycdn.com/s/f/0f887de0e1a8916b3148503daf558b838c6ff1de",
+    "gendered_details": [
+      {
+        "gender": "m",
+        "product_id": 61739,
+        "path": "eyeglasses/men/becker/indigo-crystal-with-english-oak"
+      },
+      {
+        "gender": "f",
+        "product_id": 61711,
+        "path": "eyeglasses/women/becker/indigo-crystal-with-english-oak"
+      }
+    ],
+    "starting_price": 9500,
+    "path": "eyeglasses/men/becker/indigo-crystal-with-english-oak",
+    "assembly_type": "eyeglasses",
+    "sku": "0506_8351_OPK",
+    "image_set": {
+      "modes": {
+        "clear_fill": "//i.warbycdn.com/s/l",
+        "pad": "//i.warbycdn.com/s/p",
+        "clip": "//i.warbycdn.com/s/c",
+        "fill": "//i.warbycdn.com/s/f"
+      },
+      "orientations": {
+        "base_transparent": "41d17babae4b155d6790dc929bc4ca5212a60c91",
+        "front": "68bf213735ef5a32abacf2b9b3c3a7f45c77e092",
+        "angle": "4cc924b8b22e7810ecc92bcc71acce1bde17667a",
+        "side": "a62b5877b0c91c1511ccfe3279c74798c4f261dd"
+      }
+    },
+    "display_name": "Becker",
+    "product_id": 61739,
+    "width": 140,
+    "gender": "m",
+    "list": "PLP_Nones_None",
+    "color": "Indigo Crystal With English Oak",
+    "hto_available": false,
+    "attributes": {
+      "color": { "blue": true, "crystal": true, "two-tone": true, "tortoise": true },
+      "material": { "acetate": true },
+      "collection": { "fall-2017": true },
+      "nose bridge": { "standard": true },
+      "width": { "wide": true },
+      "shape": { "square": true, "rectangle": true }
+    }
+  },
+  "61769": {
+    "description": "Matte temple arms and the contrasting sheen of the facefront give wide, rectangular Becker frame a special bit of refinement.",
+    "product_category": "Frame",
+    "image": "//i.warbycdn.com/s/c/820e5638a4c94a1bfa876490f846dbc37466e5d3",
+    "swatch_url": "//i.warbycdn.com/s/f/4d19cdb24245123d439c3260252c6bfc35825f1d",
+    "gendered_details": [
+      {
+        "gender": "m",
+        "product_id": 61797,
+        "path": "eyeglasses/men/becker/amber-tortoise-with-jet-black-matte"
+      },
+      {
+        "gender": "f",
+        "product_id": 61769,
+        "path": "eyeglasses/women/becker/amber-tortoise-with-jet-black-matte"
+      }
+    ],
+    "starting_price": 9500,
+    "path": "eyeglasses/men/becker/amber-tortoise-with-jet-black-matte",
+    "assembly_type": "eyeglasses",
+    "sku": "0506_8221_OPK",
+    "image_set": {
+      "modes": {
+        "clear_fill": "//i.warbycdn.com/s/l",
+        "pad": "//i.warbycdn.com/s/p",
+        "clip": "//i.warbycdn.com/s/c",
+        "fill": "//i.warbycdn.com/s/f"
+      },
+      "orientations": {
+        "base_transparent": "1ae5a99b70c8a810746c27e58582ece60aa526ec",
+        "front": "820e5638a4c94a1bfa876490f846dbc37466e5d3",
+        "angle": "d94425d0b0e9c7d0432bd992b0ca0e8c18d4fe04",
+        "side": "57dd8943795174077f2575616366a88ecb69fbbc"
+      }
+    },
+    "display_name": "Becker",
+    "product_id": 61797,
+    "width": 140,
+    "gender": "m",
+    "list": "PLP_Nones_None",
+    "color": "Amber Tortoise With Jet Black Matte ",
+    "hto_available": false,
+    "attributes": {
+      "color": { "neutral": true, "two-tone": true, "black": true, "tortoise": true },
+      "material": { "acetate": true },
+      "collection": { "fall-2017": true },
+      "nose bridge": { "standard": true },
+      "width": { "wide": true },
+      "shape": { "square": true, "rectangle": true }
+    }
+  },
+  "61797": {
+    "description": "Matte temple arms and the contrasting sheen of the facefront give wide, rectangular Becker frame a special bit of refinement.",
+    "product_category": "Frame",
+    "image": "//i.warbycdn.com/s/c/820e5638a4c94a1bfa876490f846dbc37466e5d3",
+    "swatch_url": "//i.warbycdn.com/s/f/4d19cdb24245123d439c3260252c6bfc35825f1d",
+    "gendered_details": [
+      {
+        "gender": "m",
+        "product_id": 61797,
+        "path": "eyeglasses/men/becker/amber-tortoise-with-jet-black-matte"
+      },
+      {
+        "gender": "f",
+        "product_id": 61769,
+        "path": "eyeglasses/women/becker/amber-tortoise-with-jet-black-matte"
+      }
+    ],
+    "starting_price": 9500,
+    "path": "eyeglasses/men/becker/amber-tortoise-with-jet-black-matte",
+    "assembly_type": "eyeglasses",
+    "sku": "0506_8221_OPK",
+    "image_set": {
+      "modes": {
+        "clear_fill": "//i.warbycdn.com/s/l",
+        "pad": "//i.warbycdn.com/s/p",
+        "clip": "//i.warbycdn.com/s/c",
+        "fill": "//i.warbycdn.com/s/f"
+      },
+      "orientations": {
+        "base_transparent": "1ae5a99b70c8a810746c27e58582ece60aa526ec",
+        "front": "820e5638a4c94a1bfa876490f846dbc37466e5d3",
+        "angle": "d94425d0b0e9c7d0432bd992b0ca0e8c18d4fe04",
+        "side": "57dd8943795174077f2575616366a88ecb69fbbc"
+      }
+    },
+    "display_name": "Becker",
+    "product_id": 61797,
+    "width": 140,
+    "gender": "m",
+    "list": "PLP_Nones_None",
+    "color": "Amber Tortoise With Jet Black Matte ",
+    "hto_available": false,
+    "attributes": {
+      "color": { "neutral": true, "two-tone": true, "black": true, "tortoise": true },
+      "material": { "acetate": true },
+      "collection": { "fall-2017": true },
+      "nose bridge": { "standard": true },
+      "width": { "wide": true },
+      "shape": { "square": true, "rectangle": true }
+    }
+  },
+  "61827": {
+    "description": "Slightly narrower with a sloped rectangular shape, Oliver is as flattering as it is wearable.",
+    "product_category": "Frame",
+    "image": "//i.warbycdn.com/s/c/136ca062b37a6fed8d0ce3eed3df39e8dc90b0ac",
+    "swatch_url": "//i.warbycdn.com/s/f/2f1617b781eb7c0f6580b7a174a5acc121a5aa14",
+    "gendered_details": [
+      {
+        "gender": "m",
+        "product_id": 61856,
+        "path": "eyeglasses/men/oliver/baltic-blue-with-marzipan-tortoise"
+      },
+      {
+        "gender": "f",
+        "product_id": 61827,
+        "path": "eyeglasses/women/oliver/baltic-blue-with-marzipan-tortoise"
+      }
+    ],
+    "starting_price": 9500,
+    "path": "eyeglasses/men/oliver/baltic-blue-with-marzipan-tortoise",
+    "assembly_type": "eyeglasses",
+    "sku": "0283_8365_OPK",
+    "image_set": {
+      "modes": {
+        "clear_fill": "//i.warbycdn.com/s/l",
+        "pad": "//i.warbycdn.com/s/p",
+        "clip": "//i.warbycdn.com/s/c",
+        "fill": "//i.warbycdn.com/s/f"
+      },
+      "orientations": {
+        "base_transparent": "37d78892039fbeef4dd0a5c0bbdbba479a37bc8c",
+        "front": "136ca062b37a6fed8d0ce3eed3df39e8dc90b0ac",
+        "angle": "4b38f8ee72d5b945ce8fcedc6efbe4a46d3a651e",
+        "side": "84f85ab57720d5e5bf217693bc3e5649236ca9a8"
+      }
+    },
+    "display_name": "Oliver",
+    "product_id": 61856,
+    "width": 130,
+    "gender": "m",
+    "list": "PLP_Nones_None",
+    "color": "Baltic Blue With Marzipan Tortoise",
+    "hto_available": true,
+    "attributes": {
+      "color": { "blue": true, "two-tone": true, "tortoise": true },
+      "material": { "acetate": true },
+      "collection": { "fall-2017": true },
+      "nose bridge": { "standard": true },
+      "width": { "narrow": true },
+      "shape": { "rectangle": true }
+    }
+  },
+  "61856": {
+    "description": "Slightly narrower with a sloped rectangular shape, Oliver is as flattering as it is wearable.",
+    "product_category": "Frame",
+    "image": "//i.warbycdn.com/s/c/136ca062b37a6fed8d0ce3eed3df39e8dc90b0ac",
+    "swatch_url": "//i.warbycdn.com/s/f/2f1617b781eb7c0f6580b7a174a5acc121a5aa14",
+    "gendered_details": [
+      {
+        "gender": "m",
+        "product_id": 61856,
+        "path": "eyeglasses/men/oliver/baltic-blue-with-marzipan-tortoise"
+      },
+      {
+        "gender": "f",
+        "product_id": 61827,
+        "path": "eyeglasses/women/oliver/baltic-blue-with-marzipan-tortoise"
+      }
+    ],
+    "starting_price": 9500,
+    "path": "eyeglasses/men/oliver/baltic-blue-with-marzipan-tortoise",
+    "assembly_type": "eyeglasses",
+    "sku": "0283_8365_OPK",
+    "image_set": {
+      "modes": {
+        "clear_fill": "//i.warbycdn.com/s/l",
+        "pad": "//i.warbycdn.com/s/p",
+        "clip": "//i.warbycdn.com/s/c",
+        "fill": "//i.warbycdn.com/s/f"
+      },
+      "orientations": {
+        "base_transparent": "37d78892039fbeef4dd0a5c0bbdbba479a37bc8c",
+        "front": "136ca062b37a6fed8d0ce3eed3df39e8dc90b0ac",
+        "angle": "4b38f8ee72d5b945ce8fcedc6efbe4a46d3a651e",
+        "side": "84f85ab57720d5e5bf217693bc3e5649236ca9a8"
+      }
+    },
+    "display_name": "Oliver",
+    "product_id": 61856,
+    "width": 130,
+    "gender": "m",
+    "list": "PLP_Nones_None",
+    "color": "Baltic Blue With Marzipan Tortoise",
+    "hto_available": true,
+    "attributes": {
+      "color": { "blue": true, "two-tone": true, "tortoise": true },
+      "material": { "acetate": true },
+      "collection": { "fall-2017": true },
+      "nose bridge": { "standard": true },
+      "width": { "narrow": true },
+      "shape": { "rectangle": true }
+    }
+  },
+  "68924": {
+    "description": "Can’t decide on acetate or stainless steel? You don’t have to settle : - ) Mona’s got both, with comfy adjustable nose pads and stylish round lenses.",
+    "product_category": "Frame",
+    "image": "//i.warbycdn.com/s/c/094d4d1b23439c0e46c1b90b6782aa81fd33a35c",
+    "swatch_url": "//i.warbycdn.com/s/f/408531fb053c3ca419fb92fc431feda98c83f6f0",
+    "gendered_details": [
+      { "gender": "f", "product_id": 68924, "path": "eyeglasses/women/mona/jet-black" }
+    ],
+    "starting_price": 14500,
+    "path": "eyeglasses/women/mona/jet-black",
+    "assembly_type": "eyeglasses",
+    "sku": "0507_7100_OPK",
+    "image_set": {
+      "modes": {
+        "clear_fill": "//i.warbycdn.com/s/l",
+        "pad": "//i.warbycdn.com/s/p",
+        "clip": "//i.warbycdn.com/s/c",
+        "fill": "//i.warbycdn.com/s/f"
+      },
+      "orientations": {
+        "base_transparent": "93198e481f29990b61f64adefbdb500cbe281561",
+        "front": "094d4d1b23439c0e46c1b90b6782aa81fd33a35c",
+        "angle": "b532774755a9d214a15eb343cf16d239119cb80d",
+        "side": "e751860cb67458c56dd9b5b54283cb139631b546"
+      }
+    },
+    "display_name": "Mona",
+    "product_id": 68924,
+    "width": 135,
+    "gender": "f",
+    "list": "PLP_Nones_None",
+    "color": "Jet Black",
+    "hto_available": false,
+    "attributes": {
+      "color": { "pink": true, "black": true, "gold": true },
+      "material": { "metal": true, "mixed material": true, "acetate": true },
+      "collection": { "fall-2017": true },
+      "nose bridge": { "standard": true },
+      "width": { "medium": true },
+      "shape": { "round": true }
+    }
+  },
+  "68952": {
+    "description": "Can’t decide on acetate or stainless steel? You don’t have to settle : - ) Mona’s got both, with comfy adjustable nose pads and stylish round lenses.",
+    "product_category": "Frame",
+    "image": "//i.warbycdn.com/s/c/cb22c55d68f8f6f9a0da4f7f3a194bb604d8b09b",
+    "swatch_url": "//i.warbycdn.com/s/f/3db6ec9de7f8eb3f00265d6aa18119267c09e05d",
+    "gendered_details": [
+      { "gender": "f", "product_id": 68952, "path": "eyeglasses/women/mona/marzipan-tortoise" }
+    ],
+    "starting_price": 14500,
+    "path": "eyeglasses/women/mona/marzipan-tortoise",
+    "assembly_type": "eyeglasses",
+    "sku": "0507_6195_OPK",
+    "image_set": {
+      "modes": {
+        "clear_fill": "//i.warbycdn.com/s/l",
+        "pad": "//i.warbycdn.com/s/p",
+        "clip": "//i.warbycdn.com/s/c",
+        "fill": "//i.warbycdn.com/s/f"
+      },
+      "orientations": {
+        "base_transparent": "8d7fdaf829d3a7b6dccdc9d3285d22b1b11b44bc",
+        "front": "cb22c55d68f8f6f9a0da4f7f3a194bb604d8b09b",
+        "angle": "012411b2c233b43f9bd7298087fc5967d2bb8419",
+        "side": "872643396b8df174384a157748e0bd1441a9bc52"
+      }
+    },
+    "display_name": "Mona",
+    "product_id": 68952,
+    "width": 135,
+    "gender": "f",
+    "list": "PLP_Nones_None",
+    "color": "Marzipan Tortoise",
+    "hto_available": false,
+    "attributes": {
+      "color": { "tortoise": true },
+      "material": { "metal": true, "mixed material": true, "acetate": true },
+      "collection": { "fall-2017": true },
+      "nose bridge": { "standard": true },
+      "width": { "medium": true },
+      "shape": { "round": true }
+    }
+  },
+  "68980": {
+    "description": "Logan’s round acetate lenses are offset in stainless steel for a look that’s slightly academic and slightly playful. (P.S. The adjustable nose pads are ultra-comfy.)",
+    "product_category": "Frame",
+    "image": "//i.warbycdn.com/s/c/a432ad2ea84351b2860dc1d51b54583530bc8adc",
+    "swatch_url": "//i.warbycdn.com/-/f/color-jet-black-matte-bc3c093b",
+    "gendered_details": [
+      { "gender": "m", "product_id": 69008, "path": "eyeglasses/men/logan/jet-black-matte" },
+      { "gender": "f", "product_id": 68980, "path": "eyeglasses/women/logan/jet-black-matte" }
+    ],
+    "starting_price": 14500,
+    "path": "eyeglasses/men/logan/jet-black-matte",
+    "assembly_type": "eyeglasses",
+    "sku": "0508_3101_OPK",
+    "image_set": {
+      "modes": {
+        "clear_fill": "//i.warbycdn.com/s/l",
+        "pad": "//i.warbycdn.com/s/p",
+        "clip": "//i.warbycdn.com/s/c",
+        "fill": "//i.warbycdn.com/s/f"
+      },
+      "orientations": {
+        "base_transparent": "ddffcaea26d58fe825ef6fc47e09389195d69617",
+        "front": "a432ad2ea84351b2860dc1d51b54583530bc8adc",
+        "angle": "12149fdeae80ce5911858f832014af773749191a",
+        "side": "72ee1109a27c99eb073f2f41584a81ec23bc327c"
+      }
+    },
+    "display_name": "Logan",
+    "product_id": 69008,
+    "width": 137,
+    "gender": "m",
+    "list": "PLP_Nones_None",
+    "color": "Jet Black Matte",
+    "hto_available": false,
+    "attributes": {
+      "color": { "neutral": true, "black": true },
+      "material": { "metal": true, "mixed material": true, "acetate": true },
+      "collection": { "fall-2017": true },
+      "nose bridge": { "standard": true },
+      "width": { "medium": true },
+      "shape": { "round": true }
+    }
+  },
+  "69008": {
+    "description": "Logan’s round acetate lenses are offset in stainless steel for a look that’s slightly academic and slightly playful. (P.S. The adjustable nose pads are ultra-comfy.)",
+    "product_category": "Frame",
+    "image": "//i.warbycdn.com/s/c/a432ad2ea84351b2860dc1d51b54583530bc8adc",
+    "swatch_url": "//i.warbycdn.com/-/f/color-jet-black-matte-bc3c093b",
+    "gendered_details": [
+      { "gender": "m", "product_id": 69008, "path": "eyeglasses/men/logan/jet-black-matte" },
+      { "gender": "f", "product_id": 68980, "path": "eyeglasses/women/logan/jet-black-matte" }
+    ],
+    "starting_price": 14500,
+    "path": "eyeglasses/men/logan/jet-black-matte",
+    "assembly_type": "eyeglasses",
+    "sku": "0508_3101_OPK",
+    "image_set": {
+      "modes": {
+        "clear_fill": "//i.warbycdn.com/s/l",
+        "pad": "//i.warbycdn.com/s/p",
+        "clip": "//i.warbycdn.com/s/c",
+        "fill": "//i.warbycdn.com/s/f"
+      },
+      "orientations": {
+        "base_transparent": "ddffcaea26d58fe825ef6fc47e09389195d69617",
+        "front": "a432ad2ea84351b2860dc1d51b54583530bc8adc",
+        "angle": "12149fdeae80ce5911858f832014af773749191a",
+        "side": "72ee1109a27c99eb073f2f41584a81ec23bc327c"
+      }
+    },
+    "display_name": "Logan",
+    "product_id": 69008,
+    "width": 137,
+    "gender": "m",
+    "list": "PLP_Nones_None",
+    "color": "Jet Black Matte",
+    "hto_available": false,
+    "attributes": {
+      "color": { "neutral": true, "black": true },
+      "material": { "metal": true, "mixed material": true, "acetate": true },
+      "collection": { "fall-2017": true },
+      "nose bridge": { "standard": true },
+      "width": { "medium": true },
+      "shape": { "round": true }
+    }
+  },
+  "69036": {
+    "description": "Logan’s round acetate lenses are offset in stainless steel for a look that’s slightly academic and slightly playful. (P.S. The adjustable nose pads are ultra-comfy.)",
+    "product_category": "Frame",
+    "image": "//i.warbycdn.com/s/c/18701f48f44debc6ed6dc6864a2c027034776f41",
+    "swatch_url": "//i.warbycdn.com/s/f/8214c6bd63855cf2175dc569d1ee74af7fc7bc0e",
+    "gendered_details": [
+      { "gender": "m", "product_id": 69036, "path": "eyeglasses/men/logan/hazelnut-tortoise" },
+      { "gender": "f", "product_id": 69064, "path": "eyeglasses/women/logan/hazelnut-tortoise" }
+    ],
+    "starting_price": 14500,
+    "path": "eyeglasses/men/logan/hazelnut-tortoise",
+    "assembly_type": "eyeglasses",
+    "sku": "0508_6206_OPK",
+    "image_set": {
+      "modes": {
+        "clear_fill": "//i.warbycdn.com/s/l",
+        "pad": "//i.warbycdn.com/s/p",
+        "clip": "//i.warbycdn.com/s/c",
+        "fill": "//i.warbycdn.com/s/f"
+      },
+      "orientations": {
+        "base_transparent": "d037c04002912e8b6bcb97e6e84e2a36a230d068",
+        "front": "18701f48f44debc6ed6dc6864a2c027034776f41",
+        "angle": "e41bea9425bb31aec8c75c0a75b6ffa1bcc0f350",
+        "side": "a77528cf3ec32be0c3a0d434d0676cf68ca9c62a"
+      }
+    },
+    "display_name": "Logan",
+    "product_id": 69036,
+    "width": 137,
+    "gender": "m",
+    "list": "PLP_Nones_None",
+    "color": "Hazelnut Tortoise",
+    "hto_available": false,
+    "attributes": {
+      "color": { "bright": true, "light-tortoise": true, "gold": true },
+      "material": { "metal": true, "mixed material": true, "acetate": true },
+      "collection": { "fall-2017": true },
+      "nose bridge": { "standard": true },
+      "width": { "medium": true },
+      "shape": { "round": true }
+    }
+  },
+  "69064": {
+    "description": "Logan’s round acetate lenses are offset in stainless steel for a look that’s slightly academic and slightly playful. (P.S. The adjustable nose pads are ultra-comfy.)",
+    "product_category": "Frame",
+    "image": "//i.warbycdn.com/s/c/18701f48f44debc6ed6dc6864a2c027034776f41",
+    "swatch_url": "//i.warbycdn.com/s/f/8214c6bd63855cf2175dc569d1ee74af7fc7bc0e",
+    "gendered_details": [
+      { "gender": "m", "product_id": 69036, "path": "eyeglasses/men/logan/hazelnut-tortoise" },
+      { "gender": "f", "product_id": 69064, "path": "eyeglasses/women/logan/hazelnut-tortoise" }
+    ],
+    "starting_price": 14500,
+    "path": "eyeglasses/men/logan/hazelnut-tortoise",
+    "assembly_type": "eyeglasses",
+    "sku": "0508_6206_OPK",
+    "image_set": {
+      "modes": {
+        "clear_fill": "//i.warbycdn.com/s/l",
+        "pad": "//i.warbycdn.com/s/p",
+        "clip": "//i.warbycdn.com/s/c",
+        "fill": "//i.warbycdn.com/s/f"
+      },
+      "orientations": {
+        "base_transparent": "d037c04002912e8b6bcb97e6e84e2a36a230d068",
+        "front": "18701f48f44debc6ed6dc6864a2c027034776f41",
+        "angle": "e41bea9425bb31aec8c75c0a75b6ffa1bcc0f350",
+        "side": "a77528cf3ec32be0c3a0d434d0676cf68ca9c62a"
+      }
+    },
+    "display_name": "Logan",
+    "product_id": 69036,
+    "width": 137,
+    "gender": "m",
+    "list": "PLP_Nones_None",
+    "color": "Hazelnut Tortoise",
+    "hto_available": false,
+    "attributes": {
+      "color": { "bright": true, "light-tortoise": true, "gold": true },
+      "material": { "metal": true, "mixed material": true, "acetate": true },
+      "collection": { "fall-2017": true },
+      "nose bridge": { "standard": true },
+      "width": { "medium": true },
+      "shape": { "round": true }
+    }
+  },
+  "69098": {
+    "description": "Tansley's oversized silhouette, punctuated in the middle by a polished metal nose bridge, is guaranteed to make a glowing first impression. (And its adjustable nose pads fit low bridges and high bridges alike.)",
+    "product_category": "Frame",
+    "image": "//i.warbycdn.com/s/c/6b680753b7d7c537e64c890dd9a9dbb3a4777dcf",
+    "swatch_url": "//i.warbycdn.com/s/f/458c17e005126f928cf2ba84fa88b51eaaebafac",
+    "gendered_details": [
+      { "gender": "f", "product_id": 69098, "path": "eyeglasses/women/tansley/pale-rose-horn" }
+    ],
+    "starting_price": 14500,
+    "path": "eyeglasses/women/tansley/pale-rose-horn",
+    "assembly_type": "eyeglasses",
+    "sku": "0416_6669_OPK",
+    "image_set": {
+      "modes": {
+        "clear_fill": "//i.warbycdn.com/s/l",
+        "pad": "//i.warbycdn.com/s/p",
+        "clip": "//i.warbycdn.com/s/c",
+        "fill": "//i.warbycdn.com/s/f"
+      },
+      "orientations": {
+        "base_transparent": "39175c5339745e52271b92d3c1594f42b0cfa2b4",
+        "front": "6b680753b7d7c537e64c890dd9a9dbb3a4777dcf",
+        "angle": "ca6ac054743ca3431d5074b4dc14fe23d31c6c91",
+        "side": "46023886efca45895f254add544a539c2eb4329f"
+      }
+    },
+    "display_name": "Tansley",
+    "product_id": 69098,
+    "width": 133,
+    "gender": "f",
+    "list": "PLP_Nones_None",
+    "color": "Pale Rose Horn With Gold",
+    "hto_available": false,
+    "attributes": {
+      "color": { "pink": true, "gold": true },
+      "material": { "metal": true, "mixed material": true, "acetate": true },
+      "collection": { "fall-2017": true },
+      "nose bridge": { "standard": true },
+      "width": { "medium": true },
+      "shape": { "round": true }
+    }
+  },
+  "69126": {
+    "description": "The special details in Hadley's construction—round acetate lens rims, polished metal temple arms and browline—are nothing but luxurious. (And it's got adjustable nose pads for extra comfort.)",
+    "product_category": "Frame",
+    "image": "//i.warbycdn.com/s/c/939aa8473634e5cbae4fed3a856387041d7daafc",
+    "swatch_url": "//i.warbycdn.com/s/f/402b7d1b8e81d4891e838e420091455b56f6ef03",
+    "gendered_details": [
+      { "gender": "f", "product_id": 69126, "path": "eyeglasses/women/hadley/opal-tortoise" }
+    ],
+    "starting_price": 14500,
+    "path": "eyeglasses/women/hadley/opal-tortoise",
+    "assembly_type": "eyeglasses",
+    "sku": "0417_6233_OPK",
+    "image_set": {
+      "modes": {
+        "clear_fill": "//i.warbycdn.com/s/l",
+        "pad": "//i.warbycdn.com/s/p",
+        "clip": "//i.warbycdn.com/s/c",
+        "fill": "//i.warbycdn.com/s/f"
+      },
+      "orientations": {
+        "base_transparent": "1cec396fad832fe356eb6a40ce57559de43dbc33",
+        "front": "939aa8473634e5cbae4fed3a856387041d7daafc",
+        "angle": "23a5c58bdfaa81be89c4ff1ea441f7d24ef1a3a0",
+        "side": "03bfdcbf630852f1c0c4e2180fbfcb5fa5b32e95"
+      }
+    },
+    "display_name": "Hadley",
+    "product_id": 69126,
+    "width": 135,
+    "gender": "f",
+    "list": "PLP_Nones_None",
+    "color": "Opal Tortoise With Rose Gold",
+    "hto_available": false,
+    "attributes": {
+      "color": { "light-tortoise": true, "gold": true, "tortoise": true },
+      "material": { "metal": true, "mixed material": true, "acetate": true },
+      "collection": { "fall-2017": true },
+      "nose bridge": { "standard": true },
+      "width": { "medium": true },
+      "shape": { "round": true }
+    }
+  },
+  "69154": {
+    "description": "The special details in Hadley's construction—round acetate lens rims, polished metal temple arms and browline—are nothing but luxurious. (And it's got adjustable nose pads for extra comfort.)",
+    "product_category": "Frame",
+    "image": "//i.warbycdn.com/s/c/44e1f5e8eaf34e2892c0244fc32946f32609ec68",
+    "swatch_url": "//i.warbycdn.com/s/f/402b7d1b8e81d4891e838e420091455b56f6ef03",
+    "gendered_details": [
+      { "gender": "f", "product_id": 69154, "path": "sunglasses/women/hadley/opal-tortoise" }
+    ],
+    "starting_price": 14500,
+    "path": "sunglasses/women/hadley/opal-tortoise",
+    "assembly_type": "sunglasses",
+    "sku": "0417_6233_SPK",
+    "image_set": {
+      "modes": {
+        "clear_fill": "//i.warbycdn.com/s/l",
+        "pad": "//i.warbycdn.com/s/p",
+        "clip": "//i.warbycdn.com/s/c",
+        "fill": "//i.warbycdn.com/s/f"
+      },
+      "orientations": {
+        "front": "44e1f5e8eaf34e2892c0244fc32946f32609ec68",
+        "angle": "3b7dc3bbad462190cc1407893956436603049a1a",
+        "side": "403cdc1efe6b31a0755f601f6db6764792c70800"
+      }
+    },
+    "display_name": "Hadley",
+    "product_id": 69154,
+    "width": 135,
+    "gender": "f",
+    "list": "PLP_Nones_None",
+    "color": "Opal Tortoise With Rose Gold",
+    "hto_available": false,
+    "attributes": {
+      "color": { "light-tortoise": true, "gold": true, "tortoise": true },
+      "material": { "metal": true, "mixed material": true, "acetate": true },
+      "collection": { "fall-2017": true },
+      "nose bridge": { "standard": true },
+      "width": { "medium": true },
+      "shape": { "round": true }
+    }
+  },
+  "69155": {
+    "description": "Claudia’s secret recipe? Add a dash of cat-eye to round lenses, and bam—a narrow frame that emanates charm.",
+    "product_category": "Frame",
+    "image": "//i.warbycdn.com/s/c/d39f87ba6ac0be8a951ed94934479d7afde25527",
+    "swatch_url": "//i.warbycdn.com/-/f/color-violet-magnolia-f745a1f0",
+    "gendered_details": [
+      { "gender": "f", "product_id": 69155, "path": "eyeglasses/women/claudia/violet-magnolia" }
+    ],
+    "starting_price": 9500,
+    "path": "eyeglasses/women/claudia/violet-magnolia",
+    "assembly_type": "eyeglasses",
+    "sku": "0521_0252_OPK",
+    "image_set": {
+      "modes": {
+        "clear_fill": "//i.warbycdn.com/s/l",
+        "pad": "//i.warbycdn.com/s/p",
+        "clip": "//i.warbycdn.com/s/c",
+        "fill": "//i.warbycdn.com/s/f"
+      },
+      "orientations": {
+        "base_transparent": "d5e5d8c08a3e988b9a1c43cb8bc7a248d0d4d069",
+        "front": "d39f87ba6ac0be8a951ed94934479d7afde25527",
+        "angle": "638ea00ba50a3a01635bf90dd1ef3684fbd56452"
+      }
+    },
+    "display_name": "Claudia",
+    "product_id": 69155,
+    "width": 132,
+    "gender": "f",
+    "list": "PLP_Nones_None",
+    "color": "Violet Magnolia",
+    "hto_available": false,
+    "attributes": {
+      "color": { "neutral": true, "tortoise": true },
+      "material": { "acetate": true },
+      "collection": { "fall-2017": true },
+      "nose bridge": { "low bridge fit": true },
+      "width": { "medium": true },
+      "shape": {}
+    }
+  },
+  "69183": {
+    "description": "Claudia’s secret recipe? Add a dash of cat-eye to round lenses, and bam—a narrow frame that emanates charm.",
+    "product_category": "Frame",
+    "image": "//i.warbycdn.com/s/c/61953259c9924b347795ff76f5ac33f0a40d2de3",
+    "swatch_url": "//i.warbycdn.com/s/f/83589bebfcb2dbc91fa8088dcdb129463c08fb1f",
+    "gendered_details": [
+      {
+        "gender": "f",
+        "product_id": 69183,
+        "path": "eyeglasses/women/claudia/crystal-sable-with-opal-tortoise"
+      }
+    ],
+    "starting_price": 9500,
+    "path": "eyeglasses/women/claudia/crystal-sable-with-opal-tortoise",
+    "assembly_type": "eyeglasses",
+    "sku": "0521_8218_OPK",
+    "image_set": {
+      "modes": {
+        "clear_fill": "//i.warbycdn.com/s/l",
+        "pad": "//i.warbycdn.com/s/p",
+        "clip": "//i.warbycdn.com/s/c",
+        "fill": "//i.warbycdn.com/s/f"
+      },
+      "orientations": {
+        "base_transparent": "051a150d07e9cd21af8f9ff61b09659ece25d6f7",
+        "front": "61953259c9924b347795ff76f5ac33f0a40d2de3",
+        "angle": "84cda2a906aa6ac9be780ec03b0c928f63df482d",
+        "side": "23a6b57f2c32bf671bfb99497e027be3010cae32"
+      }
+    },
+    "display_name": "Claudia",
+    "product_id": 69183,
+    "width": 132,
+    "gender": "f",
+    "list": "PLP_Nones_None",
+    "color": "Crystal Sable With Opal Tortoise ",
+    "hto_available": false,
+    "attributes": {
+      "color": { "crystal": true, "neutral": true, "two-tone": true, "tortoise": true },
+      "material": { "acetate": true },
+      "collection": { "fall-2017": true },
+      "nose bridge": { "low bridge fit": true },
+      "width": { "medium": true },
+      "shape": {}
+    }
+  },
+  "69211": {
+    "description": "A medium shape with roundish lenses, Lila features two dynamic acetates (the temple arms and facefront) and a heap of studious charm.  ",
+    "product_category": "Frame",
+    "image": "//i.warbycdn.com/s/c/1f0a134534ced55c5f1bf959d65d72624480690f",
+    "swatch_url": "//i.warbycdn.com/s/f/3db6ec9de7f8eb3f00265d6aa18119267c09e05d",
+    "gendered_details": [
+      {
+        "gender": "f",
+        "product_id": 69211,
+        "path": "eyeglasses/women/lila/marzipan-tortoise-with-merlot"
+      }
+    ],
+    "starting_price": 9500,
+    "path": "eyeglasses/women/lila/marzipan-tortoise-with-merlot",
+    "assembly_type": "eyeglasses",
+    "sku": "0523_8195_OPK",
+    "image_set": {
+      "modes": {
+        "clear_fill": "//i.warbycdn.com/s/l",
+        "pad": "//i.warbycdn.com/s/p",
+        "clip": "//i.warbycdn.com/s/c",
+        "fill": "//i.warbycdn.com/s/f"
+      },
+      "orientations": {
+        "base_transparent": "77cc1fb5d35162bd5696807bba5d537c0cf1fcf4",
+        "front": "1f0a134534ced55c5f1bf959d65d72624480690f",
+        "angle": "88cd96255a3c2ba153abca09153354713ba76794",
+        "side": "51431b0e35656ab9d76ad47d64b0e6e4b5457bc2"
+      }
+    },
+    "display_name": "Lila",
+    "product_id": 69211,
+    "width": 135,
+    "gender": "f",
+    "list": "PLP_Nones_None",
+    "color": "Marzipan Tortoise With Merlot Temples",
+    "hto_available": false,
+    "attributes": {
+      "color": { "red": true, "light-tortoise": true, "tortoise": true },
+      "material": { "acetate": true },
+      "collection": { "fall-2017": true },
+      "nose bridge": { "low bridge fit": true },
+      "width": { "medium": true },
+      "shape": { "round": true }
+    }
+  },
+  "69239": {
+    "description": "A medium shape with roundish lenses, Lila features two dynamic acetates (the temple arms and facefront) and a heap of studious charm.  ",
+    "product_category": "Frame",
+    "image": "//i.warbycdn.com/s/c/cc1890e79ac2919069eef6765cdbfcfef58ccf50",
+    "swatch_url": "//i.warbycdn.com/s/f/ef14c8714c2678410c6e982c1e7188d5525ab630",
+    "gendered_details": [
+      { "gender": "f", "product_id": 69239, "path": "eyeglasses/women/lila/rose-water" }
+    ],
+    "starting_price": 9500,
+    "path": "eyeglasses/women/lila/rose-water",
+    "assembly_type": "eyeglasses",
+    "sku": "0523_0668_OPK",
+    "image_set": {
+      "modes": {
+        "clear_fill": "//i.warbycdn.com/s/l",
+        "pad": "//i.warbycdn.com/s/p",
+        "clip": "//i.warbycdn.com/s/c",
+        "fill": "//i.warbycdn.com/s/f"
+      },
+      "orientations": {
+        "base_transparent": "9b5a36be04a5b5757106a04d0eb21d82c467bd44",
+        "front": "cc1890e79ac2919069eef6765cdbfcfef58ccf50",
+        "angle": "5a2595030fda77c63304bdb353b47b98449596c3",
+        "side": "79ea002e061262f264f4a95282d30ce7341490b5"
+      }
+    },
+    "display_name": "Lila",
+    "product_id": 69239,
+    "width": 135,
+    "gender": "f",
+    "list": "PLP_Nones_None",
+    "color": "Rose Water ",
+    "hto_available": false,
+    "attributes": {
+      "color": { "pink": true, "brown": true, "neutral": true, "crystal": true },
+      "material": { "acetate": true },
+      "collection": { "fall-2017": true },
+      "nose bridge": { "low bridge fit": true },
+      "width": { "medium": true },
+      "shape": { "round": true }
+    }
+  },
+  "69267": {
+    "description": "Tansley's oversized silhouette, punctuated in the middle by a polished metal nose bridge, is guaranteed to make a glowing first impression. (And its adjustable nose pads fit low bridges and high bridges alike.)",
+    "product_category": "Frame",
+    "image": "//i.warbycdn.com/s/c/3f3d2f77fa6d7fb4a96e039dfc8d523614e42fbc",
+    "swatch_url": "//i.warbycdn.com/s/f/458c17e005126f928cf2ba84fa88b51eaaebafac",
+    "gendered_details": [
+      { "gender": "f", "product_id": 69267, "path": "sunglasses/women/tansley/pale-rose-horn" }
+    ],
+    "starting_price": 22500,
+    "path": "sunglasses/women/tansley/pale-rose-horn",
+    "assembly_type": "sunglasses",
+    "sku": "0416_6669_SPK",
+    "image_set": {
+      "modes": {
+        "clear_fill": "//i.warbycdn.com/s/l",
+        "pad": "//i.warbycdn.com/s/p",
+        "clip": "//i.warbycdn.com/s/c",
+        "fill": "//i.warbycdn.com/s/f"
+      },
+      "orientations": {
+        "front": "3f3d2f77fa6d7fb4a96e039dfc8d523614e42fbc",
+        "angle": "0d3c42cee5760fdf1f64026d663835cc793eb78d",
+        "side": "422e806feebc7a193ce59513aae2477317df9bb7"
+      }
+    },
+    "display_name": "Tansley",
+    "product_id": 69267,
+    "width": 133,
+    "gender": "f",
+    "list": "PLP_Nones_None",
+    "color": "Pale Rose Horn With Gold",
+    "hto_available": false,
+    "attributes": {
+      "color": { "pink": true, "gold": true },
+      "material": { "metal": true, "mixed material": true, "acetate": true },
+      "collection": { "fall-2017": true },
+      "nose bridge": { "standard": true },
+      "width": { "medium": true },
+      "shape": { "round": true }
+    }
+  },
+  "69268": {
+    "description": "Edwin offers a medium fit, round lenses, and a flattering nose bridge. If that sounds good-looking…it is.",
+    "product_category": "Frame",
+    "image": "//i.warbycdn.com/s/c/7d61d34d4bfadfaefe84687d562561bd4c989fd1",
+    "swatch_url": "//i.warbycdn.com/s/f/4d19cdb24245123d439c3260252c6bfc35825f1d",
+    "gendered_details": [
+      {
+        "gender": "f",
+        "product_id": 69268,
+        "path": "eyeglasses/women/edwin/amber-tortoise-with-jet-black-matte"
+      },
+      {
+        "gender": "m",
+        "product_id": 69315,
+        "path": "eyeglasses/women/edwin/amber-tortoise-with-jet-black-matte"
+      }
+    ],
+    "starting_price": 9500,
+    "path": "eyeglasses/men/edwin/amber-tortoise-with-jet-black-matte",
+    "assembly_type": "eyeglasses",
+    "sku": "0522_8221_OPK",
+    "image_set": {
+      "modes": {
+        "clear_fill": "//i.warbycdn.com/s/l",
+        "pad": "//i.warbycdn.com/s/p",
+        "clip": "//i.warbycdn.com/s/c",
+        "fill": "//i.warbycdn.com/s/f"
+      },
+      "orientations": {
+        "base_transparent": "2cc33acab2994a00007675e83f9af14bbe70cce1",
+        "front": "7d61d34d4bfadfaefe84687d562561bd4c989fd1",
+        "angle": "14a5fa734acc20b403e5a6ebdbb06e76441998f5",
+        "side": "271fc00bb74a8e5fbcffd00acb07e00f2409fc74"
+      }
+    },
+    "display_name": "Edwin",
+    "product_id": 69315,
+    "width": 137,
+    "gender": "m",
+    "list": "PLP_Nones_None",
+    "color": "Amber Tortoise With Jet Black Matte ",
+    "hto_available": false,
+    "attributes": {
+      "color": { "neutral": true, "two-tone": true, "black": true, "tortoise": true },
+      "material": { "acetate": true },
+      "collection": { "fall-2017": true },
+      "nose bridge": { "low bridge fit": true },
+      "width": { "medium": true },
+      "shape": { "round": true }
+    }
+  },
+  "69343": {
+    "description": "Edwin offers a medium fit, round lenses, and a flattering nose bridge. If that sounds good-looking…it is.",
+    "product_category": "Frame",
+    "image": "//i.warbycdn.com/s/c/9625cea40d136e028fa18557f1db929ba1468440",
+    "swatch_url": "//i.warbycdn.com/s/f/0f887de0e1a8916b3148503daf558b838c6ff1de",
+    "gendered_details": [
+      { "gender": "f", "product_id": 69343, "path": "eyeglasses/women/edwin/indigo-crystal" },
+      { "gender": "m", "product_id": 69371, "path": "eyeglasses/men/edwin/indigo-crystal" }
+    ],
+    "starting_price": 9500,
+    "path": "eyeglasses/women/edwin/indigo-crystal",
+    "assembly_type": "eyeglasses",
+    "sku": "0522_0351_OPK",
+    "image_set": {
+      "modes": {
+        "clear_fill": "//i.warbycdn.com/s/l",
+        "pad": "//i.warbycdn.com/s/p",
+        "clip": "//i.warbycdn.com/s/c",
+        "fill": "//i.warbycdn.com/s/f"
+      },
+      "orientations": {
+        "base_transparent": "f193e9a55b5da28140a64a198f93b04abe0bf6f8",
+        "front": "9625cea40d136e028fa18557f1db929ba1468440",
+        "angle": "d7f991afaa6af1374e571c66bec24cdb7964ad12",
+        "side": "d95ee9dfa7ef66e918e77b48b8d43e65b4ae2040"
+      }
+    },
+    "display_name": "Edwin",
+    "product_id": 69343,
+    "width": 137,
+    "gender": "f",
+    "list": "PLP_Nones_None",
+    "color": "Indigo Crystal",
+    "hto_available": false,
+    "attributes": {
+      "color": { "blue": true, "crystal": true, "bright": true },
+      "material": { "acetate": true },
+      "collection": { "fall-2017": true },
+      "nose bridge": { "low bridge fit": true },
+      "width": { "medium": true },
+      "shape": { "round": true }
+    }
+  },
+  "69371": {
+    "description": "Edwin offers a medium fit, round lenses, and a flattering nose bridge. If that sounds good-looking…it is.",
+    "product_category": "Frame",
+    "image": "//i.warbycdn.com/s/c/9625cea40d136e028fa18557f1db929ba1468440",
+    "swatch_url": "//i.warbycdn.com/s/f/0f887de0e1a8916b3148503daf558b838c6ff1de",
+    "gendered_details": [
+      { "gender": "f", "product_id": 69343, "path": "eyeglasses/women/edwin/indigo-crystal" },
+      { "gender": "m", "product_id": 69371, "path": "eyeglasses/men/edwin/indigo-crystal" }
+    ],
+    "starting_price": 9500,
+    "path": "eyeglasses/men/edwin/indigo-crystal",
+    "assembly_type": "eyeglasses",
+    "sku": "0522_0351_OPK",
+    "image_set": {
+      "modes": {
+        "clear_fill": "//i.warbycdn.com/s/l",
+        "pad": "//i.warbycdn.com/s/p",
+        "clip": "//i.warbycdn.com/s/c",
+        "fill": "//i.warbycdn.com/s/f"
+      },
+      "orientations": {
+        "base_transparent": "f193e9a55b5da28140a64a198f93b04abe0bf6f8",
+        "front": "9625cea40d136e028fa18557f1db929ba1468440",
+        "angle": "d7f991afaa6af1374e571c66bec24cdb7964ad12",
+        "side": "d95ee9dfa7ef66e918e77b48b8d43e65b4ae2040"
+      }
+    },
+    "display_name": "Edwin",
+    "product_id": 69371,
+    "width": 137,
+    "gender": "m",
+    "list": "PLP_Nones_None",
+    "color": "Indigo Crystal",
+    "hto_available": false,
+    "attributes": {
+      "color": { "blue": true, "crystal": true, "bright": true },
+      "material": { "acetate": true },
+      "collection": { "fall-2017": true },
+      "nose bridge": { "low bridge fit": true },
+      "width": { "medium": true },
+      "shape": { "round": true }
+    }
+  }
+}

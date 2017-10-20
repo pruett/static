@@ -1,0 +1,22 @@
+@import "src/css/mixins";
+
+.c-appointment-time-slot {
+  &__time {
+    border-color: color("white") color("light-gray") color("light-gray")
+      color("white");
+    font-size: 18px;
+    line-height: 78px;
+
+    @include mqAbove($grid-breakpoint-tablet) {
+      line-height: 60px;
+    }
+  }
+
+  &__input:checked + &__time,
+  &__input:hover + &__time,
+  &__input:focus + &__time,
+  &__input:active + &__time {
+    border: 1px solid color('blue');
+    z-index: 1;
+  }
+}

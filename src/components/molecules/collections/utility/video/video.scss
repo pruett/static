@@ -1,0 +1,32 @@
+@import 'src/css/mixins';
+
+.c-collection-utility-video {
+
+  &__wrapper {
+
+    height: 0;
+
+    &.-middle {
+      padding-bottom: 120%;
+
+      @include mqAbove($grid-breakpoint-tablet) {
+        padding-bottom: 60%;
+      }
+
+      @include mqAbove($grid-breakpoint-desktop) {
+        padding-bottom: 62%;
+      }
+
+    }
+
+    &.-tall {
+      padding-bottom: 110%;
+
+      @include mqAbove($grid-breakpoint-tablet) {
+        padding-bottom: 114%;
+      }
+    }
+
+  }
+
+}

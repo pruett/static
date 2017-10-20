@@ -1,0 +1,31 @@
+@import 'src/css/mixins';
+
+.c-card-contents {
+  padding: 24px;
+  position: relative;
+  width: 100%;
+}
+
+.c-card-contents__icon,
+.c-card-contents__details {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.c-card-contents__icon {
+  width: 22%;
+  max-width: 60px;
+  margin-right: 12px;
+
+  @include mqAbove($min-width-tablet) {
+    width: 72px;
+    max-width: 72px;
+    margin-right: 24px;
+  }
+}
+
+.c-card-contents__description {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}

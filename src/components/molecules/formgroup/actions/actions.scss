@@ -1,0 +1,16 @@
+@import 'src/css/mixins';
+
+.c-formgroup-actions {
+  text-align: right;
+}
+
+.c-formgroup-actions__clear-input {
+  background-color: color('white-0p');
+  line-height: 1px;
+  padding: 12px;
+  margin-top: 1px;
+}
+
+.c-formgroup-actions__button {
+  top: -3px;
+}

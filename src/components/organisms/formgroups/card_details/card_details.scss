@@ -1,0 +1,45 @@
+.c-formgroup--card-details {
+
+  .-transition-card-details {
+
+    &-enter,
+    &-appear {
+      transition: 0.2s ease-in-out;
+      max-height: 0;
+      opacity: 0;
+      overflow: hidden;
+
+      &-active {
+        max-height: 66px;
+        opacity: 1;
+      }
+    }
+
+    &-leave {
+      transition: 0.2s ease-in-out;
+      max-height: 66px;
+      opacity: 1;
+      overflow: hidden;
+
+      &-active {
+        max-height: 0;
+        opacity: 0;
+      }
+    }
+  }
+
+  .-transition-card-icon {
+
+    &-enter,
+    &-appear {
+      transition: 0.2s ease-in-out;
+      transform: translateY(2px);
+      opacity: 0;
+
+      &-active {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+  }
+}

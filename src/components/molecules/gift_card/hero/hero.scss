@@ -1,0 +1,24 @@
+@import 'src/css/mixins';
+
+.c-gift-card-hero {
+  min-height: calc(100vh - 48px);
+  transform-style: preserve-3d;
+
+  @include mqAbove($grid-breakpoint-desktop) {
+    min-height: calc(100vh - 60px);
+  }
+}
+
+.c-gift-card-hero__description {
+  max-width: 500px;
+
+  @include mqAbove($grid-breakpoint-tablet) {
+    max-width: 700px;
+  }
+}
+
+.c-gift-card-hero__modal {
+  &:hover {
+    color: color('light-gray-alt-1');
+  }
+}

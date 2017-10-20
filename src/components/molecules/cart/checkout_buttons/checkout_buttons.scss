@@ -1,0 +1,79 @@
+@import 'src/css/mixins';
+
+.c-checkout-buttons {
+  margin-top: 24px;
+  direction: rtl;
+
+  &__error {
+    direction: ltr;
+  }
+
+  &.-footer {
+    margin-top: 0;
+    margin-bottom: 72px;
+  }
+
+  &__apple-pay {
+    &:focus {
+      outline: 0;
+      box-shadow: 0 0 0 1px color('white'),
+        0 0 0 2px color('blue');
+    }
+  }
+
+  &__picture {
+    width: 140px;
+    margin-top: -2px;
+
+    @include mqAbove($grid-breakpoint-tablet) {
+      width: 180px;
+    }
+  }
+
+  &__cta--apple-pay.-button-large,
+  &__apple-pay {
+    max-width: 220px;
+    border-radius: 5px;
+    height: 60px;
+    min-width: 0;
+    width: calc(50% - 6px);
+  }
+
+  &__cta--apple-pay {
+    font-size: 16px;
+
+    @include mqAbove($grid-breakpoint-tablet) {
+      font-size: 18px;
+    }
+  }
+
+  &__cta {
+    max-width: 260px;
+    min-width: 0;
+    margin-left: auto;
+    margin-right: auto;
+
+    &.-cta-large {
+      max-width: 260px;
+      min-width: 0;
+    }
+
+    @include mqBelow($min-width-tablet-small + 1) {
+      display: block;
+      margin-bottom: 12px;
+    }
+
+    @include mqAbove($min-width-tablet-small) {
+      margin-left: 0;
+      margin-right: 0;
+
+      & ~ & {
+        margin-right: 12px;
+      }
+
+      &.-cta-large {
+        width: 214px;
+      }
+    }
+  }
+}

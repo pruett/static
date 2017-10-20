@@ -1,0 +1,175 @@
+@import 'src/css/mixins';
+
+.c-hto-drawer {
+
+  // Special one-off max width for mobile
+  @include mqBelow($grid-breakpoint-tablet - 1) {
+    .u-grid.-maxed {
+      max-width: 414px;
+    }
+  }
+
+  &.-transition {
+    &-enter {
+      opacity: 0.01;
+      transition: $transition-duration-default;
+
+      .c-hto-drawer__drawer {
+        transform: translateX(100%);
+        transition: $transition-duration-default ease-in-out;
+        transition-delay: $transition-duration-default;
+      }
+
+      .c-hto-drawer__footer {
+        transform: translateY(60px);
+        transition: $transition-duration-default ease-in-out;
+        transition-delay: 2 * $transition-duration-default;
+      }
+
+      &-active {
+        opacity: 1;
+
+        .c-hto-drawer__drawer {
+          transform: translateX(0);
+        }
+
+        .c-hto-drawer__footer {
+          transform: translateY(0);
+        }
+      }
+    }
+
+    &-leave {
+      opacity: 1;
+      transition: $transition-duration-default;
+      transition-delay: $transition-duration-default;
+
+      .c-hto-drawer__drawer {
+        transform: translateX(0);
+        transition: $transition-duration-default ease-in-out;
+        transition-delay: $transition-duration-default / 2;
+      }
+
+      .c-hto-drawer__footer {
+        opacity: 1;
+        transform: translateY(0);
+        transition: $transition-duration-fast ease-in-out;
+      }
+
+      &-active {
+        opacity: 0.01;
+
+        .c-hto-drawer__drawer {
+          transform: translateX(100%);
+        }
+
+        .c-hto-drawer__footer {
+          opacity: 0.01;
+          transform: translateY(60px);
+        }
+      }
+    }
+  }
+
+  &__frame {
+    &.-transition {
+      &-enter {
+        opacity: 0.01;
+        transition: $transition-duration-default;
+
+        &-active {
+          opacity: 1;
+        }
+      }
+
+      &-leave {
+        opacity: 1;
+        max-height: 225px;
+        overflow: hidden;
+        transition: $transition-duration-default ease-in-out;
+        transition-delay: 2s;
+
+        &-active {
+          opacity: 0.01;
+          max-height: 0;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  &__placeholder {
+    &:focus {
+      outline: none;
+    }
+
+    &.-transition-enter-active {
+      display: none;
+    }
+  }
+
+  &__footer {
+    z-index: 1;
+  }
+
+  &__button {
+    &.u-button {
+      width: 50%;
+      min-width: 0;
+      border: none;
+      border-radius: 0;
+
+      &:focus {
+        box-shadow: none;
+      }
+
+      &.-dark {
+        background: color('blue-shadow');
+
+        &:hover {
+          background: color('blue-cta');
+        }
+      }
+    }
+  }
+
+  &__x {
+    stroke-width: 1.25;
+  }
+
+  &__close-button {
+    z-index: 1;
+
+    &:focus {
+      outline: none;
+
+      .c-rsvg {
+        stroke: color('dark-gray');
+      }
+    }
+  }
+
+  &__banner {
+    background: color('light-red');
+  }
+
+  &__banner-icon {
+    width: 16px;
+  }
+
+  &__banner-cta {
+
+    &:focus {
+      outline: none;
+      color: color('blue-shadow');
+    }
+  }
+
+  &__message {
+    max-width: 280px;
+
+    @include mqAbove($grid-breakpoint-tablet) {
+      max-width: 320px;
+    }
+  }
+}

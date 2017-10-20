@@ -1,0 +1,44 @@
+/**
+ * Grid
+ */
+$grid-columns: 12;
+
+$grid-breakpoints: (
+  default: (
+    breakpoint: 0,
+    gutter-row: 18px,
+    gutter-col: 12px,
+    max-width: 396px
+  ),
+  tablet: (
+    breakpoint: 600px,
+    gutter-row: 36px,
+    gutter-col: 12px,
+    max-width: 732px
+  ),
+  desktop: (
+    breakpoint: 900px,
+    gutter-row: 48px,
+    gutter-col: 18px,
+    max-width: 1056px
+  ),
+  desktop-large: (
+    breakpoint: 1200px,
+    gutter-row: 60px,
+    gutter-col: 24px,
+    max-width: 1440px
+  )
+);
+
+$grid-breakpoint-default: map-get(map-get($grid-breakpoints, default), breakpoint);
+$grid-breakpoint-tablet: map-get(map-get($grid-breakpoints, tablet), breakpoint);
+$grid-breakpoint-desktop: map-get(map-get($grid-breakpoints, desktop), breakpoint);
+$grid-breakpoint-desktop-large: map-get(map-get($grid-breakpoints, desktop-large), breakpoint);
+
+$grid-max-width: map-get(map-get($grid-breakpoints, desktop-large), max-width);
+
+// List of breakpoints
+$grid-breakpoint-list: ();
+@each $breakpoint, $attributes in $grid-breakpoints {
+  $grid-breakpoint-list: append($grid-breakpoint-list, map-get($attributes, breakpoint));
+}

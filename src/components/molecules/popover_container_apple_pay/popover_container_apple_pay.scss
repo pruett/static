@@ -1,0 +1,77 @@
+@import 'src/css/mixins';
+
+.c-popover-container-apple-pay {
+  z-index: 2;
+  transition: opacity $transition-duration-default ease-in-out;
+
+  &.-transition {
+    &-enter,
+    &-appear {
+      opacity: 0.01;
+
+      &-active {
+        opacity: 1;
+      }
+    }
+
+    &-leave {
+      opacity: 1;
+
+      &-active {
+        opacity: 0.01;
+      }
+    }
+  }
+
+  &__content {
+    width: 500px;
+
+    @include mqAbove($grid-breakpoint-desktop) {
+      width: 550px;
+    }
+  }
+
+  &__variants {
+    opacity: 1;
+    visibility: visible;
+    transition: {
+      property: opacity, visibility;
+      duration: $transition-duration-default, 0s;
+      delay: 0s, 0s;
+      timing-function: ease-in-out;
+    }
+
+    &.-hide {
+      opacity: 0;
+      visibility: hidden;
+      transition-delay: 0s, $transition-duration-default;
+    }
+  }
+
+  &__cancel {
+    z-index: $z-index-foreground;
+  }
+
+  &__x {
+    width: 30px;
+    height: 30px;
+
+    &::before,
+    &::after {
+      position: absolute;
+      height: 20px;
+      top: 0;
+      bottom: 0;
+      content: '';
+      border-right: 1px color('light-gray') solid;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+  }
+}

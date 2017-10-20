@@ -1,0 +1,14 @@
+@import 'src/css/mixins';
+
+.c-off-white {
+  &__frames-grid {
+    height: 100px;
+
+    @include mqAbove($grid-breakpoint-tablet) {
+      height: 150px;
+    }
+    @include mqAbove($grid-breakpoint-desktop) {
+      height: 275px;
+    }
+  }
+}

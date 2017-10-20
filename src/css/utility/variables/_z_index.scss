@@ -1,0 +1,42 @@
+/**
+ * z-indexes
+ */
+
+$z-index-negative:                    -1;
+
+$z-index-foreground:                   1;
+$z-index-overlay-breadcrumb:          10;
+$z-index-formgroup__empty:            10;
+$z-index-glasses-showing:             10;
+$z-index-glasses-view-categories:     20;
+$z-index-formgroup__label--optional:  60;
+$z-index-formgroup__label:            70;
+$z-index-formgroup__arrow:            80;
+$z-index-places:                      85;
+$z-index-formgroup__icon:             85;
+$z-index-modal-confirm__wrapper:      90;
+$z-index-modal-loader__wrapper:       100;
+$z-index-photochromics-atc:           100;
+
+$z-index-tooltip__trigger:            10;
+
+$z-index-fixed-header:                10;
+
+$z-index-overlay:                     800;
+
+// Navigation -> Top Level
+$z-index-header:                      900;
+$z-index-navigation__drawer:          910;
+$z-index-navigation__logo:            910;
+$z-index-navigation__secondary:       910;
+$z-index-navigation__overlay:         910;
+$z-index-navigation__drawer-open:     920;
+$z-index-navigation__primary:         920;
+$z-index-navigation__product:         920;
+$z-index-navigation__close:           920;
+$z-index-promo-banner:                940;
+$z-index-takeover:                    950;
+
+// Kludge for legacy template
+$z-index-navigation__legacy-override: 300;
+$z-index-footer__legacy-override:     200;
