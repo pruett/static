@@ -17,6 +17,7 @@
     "webpack-dev-server": "^2.9.3"
   },
   "scripts": {
-    "build": "webpack"
+    "build": "webpack",
+    "debug": "node --inspect ./node_modules/webpack/bin/webpack.js"
   }
 }
