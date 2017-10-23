@@ -1,14 +1,3 @@
 {
-  "presets": ["env", "react"],
-  "plugins": [
-    [
-      "module-resolver",
-      {
-        "root": ["./src"],
-        "alias": {
-          "components": "./components"
-        }
-      }
-    ]
-  ]
+  "presets": ["env", "react"]
 }

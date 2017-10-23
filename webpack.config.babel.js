@@ -1,7 +1,7 @@
 import path from "path";
 import CleanWebpackPlugin from "clean-webpack-plugin";
 import StaticRenderPlugin from "./lib/plugin.js";
-import data from "./lib/data.js";
+import pages from "./lib/data.js";
 
 const staticChunk = "static";
 
@@ -16,7 +16,15 @@ module.exports = {
   },
 
   resolve: {
-    extensions: [".js", ".json", ".jsx", ".cjsx"]
+    alias: {
+      components: path.resolve(__dirname, "src/components"),
+      backbone: "exoskeleton"
+    },
+    extensions: [".js", ".json", ".jsx", ".cjsx", ".coffee"]
+  },
+
+  externals: {
+    jquery: "jQuery"
   },
 
   module: {
@@ -30,12 +38,35 @@ module.exports = {
         test: /\.cjsx$/,
         exclude: /node_modules/,
         use: ["coffee-loader", "cjsx-loader"]
+      },
+      {
+        test: /\.coffee$/,
+        exclude: /node_modules/,
+        use: "coffee-loader"
+      },
+      {
+        test: /\.scss$/,
+        exclude: [/node_modules/],
+        use: [
+          "style-loader",
+          "css-loader",
+          "sass-loader",
+          {
+            loader: "postcss-loader",
+            options: {
+              parser: "postcss-scss",
+              plugins: loader => [require("autoprefixer")()]
+            }
+          }
+        ]
+      },
+      {
+        test: /.*\.(gif|png|jpe?g)$/i,
+        exclude: /node_modules/,
+        use: { loader: "url-loader", options: { limit: 10000 } }
       }
     ]
   },
 
-  plugins: [
-    new CleanWebpackPlugin(["dist"]),
-    new StaticRenderPlugin({ data: data })
-  ]
+  plugins: [new CleanWebpackPlugin(["dist"]), new StaticRenderPlugin(pages)]
 };

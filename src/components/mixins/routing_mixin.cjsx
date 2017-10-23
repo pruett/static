@@ -10,6 +10,7 @@ class HTTPError extends Error
   name: 'HTTPError'
 
   constructor: (@statusCode, @message = '') ->
+    super()
 
 
 module.exports =
