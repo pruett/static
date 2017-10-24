@@ -1,7 +1,9 @@
 import path from "path";
+import webpack from "webpack";
 import CleanWebpackPlugin from "clean-webpack-plugin";
 import StaticRenderPlugin from "./lib/plugin.js";
 import pages from "./lib/data.js";
+import { BundleAnalyzerPlugin } from "webpack-bundle-analyzer";
 
 const staticChunk = "static";
 
@@ -12,6 +14,7 @@ module.exports = {
 
   output: {
     filename: "[name].[hash].bundle.js",
+    chunkFilename: "[name].[hash].chunk.js",
     path: path.resolve(__dirname, "dist")
   },
 
@@ -68,5 +71,12 @@ module.exports = {
     ]
   },
 
-  plugins: [new CleanWebpackPlugin(["dist"]), new StaticRenderPlugin(pages)]
+  plugins: [
+    // new BundleAnalyzerPlugin(),
+    new CleanWebpackPlugin(["dist"]),
+    new webpack.optimize.CommonsChunkPlugin({
+      name: "common"
+    }),
+    new StaticRenderPlugin(pages)
+  ]
 };
