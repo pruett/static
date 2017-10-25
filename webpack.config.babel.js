@@ -1,3 +1,5 @@
+require("coffeescript/register.js");
+
 import path from "path";
 import webpack from "webpack";
 import CleanWebpackPlugin from "clean-webpack-plugin";
@@ -5,11 +7,9 @@ import StaticRenderPlugin from "./lib/plugin.js";
 import pages from "./lib/data.js";
 import { BundleAnalyzerPlugin } from "webpack-bundle-analyzer";
 
-const staticChunk = "static";
-
 module.exports = {
   entry: {
-    [staticChunk]: "./lib/index.js"
+    layout: "./app/server/handlers/base_handler.coffee"
   },
 
   output: {
@@ -21,6 +21,7 @@ module.exports = {
   resolve: {
     alias: {
       components: path.resolve(__dirname, "src/components"),
+      hedeia: path.resolve(__dirname, "app"),
       backbone: "exoskeleton"
     },
     extensions: [".js", ".json", ".jsx", ".cjsx", ".coffee"]

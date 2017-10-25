@@ -1,0 +1,2227 @@
+[
+ {
+  "asyncPrefetch": [],
+  "bundle": null,
+  "bundleFile": "bundle-pages-home-home-index",
+  "component": "PagesHomeHomeIndex",
+  "handler": "home_handler",
+  "method": "GET",
+  "requirePath": "components/pages/home/home_index/home_index",
+  "stores": [
+   "geo",
+   "navigation"
+  ],
+  "title": "Glasses & Prescription Eyeglasses",
+  "visibleBeforeMount": false,
+  "path": "/"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": null,
+  "bundleFile": "bundle-pages-collections-birthday-birthday-prizes",
+  "component": "PagesCollectionsBirthdayBirthdayPrizes",
+  "handler": "collections/birthday_prizes_handler",
+  "method": "GET",
+  "requirePath": "components/pages/collections/birthday/birthday_prizes/birthday_prizes",
+  "stores": [],
+  "title": "7th-birthday bonanza",
+  "visibleBeforeMount": false,
+  "path": "/7"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": null,
+  "bundleFile": "bundle-pages-static-accessibility",
+  "component": "PagesStaticAccessibility",
+  "handler": "static/accessibility_handler",
+  "method": "GET",
+  "requirePath": "components/pages/static/accessibility/accessibility",
+  "stores": [],
+  "title": "Accessibility",
+  "visibleBeforeMount": false,
+  "path": "/accessibility"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": "customer-center",
+  "bundleFile": "bundle-customer-center",
+  "component": "PagesCustomerCenterDashboardIndex",
+  "handler": "account/account_dashboard_handler",
+  "method": "GET",
+  "requirePath": "components/pages/customer_center/dashboard_index/dashboard_index",
+  "stores": [
+   "account"
+  ],
+  "title": "Account",
+  "visibleBeforeMount": true,
+  "path": "/account"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": "customer-center",
+  "bundleFile": "bundle-customer-center",
+  "component": "PagesCustomerCenterAddressesAddressIndex",
+  "handler": "account/account_addresses_handler",
+  "method": "GET",
+  "requirePath": "components/pages/customer_center/addresses/address_index/address_index",
+  "stores": [
+   "account"
+  ],
+  "title": "Addresses",
+  "visibleBeforeMount": false,
+  "path": "/account/addresses"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": "customer-center",
+  "bundleFile": "bundle-customer-center",
+  "component": "PagesCustomerCenterAddressesAddressNew",
+  "handler": "account/account_addresses_handler",
+  "method": "GET",
+  "requirePath": "components/pages/customer_center/addresses/address_new/address_new",
+  "stores": [
+   "account"
+  ],
+  "title": "New Address",
+  "visibleBeforeMount": false,
+  "path": "/account/addresses/new"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": "customer-center",
+  "bundleFile": "bundle-customer-center",
+  "component": "PagesCustomerCenterAddressesAddressDestroy",
+  "handler": "account/account_addresses_handler",
+  "method": "GET",
+  "requirePath": "components/pages/customer_center/addresses/address_destroy/address_destroy",
+  "stores": [
+   "account"
+  ],
+  "title": "Delete Address",
+  "visibleBeforeMount": false,
+  "path": "/account/addresses/{address_id}/delete"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": "customer-center",
+  "bundleFile": "bundle-customer-center",
+  "component": "PagesCustomerCenterAddressesAddressEdit",
+  "handler": "account/account_addresses_handler",
+  "method": "GET",
+  "requirePath": "components/pages/customer_center/addresses/address_edit/address_edit",
+  "stores": [
+   "account"
+  ],
+  "title": "Edit Address",
+  "visibleBeforeMount": false,
+  "path": "/account/addresses/{address_id}/edit"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": "customer-center",
+  "bundleFile": "bundle-customer-center",
+  "component": "PagesCustomerCenterBookmarksBookmarkIndex",
+  "handler": "account/account_bookmarks_handler",
+  "method": "GET",
+  "requirePath": "components/pages/customer_center/bookmarks/bookmark_index/bookmark_index",
+  "stores": [
+   "account"
+  ],
+  "title": "Bookmarks",
+  "visibleBeforeMount": false,
+  "path": "/account/bookmarks"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": "customer-center",
+  "bundleFile": "bundle-customer-center",
+  "component": "PagesCustomerCenterFavoritesFavoritesIndex",
+  "handler": "account/account_favorites_handler",
+  "method": "GET",
+  "requirePath": "components/pages/customer_center/favorites/favorites_index/favorites_index",
+  "stores": [
+   "favorites",
+   "geo",
+   "session"
+  ],
+  "title": "Favorites",
+  "visibleBeforeMount": true,
+  "path": "/account/favorites"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": "session",
+  "bundleFile": "bundle-session",
+  "component": "PagesForgotPasswordForgotPasswordIndex",
+  "handler": "default_handler",
+  "method": "GET",
+  "requirePath": "components/pages/forgot_password/forgot_password_index/forgot_password_index",
+  "stores": [
+   "password",
+   "session"
+  ],
+  "title": "Forgot Password",
+  "visibleBeforeMount": false,
+  "path": "/account/forgot-password"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": "session",
+  "bundleFile": "bundle-session",
+  "component": "PagesForgotPasswordForgotPasswordSuccess",
+  "handler": "default_handler",
+  "method": "GET",
+  "requirePath": "components/pages/forgot_password/forgot_password_success/forgot_password_success",
+  "stores": [
+   "password"
+  ],
+  "title": "Forgot Password",
+  "visibleBeforeMount": false,
+  "path": "/account/forgot-password/success"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": "customer-center",
+  "bundleFile": "bundle-customer-center",
+  "component": "PagesCustomerCenterOrdersOrderIndex",
+  "handler": "account/account_orders_handler",
+  "method": "GET",
+  "requirePath": "components/pages/customer_center/orders/order_index/order_index",
+  "stores": [
+   "account"
+  ],
+  "title": "Orders",
+  "visibleBeforeMount": true,
+  "path": "/account/orders"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": "customer-center",
+  "bundleFile": "bundle-customer-center",
+  "component": "PagesCustomerCenterOrdersOrderShow",
+  "handler": "account/account_orders_handler",
+  "method": "GET",
+  "requirePath": "components/pages/customer_center/orders/order_show/order_show",
+  "stores": [
+   "account",
+   "navigation"
+  ],
+  "title": null,
+  "visibleBeforeMount": false,
+  "path": "/account/orders/{order_id}"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": "customer-center",
+  "bundleFile": "bundle-customer-center",
+  "component": "PagesCustomerCenterOrdersOrderAddPrescription",
+  "handler": "account/account_orders_handler",
+  "method": "GET",
+  "requirePath": "components/pages/customer_center/orders/order_add_prescription/order_add_prescription",
+  "stores": [
+   "account",
+   "prescriptionRequest"
+  ],
+  "title": "Orders - Add prescription",
+  "visibleBeforeMount": true,
+  "path": "/account/orders/{order_id}/prescription/{step?}"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": "customer-center",
+  "bundleFile": "bundle-customer-center",
+  "component": "PagesCustomerCenterPrescriptionsPrescriptionIndex",
+  "handler": "account/account_dashboard_handler",
+  "method": "GET",
+  "requirePath": "components/pages/customer_center/prescriptions/prescription_index/prescription_index",
+  "stores": [
+   "account"
+  ],
+  "title": "Prescriptions",
+  "visibleBeforeMount": false,
+  "path": "/account/prescriptions"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": "customer-center",
+  "bundleFile": "bundle-customer-center",
+  "component": "PagesCustomerCenterPrescriptionsPrescriptionShow",
+  "handler": "account/account_dashboard_handler",
+  "method": "GET",
+  "requirePath": "components/pages/customer_center/prescriptions/prescription_show/prescription_show",
+  "stores": [
+   "account"
+  ],
+  "title": "Prescriptions",
+  "visibleBeforeMount": false,
+  "path": "/account/prescriptions/{prescription_id}"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": "customer-center",
+  "bundleFile": "bundle-customer-center",
+  "component": "PagesCustomerCenterProfileProfileEdit",
+  "handler": "account/account_profile_handler",
+  "method": "GET",
+  "requirePath": "components/pages/customer_center/profile/profile_edit/profile_edit",
+  "stores": [
+   "account"
+  ],
+  "title": "Edit Profile",
+  "visibleBeforeMount": false,
+  "path": "/account/profile"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": "customer-center",
+  "bundleFile": "bundle-customer-center",
+  "component": "PagesCustomerCenterProfilePasswordPasswordEdit",
+  "handler": "account/account_profile_handler",
+  "method": "GET",
+  "requirePath": "components/pages/customer_center/profile/password/password_edit/password_edit",
+  "stores": [
+   "account"
+  ],
+  "title": "Change Password",
+  "visibleBeforeMount": false,
+  "path": "/account/profile/password"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": "session",
+  "bundleFile": "bundle-session",
+  "component": "PagesResetPasswordResetPasswordSuccess",
+  "handler": "default_handler",
+  "method": "GET",
+  "requirePath": "components/pages/reset_password/reset_password_success/reset_password_success",
+  "stores": [],
+  "title": "Reset Password",
+  "visibleBeforeMount": false,
+  "path": "/account/reset-password/success"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": "session",
+  "bundleFile": "bundle-session",
+  "component": "PagesResetPasswordResetPasswordIndex",
+  "handler": "default_handler",
+  "method": "GET",
+  "requirePath": "components/pages/reset_password/reset_password_index/reset_password_index",
+  "stores": [
+   "password"
+  ],
+  "title": "Reset Password",
+  "visibleBeforeMount": false,
+  "path": "/account/reset-password/{token}"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": "session",
+  "bundleFile": "bundle-session",
+  "component": "PagesSetPasswordSetPasswordSuccess",
+  "handler": "default_handler",
+  "method": "GET",
+  "requirePath": "components/pages/set_password/set_password_success/set_password_success",
+  "stores": [],
+  "title": "Set Password",
+  "visibleBeforeMount": false,
+  "path": "/account/set-password/success"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": "session",
+  "bundleFile": "bundle-session",
+  "component": "PagesSetPasswordSetPasswordIndex",
+  "handler": "default_handler",
+  "method": "GET",
+  "requirePath": "components/pages/set_password/set_password_index/set_password_index",
+  "stores": [
+   "password"
+  ],
+  "title": "Set Password",
+  "visibleBeforeMount": false,
+  "path": "/account/set-password/{token}"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": null,
+  "bundleFile": "bundle-pages-collections-amanda-de-cadenet",
+  "component": "PagesCollectionsAmandaDeCadenet",
+  "handler": "collections/amanda_de_cadenet_handler",
+  "method": "GET",
+  "requirePath": "components/pages/collections/amanda_de_cadenet/amanda_de_cadenet",
+  "stores": [],
+  "title": "Amanda de Cadenet x Warby Parker",
+  "visibleBeforeMount": false,
+  "path": "/amanda-de-cadenet"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": null,
+  "bundleFile": "bundle-pages-annual-report-2014-annual-report",
+  "component": "PagesAnnualReport2014AnnualReport",
+  "handler": "static/annual_report_2014_handler",
+  "method": "GET",
+  "requirePath": "components/pages/annual_report_2014/annual_report/annual_report",
+  "stores": [],
+  "title": "Annual Report 2014",
+  "visibleBeforeMount": false,
+  "path": "/annual-report-2014"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": null,
+  "bundleFile": "bundle-pages-landing-app-landing",
+  "component": "PagesLandingAppLanding",
+  "handler": "landing/app_landing_handler",
+  "method": "GET",
+  "requirePath": "components/pages/landing/app_landing/app_landing",
+  "stores": [],
+  "title": "Mobile App",
+  "visibleBeforeMount": false,
+  "path": "/app"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": null,
+  "bundleFile": "bundle-pages-appointments-eye-exams-index",
+  "component": "PagesAppointmentsEyeExamsIndex",
+  "handler": "appointments/eye_exams_handler",
+  "method": "GET",
+  "requirePath": "components/pages/appointments/eye_exams_index/eye_exams_index",
+  "stores": [
+   "retail"
+  ],
+  "title": "Book an eye exam",
+  "visibleBeforeMount": false,
+  "path": "/appointments/eye-exams"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": "appointments",
+  "bundleFile": "bundle-appointments",
+  "component": "PagesAppointmentsAppointmentsNew",
+  "handler": "appointments/appointment_handler",
+  "method": "GET",
+  "requirePath": "components/pages/appointments/appointments_new/appointments_new",
+  "stores": [
+   "appointments",
+   "content",
+   "session"
+  ],
+  "title": null,
+  "visibleBeforeMount": false,
+  "path": "/appointments/{service_key}/{city_slug}/{location_slug}"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": "appointments",
+  "bundleFile": "bundle-appointments",
+  "component": "PagesAppointmentsConfirmationIndex",
+  "handler": "appointments/appointment_handler",
+  "method": "GET",
+  "requirePath": "components/pages/appointments/confirmation_index/confirmation_index",
+  "stores": [
+   "appointments",
+   "session"
+  ],
+  "title": null,
+  "visibleBeforeMount": false,
+  "path": "/appointments/{service_key}/{city_slug}/{location_slug}/confirmation"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": null,
+  "bundleFile": "bundle-pages-collections-archive",
+  "component": "PagesCollectionsArchive",
+  "handler": "collections/archive_handler",
+  "method": "GET",
+  "requirePath": "components/pages/collections/archive/archive",
+  "stores": [],
+  "title": "Archive",
+  "visibleBeforeMount": false,
+  "path": "/archive-edition"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": null,
+  "bundleFile": "bundle-pages-static-buy-a-pair-give-a-pair",
+  "component": "PagesStaticBuyAPairGiveAPair",
+  "handler": "static/buy_a_pair_give_a_pair_handler",
+  "method": "GET",
+  "requirePath": "components/pages/static/buy_a_pair_give_a_pair/buy_a_pair_give_a_pair",
+  "stores": [],
+  "title": "Buy a Pair, Give a Pair",
+  "visibleBeforeMount": false,
+  "path": "/buy-a-pair-give-a-pair"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": null,
+  "bundleFile": "bundle-pages-landing-process",
+  "component": "PagesLandingProcess",
+  "handler": "landing/landing_page_handler",
+  "method": "GET",
+  "requirePath": "components/pages/landing/process/process",
+  "stores": [
+   "landing"
+  ],
+  "title": null,
+  "visibleBeforeMount": false,
+  "path": "/california-transparency-act"
+ },
+ {
+  "asyncPrefetch": [
+   "/eyeglasses/.*",
+   "/sunglasses/.*"
+  ],
+  "bundle": null,
+  "bundleFile": "bundle-pages-cart",
+  "component": "PagesCart",
+  "handler": "cart/cart_handler",
+  "method": "GET",
+  "requirePath": "components/pages/cart/cart",
+  "stores": [
+   "applePay",
+   "cart"
+  ],
+  "title": "Cart",
+  "visibleBeforeMount": true,
+  "path": "/cart"
+ },
+ {
+  "asyncPrefetch": [
+   "/cart"
+  ],
+  "bundle": "pre-checkout",
+  "bundleFile": "bundle-pre-checkout",
+  "component": "PagesCheckoutCheckoutIndex",
+  "handler": "checkout/checkout_index_handler",
+  "method": "GET",
+  "requirePath": "components/pages/checkout/checkout_index/checkout_index",
+  "stores": [],
+  "title": "Checkout",
+  "visibleBeforeMount": false,
+  "path": "/checkout"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": "checkout",
+  "bundleFile": "bundle-checkout",
+  "component": "PagesCheckoutConfirmationIndex",
+  "handler": "checkout/checkout_confirmation_handler",
+  "method": "GET",
+  "requirePath": "components/pages/checkout/confirmation_index/confirmation_index",
+  "stores": [
+   "postCheckout",
+   "social"
+  ],
+  "title": "Thank you!",
+  "visibleBeforeMount": false,
+  "path": "/checkout/confirmation"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": "checkout",
+  "bundleFile": "bundle-checkout",
+  "component": "PagesCheckoutFaqIndex",
+  "handler": "checkout/checkout_faq_handler",
+  "method": "GET",
+  "requirePath": "components/pages/checkout/faq_index/faq_index",
+  "stores": [
+   "routing"
+  ],
+  "title": "Checkout FAQ",
+  "visibleBeforeMount": false,
+  "path": "/checkout/faq"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": "checkout-login",
+  "bundleFile": "bundle-checkout-login",
+  "component": "PagesCheckoutForgotPasswordForgotPasswordIndex",
+  "handler": "default_handler",
+  "method": "GET",
+  "requirePath": "components/pages/checkout/forgot-password/forgot_password_index/forgot_password_index",
+  "stores": [
+   "password"
+  ],
+  "title": null,
+  "visibleBeforeMount": false,
+  "path": "/checkout/forgot-password"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": "checkout-login",
+  "bundleFile": "bundle-checkout-login",
+  "component": "PagesCheckoutForgotPasswordForgotPasswordSuccess",
+  "handler": "default_handler",
+  "method": "GET",
+  "requirePath": "components/pages/checkout/forgot-password/forgot_password_success/forgot_password_success",
+  "stores": [
+   "password"
+  ],
+  "title": null,
+  "visibleBeforeMount": false,
+  "path": "/checkout/forgot-password/success"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": "checkout-login",
+  "bundleFile": "bundle-checkout-login",
+  "component": "PagesCheckoutLoginLoginIndex",
+  "handler": "checkout/checkout_login_handler",
+  "method": "GET",
+  "requirePath": "components/pages/checkout/login/login_index/login_index",
+  "stores": [
+   "session",
+   "estimate"
+  ],
+  "title": "Checkout Login",
+  "visibleBeforeMount": false,
+  "path": "/checkout/login"
+ },
+ {
+  "asyncPrefetch": [
+   "/cart",
+   "/checkout"
+  ],
+  "bundle": "checkout",
+  "bundleFile": "bundle-checkout",
+  "component": "PagesCheckoutStepInformationInformationNew",
+  "handler": "checkout/checkout_handler",
+  "method": "GET",
+  "requirePath": "components/pages/checkout/step/information/information_new/information_new",
+  "stores": [
+   "checkout",
+   "estimate"
+  ],
+  "title": null,
+  "visibleBeforeMount": false,
+  "path": "/checkout/step/information"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": "checkout",
+  "bundleFile": "bundle-checkout",
+  "component": "PagesCheckoutStepPrescriptionPrescriptionIndex",
+  "handler": "checkout/checkout_handler",
+  "method": "GET",
+  "requirePath": "components/pages/checkout/step/prescription/prescription_index/prescription_index",
+  "stores": [
+   "checkout",
+   "estimate"
+  ],
+  "title": null,
+  "visibleBeforeMount": false,
+  "path": "/checkout/step/prescription"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": "checkout",
+  "bundleFile": "bundle-checkout",
+  "component": "PagesCheckoutStepPrescriptionCallDoctorCallDoctorNew",
+  "handler": "checkout/checkout_handler",
+  "method": "GET",
+  "requirePath": "components/pages/checkout/step/prescription/call_doctor/call_doctor_new/call_doctor_new",
+  "stores": [
+   "estimate"
+  ],
+  "title": null,
+  "visibleBeforeMount": false,
+  "path": "/checkout/step/prescription/call-doctor"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": "checkout",
+  "bundleFile": "bundle-checkout",
+  "component": "PagesCheckoutStepPrescriptionLensTypeLensTypeNew",
+  "handler": "checkout/checkout_handler",
+  "method": "GET",
+  "requirePath": "components/pages/checkout/step/prescription/lens_type/lens_type_new/lens_type_new",
+  "stores": [
+   "estimate"
+  ],
+  "title": null,
+  "visibleBeforeMount": false,
+  "path": "/checkout/step/prescription/lens"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": "checkout",
+  "bundleFile": "bundle-checkout",
+  "component": "PagesCheckoutStepPrescriptionReadersReadersNew",
+  "handler": "checkout/checkout_handler",
+  "method": "GET",
+  "requirePath": "components/pages/checkout/step/prescription/readers/readers_new/readers_new",
+  "stores": [
+   "estimate"
+  ],
+  "title": null,
+  "visibleBeforeMount": false,
+  "path": "/checkout/step/prescription/readers"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": "checkout",
+  "bundleFile": "bundle-checkout",
+  "component": "PagesCheckoutStepReviewReviewIndex",
+  "handler": "checkout/checkout_handler",
+  "method": "GET",
+  "requirePath": "components/pages/checkout/step/review/review_index/review_index",
+  "stores": [
+   "estimate",
+   "checkout"
+  ],
+  "title": null,
+  "visibleBeforeMount": false,
+  "path": "/checkout/step/review"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": null,
+  "bundleFile": "bundle-pages-collections-concentric-collection",
+  "component": "PagesCollectionsConcentricCollection",
+  "handler": "collections/concentric_collection_handler",
+  "method": "GET",
+  "requirePath": "components/pages/collections/concentric_collection/concentric_collection",
+  "stores": [],
+  "title": "Concentric Collection",
+  "visibleBeforeMount": false,
+  "path": "/concentric-collection"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": null,
+  "bundleFile": "bundle-pages-costume-council",
+  "component": "PagesCostumeCouncil",
+  "handler": "landing/costume_council_handler",
+  "method": "GET",
+  "requirePath": "components/pages/costume_council/costume_council",
+  "stores": [],
+  "title": "Costume Council",
+  "visibleBeforeMount": false,
+  "path": "/costume-council"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": null,
+  "bundleFile": "bundle-pages-static-culture",
+  "component": "PagesStaticCulture",
+  "handler": "static/legacy_handler",
+  "method": "GET",
+  "requirePath": "components/pages/static/culture/culture",
+  "stores": [],
+  "title": "Culture",
+  "visibleBeforeMount": false,
+  "path": "/culture"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": null,
+  "bundleFile": "bundle-pages-static-design",
+  "component": "PagesStaticDesign",
+  "handler": "static/legacy_handler",
+  "method": "GET",
+  "requirePath": "components/pages/static/design/design",
+  "stores": [],
+  "title": "Design",
+  "visibleBeforeMount": false,
+  "path": "/design"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": null,
+  "bundleFile": "bundle-pages-products-editions-editions-gallery-index",
+  "component": "PagesProductsEditionsEditionsGalleryIndex",
+  "handler": "products/editions/editions_gallery_handler",
+  "method": "GET",
+  "requirePath": "components/pages/products/editions/editions_gallery_index/editions_gallery_index",
+  "stores": [],
+  "title": "Editions",
+  "visibleBeforeMount": false,
+  "path": "/editions"
+ },
+ {
+  "asyncPrefetch": [
+   "/.*"
+  ],
+  "bundle": null,
+  "bundleFile": "bundle-pages-products-editions-editions-detail-index",
+  "component": "PagesProductsEditionsEditionsDetailIndex",
+  "handler": "products/editions/editions_detail_handler",
+  "method": "GET",
+  "requirePath": "components/pages/products/editions/editions_detail_index/editions_detail_index",
+  "stores": [
+   "applePay",
+   "capabilities",
+   "editionsProduct"
+  ],
+  "title": null,
+  "visibleBeforeMount": false,
+  "path": "/editions/{product_name*}"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": null,
+  "bundleFile": "bundle-pages-eligibility-survey",
+  "component": "PagesEligibilitySurvey",
+  "handler": "eligibility_survey_handler",
+  "method": "GET",
+  "requirePath": "components/pages/eligibility_survey/eligibility_survey",
+  "stores": [
+   "eligibilitySurvey"
+  ],
+  "title": "Prescription Check",
+  "visibleBeforeMount": false,
+  "path": "/eligibility"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": null,
+  "bundleFile": "bundle-pages-static-eyeglasses",
+  "component": "PagesStaticEyeglasses",
+  "handler": "static/eyeglasses_handler",
+  "method": "GET",
+  "requirePath": "components/pages/static/eyeglasses/eyeglasses",
+  "stores": [
+   "routing"
+  ],
+  "title": "Eyeglasses",
+  "visibleBeforeMount": false,
+  "path": "/eyeglasses"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": null,
+  "bundleFile": "bundle-pages-landing-gallery",
+  "component": "PagesLandingGallery",
+  "handler": "landing/landing_page_handler",
+  "method": "GET",
+  "requirePath": "components/pages/landing/gallery/gallery",
+  "stores": [
+   "landing"
+  ],
+  "title": null,
+  "visibleBeforeMount": false,
+  "path": "/eyeglasses/all/{slug*}"
+ },
+ {
+  "asyncPrefetch": [
+   "/.*"
+  ],
+  "bundle": null,
+  "bundleFile": "bundle-pages-products-frames-frame-gallery-index",
+  "component": "PagesProductsFramesFrameGalleryIndex",
+  "handler": "products/frames/frame_gallery_handler",
+  "method": "GET",
+  "requirePath": "components/pages/products/frames/frame_gallery_index/frame_gallery_index",
+  "stores": [
+   "frameGallery",
+   "favorites",
+   "session",
+   "search"
+  ],
+  "title": null,
+  "visibleBeforeMount": false,
+  "path": "/eyeglasses/men"
+ },
+ {
+  "asyncPrefetch": [
+   "/.*"
+  ],
+  "bundle": null,
+  "bundleFile": "bundle-pages-products-frames-frame-detail-index",
+  "component": "PagesProductsFramesFrameDetailIndex",
+  "handler": "products/frames/frame_detail_handler",
+  "method": "GET",
+  "requirePath": "components/pages/products/frames/frame_detail_index/frame_detail_index",
+  "stores": [
+   "applePay",
+   "capabilities",
+   "favorites",
+   "frameProduct",
+   "session"
+  ],
+  "title": null,
+  "visibleBeforeMount": false,
+  "path": "/eyeglasses/men/{frame_name}/{frame_color?}"
+ },
+ {
+  "asyncPrefetch": [
+   "/.*"
+  ],
+  "bundle": null,
+  "bundleFile": "bundle-pages-products-frames-frame-gallery-index",
+  "component": "PagesProductsFramesFrameGalleryIndex",
+  "handler": "products/frames/frame_gallery_handler",
+  "method": "GET",
+  "requirePath": "components/pages/products/frames/frame_gallery_index/frame_gallery_index",
+  "stores": [
+   "frameGallery",
+   "favorites",
+   "session",
+   "search"
+  ],
+  "title": null,
+  "visibleBeforeMount": false,
+  "path": "/eyeglasses/women"
+ },
+ {
+  "asyncPrefetch": [
+   "/.*"
+  ],
+  "bundle": null,
+  "bundleFile": "bundle-pages-products-frames-frame-detail-index",
+  "component": "PagesProductsFramesFrameDetailIndex",
+  "handler": "products/frames/frame_detail_handler",
+  "method": "GET",
+  "requirePath": "components/pages/products/frames/frame_detail_index/frame_detail_index",
+  "stores": [
+   "applePay",
+   "capabilities",
+   "favorites",
+   "frameProduct",
+   "session"
+  ],
+  "title": null,
+  "visibleBeforeMount": false,
+  "path": "/eyeglasses/women/{frame_name}/{frame_color?}"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": null,
+  "bundleFile": "bundle-pages-landing-curated",
+  "component": "PagesLandingCurated",
+  "handler": "landing/landing_page_handler",
+  "method": "GET",
+  "requirePath": "components/pages/landing/curated/curated",
+  "stores": [
+   "landing"
+  ],
+  "title": null,
+  "visibleBeforeMount": false,
+  "path": "/eyeglasses/{slug*}"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": null,
+  "bundleFile": "bundle-pages-glossary",
+  "component": "PagesGlossary",
+  "handler": "landing/glossary_handler",
+  "method": "GET",
+  "requirePath": "components/pages/glossary/glossary",
+  "stores": [],
+  "title": "Eyewear A-Z",
+  "visibleBeforeMount": false,
+  "path": "/eyewear-a-z"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": null,
+  "bundleFile": "bundle-pages-collections-fall-2015",
+  "component": "PagesCollectionsFall2015",
+  "handler": "collections/fall_2015_handler",
+  "method": "GET",
+  "requirePath": "components/pages/collections/fall_2015/fall_2015",
+  "stores": [],
+  "title": "Fall 2015",
+  "visibleBeforeMount": false,
+  "path": "/fall-2015/{version?}"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": null,
+  "bundleFile": "bundle-pages-collections-fall-2016-basso",
+  "component": "PagesCollectionsFall2016Basso",
+  "handler": "collections/fall_2016/basso_handler",
+  "method": "GET",
+  "requirePath": "components/pages/collections/fall_2016/basso/basso",
+  "stores": [],
+  "title": "Warby Parker Fall 2016 Basso",
+  "visibleBeforeMount": false,
+  "path": "/fall-2016/basso"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": null,
+  "bundleFile": "bundle-pages-collections-fall-2016-fall-palette",
+  "component": "PagesCollectionsFall2016FallPalette",
+  "handler": "collections/fall_2016/fall_palette_handler",
+  "method": "GET",
+  "requirePath": "components/pages/collections/fall_2016/fall_palette/fall_palette",
+  "stores": [],
+  "title": "Warby Parker Fall 2016 Fall Palette",
+  "visibleBeforeMount": false,
+  "path": "/fall-2016/fall-palette"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": null,
+  "bundleFile": "bundle-pages-collections-fall-2016-mixed-media",
+  "component": "PagesCollectionsFall2016MixedMedia",
+  "handler": "collections/fall_2016/mixed_media_handler",
+  "method": "GET",
+  "requirePath": "components/pages/collections/fall_2016/mixed_media/mixed_media",
+  "stores": [],
+  "title": "Warby Parker Fall 2016 Mixed Media",
+  "visibleBeforeMount": false,
+  "path": "/fall-2016/mixed-materials"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": null,
+  "bundleFile": "bundle-pages-collections-fall-2016-sun",
+  "component": "PagesCollectionsFall2016Sun",
+  "handler": "collections/fall_2016/sun_handler",
+  "method": "GET",
+  "requirePath": "components/pages/collections/fall_2016/sun/sun",
+  "stores": [],
+  "title": "Warby Parker Fall 2016 Sun",
+  "visibleBeforeMount": false,
+  "path": "/fall-2016/sun"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": null,
+  "bundleFile": "bundle-pages-collections-fall-2016-two-tone",
+  "component": "PagesCollectionsFall2016TwoTone",
+  "handler": "collections/fall_2016/two_tone_handler",
+  "method": "GET",
+  "requirePath": "components/pages/collections/fall_2016/two_tone/two_tone",
+  "stores": [],
+  "title": "Warby Parker Fall 2016 Two Tone",
+  "visibleBeforeMount": false,
+  "path": "/fall-2016/two-tones"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": null,
+  "bundleFile": "bundle-pages-collections-fall-2017",
+  "component": "PagesCollectionsFall2017",
+  "handler": "collections/fall_2017_handler",
+  "method": "GET",
+  "requirePath": "components/pages/collections/fall_2017/fall_2017",
+  "stores": [],
+  "title": "Fall 2017",
+  "visibleBeforeMount": false,
+  "path": "/fall-2017/{version?}"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": null,
+  "bundleFile": "bundle-pages-collections-flash-mirrored",
+  "component": "PagesCollectionsFlashMirrored",
+  "handler": "collections/flash_mirrored_handler",
+  "method": "GET",
+  "requirePath": "components/pages/collections/flash_mirrored/flash_mirrored",
+  "stores": [],
+  "title": "Flash Mirrored",
+  "visibleBeforeMount": false,
+  "path": "/flash-mirrored-sunglasses"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": null,
+  "bundleFile": "bundle-pages-static-flexible-spending-accounts",
+  "component": "PagesStaticFlexibleSpendingAccounts",
+  "handler": "static/flexible_spending_accounts_handler",
+  "method": "GET",
+  "requirePath": "components/pages/static/flexible_spending_accounts/flexible_spending_accounts",
+  "stores": [
+   "geo"
+  ],
+  "title": "Flexible Spending Accounts",
+  "visibleBeforeMount": false,
+  "path": "/flexible-spending-accounts"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": null,
+  "bundleFile": "bundle-pages-static-general-electric",
+  "component": "PagesStaticGeneralElectric",
+  "handler": "static/general_electric_handler",
+  "method": "GET",
+  "requirePath": "components/pages/static/general_electric/general_electric",
+  "stores": [],
+  "title": "General Electric",
+  "visibleBeforeMount": false,
+  "path": "/ge"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": null,
+  "bundleFile": "bundle-pages-products-gift-card-index",
+  "component": "PagesProductsGiftCardIndex",
+  "handler": "products/gift_card_handler",
+  "method": "GET",
+  "requirePath": "components/pages/products/gift_card_index/gift_card_index",
+  "stores": [
+   "giftCard",
+   "session"
+  ],
+  "title": "Gift Card",
+  "visibleBeforeMount": false,
+  "path": "/gift-card"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": null,
+  "bundleFile": "bundle-pages-collections-birthday-birthday-form",
+  "component": "PagesCollectionsBirthdayBirthdayForm",
+  "handler": "collections/birthday_form_handler",
+  "method": "GET",
+  "requirePath": "components/pages/collections/birthday/birthday_form/birthday_form",
+  "stores": [
+   "birthday",
+   "regions",
+   "session"
+  ],
+  "title": "Glasses For Life",
+  "visibleBeforeMount": false,
+  "path": "/glasses-for-life"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": null,
+  "bundleFile": "bundle-pages-collections-half-decade",
+  "component": "PagesCollectionsHalfDecade",
+  "handler": "default_handler",
+  "method": "GET",
+  "requirePath": "components/pages/collections/half_decade/half_decade",
+  "stores": [],
+  "title": "Half Decade",
+  "visibleBeforeMount": false,
+  "path": "/half-decade"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": null,
+  "bundleFile": "bundle-pages-collections-haskell-flash",
+  "component": "PagesCollectionsHaskellFlash",
+  "handler": "collections/haskell_flash_handler",
+  "method": "GET",
+  "requirePath": "components/pages/collections/haskell_flash/haskell_flash",
+  "stores": [],
+  "title": "Warby Parker Haskell",
+  "visibleBeforeMount": false,
+  "path": "/haskell-flash"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": null,
+  "bundleFile": "bundle-pages-static-help",
+  "component": "PagesStaticHelp",
+  "handler": "static/help_handler",
+  "method": "GET",
+  "requirePath": "components/pages/static/help/help",
+  "stores": [],
+  "title": "Help",
+  "visibleBeforeMount": false,
+  "path": "/help"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": null,
+  "bundleFile": "bundle-pages-static-faqs",
+  "component": "PagesStaticFaqs",
+  "handler": "static/help_handler",
+  "method": "GET",
+  "requirePath": "components/pages/static/faqs/faqs",
+  "stores": [],
+  "title": "FAQs",
+  "visibleBeforeMount": false,
+  "path": "/help/faqs"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": null,
+  "bundleFile": "bundle-pages-static-history",
+  "component": "PagesStaticHistory",
+  "handler": "static/legacy_handler",
+  "method": "GET",
+  "requirePath": "components/pages/static/history/history",
+  "stores": [],
+  "title": "History",
+  "visibleBeforeMount": false,
+  "path": "/history"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": null,
+  "bundleFile": "bundle-pages-landing-holiday",
+  "component": "PagesLandingHoliday",
+  "handler": "landing/holiday_handler",
+  "method": "GET",
+  "requirePath": "components/pages/landing/holiday/holiday",
+  "stores": [],
+  "title": "Holiday",
+  "visibleBeforeMount": false,
+  "path": "/holiday"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": null,
+  "bundleFile": "bundle-pages-landing-gift-guide",
+  "component": "PagesLandingGiftGuide",
+  "handler": "landing/gift_guide_handler",
+  "method": "GET",
+  "requirePath": "components/pages/landing/gift_guide/gift_guide",
+  "stores": [],
+  "title": "Gift Guide",
+  "visibleBeforeMount": false,
+  "path": "/holiday-gift-guide"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": null,
+  "bundleFile": "bundle-pages-static-home-try-on",
+  "component": "PagesStaticHomeTryOn",
+  "handler": "static/home_try_on_handler",
+  "method": "GET",
+  "requirePath": "components/pages/static/home_try_on/home_try_on",
+  "stores": [
+   "favorites",
+   "homeTryOn",
+   "session"
+  ],
+  "title": "Home Try-On",
+  "visibleBeforeMount": false,
+  "path": "/home-try-on"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": null,
+  "bundleFile": "bundle-pages-landing-prescription-how-to",
+  "component": "PagesLandingPrescriptionHowTo",
+  "handler": "landing/prescription_how_to_handler",
+  "method": "GET",
+  "requirePath": "components/pages/landing/prescription_how_to/prescription_how_to",
+  "stores": [],
+  "title": "How to get a prescription",
+  "visibleBeforeMount": false,
+  "path": "/how-to-get-a-prescription"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": null,
+  "bundleFile": "bundle-pages-insurance",
+  "component": "PagesInsurance",
+  "handler": "landing/insurance_handler",
+  "method": "GET",
+  "requirePath": "components/pages/insurance/insurance",
+  "stores": [
+   "geo"
+  ],
+  "title": "Insurance",
+  "visibleBeforeMount": false,
+  "path": "/insurance"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": null,
+  "bundleFile": "bundle-pages-landing-intake-form",
+  "component": "PagesLandingIntakeForm",
+  "handler": "landing/intake_form_handler",
+  "method": "GET",
+  "requirePath": "components/pages/landing/intake_form/intake_form",
+  "stores": [
+   "fetch"
+  ],
+  "title": "Intake Form",
+  "visibleBeforeMount": false,
+  "path": "/intake-form"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": "jobs",
+  "bundleFile": "bundle-jobs",
+  "component": "PagesJobsJobsIndex",
+  "handler": "jobs/jobs_handler",
+  "method": "GET",
+  "requirePath": "components/pages/jobs/jobs_index/jobs_index",
+  "stores": [
+   "jobs"
+  ],
+  "title": "Jobs",
+  "visibleBeforeMount": true,
+  "path": "/jobs/{job_type?}"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": null,
+  "bundleFile": "bundle-pages-collections-karlie-kloss",
+  "component": "PagesCollectionsKarlieKloss",
+  "handler": "default_handler",
+  "method": "GET",
+  "requirePath": "components/pages/collections/karlie_kloss/karlie_kloss",
+  "stores": [],
+  "title": "Karlie Kloss",
+  "visibleBeforeMount": false,
+  "path": "/karlie-kloss"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": null,
+  "bundleFile": "bundle-pages-collections-killscreen",
+  "component": "PagesCollectionsKillscreen",
+  "handler": "collections/killscreen_handler",
+  "method": "GET",
+  "requirePath": "components/pages/collections/killscreen/killscreen",
+  "stores": [
+   "scripts"
+  ],
+  "title": "Warby Parker x Kill Screen",
+  "visibleBeforeMount": false,
+  "path": "/kill-screen"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": null,
+  "bundleFile": "bundle-pages-killscreen-kiosk",
+  "component": "PagesKillscreenKiosk",
+  "handler": "static/killscreen_kiosk_handler",
+  "method": "GET",
+  "requirePath": "components/pages/killscreen_kiosk/killscreen_kiosk",
+  "stores": [],
+  "title": "WP x KillScreen Kiosk",
+  "visibleBeforeMount": false,
+  "path": "/kill-screen-kiosk"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": null,
+  "bundleFile": "bundle-pages-collections-leith-clark",
+  "component": "PagesCollectionsLeithClark",
+  "handler": "collections/leith_clark_handler",
+  "method": "GET",
+  "requirePath": "components/pages/collections/leith_clark/leith_clark",
+  "stores": [],
+  "title": "Leith Clark",
+  "visibleBeforeMount": false,
+  "path": "/leith-clark"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": null,
+  "bundleFile": "bundle-pages-landing-lenses",
+  "component": "PagesLandingLenses",
+  "handler": "landing/lenses_landing_handler",
+  "method": "GET",
+  "requirePath": "components/pages/landing/lenses/lenses",
+  "stores": [],
+  "title": "Lenses",
+  "visibleBeforeMount": false,
+  "path": "/lenses"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": null,
+  "bundleFile": "bundle-pages-landing-light-responsive",
+  "component": "PagesLandingLightResponsive",
+  "handler": "default_handler",
+  "method": "GET",
+  "requirePath": "components/pages/landing/light_responsive/light_responsive",
+  "stores": [],
+  "title": "Light Responsive",
+  "visibleBeforeMount": false,
+  "path": "/light-responsive"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": "session",
+  "bundleFile": "bundle-session",
+  "component": "PagesLogin",
+  "handler": "login_handler",
+  "method": "GET",
+  "requirePath": "components/pages/login/login",
+  "stores": [
+   "session"
+  ],
+  "title": "Sign-in",
+  "visibleBeforeMount": false,
+  "path": "/login"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": "session",
+  "bundleFile": "bundle-session",
+  "component": "PagesLogout",
+  "handler": "default_handler",
+  "method": "GET",
+  "requirePath": "components/pages/logout/logout",
+  "stores": [
+   "session"
+  ],
+  "title": "Signed-out",
+  "visibleBeforeMount": false,
+  "path": "/logout"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": null,
+  "bundleFile": "bundle-pages-landing-low-bridge-fit-fans",
+  "component": "PagesLandingLowBridgeFitFans",
+  "handler": "landing/low_bridge_fit_handler",
+  "method": "GET",
+  "requirePath": "components/pages/landing/low_bridge_fit/fans/fans",
+  "stores": [],
+  "title": "Low Bridge Fit",
+  "visibleBeforeMount": false,
+  "path": "/low-bridge-fit"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": null,
+  "bundleFile": "bundle-pages-landing-low-bridge-fit-men",
+  "component": "PagesLandingLowBridgeFitMen",
+  "handler": "landing/low_bridge_fit_handler",
+  "method": "GET",
+  "requirePath": "components/pages/landing/low_bridge_fit/men/men",
+  "stores": [],
+  "title": "Low Bridge Fit",
+  "visibleBeforeMount": false,
+  "path": "/low-bridge-fit/men"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": null,
+  "bundleFile": "bundle-pages-landing-low-bridge-fit-women",
+  "component": "PagesLandingLowBridgeFitWomen",
+  "handler": "landing/low_bridge_fit_handler",
+  "method": "GET",
+  "requirePath": "components/pages/landing/low_bridge_fit/women/women",
+  "stores": [],
+  "title": "Low Bridge Fit",
+  "visibleBeforeMount": false,
+  "path": "/low-bridge-fit/women"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": null,
+  "bundleFile": "bundle-pages-collections-metal-optical",
+  "component": "PagesCollectionsMetalOptical",
+  "handler": "collections/metal_handler",
+  "method": "GET",
+  "requirePath": "components/pages/collections/metal_optical/metal_optical",
+  "stores": [],
+  "title": "Metal Eyeglasses",
+  "visibleBeforeMount": false,
+  "path": "/metal-eyeglasses"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": null,
+  "bundleFile": "bundle-pages-collections-metal-sun",
+  "component": "PagesCollectionsMetalSun",
+  "handler": "collections/metal_handler",
+  "method": "GET",
+  "requirePath": "components/pages/collections/metal_sun/metal_sun",
+  "stores": [],
+  "title": "Metal Sunglasses",
+  "visibleBeforeMount": false,
+  "path": "/metal-sunglasses"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": null,
+  "bundleFile": "bundle-pages-collections-mixed-materials",
+  "component": "PagesCollectionsMixedMaterials",
+  "handler": "collections/mixed_materials_handler",
+  "method": "GET",
+  "requirePath": "components/pages/collections/mixed_materials/mixed_materials",
+  "stores": [],
+  "title": "Mixed Materials",
+  "visibleBeforeMount": false,
+  "path": "/mixed-materials"
+ },
+ {
+  "asyncPrefetch": [
+   "/.*"
+  ],
+  "bundle": null,
+  "bundleFile": "bundle-pages-products-frames-frame-detail-index",
+  "component": "PagesProductsFramesFrameDetailIndex",
+  "handler": "products/frames/frame_detail_handler",
+  "method": "GET",
+  "requirePath": "components/pages/products/frames/frame_detail_index/frame_detail_index",
+  "stores": [
+   "applePay",
+   "capabilities",
+   "favorites",
+   "frameProduct",
+   "session"
+  ],
+  "title": null,
+  "visibleBeforeMount": false,
+  "path": "/monocle/{frame_name}/{frame_color?}"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": null,
+  "bundleFile": "bundle-pages-collections-off-white",
+  "component": "PagesCollectionsOffWhite",
+  "handler": "collections/off_white_handler",
+  "method": "GET",
+  "requirePath": "components/pages/collections/off_white/off_white",
+  "stores": [],
+  "title": "Off White",
+  "visibleBeforeMount": false,
+  "path": "/off-white"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": null,
+  "bundleFile": "bundle-pages-static-originals",
+  "component": "PagesStaticOriginals",
+  "handler": "static/legacy_handler",
+  "method": "GET",
+  "requirePath": "components/pages/static/originals/originals",
+  "stores": [],
+  "title": "Originals",
+  "visibleBeforeMount": false,
+  "path": "/originals"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": "pd",
+  "bundleFile": "bundle-pd",
+  "component": "PagesPdErrorPhoto",
+  "handler": "pd/pd_handler",
+  "method": "GET",
+  "requirePath": "components/pages/pd/error/photo/photo",
+  "stores": [
+   "capabilities"
+  ],
+  "title": null,
+  "visibleBeforeMount": false,
+  "path": "/pd/error/photo"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": "pd",
+  "bundleFile": "bundle-pd",
+  "component": "PagesPdStepInstructions",
+  "handler": "pd/pd_handler",
+  "method": "GET",
+  "requirePath": "components/pages/pd/step/instructions/instructions",
+  "stores": [],
+  "title": null,
+  "visibleBeforeMount": false,
+  "path": "/pd/instructions"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": "pd",
+  "bundleFile": "bundle-pd",
+  "component": "PagesPdStepReview",
+  "handler": "pd/pd_handler",
+  "method": "GET",
+  "requirePath": "components/pages/pd/step/review/review",
+  "stores": [
+   "pd",
+   "session"
+  ],
+  "title": null,
+  "visibleBeforeMount": false,
+  "path": "/pd/review"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": "pd",
+  "bundleFile": "bundle-pd",
+  "component": "PagesPdStepSuccess",
+  "handler": "pd/pd_handler",
+  "method": "GET",
+  "requirePath": "components/pages/pd/step/success/success",
+  "stores": [],
+  "title": null,
+  "visibleBeforeMount": false,
+  "path": "/pd/success"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": "pd",
+  "bundleFile": "bundle-pd",
+  "component": "PagesPdStepWebcam",
+  "handler": "pd/pd_handler",
+  "method": "GET",
+  "requirePath": "components/pages/pd/step/webcam/webcam",
+  "stores": [
+   "capabilities"
+  ],
+  "title": null,
+  "visibleBeforeMount": false,
+  "path": "/pd/webcam"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": null,
+  "bundleFile": "bundle-pages-landing-prescription-check",
+  "component": "PagesLandingPrescriptionCheck",
+  "handler": "landing/prescription_check_handler",
+  "method": "GET",
+  "requirePath": "components/pages/landing/prescription_check/prescription_check",
+  "stores": [
+   "geo",
+   "prescriptionCheck",
+   "regions",
+   "fetch"
+  ],
+  "title": "Prescription Check app",
+  "visibleBeforeMount": false,
+  "path": "/prescription-check-app"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": null,
+  "bundleFile": "bundle-pages-landing-prescription-services",
+  "component": "PagesLandingPrescriptionServices",
+  "handler": "landing/prescription_services_handler",
+  "method": "GET",
+  "requirePath": "components/pages/landing/prescription_services/prescription_services",
+  "stores": [
+   "fetch"
+  ],
+  "title": "In-store Prescription Check",
+  "visibleBeforeMount": false,
+  "path": "/prescription-check-store"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": null,
+  "bundleFile": "bundle-pages-static-privacy-policy",
+  "component": "PagesStaticPrivacyPolicy",
+  "handler": "static/privacy_policy_handler",
+  "method": "GET",
+  "requirePath": "components/pages/static/privacy_policy/privacy_policy",
+  "stores": [],
+  "title": "Privacy Policy",
+  "visibleBeforeMount": false,
+  "path": "/privacy-policy"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": null,
+  "bundleFile": "bundle-pages-landing-process",
+  "component": "PagesLandingProcess",
+  "handler": "landing/landing_page_handler",
+  "method": "GET",
+  "requirePath": "components/pages/landing/process/process",
+  "stores": [
+   "landing"
+  ],
+  "title": null,
+  "visibleBeforeMount": false,
+  "path": "/process/{slug*}"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": null,
+  "bundleFile": "bundle-pages-static-progressives",
+  "component": "PagesStaticProgressives",
+  "handler": "static/legacy_handler",
+  "method": "GET",
+  "requirePath": "components/pages/static/progressives/progressives",
+  "stores": [],
+  "title": "Progressives",
+  "visibleBeforeMount": false,
+  "path": "/progressives"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": "quiz",
+  "bundleFile": "bundle-quiz",
+  "component": "PagesQuizQuiz",
+  "handler": "quiz/quiz_handler",
+  "method": "GET",
+  "requirePath": "components/pages/quiz/quiz/quiz",
+  "stores": [
+   "quiz"
+  ],
+  "title": "Frames quiz",
+  "visibleBeforeMount": false,
+  "path": "/quiz"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": "quiz",
+  "bundleFile": "bundle-quiz",
+  "component": "PagesQuizResults",
+  "handler": "quiz/quiz_results_handler",
+  "method": "GET",
+  "requirePath": "components/pages/quiz/results/results",
+  "stores": [
+   "favorites",
+   "quiz",
+   "session"
+  ],
+  "title": "Quiz results",
+  "visibleBeforeMount": false,
+  "path": "/quiz/results"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": null,
+  "bundleFile": "bundle-pages-collections-rauschenberg",
+  "component": "PagesCollectionsRauschenberg",
+  "handler": "collections/rauschenberg_handler",
+  "method": "GET",
+  "requirePath": "components/pages/collections/rauschenberg/rauschenberg",
+  "stores": [],
+  "title": "Rauschenberg",
+  "visibleBeforeMount": false,
+  "path": "/rauschenberg"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": null,
+  "bundleFile": "bundle-pages-collections-resort",
+  "component": "PagesCollectionsResort",
+  "handler": "collections/resort_handler",
+  "method": "GET",
+  "requirePath": "components/pages/collections/resort/resort",
+  "stores": [],
+  "title": "Warby Parker Resort Collection",
+  "visibleBeforeMount": false,
+  "path": "/resort"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": null,
+  "bundleFile": "bundle-pages-locations-locations-index",
+  "component": "PagesLocationsLocationsIndex",
+  "handler": "locations/locations_handler",
+  "method": "GET",
+  "requirePath": "components/pages/locations/locations_index/locations_index",
+  "stores": [
+   "retail"
+  ],
+  "title": "Retail Locations",
+  "visibleBeforeMount": false,
+  "path": "/retail"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": null,
+  "bundleFile": "bundle-pages-locations-locations-show",
+  "component": "PagesLocationsLocationsShow",
+  "handler": "locations/locations_handler",
+  "method": "GET",
+  "requirePath": "components/pages/locations/locations_show/locations_show",
+  "stores": [
+   "retail",
+   "retailEmailCapture",
+   "appointments",
+   "content",
+   "session"
+  ],
+  "title": null,
+  "visibleBeforeMount": false,
+  "path": "/retail/{city_slug}/{location_slug}"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": null,
+  "bundleFile": "bundle-pages-collections-sculpted-series",
+  "component": "PagesCollectionsSculptedSeries",
+  "handler": "collections/sculpted_series_handler",
+  "method": "GET",
+  "requirePath": "components/pages/collections/sculpted_series/sculpted_series",
+  "stores": [],
+  "title": "Sculpted Series",
+  "visibleBeforeMount": false,
+  "path": "/sculpted-series"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": null,
+  "bundleFile": "bundle-pages-landing-see-summer-better",
+  "component": "PagesLandingSeeSummerBetter",
+  "handler": "landing/see_summer_better_handler",
+  "method": "GET",
+  "requirePath": "components/pages/landing/see_summer_better/see_summer_better",
+  "stores": [],
+  "title": "See Summer Better",
+  "visibleBeforeMount": false,
+  "path": "/see-summer-better"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": null,
+  "bundleFile": "bundle-pages-static-solar-eclipse",
+  "component": "PagesStaticSolarEclipse",
+  "handler": "static/solar_eclipse_handler",
+  "method": "GET",
+  "requirePath": "components/pages/static/solar_eclipse/solar_eclipse",
+  "stores": [],
+  "title": "Solar Eclipse ",
+  "visibleBeforeMount": false,
+  "path": "/solar-eclipse"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": null,
+  "bundleFile": "bundle-pages-collections-spring-2016-fans",
+  "component": "PagesCollectionsSpring2016Fans",
+  "handler": "collections/spring_2016_handler",
+  "method": "GET",
+  "requirePath": "components/pages/collections/spring_2016/fans/fans",
+  "stores": [],
+  "title": "Spring 2016",
+  "visibleBeforeMount": false,
+  "path": "/spring-2016"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": null,
+  "bundleFile": "bundle-pages-collections-spring-2016-men",
+  "component": "PagesCollectionsSpring2016Men",
+  "handler": "collections/spring_2016_handler",
+  "method": "GET",
+  "requirePath": "components/pages/collections/spring_2016/men/men",
+  "stores": [],
+  "title": "Spring 2016",
+  "visibleBeforeMount": false,
+  "path": "/spring-2016/men"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": null,
+  "bundleFile": "bundle-pages-collections-spring-2016-women",
+  "component": "PagesCollectionsSpring2016Women",
+  "handler": "collections/spring_2016_handler",
+  "method": "GET",
+  "requirePath": "components/pages/collections/spring_2016/women/women",
+  "stores": [],
+  "title": "Spring 2016",
+  "visibleBeforeMount": false,
+  "path": "/spring-2016/women"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": null,
+  "bundleFile": "bundle-pages-collections-spring-2017-fans",
+  "component": "PagesCollectionsSpring2017Fans",
+  "handler": "collections/spring_2017_handler",
+  "method": "GET",
+  "requirePath": "components/pages/collections/spring_2017/fans/fans",
+  "stores": [],
+  "title": "Spring 2017",
+  "visibleBeforeMount": false,
+  "path": "/spring-2017"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": null,
+  "bundleFile": "bundle-pages-collections-spring-2017-men",
+  "component": "PagesCollectionsSpring2017Men",
+  "handler": "collections/spring_2017_handler",
+  "method": "GET",
+  "requirePath": "components/pages/collections/spring_2017/men/men",
+  "stores": [],
+  "title": "Spring 2017",
+  "visibleBeforeMount": false,
+  "path": "/spring-2017/men"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": null,
+  "bundleFile": "bundle-pages-collections-spring-2017-women",
+  "component": "PagesCollectionsSpring2017Women",
+  "handler": "collections/spring_2017_handler",
+  "method": "GET",
+  "requirePath": "components/pages/collections/spring_2017/women/women",
+  "stores": [],
+  "title": "Spring 2017",
+  "visibleBeforeMount": false,
+  "path": "/spring-2017/women"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": null,
+  "bundleFile": "bundle-pages-collections-summer-2016-optical-fans",
+  "component": "PagesCollectionsSummer2016OpticalFans",
+  "handler": "collections/summer_2016_handler",
+  "method": "GET",
+  "requirePath": "components/pages/collections/summer_2016/optical/fans/fans",
+  "stores": [],
+  "title": "Summer 2016",
+  "visibleBeforeMount": false,
+  "path": "/summer-2016/optical"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": null,
+  "bundleFile": "bundle-pages-collections-summer-2016-optical-men",
+  "component": "PagesCollectionsSummer2016OpticalMen",
+  "handler": "collections/summer_2016_handler",
+  "method": "GET",
+  "requirePath": "components/pages/collections/summer_2016/optical/men/men",
+  "stores": [],
+  "title": "Summer 2016",
+  "visibleBeforeMount": false,
+  "path": "/summer-2016/optical/men"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": null,
+  "bundleFile": "bundle-pages-collections-summer-2016-optical-women",
+  "component": "PagesCollectionsSummer2016OpticalWomen",
+  "handler": "collections/summer_2016_handler",
+  "method": "GET",
+  "requirePath": "components/pages/collections/summer_2016/optical/women/women",
+  "stores": [],
+  "title": "Summer 2016",
+  "visibleBeforeMount": false,
+  "path": "/summer-2016/optical/women"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": null,
+  "bundleFile": "bundle-pages-collections-summer-2016-sun-fans",
+  "component": "PagesCollectionsSummer2016SunFans",
+  "handler": "collections/summer_2016_handler",
+  "method": "GET",
+  "requirePath": "components/pages/collections/summer_2016/sun/fans/fans",
+  "stores": [],
+  "title": "Summer 2016",
+  "visibleBeforeMount": false,
+  "path": "/summer-2016/sun"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": null,
+  "bundleFile": "bundle-pages-collections-summer-2016-sun-men",
+  "component": "PagesCollectionsSummer2016SunMen",
+  "handler": "collections/summer_2016_handler",
+  "method": "GET",
+  "requirePath": "components/pages/collections/summer_2016/sun/men/men",
+  "stores": [],
+  "title": "Summer 2016",
+  "visibleBeforeMount": false,
+  "path": "/summer-2016/sun/men"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": null,
+  "bundleFile": "bundle-pages-collections-summer-2016-sun-women",
+  "component": "PagesCollectionsSummer2016SunWomen",
+  "handler": "collections/summer_2016_handler",
+  "method": "GET",
+  "requirePath": "components/pages/collections/summer_2016/sun/women/women",
+  "stores": [],
+  "title": "Summer 2016",
+  "visibleBeforeMount": false,
+  "path": "/summer-2016/sun/women"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": null,
+  "bundleFile": "bundle-pages-collections-summer-2017-optical-fans",
+  "component": "PagesCollectionsSummer2017OpticalFans",
+  "handler": "collections/summer_2017_handler",
+  "method": "GET",
+  "requirePath": "components/pages/collections/summer_2017/optical/fans/fans",
+  "stores": [],
+  "title": "Warby Parker Summer 2017",
+  "visibleBeforeMount": false,
+  "path": "/summer-2017"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": null,
+  "bundleFile": "bundle-pages-collections-summer-2017-optical-men",
+  "component": "PagesCollectionsSummer2017OpticalMen",
+  "handler": "collections/summer_2017_handler",
+  "method": "GET",
+  "requirePath": "components/pages/collections/summer_2017/optical/men/men",
+  "stores": [],
+  "title": "Warby Parker Summer 2017",
+  "visibleBeforeMount": false,
+  "path": "/summer-2017/men"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": null,
+  "bundleFile": "bundle-pages-collections-summer-2017-sun-fans",
+  "component": "PagesCollectionsSummer2017SunFans",
+  "handler": "collections/summer_2017_handler",
+  "method": "GET",
+  "requirePath": "components/pages/collections/summer_2017/sun/fans/fans",
+  "stores": [],
+  "title": "Warby Parker Summer 2017",
+  "visibleBeforeMount": false,
+  "path": "/summer-2017/sunglasses"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": null,
+  "bundleFile": "bundle-pages-collections-summer-2017-sun-men",
+  "component": "PagesCollectionsSummer2017SunMen",
+  "handler": "collections/summer_2017_handler",
+  "method": "GET",
+  "requirePath": "components/pages/collections/summer_2017/sun/men/men",
+  "stores": [],
+  "title": "Warby Parker Summer 2017",
+  "visibleBeforeMount": false,
+  "path": "/summer-2017/sunglasses/men"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": null,
+  "bundleFile": "bundle-pages-collections-summer-2017-sun-women",
+  "component": "PagesCollectionsSummer2017SunWomen",
+  "handler": "collections/summer_2017_handler",
+  "method": "GET",
+  "requirePath": "components/pages/collections/summer_2017/sun/women/women",
+  "stores": [],
+  "title": "Warby Parker Summer 2017",
+  "visibleBeforeMount": false,
+  "path": "/summer-2017/sunglasses/women"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": null,
+  "bundleFile": "bundle-pages-collections-summer-2017-optical-women",
+  "component": "PagesCollectionsSummer2017OpticalWomen",
+  "handler": "collections/summer_2017_handler",
+  "method": "GET",
+  "requirePath": "components/pages/collections/summer_2017/optical/women/women",
+  "stores": [],
+  "title": "Warby Parker Summer 2017",
+  "visibleBeforeMount": false,
+  "path": "/summer-2017/women"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": null,
+  "bundleFile": "bundle-pages-static-sunglasses",
+  "component": "PagesStaticSunglasses",
+  "handler": "static/sunglasses_handler",
+  "method": "GET",
+  "requirePath": "components/pages/static/sunglasses/sunglasses",
+  "stores": [
+   "routing"
+  ],
+  "title": "Sunglasses",
+  "visibleBeforeMount": false,
+  "path": "/sunglasses"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": null,
+  "bundleFile": "bundle-pages-landing-gallery",
+  "component": "PagesLandingGallery",
+  "handler": "landing/landing_page_handler",
+  "method": "GET",
+  "requirePath": "components/pages/landing/gallery/gallery",
+  "stores": [
+   "landing"
+  ],
+  "title": null,
+  "visibleBeforeMount": false,
+  "path": "/sunglasses/all/{slug*}"
+ },
+ {
+  "asyncPrefetch": [
+   "/.*"
+  ],
+  "bundle": null,
+  "bundleFile": "bundle-pages-products-frames-frame-gallery-index",
+  "component": "PagesProductsFramesFrameGalleryIndex",
+  "handler": "products/frames/frame_gallery_handler",
+  "method": "GET",
+  "requirePath": "components/pages/products/frames/frame_gallery_index/frame_gallery_index",
+  "stores": [
+   "frameGallery",
+   "favorites",
+   "session",
+   "search"
+  ],
+  "title": null,
+  "visibleBeforeMount": false,
+  "path": "/sunglasses/men"
+ },
+ {
+  "asyncPrefetch": [
+   "/.*"
+  ],
+  "bundle": null,
+  "bundleFile": "bundle-pages-products-frames-frame-detail-index",
+  "component": "PagesProductsFramesFrameDetailIndex",
+  "handler": "products/frames/frame_detail_handler",
+  "method": "GET",
+  "requirePath": "components/pages/products/frames/frame_detail_index/frame_detail_index",
+  "stores": [
+   "applePay",
+   "capabilities",
+   "favorites",
+   "frameProduct",
+   "session"
+  ],
+  "title": null,
+  "visibleBeforeMount": false,
+  "path": "/sunglasses/men/{frame_name}/{frame_color?}"
+ },
+ {
+  "asyncPrefetch": [
+   "/.*"
+  ],
+  "bundle": null,
+  "bundleFile": "bundle-pages-products-frames-frame-gallery-index",
+  "component": "PagesProductsFramesFrameGalleryIndex",
+  "handler": "products/frames/frame_gallery_handler",
+  "method": "GET",
+  "requirePath": "components/pages/products/frames/frame_gallery_index/frame_gallery_index",
+  "stores": [
+   "frameGallery",
+   "favorites",
+   "session",
+   "search"
+  ],
+  "title": null,
+  "visibleBeforeMount": false,
+  "path": "/sunglasses/women"
+ },
+ {
+  "asyncPrefetch": [
+   "/.*"
+  ],
+  "bundle": null,
+  "bundleFile": "bundle-pages-products-frames-frame-detail-index",
+  "component": "PagesProductsFramesFrameDetailIndex",
+  "handler": "products/frames/frame_detail_handler",
+  "method": "GET",
+  "requirePath": "components/pages/products/frames/frame_detail_index/frame_detail_index",
+  "stores": [
+   "applePay",
+   "capabilities",
+   "favorites",
+   "frameProduct",
+   "session"
+  ],
+  "title": null,
+  "visibleBeforeMount": false,
+  "path": "/sunglasses/women/{frame_name}/{frame_color?}"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": null,
+  "bundleFile": "bundle-pages-landing-curated",
+  "component": "PagesLandingCurated",
+  "handler": "landing/landing_page_handler",
+  "method": "GET",
+  "requirePath": "components/pages/landing/curated/curated",
+  "stores": [
+   "landing"
+  ],
+  "title": null,
+  "visibleBeforeMount": false,
+  "path": "/sunglasses/{slug*}"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": null,
+  "bundleFile": "bundle-pages-collections-sunscapade",
+  "component": "PagesCollectionsSunscapade",
+  "handler": "collections/sunscapades_handler",
+  "method": "GET",
+  "requirePath": "components/pages/collections/sunscapade/sunscapade",
+  "stores": [],
+  "title": "Warby Parker",
+  "visibleBeforeMount": false,
+  "path": "/sunscapades"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": null,
+  "bundleFile": "bundle-pages-static-terms-of-use",
+  "component": "PagesStaticTermsOfUse",
+  "handler": "static/terms_of_use_handler",
+  "method": "GET",
+  "requirePath": "components/pages/static/terms_of_use/terms_of_use",
+  "stores": [],
+  "title": "Terms of Use",
+  "visibleBeforeMount": false,
+  "path": "/terms-of-use"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": null,
+  "bundleFile": "bundle-pages-collections-tyler-oakley",
+  "component": "PagesCollectionsTylerOakley",
+  "handler": "collections/tyler_oakley_handler",
+  "method": "GET",
+  "requirePath": "components/pages/collections/tyler_oakley/tyler_oakley",
+  "stores": [],
+  "title": "Warby Parker x Tyler Oakley",
+  "visibleBeforeMount": false,
+  "path": "/tyler-oakley"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": null,
+  "bundleFile": "bundle-pages-collections-winter-2015",
+  "component": "PagesCollectionsWinter2015",
+  "handler": "collections/winter_2015_handler",
+  "method": "GET",
+  "requirePath": "components/pages/collections/winter_2015/winter_2015",
+  "stores": [],
+  "title": "Winter 2015",
+  "visibleBeforeMount": false,
+  "path": "/winter-2015/{version?}"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": null,
+  "bundleFile": "bundle-pages-collections-winter-2016-fans",
+  "component": "PagesCollectionsWinter2016Fans",
+  "handler": "collections/winter_2016_handler",
+  "method": "GET",
+  "requirePath": "components/pages/collections/winter_2016/fans/fans",
+  "stores": [],
+  "title": "Winter 2016",
+  "visibleBeforeMount": false,
+  "path": "/winter-2016"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": null,
+  "bundleFile": "bundle-pages-collections-winter-2016-men",
+  "component": "PagesCollectionsWinter2016Men",
+  "handler": "collections/winter_2016_handler",
+  "method": "GET",
+  "requirePath": "components/pages/collections/winter_2016/men/men",
+  "stores": [],
+  "title": "Winter 2016",
+  "visibleBeforeMount": false,
+  "path": "/winter-2016/men"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": null,
+  "bundleFile": "bundle-pages-collections-winter-2016-women",
+  "component": "PagesCollectionsWinter2016Women",
+  "handler": "collections/winter_2016_handler",
+  "method": "GET",
+  "requirePath": "components/pages/collections/winter_2016/women/women",
+  "stores": [],
+  "title": "Winter 2016",
+  "visibleBeforeMount": false,
+  "path": "/winter-2016/women"
+ },
+ {
+  "asyncPrefetch": [],
+  "bundle": null,
+  "bundleFile": "bundle-pages-annual-report-2014-year-in-review",
+  "component": "PagesAnnualReport2014YearInReview",
+  "handler": "static/year_in_review_2014_handler",
+  "method": "GET",
+  "requirePath": "components/pages/annual_report_2014/year_in_review/year_in_review",
+  "stores": [],
+  "title": "Year in Review 2014",
+  "visibleBeforeMount": false,
+  "path": "/year-in-review-2014"
+ }
+]

@@ -1,4 +1,16 @@
 {
+  "dependencies": {
+    "backbone-deep-model": "git://github.com/WarbyParker/backbone-deep-model#v2.0.1",
+    "backbone-validation": "git://github.com/WarbyParker/backbone.validation.git#lodash",
+    "backbone.nativeajax": "0.3.2",
+    "catbox": "4.3.0",
+    "catbox-redis": "1.0.4",
+    "catbox-redis-master-slave": "git://github.com/WarbyParker/catbox-redis-master-slave.git",
+    "keymirror": "0.1.1",
+    "levee": "^1.2.1",
+    "mersennetwister": "0.2.1",
+    "node-statsd": "0.1.1"
+  },
   "devDependencies": {
     "autoprefixer": "^7.1.6",
     "babel-cli": "^6.26.0",
@@ -28,7 +40,8 @@
     "url-loader": "^0.6.2",
     "webpack": "^3.8.1",
     "webpack-bundle-analyzer": "^2.9.0",
-    "webpack-dev-server": "^2.9.3"
+    "webpack-dev-server": "^2.9.3",
+    "webpack-sources": "^1.0.1"
   },
   "scripts": {
     "build": "webpack",
