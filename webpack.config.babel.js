@@ -9,7 +9,7 @@ import { BundleAnalyzerPlugin } from "webpack-bundle-analyzer";
 
 module.exports = {
   entry: {
-    layout: "./app/server/handlers/base_handler.coffee"
+    layout: "./app/server/handlers/base_static_handler.coffee"
   },
 
   output: {

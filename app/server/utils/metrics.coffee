@@ -1,14 +1,12 @@
 [
   _
   StatsD
-  OS
 
   Logger
   Timing
 ] = [
   require 'lodash'
   require 'node-statsd'
-  require 'os'
 
   require 'hedeia/server/logger'
   require 'hedeia/server/utils/timing'
