@@ -16,10 +16,7 @@ module.exports = env => {
     },
 
     resolve: {
-      alias: {
-        components: path.resolve(__dirname, "src/components")
-      },
-      extensions: [".js", ".json", ".jsx", ".cjsx", ".coffee"]
+      extensions: [".js", ".json", ".jsx"]
     },
 
     module: {
@@ -28,16 +25,6 @@ module.exports = env => {
           test: /\.jsx?$/,
           exclude: /node_modules/,
           use: ["babel-loader"]
-        },
-        {
-          test: /\.cjsx$/,
-          exclude: /node_modules/,
-          use: ["coffee-loader", "cjsx-loader"]
-        },
-        {
-          test: /\.coffee$/,
-          exclude: /node_modules/,
-          use: "coffee-loader"
         },
         {
           test: /\.scss$/,

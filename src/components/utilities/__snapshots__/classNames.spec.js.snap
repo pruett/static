@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`className helpers trim should remove extra spaces 1`] = `"foo"`;
-
-exports[`className helpers µ : Multi-line should remove extra spaces 1`] = `"foo bar"`;
-
-exports[`className helpers µ : Multi-line should resolve interpolations 1`] = `"foo bar"`;

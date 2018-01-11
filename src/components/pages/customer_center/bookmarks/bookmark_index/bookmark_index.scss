@@ -1,8 +1,0 @@
-@import 'src/css/mixins';
-
-.c-customer-center-bookmark-index {
-  @include mqAbove(500px) {
-    column-count: 2;
-    column-gap: 24px;
-  }
-}
