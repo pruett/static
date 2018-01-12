@@ -6,7 +6,7 @@ import StaticCompilerPlugin from "./lib/StaticCompilerPlugin.js";
 module.exports = env => {
   return {
     entry: {
-      main: "./src/entry.js"
+      main: "./src/template.js"
     },
 
     output: {
@@ -50,9 +50,6 @@ module.exports = env => {
       ]
     },
 
-    plugins: [
-      new CleanWebpackPlugin(["dist"]),
-      new StaticCompilerPlugin({ foo: "foo", bar: "bar" })
-    ]
+    plugins: [new CleanWebpackPlugin(["dist"]), new StaticCompilerPlugin()]
   };
 };
