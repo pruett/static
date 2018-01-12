@@ -1,7 +1,7 @@
-const React = require("react/addons");
+import { Component } from "react";
 
-module.exports = React.createClass({
-  render: function() {
+export default class MySection extends Component {
+  render() {
     return (
       <section>
         <h1>hello world</h1>
@@ -9,4 +9,4 @@ module.exports = React.createClass({
       </section>
     );
   }
-});
+}
