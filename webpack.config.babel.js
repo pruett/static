@@ -6,7 +6,7 @@ import StaticCompilerPlugin from "./lib/StaticCompilerPlugin.js";
 module.exports = env => {
   return {
     entry: {
-      main: "./src/template.js"
+      template: "./src/template.js"
     },
 
     output: {
