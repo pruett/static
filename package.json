@@ -17,7 +17,7 @@
     "sass-loader": "^6.0.6",
     "style-loader": "^0.19.1",
     "url-loader": "^0.6.2",
-    "webpack": "4.0.0-alpha.4",
+    "webpack": "4.0.0-alpha.5",
     "webpack-bundle-analyzer": "^2.9.2",
     "webpack-cli": "^2.0.2",
     "webpack-dev-middleware": "^2.0.4",

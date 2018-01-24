@@ -10,9 +10,10 @@ module.exports = {
     this is set dynamically
   */
   output: {
-    filename: "[name].[hash].bundle.js",
-    chunkFilename: "[name].[hash].chunk.js",
     path: path.resolve(__dirname, "dist"),
+    // filename: "[name].[hash].bundle.js",
+    filename: "[name].bundle.js",
+    // chunkFilename: "[name].[hash].chunk.js",
     publicPath: "/"
   },
 
