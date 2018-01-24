@@ -5,7 +5,7 @@ const http = require("http");
 const webpack = require("webpack");
 const React = require("react");
 const ReactDOM = require("react-dom");
-const webpackConfig = require("../webpack.config");
+const webpackConfig = require("../../webpack.config.development");
 const port = 8080;
 const args = require("minimist")(process.argv.slice(2));
 const page = args.p || args.page;
@@ -21,11 +21,11 @@ const page = args.p || args.page;
 // 5. Deploy!!
 
 const validatePage = page => {
-  fs.existsSync(path.join(__dirname, "..", "pages", page, "index.js"))
+  fs.existsSync(path.join(__dirname, "..", "..", "pages", page, "index.js"))
     ? void 0
     : (function() {
         throw new Error(
-          `Please ensure that a ${page} directory exists inside the pages folder and that it contains an index.js file.`
+          `Please ensure that a ${page} directory exists inside the top-level /pages directory, and that *it* contains an index.js file.`
         );
       })();
 };
@@ -41,7 +41,11 @@ page
 const compiler = webpack(
   Object.assign({}, webpackConfig, {
     entry: {
-      main: ["webpack-hot-middleware/client", `./${page}/index.js`]
+      main: [
+        "react-hot-loader/patch",
+        "webpack-hot-middleware/client?overlay=true&reload=true",
+        `./${page}/index.js`
+      ]
     }
   })
 );
@@ -55,7 +59,7 @@ express.use(
 express.use(require("webpack-hot-middleware")(compiler));
 
 express.get("*", (req, res) => {
-  const markup = require("../src/index.html")({
+  const markup = require("../index.html")({
     title: "my cool title",
     bundle: "main.bundle.js"
   });
