@@ -1,11 +1,11 @@
-module.exports = ({ bundle, title }) => `
+module.exports = ({ title = "blah", app = "", bundle = "" } = {}) => `
   <!doctype>
   <html>
     <head>
       <title>${title}</title>
     </head>
     <body>
-      <div id='root'></div>
+      <div id='root'>${app}</div>
       <script src=${bundle}></script>
     </body>
   </html>

@@ -1,18 +1,14 @@
 const path = require("path");
 const webpack = require("webpack");
-const CleanWebpackPlugin = require("clean-webpack-plugin");
 
 module.exports = {
   context: path.resolve(__dirname, "pages"),
 
   /*
-  entry: {
-    this is set dynamically
+   * entry: {
+   *   --> this is set dynamically
+   * },
   */
-
-  output: {
-    path: path.resolve(__dirname, "dist")
-  },
 
   resolve: {
     extensions: [".js", ".json", ".jsx"]
@@ -26,7 +22,5 @@ module.exports = {
         use: ["babel-loader"]
       }
     ]
-  },
-
-  plugins: [new CleanWebpackPlugin(["dist"])]
+  }
 };

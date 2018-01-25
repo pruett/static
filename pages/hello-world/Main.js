@@ -5,8 +5,8 @@ export default class Main extends React.Component {
     return (
       <div>
         <input type="text" />
-        <h1>hey mum</h1>
         <h2>does this work?</h2>
+        <h3>test</h3>
       </div>
     );
   }
