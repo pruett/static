@@ -29,5 +29,7 @@
     "webpack-hot-middleware": "^2.21.0",
     "webpack-merge": "^4.1.1"
   },
-  "scripts": {}
+  "scripts": {
+    "build": "webpack --config ./webpack.config.production.js"
+  }
 }
