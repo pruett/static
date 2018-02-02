@@ -5,10 +5,14 @@ const common = require("./webpack.config.common.js");
 module.exports = merge(common, {
   mode: "development",
 
+  target: "web",
+
+  entry: { mainmjs: "./src/test.mjs" },
+
   output: {
     filename: "[name].bundle.js",
     publicPath: "/"
-  },
+  }
 
-  plugins: [new webpack.HotModuleReplacementPlugin()]
+  // plugins: [new webpack.HotModuleReplacementPlugin()]
 });

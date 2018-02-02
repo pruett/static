@@ -1,17 +1,13 @@
-const path = require("path");
+const { resolve } = require("path");
 const webpack = require("webpack");
 
 module.exports = {
-  context: path.resolve(__dirname, "pages"),
+  // context: resolve(__dirname, "pages"),
 
-  /*
-   * entry: {
-   *   --> this is set dynamically
-   * },
-  */
+  // entry: { --> this is set dynamically },
 
-  resolve: {
-    extensions: [".js", ".json", ".jsx"]
+  output: {
+    path: resolve(__dirname, "dist")
   },
 
   module: {

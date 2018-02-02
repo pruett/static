@@ -1,35 +1,21 @@
 {
   "license": "MIT",
   "devDependencies": {
-    "autoprefixer": "^7.2.4",
-    "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.2",
-    "babel-preset-env": "^1.6.1",
-    "babel-preset-react": "^6.24.1",
-    "clean-webpack-plugin": "^0.1.17",
-    "commander": "^2.13.0",
-    "css-loader": "^0.28.8",
-    "express": "^4.16.2",
-    "inquirer": "^5.0.1",
-    "lodash": "^4.17.4",
-    "minimist": "^1.2.0",
-    "postcss-loader": "^2.0.10",
-    "postcss-scss": "^1.0.3",
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0",
-    "react-hot-loader": "4.0.0-beta.17",
-    "sass-loader": "^6.0.6",
-    "style-loader": "^0.19.1",
-    "url-loader": "^0.6.2",
+    "@babel/core": "^7.0.0-beta.39",
+    "@babel/preset-env": "^7.0.0-beta.39",
+    "@babel/preset-react": "^7.0.0-beta.39",
+    "@babel/register": "^7.0.0-beta.39",
+    "@std/esm": "^0.20.0",
+    "babel-loader": "8.0.0-beta.0",
     "webpack": "^4.0.0-beta.0",
-    "webpack-bundle-analyzer": "^2.9.2",
-    "webpack-cli": "^2.0.2",
+    "webpack-cli": "^2.0.4",
     "webpack-dev-middleware": "^2.0.4",
     "webpack-dev-server": "^2.10.1",
     "webpack-hot-middleware": "^2.21.0",
     "webpack-merge": "^4.1.1"
   },
   "scripts": {
-    "build": "webpack --config ./webpack.config.production.js"
+    "build": "webpack --config ./webpack.config.production.js",
+    "debug": "node --inspect ./node_modules/webpack/bin/webpack.js --config ./webpack.config.production.js"
   }
 }
