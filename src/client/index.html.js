@@ -1,4 +1,4 @@
-module.exports = ({ title = "blah", app = "", bundle = "" } = {}) => `
+const markup = ({ title = "blah", app = "", bundle = "" } = {}) => `
   <!doctype>
   <html>
     <head>
@@ -10,3 +10,5 @@ module.exports = ({ title = "blah", app = "", bundle = "" } = {}) => `
     </body>
   </html>
 `;
+
+export default markup;

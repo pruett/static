@@ -1,4 +1,8 @@
-require = require("@std/esm")(module);
-require("@babel/register");
+import React from "react";
+import ReactDOM from "react-dom";
+import Main from "./Main";
 
-module.exports = require("./index.mjs").default;
+const rootEl = document.getElementById("root");
+const render = Component => ReactDOM.render(<Main />, rootEl);
+
+render(Main);

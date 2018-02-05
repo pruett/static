@@ -1,12 +1,14 @@
-const fs = require("fs");
-const path = require("path");
-const express = require("express")();
-const http = require("http");
-const webpack = require("webpack");
-const webpackConfig = require("../../webpack.config.development");
-
-const args = require("minimist")(process.argv.slice(2));
+import fs from "fs";
+import path from "path";
+import express from "express";
+import minimist from "minimist";
+import http from "http";
+import webpack from "webpack";
+import webpackConfig from "../../webpack.config.development";
+import markup from "./index.html.js";
+const args = minimist(process.argv.slice(2));
 const page = args.p || args.page;
+const app = express();
 
 const validatePage = page => {
   fs.existsSync(path.join(__dirname, "..", "..", "pages", page, "index.js"))
@@ -30,7 +32,6 @@ const compiler = webpack(
   Object.assign({}, webpackConfig, {
     entry: {
       main: [
-        "react-hot-loader/patch",
         "webpack-hot-middleware/client?overlay=true&reload=true",
         `./${page}`
       ]
@@ -38,23 +39,24 @@ const compiler = webpack(
   })
 );
 
-express.use(
+app.use(
   require("webpack-dev-middleware")(compiler, {
     noInfo: true,
     publicPath: webpackConfig.output.publicPath
   })
 );
-express.use(require("webpack-hot-middleware")(compiler));
+app.use(require("webpack-hot-middleware")(compiler));
 
-express.get("*", (req, res) => {
-  const markup = require("../index.html")({
-    title: "my cool title",
-    bundle: "main.bundle.js"
-  });
-  res.send(markup);
+app.get("*", (req, res) => {
+  res.send(
+    markup({
+      title: "my cool title",
+      bundle: "main.bundle.js"
+    })
+  );
 });
 
-const server = http.createServer(express);
+const server = http.createServer(app);
 const port = 8080;
 server.listen(port, "0.0.0.0", err => {
   if (err) console.log(err);

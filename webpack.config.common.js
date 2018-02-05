@@ -2,7 +2,7 @@ const { resolve } = require("path");
 const webpack = require("webpack");
 
 module.exports = {
-  // context: resolve(__dirname, "pages"),
+  context: resolve(__dirname, "pages"),
 
   // entry: { --> this is set dynamically },
 
