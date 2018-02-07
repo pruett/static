@@ -2,7 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom";
 import Main from "./Main";
 
-const rootEl = document.getElementById("root");
-const render = Component => ReactDOM.render(<Main />, rootEl);
+const CLIENT_MOUNT = document.getElementById("CLIENT_MOUNT");
 
-render(Main);
+RENDER_ENV === 'server'
+  ? ReactDOM.hydrate(<Main />, CLIENT_MOUNT)
+  : ReactDOM.render(<Main />, CLIENT_MOUNT);

@@ -1,7 +1,7 @@
 const { resolve } = require("path");
+const webpack = require("webpack");
 const merge = require("webpack-merge");
 const common = require("./webpack.config.common.js");
-const StaticGeneratorPlugin = require("./lib/StaticGeneratorPlugin.js");
 
 module.exports = merge(common, {
   mode: "production",
@@ -14,5 +14,9 @@ module.exports = merge(common, {
     chunkFilename: "[name].[hash].chunk.js"
   },
 
-  plugins: [new StaticGeneratorPlugin()]
+  plugins: [
+    new webpack.DefinePlugin({
+      RENDER_ENV: JSON.stringify("server")
+    })
+  ]
 });

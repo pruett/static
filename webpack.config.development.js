@@ -14,5 +14,10 @@ module.exports = merge(common, {
     publicPath: "/"
   },
 
-  plugins: [new webpack.HotModuleReplacementPlugin()]
+  plugins: [
+    new webpack.DefinePlugin({
+      RENDER_ENV: JSON.stringify("client")
+    }),
+    new webpack.HotModuleReplacementPlugin()
+  ]
 });

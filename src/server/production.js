@@ -1,10 +1,18 @@
-const fs = require("fs");
-const path = require("path");
-const { merge } = require("lodash");
-const webpack = require("webpack");
-const webpackConfig = require("../../webpack.config.production");
+/*
+ *
+ * Add all folders in /pages directory as entrypoints
+ *
+*/
+import fs from "fs";
+import path from "path";
+import merge from "webpack-merge";
+import webpack from "webpack";
+import webpackConfig from "../../webpack.config.production";
+import StaticGeneratorPlugin from "../../lib/StaticGeneratorPlugin";
+
 const pages = fs.readdirSync(path.join(__dirname, "..", "..", "pages"));
 
+console.log("hello");
 pages
   ? void 0
   : (function() {
@@ -17,8 +25,11 @@ const entries = pages.reduce((acc, x) => {
 }, {});
 
 const config = merge(webpackConfig, {
-  entry: entries
+  entry: entries,
+  plugins: [new StaticGeneratorPlugin()]
 });
+
+console.log(config);
 
 webpack(config, (err, stats) => {
   if (err || stats.hasErrors()) console.error("Error:", err);

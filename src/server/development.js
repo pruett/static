@@ -1,3 +1,8 @@
+/*
+ *
+ * Kick off development server for a particular page
+ *
+*/
 import fs from "fs";
 import path from "path";
 import express from "express";
@@ -5,7 +10,7 @@ import minimist from "minimist";
 import http from "http";
 import webpack from "webpack";
 import webpackConfig from "../../webpack.config.development";
-import markup from "./index.html.js";
+import renderMarkup from "../utils/staticMarkup";
 const args = minimist(process.argv.slice(2));
 const page = args.p || args.page;
 const app = express();
@@ -41,7 +46,7 @@ const compiler = webpack(
 
 app.use(
   require("webpack-dev-middleware")(compiler, {
-    noInfo: true,
+    logLevel: "warn",
     publicPath: webpackConfig.output.publicPath
   })
 );
@@ -49,16 +54,16 @@ app.use(require("webpack-hot-middleware")(compiler));
 
 app.get("*", (req, res) => {
   res.send(
-    markup({
-      title: "my cool title",
-      bundle: "main.bundle.js"
+    renderMarkup({
+      bundles: ["main.bundle.js"]
     })
   );
 });
 
 const server = http.createServer(app);
 const port = 8080;
+
 server.listen(port, "0.0.0.0", err => {
   if (err) console.log(err);
-  console.info(`🍒 Listening on port ${port}.`);
+  console.info(`\n🍒 Server started on port ${port}.\n`);
 });
