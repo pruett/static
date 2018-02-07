@@ -4,8 +4,6 @@ const webpack = require("webpack");
 module.exports = {
   context: resolve(__dirname, "pages"),
 
-  // entry: { --> this is set dynamically },
-
   output: {
     path: resolve(__dirname, "dist")
   },

@@ -7,8 +7,6 @@ module.exports = merge(common, {
 
   target: "web",
 
-  entry: { main: "../src/index.js" },
-
   output: {
     filename: "[name].bundle.js",
     publicPath: "/"
