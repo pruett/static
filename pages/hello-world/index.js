@@ -1,10 +1,16 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import { render, hydrate } from "react-dom";
+import { fetchData } from "../../lib/utils/dataFetchingUtils";
 import Main from "./Main";
 
-const page = <Main />;
-const CLIENT_MOUNT = document.getElementById("CLIENT_MOUNT");
+const DOM_CLIENT_HOOK = document.getElementById("Root");
 
-RENDER_ENV === "server"
-  ? ReactDOM.hydrate(page, CLIENT_MOUNT)
-  : ReactDOM.render(page, CLIENT_MOUNT);
+if (ENV === "development") {
+  import("./data").then(data => {
+    fetchData(data.default).then(res => {
+      render(<Main {...res} />, DOM_CLIENT_HOOK);
+    });
+  });
+} else {
+  hydrate(<Main />, DOM_CLIENT_HOOK);
+}

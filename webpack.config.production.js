@@ -16,7 +16,7 @@ module.exports = merge(common, {
 
   plugins: [
     new webpack.DefinePlugin({
-      RENDER_ENV: JSON.stringify("server")
+      ENV: JSON.stringify("production")
     })
   ]
 });

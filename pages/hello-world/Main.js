@@ -7,7 +7,7 @@ class Main extends Component {
       <div>
         <input type="text" />
         <h2>does this work?</h2>
-        <h3>on node son</h3>
+        <h3>{`${this.props.github.login} is the coolest!`}</h3>
       </div>
     );
   }

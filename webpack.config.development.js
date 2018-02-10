@@ -14,7 +14,7 @@ module.exports = merge(common, {
 
   plugins: [
     new webpack.DefinePlugin({
-      RENDER_ENV: JSON.stringify("client")
+      ENV: JSON.stringify("development")
     }),
     new webpack.HotModuleReplacementPlugin()
   ]
