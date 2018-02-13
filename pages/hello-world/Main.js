@@ -3,11 +3,15 @@ import { hot } from "react-hot-loader";
 
 class Main extends Component {
   render() {
+    const { github } = this.props.initialData;
+
     return (
       <div>
         <input type="text" />
-        <h2>does this work?</h2>
-        <h3>{`${this.props.github.login} is the coolest!`}</h3>
+        <h1>{`${github.login}'s Github`}</h1>
+        <h3>{github.name}</h3>
+        <h4>{github.company || "NO COMPANY LISTED"}</h4>
+        <img src={`${github.avatar_url}`} width={150} height={150} />
       </div>
     );
   }
