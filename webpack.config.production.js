@@ -13,10 +13,5 @@ module.exports = merge(common, {
     chunkFilename: "[name].[hash].chunk.js"
   },
 
-  plugins: [
-    new webpack.DefinePlugin({
-      ENV: JSON.stringify("production")
-    }),
-    new CleanWebpackPlugin(["dist"])
-  ]
+  plugins: [new CleanWebpackPlugin(["dist"])]
 });
