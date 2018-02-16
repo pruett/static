@@ -1,6 +1,7 @@
 import React from "react";
 import { render, hydrate } from "react-dom";
 import Main from "./Main";
+// import data from './data.json'
 
 if (ENV === "development") {
   import("./data").then(contents =>
