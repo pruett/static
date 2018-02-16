@@ -1,7 +1,7 @@
 const { resolve } = require("path");
 const webpack = require("webpack");
 const merge = require("webpack-merge");
-const common = require("./webpack.config.common.js");
+const common = require("./common.config.js");
 const CleanWebpackPlugin = require("clean-webpack-plugin");
 
 module.exports = merge(common, {

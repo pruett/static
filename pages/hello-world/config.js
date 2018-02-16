@@ -22,18 +22,19 @@ import { filter } from "lodash";
 
 export default {
   remoteData: {
-    foo: {
-      endpoint: "https://api.endpoint.com/thing",
+    remoteA: {
+      endpoint: "https://jsonplaceholder.typicode.com/users/1",
       transformation: data => filter(data => data > 0)
     },
-    bar: {
-      endpoint: "https://api.endpoint.com/thing2"
+    remoteB: {
+      endpoint: "https://jsonplaceholder.typicode.com/users/2",
+      transformation: data => filter(data => data > 0)
     }
   },
   localData: {
-    foo: "foo",
-    bar: "bar",
-    baz: val => `${val}!!`
+    localA: "localA",
+    localB: "localB",
+    localC: { localD: "localD" }
   },
   pureStatic: false
 };
