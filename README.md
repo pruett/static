@@ -3,12 +3,10 @@
 </p>
 
 # static
-`under development`
+`under HEAVY development`
 
 ### Requirements
-
-- Node.js >= v6
-- `npm` or `yarn`
+- `yarn`
 
 ### Getting started
 
@@ -17,12 +15,10 @@
 git clone <repo>
 
 # install local dependencies:
-npm install
-# - or -
 yarn
 ```
 
-### Commands
+### CLI
 
 ```bash
 # bootstrap project:
